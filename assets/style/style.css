@@ -1,7 +1,7 @@
 @import url('colors.css');
 
-body{
-    background: --primary-color;
+p{
+    color: red;
 }
 
 
