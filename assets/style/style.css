@@ -1,7 +1,64 @@
-@import url('colors.css');
+@import url('main.css');
 
-p{
-    color: red;
+
+body {
+    background-color: var( --bg-black);
 }
 
+/*nav*/
 
+.navbar .container {
+    border-radius: 4px;
+    background-color: #ffffff64;
+}
+
+.container{
+    height: 80px;
+}
+
+.textColor-white {
+    border-radius: 4px;
+    color: #fff;
+    margin: 14px;
+    background-color: #ffffff64;
+}
+
+.textColor-white:hover{
+    color: #fff;
+    margin: 14px;
+    background-color: #f0126a;
+}
+
+.btn-menu{
+    width: 155px;
+    background-color:#ffffff64 ;
+    color: #fff;
+}
+
+.btn-menu:hover{
+    width: 155px;
+    background-color: #f0126a;
+    color: #fff;
+}
+
+/**/
+
+/*Home*/
+
+.textHome{
+    margin-top: 10%;
+    color: var(--text-White);
+}
+.btn-home{
+    background-color: #f0126a;
+    width: 155px;
+    color: #fff;
+}
+
+.btn-home:hover{
+    background-color: #f0126a;
+    width: 155px;
+    color: #fff;
+}
+
+/**/
