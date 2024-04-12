@@ -19,10 +19,16 @@ body {
     left: 0;
     z-index: 1030;
 }
+
+.transparent-navbar {
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+}
+
 .navbar .container {
-    
     border-radius: 4px;
-    background-color: #ffffff64;
+    background-color: #343333a7;
 }
 
 .dropdown-item {
@@ -86,6 +92,24 @@ body {
     color: #fff;
 }
 
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 65px;
+  }
+  .video-container iframe {
+    width: 450px;
+    height: 250px;
+    transition: width 0.5s, height 0.5s, transform 0.5s;
+  }
+  
+  .video-container.zoom1 iframe {
+    width: 800px;
+    height: 450px;
+    transform: scale(1.2);
+  }
+  
 /*parte 2*/
 
 .textppart2Home {
@@ -101,6 +125,9 @@ body {
 .cardContHome {
     height: 160px;
 }
+
+
+
 
 .card {
     border-radius: 20px;

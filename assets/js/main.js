@@ -76,3 +76,23 @@ function startFlipping() {
 }
 
 startFlipping();
+
+var lastScrollTop = 0;
+
+function handleVideoZoom() {
+  var scrollPosition = window.scrollY;
+  var scrollDirection = scrollPosition > lastScrollTop ? 'down' : 'up';
+  lastScrollTop = scrollPosition;
+
+  var videoContainer = document.querySelector('.video-container');
+  var videoIframe = document.querySelector('.video-container iframe');
+
+  // Ajustamos el tamaño del video gradualmente mientras se hace scroll hacia arriba
+  var scaleFactor = 1 - (scrollPosition / 400); // Puedes ajustar este valor según tu preferencia
+
+  videoIframe.style.width = (450 + 350 * scaleFactor) + 'px'; // 450px es el tamaño inicial del video
+  videoIframe.style.height = (250 + 200 * scaleFactor) + 'px'; // 250px es la altura inicial del video
+}
+
+window.addEventListener('scroll', handleVideoZoom);
+document.addEventListener('DOMContentLoaded', handleVideoZoom);

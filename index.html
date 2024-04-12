@@ -4,22 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SayHello</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-  <title>Say Hello</title>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./assets/style/style.css">
+
 </head>
 
 <body class="p-3 m-0 border-0">
-
+  
   <!-- start nav  -->
-  <nav class="navbar navbar-expand-lg fixed-topM">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg fixed-topM ">
+    <div class="container transparent-navbar">
       <a class="navbar-brand" href="#">SayHello</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,13 +66,19 @@
     <!-- start Section Home  -->
     <section class="home d-flex justify-content-center align-items-center">
       <div class="textHome text-center">
-        <h1>Your digital success partner</h1>
-        <p>We design tailored solutions that ensure a strong online presence, effective marketing, and optimized
+        <h1 class="animationScroll">Your digital success partner</h1>
+        <p class="animationScroll">We design tailored solutions that ensure a strong online presence, effective marketing, and optimized
           technical infrastructure.</p>
-        <form class="d-lg-flex justify-content-center" role="search">
+        <form class="d-lg-flex justify-content-center animationScroll" role="search">
           <button class="btn btn-home" type="submit">Start a Project</button>
         </form>
+        <div class="video-container animationScroll justify-center items-center">
+          <iframe src="https://www.youtube.com/embed/ZB_2xpwwjC4?si=cbj0x3QkGIXr8ghh" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
       </div>
+   
+  
     </section>
     <!-- End Section Home  -->
 
@@ -133,11 +137,12 @@
       </div>
     </section>
     <!-- End part2Home Home  -->
-    <section class="carrucelHome"></section>
+
     <!-- Start Carrucell Home  -->
+    <section class="carrucelHome"></section>
+    <!-- End Carrucell Home  -->
 
     <!-- Start testimonyHome Home -->
-
     <section class="testimonioHome">
       <div class="titleTextTesti">
         <h2 class="textTestHomeH2">What our clients say about us</h2>
@@ -198,8 +203,43 @@
   <!--Start TestiminioHome Home  -->
   </div>
   <!--End container home -->
-
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/scrollreveal.min.js"></script>
+<script>/* Animacion de inicio*/
+document.addEventListener('DOMContentLoaded', function() {
+  const videoContainer = document.querySelector('.video-container');
+  const videoIframe = document.querySelector('.video-container iframe');
+  
+  // Ajustamos el tamaño inicial del video
+  videoIframe.style.width = '450px';
+  videoIframe.style.height = '250px';
+  videoIframe.style.transform = 'scale(1)';
+  
+  // ScrollReveal para mostrar los elementos con animación
+  const sr7 = ScrollReveal({
+    duration: 2000,
+    delay: 300,
+    origin: "bottom",
+    distance: "180px",
+    reset: true
+  });
+
+  sr7.reveal(".animationScroll", {
+    origin: "bottom",
+    interval: 200,
+    reset: true
+  });
+
+  window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var scaleFactor = Math.min(scrollPosition / 400, 1); 
+
+    videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
+    videoIframe.style.height = (250 + 200 * scaleFactor) + 'px'; 
+    videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')'; 
+  });
+});
+</script>
 </body>
 
 </html>
