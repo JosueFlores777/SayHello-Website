@@ -2,17 +2,35 @@
 
 
 body {
-    background-color: var( --bg-black);
+    background-color: var(--bg-black);
 }
 
-/*nav*/
+/*Config General*/
+.margenGeneral {
+    margin: 0 75px;
+}
 
+/**/
+
+/*nav*/
+.fixed-topM {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 .navbar .container {
+    
     border-radius: 4px;
     background-color: #ffffff64;
 }
 
-.container{
+.dropdown-item {
+    width: auto;
+}
+
+
+.container {
     height: 80px;
 }
 
@@ -23,19 +41,19 @@ body {
     background-color: #ffffff64;
 }
 
-.textColor-white:hover{
+.textColor-white:hover {
     color: #fff;
     margin: 14px;
     background-color: #f0126a;
 }
 
-.btn-menu{
+.btn-menu {
     width: 155px;
-    background-color:#ffffff64 ;
+    background-color: #ffffff64;
     color: #fff;
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
     width: 155px;
     background-color: #f0126a;
     color: #fff;
@@ -43,22 +61,313 @@ body {
 
 /**/
 
-/*Home*/
+/* start Home*/
 
-.textHome{
+/*parte 1*/
+
+.home {
+    height: 100vh;
+}
+
+.textHome {
     margin-top: 10%;
     color: var(--text-White);
 }
-.btn-home{
+
+.btn-home {
     background-color: #f0126a;
     width: 155px;
     color: #fff;
 }
 
-.btn-home:hover{
+.btn-home:hover {
     background-color: #f0126a;
     width: 155px;
     color: #fff;
+}
+
+/*parte 2*/
+
+.textppart2Home {
+    width: 80%;
+    color: var(--text-White);
+}
+
+.cardHome {
+    display: flex;
+    justify-content: center;
+}
+
+.cardContHome {
+    height: 160px;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card-body {
+    margin-top: 20%;
+}
+
+.margenpart2Home {
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
+.cardContHome:nth-child(1) {
+    background-color: #fdfce9;
+    transition-delay: 300ms;
+}
+
+.cardContHome:nth-child(2) {
+    background-color: #fcfac5;
+    transition-delay: 600ms;
+}
+
+.cardContHome:nth-child(3) {
+    background-color: #f8ef70;
+    transition-delay: 900ms;
+}
+
+.cardContHome:nth-child(4) {
+    background-color: #f1d31e;
+    transition-delay: 1300ms;
+}
+
+.cardContHome:nth-child(2),
+.cardContHome:nth-child(3),
+.cardContHome:nth-child(4) {
+    margin-left: 15px;
+}
+
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden1 {
+        transition: none;
+    }
+}
+
+
+#containerScrollInfiteHome {
+    display: grid;
+    /*min-block-size: 100vh;*/
+    font-family: system-ui;
+    font-size: 1.125rem;
+}
+
+
+#containerScrollInfiteHome {
+    margin-top: 50px;
+}
+
+.scrollerHome {
+    overflow: hidden;
+    max-width: auto;
+}
+
+.scrollerHome__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: max-content;
+}
+
+.scrollerHome[data-animated="true"] {
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scrollerHome[data-animated="true"] .scrollerHome__inner {
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scrollerHome[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.scrollerHome[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.scrollerHome[data-speed="fast"] {
+    --_animation-duration: 10s;
+}
+
+.scrollerHome[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+/*Home Carrucel*/
+.carrucelHome {
+    height: 100vh;
 }
 
 /**/
+
+/*TestimonyHome*/
+.testimonioHome{
+    height: 60vh;
+}
+
+.titleTextTesti {
+    color: var(--text-White);
+}
+
+.testimony{
+    margin-top: 100px;
+}
+.textTestHomeH2 {
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.cardPageTestiHome-stack {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardPageTestiHome {
+    margin: 10px auto;
+    position: absolute;
+    background-color: #6d4416;
+    height: 360px;
+    width: 580px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cardPageTestiHome .dark {
+    background-color: black;
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.cardPageTestiHome-content {
+    color: #55555500;
+}
+
+.card.dark .card-content {
+    color: var(--text-White);
+}
+
+.designation {
+    color: var(--text-White);
+    font-weight: normal;
+    margin:0 25px;
+}
+.name{
+    color: var(--text-White);
+}
+
+.testimonial-info {
+    margin-top: 20px;
+}
+
+.testimonial-avatar {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.testimonial-avatar img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 10px; /
+}
+
+
+
+
+/* end home*/
+
+
+
+/*Resposive*/
+
+@media(max-width:992px){
+    .navbar-collapse {
+        margin-top: 60px;
+        background-color: #897b7b;
+    }
+}
+
+@media (max-width: 700px) {
+    .cardHome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardContHome:nth-child(2),
+    .cardContHome:nth-child(3),
+    .cardContHome:nth-child(4) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 478px) {
+    .margenGeneral {
+        margin: 0 5px;
+    }
+
+    .textppart2Home{
+        width: 100%;
+    }
+
+    /*home card*/
+    .cardHome {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .cardContHome {
+        width: auto !important;
+    }
+
+    .testimony{
+        height: 100vh;
+    }
+
+    .textTestHomeH2 {
+        width: 50%;
+    }
+    .cardPageTestiHome {
+        height: auto; 
+        width: auto; 
+    }
+
+}
