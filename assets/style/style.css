@@ -47,6 +47,12 @@ body {
     background-color: #ffffff64;
 }
 
+.textColor-white2 {
+    border-radius: 4px;
+    color: #fff;
+    margin: 14px;
+}
+
 .textColor-white:hover {
     color: #fff;
     margin: 14px;
@@ -174,7 +180,6 @@ body {
     margin-left: 15px;
 }
 
-
 .hidden1 {
     opacity: 0;
     filter: blur(5px);
@@ -254,6 +259,13 @@ body {
 
 /*Home Carrucel*/
 /*Parte 3*/
+
+.btn-carrucelHomeS, .btn-carrucelHomeS:hover {
+    background-color: #f0126a;
+    width: 155px;
+    color: #fff;
+}
+
 .carrucelHome {
     height: 100vh;
 }
@@ -380,6 +392,15 @@ swiper-slide {
 }
 
 
+footer{
+    width: auto;
+    margin-top: 120px;
+}
+
+.footer {
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
 
 
 /* end home*/
@@ -405,16 +426,16 @@ swiper-slide {
     }
 }
 
-
 @media(max-width:992px) {
     .navbar-collapse {
         margin-top: 60px;
         background-color: #101010;
     }
-
-    .fondoPart3Home {
-        height: 80vh;
+    .fondoPart3Home,
+    .carrucelHome {
+        height: 90vh;
     }
+
 
     swiper-container {
         margin-top: 25px;
@@ -432,10 +453,17 @@ swiper-slide {
     }
 }
 
+@media (max-width: 835px){
+    .fondoPart3Home,
+    .carrucelHome {
+        height: 75vh;
+    }
+}
+
 @media (max-width: 825px){
     .fondoPart3Home,
     .carrucelHome {
-        height: 60vh;
+        height: 65vh;
     }
 }
 
@@ -457,7 +485,7 @@ swiper-slide {
 @media (max-width: 625px){
     .fondoPart3Home,
     .carrucelHome {
-        height: 60vh;
+        height: 70vh;
     }
     .carrucelHome {
         margin-top: 60px !important;
