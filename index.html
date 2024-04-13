@@ -22,7 +22,7 @@
       <button class="navbar-toggler white-icon" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        
+
       </button>
       <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -138,43 +138,46 @@
     <!-- End part2Home Home  -->
 
     <!-- Start Carrucell Home  -->
-    <section class="carrucelHome margeTopCarrucel">
+    <section class="carrucelHome margeTopCarrucel margenGeneral">
       <div class="fondoPart3Home">
-        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-        slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-        <swiper-slide>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+        <div class="carruselTitleHome">
+          <h2 class="text-center">Selected Projects</h2>
+        </div>
+
+
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+        centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+        coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true"
+        autoplay='{"delay": 4500, "disableOnInteraction": false}'><swiper-slide>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
             </div>
-          </div> </swiper-slide>
-        <swiper-slide>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
             </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-    
-      </swiper-container>
+          </swiper-slide>
+
+        </swiper-container>
       </div>
     </section>
     <!-- End Carrucell Home  -->
@@ -244,46 +247,46 @@
   <script src="./assets/js/animacion.js"></script>
   <script src="./assets/js/scrollreveal.min.js"></script>
   <script>/* Animacion de inicio*/
-  document.addEventListener('DOMContentLoaded', function () {
-    const videoContainer = document.querySelector('.video-container');
-    const videoIframe = document.querySelector('.video-container iframe');
-  
-    videoIframe.style.width = '450px';
-    videoIframe.style.height = '250px';
-    videoIframe.style.transform = 'scale(1)';
-  
-    const sr = ScrollReveal({
-      duration: 2000,
-      delay: 300,
-      origin: "bottom",
-      distance: "180px",
-      reset: true
+    document.addEventListener('DOMContentLoaded', function () {
+      const videoContainer = document.querySelector('.video-container');
+      const videoIframe = document.querySelector('.video-container iframe');
+
+      videoIframe.style.width = '450px';
+      videoIframe.style.height = '250px';
+      videoIframe.style.transform = 'scale(1)';
+
+      const sr = ScrollReveal({
+        duration: 2000,
+        delay: 300,
+        origin: "bottom",
+        distance: "180px",
+        reset: true
+      });
+
+      sr.reveal(".animationScroll", {
+        origin: "bottom",
+        interval: 200,
+        reset: true
+      });
+
+      window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY;
+        var scaleFactor = Math.min(scrollPosition / 400, 1);
+
+        videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
+        videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+        videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+      });
     });
-  
-    sr.reveal(".animationScroll", {
-      origin: "bottom",
-      interval: 200,
-      reset: true
-    });
-  
-    window.addEventListener('scroll', function () {
-      var scrollPosition = window.scrollY;
-      var scaleFactor = Math.min(scrollPosition / 400, 1);
-  
-      videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
-      videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
-      videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
-    });
-  });
-  
-  const sr1 = ScrollReveal({
+
+    const sr1 = ScrollReveal({
       duration: 2000,
       delay: 300,
       origin: "bottom",
       distance: "480px",
       reset: true
     });
-  
+
     sr1.reveal(".carrucelHome", {
       origin: "bottom",
       interval: 200,
@@ -295,7 +298,7 @@
       reset: true
     });
   </script>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 </body>

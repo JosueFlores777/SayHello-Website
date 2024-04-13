@@ -67,10 +67,10 @@ body {
 
 .white-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    background-size: 45px 45px; 
-    background-repeat: no-repeat; 
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
     width: 45px;
-    height: 45px; 
+    height: 45px;
 }
 
 /**/
@@ -258,9 +258,13 @@ body {
     height: 100vh;
 }
 
+.carruselTitleHome {
+    padding-top: 105px;
+    color: var(--text-White);
+}
 
-.fondoPart3Home{
-    height: 80vh;
+.fondoPart3Home {
+    height: 100vh;
     border-radius: 15px;
     background-color: var(--secondary-color);
 }
@@ -270,19 +274,25 @@ body {
     margin-bottom: 65px;
 }
 
+swiper-container .card {
+    height: 100%;
+}
+
 swiper-container {
     margin-top: 25px;
     width: 80%;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-bottom: 50px;
-  }
 
-  swiper-slide {
+}
+
+swiper-slide {
+    padding: 50px;
     background-position: center;
     background-size: cover;
-    width: 600px;
+    width: 800px;
     height: 600px;
-  }
+}
 
 /**/
 
@@ -378,10 +388,32 @@ swiper-container {
 
 /*Resposive*/
 
+@media(max-width:1025px) {
+    swiper-container {
+        margin-top: 25px;
+        width: 93%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    swiper-slide {
+        padding: 0px;
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 500px;
+    }
+}
+
+
 @media(max-width:992px) {
     .navbar-collapse {
         margin-top: 60px;
         background-color: #101010;
+    }
+
+    .fondoPart3Home {
+        height: 80vh;
     }
 
     swiper-container {
@@ -389,14 +421,22 @@ swiper-container {
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
-      }
-    
-      swiper-slide {
+    }
+
+    swiper-slide {
+        padding: 0px;
         background-position: center;
         background-size: cover;
-        width: 500px;
+        width: 400px;
         height: 500px;
-      }
+    }
+}
+
+@media (max-width: 825px){
+    .fondoPart3Home,
+    .carrucelHome {
+        height: 60vh;
+    }
 }
 
 @media (max-width: 700px) {
@@ -414,20 +454,61 @@ swiper-container {
 
 }
 
+@media (max-width: 625px){
+    .fondoPart3Home,
+    .carrucelHome {
+        height: 60vh;
+    }
+    .carrucelHome {
+        margin-top: 60px !important;
+        margin-bottom: 160px !important;
+    }
+
+    swiper-container .card {
+        height: 60%;
+    }
+
+    swiper-container {
+        margin-top: 25px;
+        width: 80%;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    
+    }
+    
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+}
 
 @media (max-width: 478px) {
     swiper-container {
-        width: 50%;
+        width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
-      }
-    
-      swiper-slide {
+    }
+
+    .fondoPart3Home,
+    .carrucelHome {
+        height: 60vh;
+    }
+
+    .carrucelHome {
+        margin-top: 60px !important;
+        margin-bottom: 60px !important;
+    }
+
+    swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 200px;
-        height: 200px;
-      }
+        width: 300px;
+        height: 300px;
+    }
+
     .margenGeneral {
         margin: 0 5px;
     }
@@ -467,6 +548,43 @@ swiper-container {
 
     .video-container {
         margin-top: 25px;
+    }
+
+}
+
+@media (max-width: 378px) {
+    swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+  
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 270px;
+        height: 390px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .fondoPart3Home,
+    .carrucelHome {
+        height: 70vh;
+    }
+    swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+  
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 275px;
+        height: 360px;
     }
 
 }
