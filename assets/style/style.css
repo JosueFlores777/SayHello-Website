@@ -135,9 +135,6 @@ body {
     height: 160px;
 }
 
-
-
-
 .card {
     border-radius: 20px;
 }
@@ -256,9 +253,36 @@ body {
 }
 
 /*Home Carrucel*/
+/*Parte 3*/
 .carrucelHome {
     height: 100vh;
 }
+
+
+.fondoPart3Home{
+    height: 80vh;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+}
+
+.margeTopCarrucel {
+    margin-top: 75px;
+    margin-bottom: 65px;
+}
+
+swiper-container {
+    margin-top: 25px;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+  }
 
 /**/
 
@@ -359,6 +383,20 @@ body {
         margin-top: 60px;
         background-color: #101010;
     }
+
+    swiper-container {
+        margin-top: 25px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+      swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+      }
 }
 
 @media (max-width: 700px) {
@@ -378,6 +416,18 @@ body {
 
 
 @media (max-width: 478px) {
+    swiper-container {
+        width: 50%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+      swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+      }
     .margenGeneral {
         margin: 0 5px;
     }

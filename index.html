@@ -79,7 +79,6 @@
           allowfullscreen></iframe>
       </div>
     </section>
-
     <!-- End Section Home  -->
 
     <!-- Start part2Home Home  -->
@@ -139,7 +138,45 @@
     <!-- End part2Home Home  -->
 
     <!-- Start Carrucell Home  -->
-    <section class="carrucelHome"></section>
+    <section class="carrucelHome margeTopCarrucel">
+      <div class="fondoPart3Home">
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+        slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <swiper-slide>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div> </swiper-slide>
+        <swiper-slide>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+    
+      </swiper-container>
+      </div>
+    </section>
     <!-- End Carrucell Home  -->
 
     <!-- Start testimonyHome Home -->
@@ -204,42 +241,63 @@
   </div>
   <!--End container home -->
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/animacion.js"></script>
   <script src="./assets/js/scrollreveal.min.js"></script>
   <script>/* Animacion de inicio*/
-    document.addEventListener('DOMContentLoaded', function () {
-      const videoContainer = document.querySelector('.video-container');
-      const videoIframe = document.querySelector('.video-container iframe');
-
-      // Ajustamos el tamaño inicial del video
-      videoIframe.style.width = '450px';
-      videoIframe.style.height = '250px';
-      videoIframe.style.transform = 'scale(1)';
-
-      // ScrollReveal para mostrar los elementos con animación
-      const sr7 = ScrollReveal({
-        duration: 2000,
-        delay: 300,
-        origin: "bottom",
-        distance: "180px",
-        reset: true
-      });
-
-      sr7.reveal(".animationScroll", {
-        origin: "bottom",
-        interval: 200,
-        reset: true
-      });
-
-      window.addEventListener('scroll', function () {
-        var scrollPosition = window.scrollY;
-        var scaleFactor = Math.min(scrollPosition / 400, 1);
-
-        videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
-        videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
-        videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
-      });
+  document.addEventListener('DOMContentLoaded', function () {
+    const videoContainer = document.querySelector('.video-container');
+    const videoIframe = document.querySelector('.video-container iframe');
+  
+    videoIframe.style.width = '450px';
+    videoIframe.style.height = '250px';
+    videoIframe.style.transform = 'scale(1)';
+  
+    const sr = ScrollReveal({
+      duration: 2000,
+      delay: 300,
+      origin: "bottom",
+      distance: "180px",
+      reset: true
+    });
+  
+    sr.reveal(".animationScroll", {
+      origin: "bottom",
+      interval: 200,
+      reset: true
+    });
+  
+    window.addEventListener('scroll', function () {
+      var scrollPosition = window.scrollY;
+      var scaleFactor = Math.min(scrollPosition / 400, 1);
+  
+      videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
+      videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+      videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+    });
+  });
+  
+  const sr1 = ScrollReveal({
+      duration: 2000,
+      delay: 300,
+      origin: "bottom",
+      distance: "480px",
+      reset: true
+    });
+  
+    sr1.reveal(".carrucelHome", {
+      origin: "bottom",
+      interval: 200,
+      reset: true
+    });
+    sr1.reveal(".mySwiper", {
+      origin: "bottom",
+      interval: 200,
+      reset: true
     });
   </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
 
 </html>

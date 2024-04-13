@@ -95,3 +95,6 @@ function handleVideoZoom() {
 
 window.addEventListener('scroll', handleVideoZoom);
 document.addEventListener('DOMContentLoaded', handleVideoZoom);
+
+
+
