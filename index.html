@@ -14,7 +14,7 @@
 </head>
 
 <body class="p-3 m-0 border-0">
-  
+
   <!-- start nav  -->
   <nav class="navbar navbar-expand-lg fixed-topM ">
     <div class="container transparent-navbar">
@@ -60,26 +60,25 @@
     </div>
   </nav>
   <!-- End Nav -->
-
   <!-- startcontainer home  -->
   <div class="container-fluid  mx-auto mt-8">
     <!-- start Section Home  -->
-    <section class="home d-flex justify-content-center align-items-center">
+    <section class="home d-flex justify-content-center align-items-center flex-column">
       <div class="textHome text-center">
         <h1 class="animationScroll">Your digital success partner</h1>
-        <p class="animationScroll">We design tailored solutions that ensure a strong online presence, effective marketing, and optimized
+        <p class="animationScroll">We design tailored solutions that ensure a strong online presence, effective
+          marketing, and optimized
           technical infrastructure.</p>
         <form class="d-lg-flex justify-content-center animationScroll" role="search">
           <button class="btn btn-home" type="submit">Start a Project</button>
         </form>
-        <div class="video-container animationScroll justify-center items-center">
-          <iframe src="https://www.youtube.com/embed/ZB_2xpwwjC4?si=cbj0x3QkGIXr8ghh" frameborder="0"
-            allowfullscreen></iframe>
-        </div>
       </div>
-   
-  
+      <div class="video-container animationScroll justify-center items-center">
+        <iframe src="https://www.youtube.com/embed/ZB_2xpwwjC4?si=cbj0x3QkGIXr8ghh" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
     </section>
+    
     <!-- End Section Home  -->
 
     <!-- Start part2Home Home  -->
@@ -155,7 +154,7 @@
               <p class="designation">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-       
+
                 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 1</p>
               <div class="testimonial-avatar">
@@ -171,7 +170,7 @@
               <p class="designation">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-          
+
                 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 1</p>
               <div class="testimonial-avatar">
@@ -187,7 +186,7 @@
               <p class="designation">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-               
+
                 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
                 desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 1</p>
               <div class="testimonial-avatar">
@@ -200,46 +199,46 @@
         </div>
       </div>
     </section>
-  <!--Start TestiminioHome Home  -->
+    <!--Start TestiminioHome Home  -->
   </div>
   <!--End container home -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/scrollreveal.min.js"></script>
-<script>/* Animacion de inicio*/
-document.addEventListener('DOMContentLoaded', function() {
-  const videoContainer = document.querySelector('.video-container');
-  const videoIframe = document.querySelector('.video-container iframe');
-  
-  // Ajustamos el tamaño inicial del video
-  videoIframe.style.width = '450px';
-  videoIframe.style.height = '250px';
-  videoIframe.style.transform = 'scale(1)';
-  
-  // ScrollReveal para mostrar los elementos con animación
-  const sr7 = ScrollReveal({
-    duration: 2000,
-    delay: 300,
-    origin: "bottom",
-    distance: "180px",
-    reset: true
-  });
+  <script>/* Animacion de inicio*/
+    document.addEventListener('DOMContentLoaded', function () {
+      const videoContainer = document.querySelector('.video-container');
+      const videoIframe = document.querySelector('.video-container iframe');
 
-  sr7.reveal(".animationScroll", {
-    origin: "bottom",
-    interval: 200,
-    reset: true
-  });
+      // Ajustamos el tamaño inicial del video
+      videoIframe.style.width = '450px';
+      videoIframe.style.height = '250px';
+      videoIframe.style.transform = 'scale(1)';
 
-  window.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY;
-    var scaleFactor = Math.min(scrollPosition / 400, 1); 
+      // ScrollReveal para mostrar los elementos con animación
+      const sr7 = ScrollReveal({
+        duration: 2000,
+        delay: 300,
+        origin: "bottom",
+        distance: "180px",
+        reset: true
+      });
 
-    videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
-    videoIframe.style.height = (250 + 200 * scaleFactor) + 'px'; 
-    videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')'; 
-  });
-});
-</script>
+      sr7.reveal(".animationScroll", {
+        origin: "bottom",
+        interval: 200,
+        reset: true
+      });
+
+      window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY;
+        var scaleFactor = Math.min(scrollPosition / 400, 1);
+
+        videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
+        videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+        videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -21,9 +21,9 @@ body {
 }
 
 .transparent-navbar {
-    background-color: rgba(255, 255, 255, 0.8); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar .container {
@@ -97,19 +97,20 @@ body {
     margin: 0 auto;
     overflow: hidden;
     margin-top: 65px;
-  }
-  .video-container iframe {
+}
+
+.video-container iframe {
     width: 450px;
     height: 250px;
     transition: width 0.5s, height 0.5s, transform 0.5s;
-  }
-  
-  .video-container.zoom1 iframe {
+}
+
+.video-container.zoom1 iframe {
     width: 800px;
     height: 450px;
     transform: scale(1.2);
-  }
-  
+}
+
 /*parte 2*/
 
 .textppart2Home {
@@ -254,7 +255,7 @@ body {
 /**/
 
 /*TestimonyHome*/
-.testimonioHome{
+.testimonioHome {
     height: 60vh;
 }
 
@@ -262,9 +263,10 @@ body {
     color: var(--text-White);
 }
 
-.testimony{
+.testimony {
     margin-top: 100px;
 }
+
 .textTestHomeH2 {
     text-align: center;
     width: 25%;
@@ -311,9 +313,10 @@ body {
 .designation {
     color: var(--text-White);
     font-weight: normal;
-    margin:0 25px;
+    margin: 0 25px;
 }
-.name{
+
+.name {
     color: var(--text-White);
 }
 
@@ -328,10 +331,10 @@ body {
 }
 
 .testimonial-avatar img {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
-    margin-right: 10px; /
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 
@@ -343,7 +346,7 @@ body {
 
 /*Resposive*/
 
-@media(max-width:992px){
+@media(max-width:992px) {
     .navbar-collapse {
         margin-top: 60px;
         background-color: #897b7b;
@@ -371,7 +374,7 @@ body {
         margin: 0 5px;
     }
 
-    .textppart2Home{
+    .textppart2Home {
         width: 100%;
     }
 
@@ -385,16 +388,27 @@ body {
         width: auto !important;
     }
 
-    .testimony{
+    .testimony {
         height: 100vh;
     }
 
     .textTestHomeH2 {
         width: 50%;
     }
+
     .cardPageTestiHome {
-        height: auto; 
-        width: auto; 
+        height: auto;
+        width: auto;
+    }
+
+    .video-container iframe {
+        width: auto !important;
+        height: 250px;
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+    }
+
+    .video-container {
+        margin-top: 25px;
     }
 
 }
