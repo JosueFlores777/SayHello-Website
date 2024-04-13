@@ -87,11 +87,10 @@ function handleVideoZoom() {
   var videoContainer = document.querySelector('.video-container');
   var videoIframe = document.querySelector('.video-container iframe');
 
-  // Ajustamos el tamaño del video gradualmente mientras se hace scroll hacia arriba
-  var scaleFactor = 1 - (scrollPosition / 400); // Puedes ajustar este valor según tu preferencia
+ var scaleFactor = 1 - (scrollPosition / 400); 
 
-  videoIframe.style.width = (450 + 350 * scaleFactor) + 'px'; // 450px es el tamaño inicial del video
-  videoIframe.style.height = (250 + 200 * scaleFactor) + 'px'; // 250px es la altura inicial del video
+  videoIframe.style.width = (450 + 350 * scaleFactor) + 'px'; 
+  videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
 }
 
 window.addEventListener('scroll', handleVideoZoom);
