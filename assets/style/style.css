@@ -397,12 +397,35 @@ swiper-slide {
 
 
 footer{
-    width: 100%;
+    width: auto;
     margin-top: 120px;
 }
 
+footer hr {
+
+    color: var(--text-White);
+}
+
+.draw-on-scroll {
+    margin-bottom: 25px;
+    border: none;
+    border-top: 2px solid rgb(255, 255, 255); 
+    transition: width 3s ease; 
+}
+
+.draw-on-scroll2 {
+    margin-bottom: 25px;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: rgb(225, 225, 225); 
+    transition: width 3s ease, right 3s ease; 
+  }
+
+
 .footer {
-    height: 100vh;
+    height: auto;
     background-color: var(--secondary-color);
 }
 
@@ -411,10 +434,76 @@ footer{
 }
 
 .footerConter{
-    padding: 125px;
-    margin-left: 135px;
+    padding: 85px;
+    margin-left: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text-White);
+}
+.footer {
+    background-color: var(--secondary-color); 
+    color: white;
+  }
+  
+  .finalFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; 
+  }
+  
+  .finalFooter hr {
+    width: 90%;
+    margin-top: 20px;
+  }
+  
+  .finalFooter .row {
+    width: 90%;
+    justify-content: space-between;
+  }
+  
+  .finalFooter .row a {
+    color: white;
+    margin-right: 20px; 
+  }
+  
+  .finalFooter .row p {
+    margin: 0;
+  }
+
+  footer h1{
+    width: 60%;
+  }
+
+  footer button {
+    margin-left: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .finalFooter .row {
+      flex-direction: column;
+    }
+  
+    .finalFooter .row a,
+    .finalFooter .row p {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .finalFooter .row:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
 /* end home*/
 
 
@@ -473,12 +562,25 @@ footer{
     .carrucul{
         margin-top: 0;
     }
+
+    .footer a {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 825px){
     .fondoPart3Home,
     .carrucelHome {
         height: 65vh;
+    }
+    footer h1{
+        width: auto;
+      }
+}
+
+@media (max-width:767px) {
+    .footer a {
+        font-size: 16px;
     }
 }
 
@@ -503,9 +605,10 @@ footer{
     }
 
     .footerConter{
-        padding: 25;
+        padding: 12px;
         margin-left: 0;
     }
+    
 }
 
 @media (max-width: 625px){
@@ -612,6 +715,10 @@ footer{
         margin-top: 60%;
     }
 
+    .footer a {
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 378px) {
@@ -630,6 +737,16 @@ footer{
 
     .footer{
         margin-top: 90%;
+    }
+
+    
+    .footerConter{
+        padding: 8px;
+        margin-left: 0;
+    }
+
+    .footer a {
+        font-size: 14px;
     }
 
 }

@@ -98,3 +98,25 @@ document.addEventListener('DOMContentLoaded', handleVideoZoom);
 
 
 
+window.addEventListener('scroll', function() {
+  var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
+
+  if (distanceToFooterTop < window.innerHeight) {
+      document.querySelector('.draw-on-scroll').style.width = '50%';
+  } else {
+      document.querySelector('.draw-on-scroll').style.width = '0';
+  }
+});
+
+
+window.addEventListener('scroll', function() {
+  var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
+
+  if (distanceToFooterTop < window.innerHeight) {
+    document.querySelector('.draw-on-scroll2').style.width = '90%';
+    document.querySelector('.draw-on-scroll2').style.right = '0';
+  } else {
+    document.querySelector('.draw-on-scroll2').style.width = '0';
+    document.querySelector('.draw-on-scroll2').style.right = '100%';
+  }
+});
