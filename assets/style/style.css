@@ -59,6 +59,12 @@ body {
     background-color: #f0126a;
 }
 
+.activeC{
+    color: #fff;
+    margin: 14px;
+    background-color: #f0126a;
+}
+
 .btn-menu {
     width: 155px;
     background-color: #ffffff64;
@@ -260,7 +266,8 @@ body {
 /*Home Carrucel*/
 /*Parte 3*/
 
-.btn-carrucelHomeS, .btn-carrucelHomeS:hover {
+.btn-carrucelHomeS,
+.btn-carrucelHomeS:hover {
     background-color: #f0126a;
     width: 155px;
     color: #fff;
@@ -306,7 +313,7 @@ swiper-slide {
     height: 600px;
 }
 
-.carrucul{
+.carrucul {
     margin-top: 65px;
 }
 
@@ -395,8 +402,19 @@ swiper-slide {
     margin-right: 10px;
 }
 
+/* Page WORK*/
 
-footer{
+.workContent{
+    height: 100vh;
+}
+
+.titleMainWork{
+    margin-top: 15%;
+    color: var(--text-White);
+}
+
+/**/
+footer {
     width: auto;
     margin-top: 120px;
 }
@@ -409,8 +427,8 @@ footer hr {
 .draw-on-scroll {
     margin-bottom: 25px;
     border: none;
-    border-top: 2px solid rgb(255, 255, 255); 
-    transition: width 3s ease; 
+    border-top: 2px solid rgb(255, 255, 255);
+    transition: width 3s ease;
 }
 
 .draw-on-scroll2 {
@@ -419,9 +437,9 @@ footer hr {
     right: 0;
     height: 2px;
     width: 0;
-    background-color: rgb(225, 225, 225); 
-    transition: width 3s ease, right 3s ease; 
-  }
+    background-color: rgb(225, 225, 225);
+    transition: width 3s ease, right 3s ease;
+}
 
 
 .footer {
@@ -430,10 +448,10 @@ footer hr {
 }
 
 .footer {
-    padding: 20px; 
+    padding: 20px;
 }
 
-.footerConter{
+.footerConter {
     padding: 85px;
     margin-left: 0;
 }
@@ -445,65 +463,72 @@ a {
 footer a:hover {
     color: var(--text-White);
 }
+
 .footer {
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
     color: white;
-  }
-  
-  .finalFooter {
+}
+
+.finalFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px; 
-  }
-  
-  .finalFooter hr {
+    padding-bottom: 20px;
+}
+
+.finalFooter hr {
     width: 90%;
     margin-top: 20px;
-  }
-  
-  .finalFooter .row {
+}
+
+.finalFooter .row {
     width: 90%;
     justify-content: space-between;
-  }
-  
-  .finalFooter .row a {
+}
+
+.finalFooter .row a {
     color: white;
-    margin-right: 20px; 
-  }
-  
-  .finalFooter .row p {
+    margin-right: 20px;
+}
+
+.finalFooter .row p {
     margin: 0;
-  }
+}
 
-  footer h1{
+footer h1 {
     width: 60%;
-  }
+}
 
-  footer button {
+footer button {
     margin-left: 15px;
     margin-bottom: 25px;
     margin-top: 25px;
-  }
+}
 
 
-  
-  @media (max-width: 768px) {
+
+@media (max-width: 768px) {
     .finalFooter .row {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .finalFooter .row a,
     .finalFooter .row p {
-      margin-bottom: 10px;
-      margin-right: 0;
+        margin-bottom: 10px;
+        margin-right: 6px;
     }
-  
+
     .finalFooter .row:last-child {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
-  }
-  
+
+
+    .finalFooter.col-md-6  .col-md-6 {
+        flex: 0 0 auto;
+         width: 100% !important;
+    }
+}
+
 /* end home*/
 
 
@@ -532,11 +557,11 @@ footer a:hover {
         margin-top: 60px;
         background-color: #101010;
     }
+
     .fondoPart3Home,
     .carrucelHome {
         height: 90vh;
     }
-
 
     swiper-container {
         margin-top: 25px;
@@ -552,14 +577,24 @@ footer a:hover {
         width: 400px;
         height: 500px;
     }
+
+    .draw-on-scroll {
+        transition: width 5s ease;
+    }
+
+    .draw-on-scroll2 {
+        transition: width 5s ease, right 5s ease;
+    }
 }
 
-@media (max-width: 835px){
+@media (max-width: 835px) {
+
     .fondoPart3Home,
     .carrucelHome {
         height: 75vh;
     }
-    .carrucul{
+
+    .carrucul {
         margin-top: 0;
     }
 
@@ -568,14 +603,16 @@ footer a:hover {
     }
 }
 
-@media (max-width: 825px){
+@media (max-width: 825px) {
+
     .fondoPart3Home,
     .carrucelHome {
         height: 65vh;
     }
-    footer h1{
+
+    footer h1 {
         width: auto;
-      }
+    }
 }
 
 @media (max-width:767px) {
@@ -591,7 +628,7 @@ footer a:hover {
         height: 650px;
         transition: width 0.5s, height 0.5s, transform 0.5s;
     }
-    
+
     .cardHome {
         flex-direction: column;
         align-items: center;
@@ -604,18 +641,20 @@ footer a:hover {
         margin-top: 20px;
     }
 
-    .footerConter{
+    .footerConter {
         padding: 12px;
         margin-left: 0;
     }
-    
+
 }
 
-@media (max-width: 625px){
+@media (max-width: 625px) {
+
     .fondoPart3Home,
     .carrucelHome {
         height: 70vh;
     }
+
     .carrucelHome {
         margin-top: 60px !important;
         margin-bottom: 160px !important;
@@ -630,9 +669,9 @@ footer a:hover {
         width: 80%;
         padding-top: 60px;
         padding-bottom: 50px;
-    
+
     }
-    
+
     swiper-slide {
         background-position: center;
         background-size: cover;
@@ -711,7 +750,7 @@ footer a:hover {
 
 @media (max-width: 430px) {
 
-    .footer{
+    .footer {
         margin-top: 60%;
     }
 
@@ -727,7 +766,7 @@ footer a:hover {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-  
+
     swiper-slide {
         background-position: center;
         background-size: cover;
@@ -735,12 +774,12 @@ footer a:hover {
         height: 26%;
     }
 
-    .footer{
+    .footer {
         margin-top: 90%;
     }
 
-    
-    .footerConter{
+
+    .footerConter {
         padding: 8px;
         margin-left: 0;
     }
@@ -757,12 +796,13 @@ footer a:hover {
     .carrucelHome {
         height: 70vh;
     }
+
     swiper-container {
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
     }
-  
+
     swiper-slide {
         background-position: center;
         background-size: cover;
@@ -770,7 +810,7 @@ footer a:hover {
         height: 26%;
     }
 
-    .footer{
+    .footer {
         margin-top: 120%;
     }
 
