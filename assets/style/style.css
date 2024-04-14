@@ -417,13 +417,6 @@ swiper-slide {
     color: var(--text-White);
 }
 
-
-
-
-
-
-/**/
-
 .containerL {
     display: flex;
     flex-direction: column;
@@ -516,40 +509,27 @@ swiper-slide {
     margin-top: 6%;
 }
 
-
-
-
-
-
-
-
-
 /**/
 footer {
     width: auto;
     margin-top: 120px;
 }
 
-footer hr {
-
-    color: var(--text-White);
-}
-
-.draw-on-scroll {
+.draw-on-scroll,.draw-on-scroll1 {
     margin-bottom: 25px;
     border: none;
     border-top: 2px solid rgb(255, 255, 255);
-    transition: width 3s ease;
+    transition: width 6s ease;
 }
 
-.draw-on-scroll2 {
+.draw-on-scroll2, .draw-on-scroll-my {
     margin-bottom: 25px;
     top: 0;
     right: 0;
     height: 2px;
     width: 0;
     background-color: rgb(225, 225, 225);
-    transition: width 3s ease, right 3s ease;
+    transition: width 8s ease, right 8s ease;
 }
 
 
@@ -689,7 +669,7 @@ footer button {
         height: 500px;
     }
 
-    .draw-on-scroll {
+    .draw-on-scroll,.draw-on-scroll1 {
         transition: width 5s ease;
     }
 
@@ -712,6 +692,11 @@ footer button {
     .footer a {
         font-size: 11px;
     }
+
+    .close-button svg {
+        margin-left: -32px;
+    }
+    
 }
 
 @media (max-width: 825px) {
@@ -879,7 +864,7 @@ footer button {
     }
     .scrollerWork {
         padding: 30px;
-        transition: bottom 1s ease !important; 
+        transition: bottom 7s ease !important; 
     }
     
 

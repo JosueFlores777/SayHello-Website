@@ -263,7 +263,7 @@
         </div>
         <div class="col-md-4">
           <h1 class="textColor-white2">Services</h1>
-          <div class="draw-on-scroll"></div>
+          <div class="draw-on-scroll2"></div>
 
           <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2" href="#">Branding & Logo
               Design <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -329,7 +329,7 @@
         </div>
       </div>
       <div class="finalFooter">
-        <div class="draw-on-scroll2"></div>
+        <div class="draw-on-scroll-my"></div>
         <div class="row align-items-center">
           <div class="col-md-6">
             <a href="#">Work</a>
@@ -397,11 +397,7 @@
       document.getElementById("titleWork").textContent = selectedBox.title;
       document.getElementById("cardText").textContent = selectedBox.cardText;
       document.getElementById("big-box-image").src = selectedBox.image;
-    
-  
-
     }
-
 
 
     function clearSelection() {
@@ -425,9 +421,22 @@
     });
 
 
+    window.addEventListener('scroll', function() {
+  var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
+  
+  if (distanceToFooterTop < window.innerHeight) {
+    document.querySelector('.draw-on-scroll-my').style.width = '90%';
+    document.querySelector('.draw-on-scroll2').style.width = '50%';
+    document.querySelector('.draw-on-scroll2').style.right = '0';
+  } else {
+    document.querySelector('.draw-on-scroll-my').style.width = '0';
+    document.querySelector('.draw-on-scroll2').style.width = '0';
+    document.querySelector('.draw-on-scroll2').style.right = '0';
+  }
+});
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+  <script src="../js/scrollreveal.min.js"></script>
 </body>
 
 </html>
