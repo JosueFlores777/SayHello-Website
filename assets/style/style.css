@@ -417,9 +417,37 @@ swiper-slide {
     color: var(--text-White);
 }
 
+
+
+
+
+
+/**/
+
+.containerL {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+}
+
+.grid-item {
+    width: 33%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.paddingWork {
+    padding: 65px;
+}
+
+.workImag{
+    width: 90% !important;
+}
+
 .box {
     border-radius: 25px;
-    background: #6c6c6c;
+    background: var(--text-White);
     width: 100%;
     padding-top: 25px; 
 }
@@ -429,20 +457,19 @@ swiper-slide {
     height: auto;
 }
 
-.fullscreen-background {
+
+#fullscreen-background {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  
     transition: top 3s ease;
     z-index: -1;
 }
 
-.scroller {
+.scrollerWork {
     display: none;
     position: fixed;
     top: 0;
@@ -450,28 +477,28 @@ swiper-slide {
     bottom: 0;
     left: 0;
     overflow-y: auto;
-    z-index: 999;
+    z-index: 1036;
     padding: 60px;
     transition: bottom 9s ease;
 }
 
 .close-button {
-    position: fixed;
+    position: sticky;
     top: 20px;
-    right: 20px;
-    color: rgb(0, 0, 0);
+    left: 98%;
+    color: #a87c22;
     cursor: pointer;
     z-index: 1000;
 }
 
-.close-button i {
-    font-size: 35px;
-}
-
-h1 {
-    color: white;
-    margin-bottom: 30px;
-    text-align: center;
+.close-button svg {
+    background-color: #fcfcc4;
+    width: 35px;
+    height: auto;
+    padding: 8px;
+    border-radius: 25px;
+    margin-left: -15px;
+    font-size: 25px;
 }
 
 .content {
@@ -488,6 +515,10 @@ h1 {
 .on-top {
     margin-top: 6%;
 }
+
+
+
+
 
 
 
@@ -761,6 +792,16 @@ footer button {
 
 }
 
+@media (max-width: 600px) {
+    .content {
+        padding: 10px 20px;
+    }
+    .on-top {
+        margin-top: 4%;
+    }
+}
+
+
 @media (max-width: 478px) {
     swiper-container {
         width: 100%;
@@ -825,6 +866,22 @@ footer button {
     .video-container {
         margin-top: 25px;
     }
+
+    /* Page Work*/
+    .on-top {
+        margin-top: 54%;
+    }
+    .paddingWork {
+        padding: 15px;
+    }
+    .workContent {
+        margin-top: 155px;
+    }
+    .scrollerWork {
+        padding: 30px;
+        transition: bottom 1s ease !important; 
+    }
+    
 
 }
 
