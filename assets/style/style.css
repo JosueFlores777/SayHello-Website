@@ -425,7 +425,7 @@ swiper-slide {
 
 /* Page WORK*/
 
-.work-card {
+.work-card, #workcardModal {
     padding: 8px;
     border-radius: 210px;
     background-color: #f6f4bd;
@@ -438,6 +438,26 @@ swiper-slide {
     margin-bottom: 25px;
     font-size: 15px;
 }
+
+ #workcardModal {
+    padding: 8px;
+    border-radius: 210px;
+    background-color: #f6f4bd;
+    color: #916d30;
+    width: fit-content; 
+    max-width: 80%; 
+    font-family: var(--Urbanist);
+    font-weight: 100;
+    display: inline-block; 
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.paddingWork-left {
+    padding-left: 85px;
+}
+
+
 
 .work-title{
     font-family: var(--FontspringDemoText);
@@ -480,15 +500,21 @@ swiper-slide {
 }
 
 .paddingWork {
-    padding: 65px;
+    padding: 0 65px;
 }
 
+.paddingWork2{
+    margin-top: 25px;
+    padding: 0 25px;
+}
+
+/*
 .workImag{
     width: 90% !important;
 }
-
+*/
 .box {
-    border-radius: 25px;
+    border-radius:25px 25px 0 0;
     background: var(--text-White);
     width: 100%;
     padding-top: 25px; 
@@ -678,6 +704,22 @@ footer button {
 
 
 /*Resposive*/
+
+@media screen and (min-width: 1200px) and (max-width: 2600px) {
+    .part2Home {
+        margin-top: 100px;
+        margin-bottom: 130px;
+    }
+
+    /*work page*/
+    .work-card {
+        padding: 8px;
+        border-radius: 210px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+}
 
 @media(max-width:1025px) {
     swiper-container {

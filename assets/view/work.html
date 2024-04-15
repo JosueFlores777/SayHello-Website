@@ -117,7 +117,10 @@
                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
             </svg>
           </a>
-          <h1 id="selected-box-name"></h1>
+          <div class="contWorkTitle paddingWork-left">
+            <p id="workcardModal" ></p>
+            <h4 id="titleModal"></h4>
+          </div>
           <div class="card mb-3 paddingWork" style="border: none;">
             <div class="row g-0  justify-content-center">
               <div class="col-md-7 order-md-2">
@@ -135,105 +138,35 @@
             </div>
           </div>
           <div class="content">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center paddingWork2">
               <img
                 src="https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1"
                 class="img-fluid rounded-start workImag" alt="...">
             </div>
-            <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis quam vel ante bibendum sodales non in
-              justo. In est velit, fermentum sit amet auctor nec, pellentesque sit amet dolor. Vestibulum lectus justo,
-              tincidunt vitae convallis quis, aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis
-              aliquam eros. Nam scelerisque nec eros sit amet elementum. Sed maximus euismod lectus, et semper massa
-              facilisis sed. Nunc rutrum, sapien quis volutpat tincidunt, lorem massa hendrerit nisl, non rhoncus ligula
-              orci et diam. Aenean diam enim, porttitor et augue eget, mollis vestibulum diam. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam mauris velit, ornare eget
-              lacinia in, efficitur vel justo.
-
-              Nullam tincidunt justo sit amet tellus pulvinar, in porta nibh aliquet. Nam gravida et ligula sit amet
-              maximus. Aliquam lacinia arcu sit amet ex rhoncus malesuada. Quisque sagittis libero ac metus fringilla,
-              tempor facilisis dui mollis. Integer a mi viverra nulla dapibus accumsan non tincidunt augue. Pellentesque
-              volutpat pharetra augue in cursus. Pellentesque accumsan, mi a congue finibus, sem sapien aliquet tortor,
-              eget feugiat purus ante sit amet ex.
-
-              Vivamus libero urna, interdum sed nunc nec, consequat consectetur lectus. Fusce laoreet odio sed lectus
-              rhoncus imperdiet. Quisque porttitor pulvinar lorem, a luctus orci aliquet at. Nunc luctus pulvinar
-              tincidunt. Curabitur gravida metus vel luctus tristique. Morbi hendrerit nunc a nibh maximus placerat.
-              Etiam ac vestibulum nibh. Aliquam fringilla ante id elit accumsan, ut tempor risus gravida. Nullam ac
-              auctor odio. Pellentesque porttitor, purus sit amet elementum eleifend, erat purus porta leo, ac feugiat
-              diam elit id turpis. Vestibulum vitae dui quis augue auctor scelerisque volutpat quis lorem. Curabitur
-              scelerisque vulputate metus ut ultricies.
-
-              Nullam tincidunt justo sit amet tellus pulvinar, in porta nibh aliquet. Nam gravida et ligula sit amet
-              maximus. Aliquam lacinia arcu sit amet ex rhoncus malesuada. Quisque sagittis libero ac metus fringilla,
-              tempor facilisis dui mollis. Integer a mi viverra nulla dapibus accumsan non tincidunt augue. Pellentesque
-              volutpat pharetra augue in cursus. Pellentesque accumsan, mi a congue finibus, sem sapien aliquet tortor,
-              eget feugiat purus ante sit amet ex.
-
-              Vivamus libero urna, interdum sed nunc nec, consequat consectetur lectus. Fusce laoreet odio sed lectus
-              rhoncus imperdiet. Quisque porttitor pulvinar lorem, a luctus orci aliquet at. Nunc luctus pulvinar
-              tincidunt. Curabitur gravida metus vel luctus tristique. Morbi hendrerit nunc a nibh maximus placerat.
-              Etiam ac vestibulum nibh. Aliquam fringilla ante id elit accumsan, ut tempor risus gravida. Nullam ac
-              auctor odio. Pellentesque porttitor, purus sit amet elementum eleifend, erat purus porta leo, ac feugiat
-              diam elit id turpis. Vestibulum vitae dui quis augue auctor scelerisque volutpat quis lorem. Curabitur
-              scelerisque vulputate metus ut ultricies.
-
-              Nullam tincidunt justo sit amet tellus pulvinar, in porta nibh aliquet. Nam gravida et ligula sit amet
-              maximus. Aliquam lacinia arcu sit amet ex rhoncus malesuada. Quisque sagittis libero ac metus fringilla,
-              tempor facilisis dui mollis. Integer a mi viverra nulla dapibus accumsan non tincidunt augue. Pellentesque
-              volutpat pharetra augue in cursus. Pellentesque accumsan, mi a congue finibus, sem sapien aliquet tortor,
-              eget feugiat purus ante sit amet ex.
-
-              Vivamus libero urna, interdum sed nunc nec, consequat consectetur lectus. Fusce laoreet odio sed lectus
-              rhoncus imperdiet. Quisque porttitor pulvinar lorem, a luctus orci aliquet at. Nunc luctus pulvinar
-              tincidunt. Curabitur gravida metus vel luctus tristique. Morbi hendrerit nunc a nibh maximus placerat.
-              Etiam ac vestibulum nibh. Aliquam fringilla ante id elit accumsan, ut tempor risus gravida. Nullam ac
-              auctor odio. Pellentesque porttitor, purus sit amet elementum eleifend, erat purus porta leo, ac feugiat
-              diam elit id turpis. Vestibulum vitae dui quis augue auctor scelerisque volutpat quis lorem. Curabitur
-              scelerisque vulputate metus ut ultricies.
-
-              Nullam tincidunt justo sit amet tellus pulvinar, in porta nibh aliquet. Nam gravida et ligula sit amet
-              maximus. Aliquam lacinia arcu sit amet ex rhoncus malesuada. Quisque sagittis libero ac metus fringilla,
-              tempor facilisis dui mollis. Integer a mi viverra nulla dapibus accumsan non tincidunt augue. Pellentesque
-              volutpat pharetra augue in cursus. Pellentesque accumsan, mi a congue finibus, sem sapien aliquet tortor,
-              eget feugiat purus ante sit amet ex.
-
-              Vivamus libero urna, interdum sed nunc nec, consequat consectetur lectus. Fusce laoreet odio sed lectus
-              rhoncus imperdiet. Quisque porttitor pulvinar lorem, a luctus orci aliquet at. Nunc luctus pulvinar
-              tincidunt. Curabitur gravida metus vel luctus tristique. Morbi hendrerit nunc a nibh maximus placerat.
-              Etiam ac vestibulum nibh. Aliquam fringilla ante id elit accumsan, ut tempor risus gravida. Nullam ac
-              auctor odio. Pellentesque porttitor, purus sit amet elementum eleifend, erat purus porta leo, ac feugiat
-              diam elit id turpis. Vestibulum vitae dui quis augue auctor scelerisque volutpat quis lorem. Curabitur
-              scelerisque vulputate metus ut ultricies.
-
-              Nullam tincidunt justo sit amet tellus pulvinar, in porta nibh aliquet. Nam gravida et ligula sit amet
-              maximus. Aliquam lacinia arcu sit amet ex rhoncus malesuada. Quisque sagittis libero ac metus fringilla,
-              tempor facilisis dui mollis. Integer a mi viverra nulla dapibus accumsan non tincidunt augue. Pellentesque
-              volutpat pharetra augue in cursus. Pellentesque accumsan, mi a congue finibus, sem sapien aliquet tortor,
-              eget feugiat purus ante sit amet ex.
-
-              Vivamus libero urna, interdum sed nunc nec, consequat consectetur lectus. Fusce laoreet odio sed lectus
-              rhoncus imperdiet. Quisque porttitor pulvinar lorem, a luctus orci aliquet at. Nunc luctus pulvinar
-              tincidunt. Curabitur gravida metus vel luctus tristique. Morbi hendrerit nunc a nibh maximus placerat.
-              Etiam ac vestibulum nibh. Aliquam fringilla ante id elit accumsan, ut tempor risus gravida. Nullam ac
-              auctor odio. Pellentesque porttitor, purus sit amet elementum eleifend, erat purus porta leo, ac feugiat
-              diam elit id turpis. Vestibulum vitae dui quis augue auctor scelerisque volutpat quis lorem. Curabitur
-              scelerisque vulputate metus ut ultricies.
-
-              Nam aliquam, purus ut tempus sollicitudin, purus elit condimentum est, a blandit elit purus in dui. Sed
-              vitae metus et augue blandit aliquam. Morbi bibendum nulla nunc, sit amet pretium massa vehicula a. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus est, placerat vitae mauris vel,
-              porttitor finibus erat. Donec porta augue sem, quis malesuada orci rutrum a. Sed aliquet augue felis, eget
-              tincidunt lacus sollicitudin fringilla. Pellentesque at sollicitudin magna, rutrum bibendum tellus. Donec
-              vitae metus vehicula, tempus erat vitae, vulputate sapien. Suspendisse euismod lacinia eros, non viverra
-              lectus. Donec bibendum odio eros.
-
-              Etiam in mattis ipsum. Pellentesque ultrices erat eu eleifend aliquam. Aliquam posuere leo erat, in
-              faucibus felis lacinia eget. Donec vulputate id tellus vel volutpat. Integer pharetra sem vitae sem
-              fringilla, vel blandit sem vehicula. Sed et est at leo lacinia luctus. Vivamus eget lobortis lorem, eu
-              consequat lorem. Donec sit amet elementum massa. Fusce hendrerit purus a vehicula hendrerit. Sed at quam
-              imperdiet, molestie dui vitae, dignissim sapien.</p>
-
+            <div class="row row-cols-1 row-cols-md-2 g-4 paddingWork2 ">
+              <div class="col">
+                <div class="card">
+                  <img class="card-img-top" src="" id="imgcard1" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img class="card-img-top"  id="imgcard2" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img class="card-img-top"  id="imgcard3" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img class="card-img-top"  id="imgcard4"alt="...">
+                </div>
+              </div>
+            </div>
+            <h2>Let's create something together</h2>
+           
           </div>
         </div>
       </div>
@@ -241,7 +174,7 @@
     </section>
 
   </div>
-
+  <!--End container home -->
   <!-- Start Footeer Home -->
   <footer class="footer">
     <div class="container-fluid">
@@ -366,75 +299,11 @@
     </div>
   </footer>
   <!--Start Footeer Home  -->
-  <!--End container home -->
+
   <script src="../js/main.js"></script>
-  <script src="../js/animacion.js"></script>
+  <script src="../js/modalWork.js"></script>
   <script src="../js/scrollreveal.min.js"></script>
-  <script>
-    var boxes = [
-      {
-        name: 'Friends',
-        image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
-        title: 'Hotel Equinoccio',
-        cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit'
 
-      },
-      {
-        name: 'test 2',
-        image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        title: 'Visible Talent',
-        cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit'
-
-      },
-
-    ];
-    function selectBox(index) {
-      document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7"; 
-      document.getElementById("fullscreen-background").style.zIndex = 10;
-      var selectedBox = boxes[index - 1];
-      document.getElementById("scrollerWork").style.display = "block";
-      document.getElementById("selected-box-name").textContent = selectedBox.name;
-      document.getElementById("titleWork").textContent = selectedBox.title;
-      document.getElementById("cardText").textContent = selectedBox.cardText;
-      document.getElementById("big-box-image").src = selectedBox.image;
-    }
-
-
-    function clearSelection() {
-
-      document.getElementById("scrollerWork").scrollTop = 0;
-      document.getElementById("scrollerWork").style.display = "none";
-      document.getElementById("fullscreen-background").style.zIndex = -6;
-      document.getElementById("fullscreen-background").style.backgroundColor = "black";
-    
-    }
-
-
-    document.getElementById("scrollerWork").addEventListener("scroll", function () {
-      var scrollPosition = this.scrollTop;
-      if (window.innerWidth < 478) {
-        paddingValue = scrollPosition > 0 ? 0 : 30;
-      } else {
-        paddingValue = scrollPosition > 0 ? 0 : 60;
-      }
-      this.style.padding = paddingValue + "px";
-    });
-
-
-    window.addEventListener('scroll', function() {
-  var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
-  
-  if (distanceToFooterTop < window.innerHeight) {
-    document.querySelector('.draw-on-scroll-my').style.width = '90%';
-    document.querySelector('.draw-on-scroll2').style.width = '50%';
-    document.querySelector('.draw-on-scroll2').style.right = '0';
-  } else {
-    document.querySelector('.draw-on-scroll-my').style.width = '0';
-    document.querySelector('.draw-on-scroll2').style.width = '0';
-    document.querySelector('.draw-on-scroll2').style.right = '0';
-  }
-});
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="../js/scrollreveal.min.js"></script>
 </body>
