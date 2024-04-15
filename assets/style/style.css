@@ -3,6 +3,7 @@
 
 body {
     background-color: var(--bg-black);
+    
 }
 
 /*Config General*/
@@ -102,6 +103,14 @@ body {
 .textHome {
     margin-top: 10%;
     color: var(--text-White);
+}
+
+.textHome h1{
+    font-size: 44px;
+    margin: 0 auto;
+    width: 50%;
+    font-family: var(--FontspringDemo);
+    margin-bottom: 25px;
 }
 
 .btn-home {
@@ -408,6 +417,34 @@ swiper-slide {
 
 /* Page WORK*/
 
+.work-card {
+    padding: 8px;
+    border-radius: 210px;
+    background-color: #f6f4bd;
+    color: #916d30;
+    width: fit-content; 
+    max-width: 80%; 
+    font-family: var(--Urbanist);
+    font-weight: 100;
+    display: inline-block; 
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.work-title{
+    font-family: var(--FontspringDemoText);
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.titleMainWork {
+    font-family: var(--FontspringDemoText);
+}
+
+#box1{
+    background-color: #4e4e4a;
+}
+
 .workContent{
     height: auto;
 }
@@ -422,6 +459,10 @@ swiper-slide {
     flex-direction: column;
     min-height: 100%;
     position: relative;
+}
+
+.card-body1 {
+    color: var(--text-White);
 }
 
 .grid-item {
@@ -509,6 +550,10 @@ swiper-slide {
     margin-top: 6%;
 }
 
+.card-body1{
+    margin-top: 20px;
+}
+
 /**/
 footer {
     width: auto;
@@ -529,7 +574,7 @@ footer {
     height: 2px;
     width: 0;
     background-color: rgb(225, 225, 225);
-    transition: width 8s ease, right 8s ease;
+    transition: width 12s ease, right 12s ease;
 }
 
 
@@ -670,11 +715,11 @@ footer button {
     }
 
     .draw-on-scroll,.draw-on-scroll1 {
-        transition: width 5s ease;
+        transition: width 10s ease;
     }
 
     .draw-on-scroll2 {
-        transition: width 5s ease, right 5s ease;
+        transition: width 12s ease, right 12s ease;
     }
 }
 
@@ -775,9 +820,16 @@ footer button {
         height: 26%;
     }
 
+    .cardContHome {
+        width: 100% !important;
+    }
+
 }
 
 @media (max-width: 600px) {
+
+
+
     .content {
         padding: 10px 20px;
     }
@@ -788,6 +840,14 @@ footer button {
 
 
 @media (max-width: 478px) {
+    .textHome h1{
+        font-size: 34px;
+        margin: 0 auto;
+        width: 80%;
+        font-family: var(--FontspringDemo);
+        margin-bottom: 20px;
+    }
+
     swiper-container {
         width: 100%;
         padding-top: 50px;
@@ -913,6 +973,10 @@ footer button {
 }
 
 @media (max-width: 360px) {
+
+    .textHome {
+        margin-top: 30%;
+    }
 
     .fondoPart3Home,
     .carrucelHome {
