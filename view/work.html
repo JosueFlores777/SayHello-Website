@@ -9,7 +9,7 @@
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../assets/style/style.css">
 
 </head>
 
@@ -18,7 +18,7 @@
   <!-- start nav  -->
   <nav class="navbar navbar-expand-lg fixed-topM ">
     <div class="container transparent-navbar">
-      <a class="navbar-brand" href="../../index.html" style="color: #fff;">SayHello</a>
+      <a class="navbar-brand" href="../index.html" style="color: #fff;">SayHello</a>
       <button class="navbar-toggler white-icon" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link textColor-white">Contact Us</a>
+            <a class="nav-link textColor-white" href="./contact.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -119,7 +119,7 @@
           </a>
           <div class="contWorkTitle paddingWork-left">
             <p id="workcardModal" ></p>
-            <h4 id="titleModal"></h4>
+            <h1 id="titleModal"></h1>
           </div>
           <div class="card mb-3 paddingWork" style="border: none;">
             <div class="row g-0  justify-content-center">
@@ -129,7 +129,7 @@
                   class="img-fluid rounded-start carrucul" alt="...">
               </div>
               <div class="col-md-5 order-md-1">
-                <div class="card-body">
+                <div class="card-body" style="margin-top:10%;">
                   <h5 class="card-title" id="titleWork"></h5>
                   <p class="card-text" id="cardText"></p>
 
@@ -141,31 +141,57 @@
             <div class="d-flex justify-content-center align-items-center paddingWork2">
               <img
                 src="https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1"
-                class="img-fluid rounded-start workImag" alt="...">
+                class="img-fluid rounded-start borRadModal workImag" alt="...">
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 paddingWork2 ">
               <div class="col">
                 <div class="card">
-                  <img class="card-img-top" src="" id="imgcard1" alt="...">
+                  <img class="card-img-top borRadModal" src="" id="imgcard1" alt="...">
                 </div>
               </div>
               <div class="col">
                 <div class="card">
-                  <img class="card-img-top"  id="imgcard2" alt="...">
+                  <img class="card-img-top borRadModal"  id="imgcard2" alt="...">
                 </div>
               </div>
               <div class="col">
                 <div class="card">
-                  <img class="card-img-top"  id="imgcard3" alt="...">
+                  <img class="card-img-top borRadModal"  id="imgcard3" alt="...">
                 </div>
               </div>
               <div class="col">
                 <div class="card">
-                  <img class="card-img-top"  id="imgcard4"alt="...">
+                  <img class="card-img-top borRadModal"  id="imgcard4"alt="...">
                 </div>
               </div>
             </div>
-            <h2>Let's create something together</h2>
+
+            <div class="testimonioModal" >
+             <div class="testimonioModal2">
+                <div class="conteTestModal">
+                  <p class="textTestiModal text-justify" id="testomioModa"></p>
+                  <div class="testimonial-avatarWork" >
+                    <img id="avatarTesti"
+                    alt="">
+                    <p class="name" id="nameTesti"></p>
+                  </div>
+                </div>
+             </div>
+            </div>
+            
+            <div class="modalFinal">
+              <h2 class="textModalFinal">Let's create something together</h2>
+              <form class="d-lg-flex justify-content-center animationScroll" role="search">
+                <button class="btn btn-home" type="submit">Start a Project
+                  <svg style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 1 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
+                    </path>
+                  </svg>
+                </button>
+              </form>
+            </div>
            
           </div>
         </div>
@@ -300,12 +326,12 @@
   </footer>
   <!--Start Footeer Home  -->
 
-  <script src="../js/main.js"></script>
-  <script src="../js/modalWork.js"></script>
-  <script src="../js/scrollreveal.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/modalWork.js"></script>
+  <script src="../assets/js/scrollreveal.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  <script src="../js/scrollreveal.min.js"></script>
+  <script src="../assets/js/scrollreveal.min.js"></script>
 </body>
 
 </html>

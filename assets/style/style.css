@@ -108,8 +108,9 @@ body {
 .textHome h1{
     font-size: 44px;
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
     font-family: var(--FontspringDemo);
+    font-weight: 400;
     margin-bottom: 25px;
 }
 
@@ -403,6 +404,7 @@ swiper-slide {
 }
 
 .name {
+    margin-top: auto;
     color: var(--text-White);
 }
 
@@ -457,8 +459,6 @@ swiper-slide {
     padding-left: 85px;
 }
 
-
-
 .work-title{
     font-family: var(--FontspringDemoText);
     font-size: 35px;
@@ -507,6 +507,65 @@ swiper-slide {
     margin-top: 25px;
     padding: 0 25px;
 }
+
+.testimonioModal{
+    width: auto;
+    height: 50vh;
+    padding: 25px;
+}
+
+.borRadModal{
+    border-radius: 8px;
+}
+
+.testimonioModal2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #605c5c;
+    border-radius: 6px;
+    height: 50vh;
+}
+
+.titleModal{
+    font-family: var(--FontspringDemo);
+    font-size: 35px;
+}
+
+.textTestiModal{
+    font-size: 16px;
+    color: var(--text-White);
+}
+
+.conteTestModal{
+    width: 70%; 
+}
+
+.testimonial-avatarWork {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.testimonial-avatarWork img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.modalFinal {
+    padding: 65px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .textModalFinal{
+    width: 30%;
+    font-size: 38px;
+    font-family: var(--AllRoundGothic);
+  }
 
 /*
 .workImag{
@@ -588,6 +647,43 @@ swiper-slide {
     margin-top: 20px;
 }
 
+
+/*About*/
+
+
+
+
+
+
+
+
+
+
+
+/*Contact*/
+
+.contact{
+    margin-top: 137px;
+}
+
+.textContact{
+    color: var(--text-White);
+    font-family: var(--FontspringDemoText);
+}
+
+
+.mapContact{
+    margin-top: 35px;
+    height: 350px;
+    width: auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+
 /**/
 footer {
     width: auto;
@@ -611,8 +707,17 @@ footer {
     transition: width 12s ease, right 12s ease;
 }
 
+.draw-on-scroll3, .draw-on-scroll4{
+    margin-bottom: 25px;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #e43484;
+    transition: width 3s ease, right 3s ease;
+}
 
-.footer {
+.footer, .footer-contact {
     height: auto;
     background-color: var(--secondary-color);
 }
@@ -644,11 +749,6 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-}
-
-.finalFooter hr {
-    width: 90%;
-    margin-top: 20px;
 }
 
 .finalFooter .row {
@@ -718,6 +818,14 @@ footer button {
         margin-top: 20px;
         margin-bottom: 25px;
         font-size: 15px;
+    }
+
+    /*contact*/
+    .mapContact {
+        margin-top: 35px;
+        height: 450px;
+        width: 550px;
+        border-radius: 15px;
     }
 }
 
@@ -995,6 +1103,13 @@ footer button {
         transition: bottom 7s ease !important; 
     }
     
+    /*Contact*/
+    .contact {
+        margin-top: 45%;
+    }
+    .draw-on-scroll3{
+        margin-top: 45px;
+    }
 
 }
 
