@@ -4,7 +4,7 @@
     --primary-color: #007bff; 
     --secondary-color: #403c3c;
     --text-White:#fff; 
-    --Urbanist: 'Urbanist Bold', sans-serif;
+    --Urbanist: 'Urbanist Regular', sans-serif;
     --AllRoundGothic: 'AllRound Gothic Bold', sans-serif;
     --FontspringDemo: 'Fontspring Demo', sans-serif;
     --FontspringDemoText: 'Fontspring Demo Text', sans-serif;
@@ -19,8 +19,8 @@
 }
 
 @font-face {
-    font-family: 'Urbanist Bold';
-    src: url('/assets/fonts/Urbanist-Bold.ttf') format('truetype'); 
+    font-family: 'Urbanist Regular';
+    src: url('/assets/fonts/Urbanist-Regular.ttf') format('truetype'); 
     font-weight: bold;
     font-style: normal;
 }

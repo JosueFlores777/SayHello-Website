@@ -146,9 +146,11 @@ body {
 
 /*parte 2*/
 
+
 .textppart2Home {
-    width: 80%;
+    width: 70%;
     color: var(--text-White);
+    font-family: var(--Urbanist);
 }
 
 .cardHome {
@@ -160,12 +162,18 @@ body {
     height: 160px;
 }
 
+
 .card {
     border-radius: 20px;
 }
 
 .card-body {
     margin-top: 20%;
+}
+
+.card-bodyhome{
+    margin-top: 20%;
+    padding-left: 10px;
 }
 
 .margenpart2Home {
@@ -721,6 +729,10 @@ footer button {
     .draw-on-scroll2 {
         transition: width 12s ease, right 12s ease;
     }
+    .card-bodyhome{
+        margin-top: 30%;
+        padding: 8px;
+    }
 }
 
 @media (max-width: 835px) {
@@ -741,7 +753,10 @@ footer button {
     .close-button svg {
         margin-left: -32px;
     }
-    
+    .card-bodyhome{
+        margin-top: 35%;
+        padding: 8px;
+    }
 }
 
 @media (max-width: 825px) {
@@ -763,6 +778,13 @@ footer button {
 }
 
 @media (max-width: 700px) {
+    .textppart2Home{
+        width: auto;
+    }
+
+    .card-bodyhome{
+        margin-top: 15%;
+    }
 
     .video-container iframe {
         width: auto !important;
@@ -786,6 +808,8 @@ footer button {
         padding: 12px;
         margin-left: 0;
     }
+
+
 
 }
 
@@ -827,7 +851,9 @@ footer button {
 }
 
 @media (max-width: 600px) {
-
+    .card-bodyhome{
+        margin-top: 20%;
+    }
 
 
     .content {
