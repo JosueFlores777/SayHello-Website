@@ -805,6 +805,23 @@ footer button {
 
 /*Resposive*/
 
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+    .contact{
+        padding: 0 65px;
+    }
+    .margin-leftContact{
+        margin-left: 10%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .margin-leftContact{
+        margin-left: 18%;
+    }
+}
+
+
 @media screen and (min-width: 1200px) and (max-width: 2600px) {
     .part2Home {
         margin-top: 100px;
@@ -827,6 +844,8 @@ footer button {
         width: 550px;
         border-radius: 15px;
     }
+
+   
 }
 
 @media(max-width:1025px) {
@@ -843,6 +862,15 @@ footer button {
         background-size: cover;
         width: 400px;
         height: 500px;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    .margin-leftContact{
+        margin-left: 18%;
     }
 }
 
@@ -1089,6 +1117,10 @@ footer button {
     }
 
     /* Page Work*/
+
+    .paddingWork-left{
+        padding-left: 15px;
+    }
     .on-top {
         margin-top: 54%;
     }
