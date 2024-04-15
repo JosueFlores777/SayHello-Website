@@ -1134,6 +1134,18 @@ footer button {
         padding: 30px;
         transition: bottom 7s ease !important; 
     }
+
+    .textModalFinal{
+        width: auto;
+        margin-bottom: 35px;
+    }
+
+    .modalFinal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch; 
+        padding: 50px 20px; 
+    }
     
     /*Contact*/
     .contact {
