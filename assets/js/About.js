@@ -1,4 +1,6 @@
 const scrollers = document.querySelectorAll(".scrollerAbout");
+const scrollers1 = document.querySelectorAll(".scrollerHome");
+
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -21,6 +23,17 @@ function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
     const scrollerInner = scroller.querySelector(".scrollerAbout__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+
+  scrollers1.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+    const scrollerInner = scroller.querySelector(".scrollerHome__inner");
     const scrollerContent = Array.from(scrollerInner.children);
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
@@ -85,13 +98,7 @@ $(window).scroll(function () {
                 $("figure:nth-child(29)").css("transform", "translateY(" + (parallax-250) + "px)");
              
             }
-
-
-
     } else {
-            
-
-            
             $("figure:nth-child(2)").css("transform", "translateY(" + (parallax-250) + "px)");
             $("figure:nth-child(4)").css("transform", "translateY(" + (parallax-250) + "px)");
             $("figure:nth-child(6)").css("transform", "translateY(" + (parallax-250) + "px)");
@@ -135,4 +142,58 @@ window.addEventListener('load', function () {
 window.addEventListener('scroll', function () {
     ejecutarAnimacion();
 });
+
+
+
+/* testi*/
+
+/*Card TestymoHome */
+const cardStack = document.querySelector('.cardPageTestiHome-stack');
+let cards = Array.from(cardStack.children);
+
+function startFlipping() {
+  // Array de colores para cada tarjeta
+  const colors = ['#805313', '#e1b911', '#f8ef70'];
+
+  setInterval(() => {
+    const lastCard = cards.pop();
+    cards.unshift(lastCard);
+    cards.forEach((card, index) => {
+      const newIndex = (index + 1) % cards.length;
+      card.style.top = `${newIndex * -50}px`;
+      card.style.transform = `scale(${1 - newIndex * 0.09})`;
+      card.style.zIndex = cards.length - newIndex;
+      card.style.backgroundColor = colors[newIndex];
+      if (index === 1) {
+        card.style.backgroundColor = '#f8ef70';
+      }
+      if (newIndex === 0) {
+        card.classList.add('animate__animated', 'animate__zoomInDown');
+        setTimeout(() => {
+          card.classList.remove('animate__animated', 'animate__zoomInDown');
+        }, 1000); 
+        
+      }
+      if (newIndex === 1) {
+        card.classList.add('animate__animated', 'animate__fadeIn');
+        setTimeout(() => {
+          card.classList.remove('animate__animated', 'animate__fadeIn');
+        }, 500); 
+      }
+      if (newIndex === 2) {
+        card.classList.add('animate__animated', 'animate__fadeIn');
+        setTimeout(() => {
+          card.classList.remove('animate__animated', 'animate__fadeIn');
+        }, 500); 
+      }
+    });
+  }, 4100);
+}
+
+startFlipping();
+
+
+
+/*Carrucel about */
+
 

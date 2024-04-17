@@ -689,23 +689,38 @@ swiper-slide {
 /*About*/
 
 
+.margeTopAbouTesti {
+    margin-top: 85px;
+}
+
 .sectionAbout1 {
-    height: 100vh;
+    margin-top: 15%;
+    height: 60vh;
 }
 
 .mainTextAbout {
     width: 80%;
     margin: 0 auto;
-    margin-top: 25%;
 }
 
-.sectionAbout4{
+.teamTextAbout {
+    margin-top: 25px;
+    margin-bottom: 155px;
+}
+
+.teamTextAbout h1 {
+    font-family: var(--Urbanist);
+}
+
+.sectionAbout4 {
     margin-top: 45px;
-    height: 100vh;
+    height: auto;
     background-color: var(--secondary-color);
 }
 
-
+.margenCardAbout{
+    padding: 0 25%;
+}
 /*carrucel infinito About*/
 
 .hidden1 {
@@ -780,18 +795,46 @@ swiper-slide {
 }
 
 
-.imageAboutCarrInfi{
+.imageAboutCarrInfi {
     width: 250px;
 }
 
 
 /*section2*/
-.sectionAbout2{
+.sectionAbout2 {
     height: 100vh;
 }
 
 /*section 3 esta en about*/
 
+/*section 4 about*/
+.textSubAbout {
+    color: var(--secondary-color);
+    margin-top: 65px;
+}
+
+.textSubAbout2 {
+    margin-top: 65px;
+}
+
+.textPrinciAbout {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.textPrinciAbout h1 {
+    font-family: var(--Urbanist);
+}
+
+/*
+.cardImageAbout{
+
+}
+*/
+.margiBottonCarruInfit{
+    margin-top: 60% !important ;
+} 
 /*Contact*/
 
 .contact {
@@ -816,11 +859,11 @@ swiper-slide {
     place-items: center;
 }
 
-/*
-.centrarContact2{
-    top: -26%;
-}
-*/
+.sectionAbout4 .row .card{
+    background-color: var(--secondary-color);
+    color: var(--text-White);
+    border: none;
+  }   
 
 
 /**/
@@ -1018,6 +1061,9 @@ footer button {
 }
 
 @media(max-width:1025px) {
+    .sectionAbout4 .row {
+        --bs-gutter-x: 0 !important;
+      }    
     swiper-container {
         margin-top: 25px;
         width: 93%;
@@ -1225,12 +1271,16 @@ footer button {
         margin-top: 4%;
     }
 
-        /*About*/
-        .mainTextAbout {
-            width: 82%;
-            margin: 0 auto;
-            margin-top: 40%;
-        }
+    /*About*/
+    .mainTextAbout {
+        width: 82%;
+        margin: 0 auto;
+        margin-top: 40%;
+    }
+
+    .margenCardAbout {
+        padding: 18px    ;
+    }
 }
 
 @media (max-width: 478px) {
@@ -1365,9 +1415,28 @@ footer button {
         margin: 0 auto;
         margin-top: 60%;
     }
-    .draw-on-scroll,.draw-on-scroll2{
+
+    .draw-on-scroll,
+    .draw-on-scroll2 {
         margin-left: 15px;
     }
+
+    .testimonioAboutBootm{
+        margin-bottom: 68%;
+    }
+
+    .sectionAbout4 .row {
+      --bs-gutter-x: 0 !important;
+    }    
+
+    .margenCardAbout {
+        padding: 68px;
+    }
+
+    .textPrinciAbout {
+        width: auto;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -1388,6 +1457,12 @@ footer button {
         padding: 0 15px;
     }
 
+}
+
+@media(max-width: 400px){
+    .testimonioAboutBootm{
+        margin-bottom: 85%;
+     }
 }
 
 @media (max-width: 378px) {
@@ -1456,4 +1531,7 @@ footer button {
         margin-top: 120%;
     }
 
+ .testimonioAboutBootm{
+    margin-bottom: 135%;
+ }
 }
