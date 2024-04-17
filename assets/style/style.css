@@ -1365,7 +1365,7 @@ footer button {
         margin: 0 auto;
         margin-top: 60%;
     }
-    .draw-on-scroll{
+    .draw-on-scroll,.draw-on-scroll2{
         margin-left: 15px;
     }
 }
