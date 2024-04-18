@@ -465,7 +465,8 @@ swiper-slide {
 /*page Services*/
 
 .principalServices{
-    height: 100vh;
+    height: auto;
+    margin-bottom: 10%;
 }
 
 .margenTopService {
@@ -475,6 +476,32 @@ swiper-slide {
 
 .textPrinciService{
     width: 40%;
+    font-family: var(--Urbanist);
+}
+
+.contenService{
+    height: auto;
+}
+
+.contenService .imagenFlui img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.contenService .col-md-6 {
+    max-width: 650px; 
+}
+
+.contenServiceFinal .row{
+    margin-top: 8%;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: var(--text-White);
+}
+.contenService h2{
+    font-family: var(--Urbanist);
+}
+.titleTestimService{
     font-family: var(--Urbanist);
 }
 

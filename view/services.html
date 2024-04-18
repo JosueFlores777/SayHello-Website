@@ -72,11 +72,79 @@
 
         <section class="principalServices margenGeneral ">
             <p class=" work-card margenTopService">WebSite Development</p>
-             <h1 class="textPrinciService textColor-white2">
+            <h1 class="textPrinciService textColor-white2 animatioTopScr">
                 Awartd winning design for extraordinary outcomes
-             </h1>
+            </h1>
+            <div class="imagenFlui animatioTopScr">
+                <img src="https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1"
+                    class="img-fluid" alt="" srcset="">
+            </div>
+
         </section>
 
+        <section class="contenService">
+            <div class="container-fluid">
+                <div class="row mb-4 margenGeneral">
+                    <div class="col-md-6">
+                        <div class="imagenFlui">
+                            <img src="https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1" class="img-fluid" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <div>
+                            <h2 class="text-break textColor-white2">Immersive brand experiences</h2>
+                            <p class="text-break textColor-white2">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4 margenGeneral">
+                    <div class="col-md-6 order-md-1 order-1">
+                        <div class="imagenFlui">
+                            <img src="https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1" class="img-fluid" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-2 d-flex align-items-center justify-content-center">
+                        <div >
+                            <h2 class="text-break textColor-white2">Creative storytelling</h2>
+                            <p class="text-break textColor-white2">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4 margenGeneral"> 
+                    <div class="col-md-6">
+                        <div class="imagenFlui">
+                            <img src="https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1" class="img-fluid" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <div>
+                            <h2 class="text-break textColor-white2">Beyond static mockups</h2>
+                            <p class= "text-break textColor-white2">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenServiceFinal">
+            <div class="container-fluid">
+                <div class="row mb-4 margenGeneral">
+                    <div class="col-md-6">
+                        <div class="imagenFlui">
+                            <img src="https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1" class="img-fluid" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <div>
+                            <h2 class="text-break titleTestimService">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using </h2>
+                            <span class="text-break">Janne Copper</span>
+                            <p class="text-break ">VP. User Experience Design @ Facebook</p>
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+        </section>
     </div>
     <!--End container home -->
     <!-- Start Footeer Home -->
@@ -210,6 +278,8 @@
         </div>
     </footer>
     <!--Start Footeer Home  -->
+    <script src="../assets/js/scrollreveal.min.js"></script>
+
     <script>
         // Función para ejecutar la animación
         function ejecutarAnimacion() {
@@ -223,12 +293,12 @@
                 document.querySelector('.draw-on-scroll2').style.right = '0';
             } else {
                 document.querySelector('.draw-on-scroll-my').style.width = '0';
-               document.querySelector('.draw-on-scroll2').style.width = '0';
+                document.querySelector('.draw-on-scroll2').style.width = '0';
                 document.querySelector('.draw-on-scroll2').style.right = '0';
             }
         }
 
-   
+
         window.addEventListener('load', function () {
             ejecutarAnimacion();
         });
@@ -236,10 +306,36 @@
         window.addEventListener('scroll', function () {
             ejecutarAnimacion();
         });
+        
+        const sr5 = ScrollReveal({
+            duration: 2000,
+            delay: 300,
+            origin: "top",
+            distance: "130px",
+            reset: true
+        });
+
+        sr5.reveal(".animatioTopScr", {
+            origin: "top",
+            interval: 200,
+            reset: true
+        });
+
+        const sr6 = ScrollReveal({
+            duration: 2000,
+            delay: 300,
+            origin: "bottom",
+            distance: "230px",
+            reset: true
+        });
+
+        sr6.reveal(".contenServiceFinal", {
+            origin: "bottom",
+            interval: 200,
+            reset: true
+        });
     </script>
-    <script src="../assets/js/scrollreveal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="../assets/js/scrollreveal.min.js"></script>
+
 </body>
 
 </html>
