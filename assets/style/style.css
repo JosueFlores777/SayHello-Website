@@ -462,6 +462,22 @@ swiper-slide {
     margin-right: 10px;
 }
 
+/*page Services*/
+
+.principalServices{
+    height: 100vh;
+}
+
+.margenTopService {
+    margin-left: 10px !important;
+    margin-top: 10% !important;
+}
+
+.textPrinciService{
+    width: 40%;
+    font-family: var(--Urbanist);
+}
+
 /* Page WORK*/
 
 .work-card,
@@ -1078,6 +1094,14 @@ footer button {
         width: 400px;
         height: 500px;
     }
+
+    .margenTopService{
+        margin-top: 20% !important;
+    }
+
+    .textPrinciService {
+        width: 70%;
+    }
 }
 
 @media(max-width:992px) {
@@ -1119,6 +1143,8 @@ footer button {
         margin-top: 30%;
         padding: 8px;
     }
+
+  
 }
 
 @media (max-width: 835px) {
@@ -1202,6 +1228,15 @@ footer button {
         margin-top: 20px;
     }
 
+
+    .margenTopService{
+        margin-top: 30% !important;
+    }
+
+    .textPrinciService {
+        width: 70%;
+    }
+
     .footerConter {
         padding: 12px;
         margin-left: 0;
@@ -1238,6 +1273,14 @@ footer button {
         background-size: cover;
         width: 300px;
         height: 26%;
+    }
+
+    .margenTopService{
+        margin-top: 45% !important;
+    }
+
+    .textPrinciService {
+        width: 70%;
     }
 
     .cardContHome {
