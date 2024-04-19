@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SayHello -Work</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,54 +18,73 @@
 <body class="m-0 border-0">
 
     <!-- start nav  -->
-    <nav class="navbar navbar-expand-lg fixed-topM ">
-        <div class="container transparent-navbar">
-            <a class="navbar-brand" href="../index.html" style="color: #fff;">SayHello</a>
-            <button class="navbar-toggler white-icon" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <nav>
+        <div class="wrapper fixed-top">
+            <div class="logo">
+                <a href="../index.html"> <img src="../public/img/logo blanco.png" alt=""></a>
 
-            </button>
-            <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle textColor-white" href="./services.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu textColor-white">
-                            <li><a class="dropdown-item textColor-white" href="#">Action</a></li>
-                            <li><a class="dropdown-item textColor-white" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider textColor-white ">
-                            </li>
-                            <li><a class="dropdown-item textColor-white" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link textColor-white" aria-current="page" href="./work.html">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link textColor-white" href="./about.html">About Us</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link textColor-white activeC">Contact Us</a>
-                    </li>
-                </ul>
             </div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li>
+                    <a href="#" class="desktop-item navtext">Services <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item navtext">Services</label>
+                    <div class="mega-box">
+                        <div class="content">
 
-            <!-- Formulario -->
-            <form class="d-none d-lg-flex justify-content-end" role="search">
-                <button class="btn btn-menu" type="submit">Start a Project <svg style="margin-left: 6px;"
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right" viewBox="0 1 16 16">
+                            <div class="row">
+                                <header>Engagement Models</header>
+                                <ul class="mega-links">
+                                    <li><a href="./services.html" class="navtext">Staff Augmentation Empower your
+                                            projects with top talent</a></li>
+                                    <li><a href="#" class="navtext">Team Augmentation Assemble a team that excels</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Digital Services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="navtext">Branding & Logo Design</a></li>
+                                    <li><a href="#" class="navtext">Al Marketing</a></li>
+                                    <li><a href="#" class="navtext">Digital Marketing</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header class="navtext2">Security services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#" class="navtext">Photography & Multimedia</a></li>
+                                    <li><a href="#" class="navtext">Advertising Plans</a></li>
+                                    <li><a href="#" class="navtext">Website Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./work.html" class="navtext">Work</a></li>
+                <li><a href="./about.html" class="navtext">About us</a></li>
+
+                <li><a href="#" class="navtext activeC">Contact</a></li>
+
+            </ul>
+            <div class="text-end">
+                <button class="btn2 btn-home" type="submit">Start a Project
+                    <svg style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-arrow-right" viewBox="0 1 16 16">
                         <path fill-rule="evenodd"
                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
                         </path>
-                    </svg></button>
-            </form>
+                    </svg>
+                </button>
 
+            </div>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
     <!-- End Nav -->
@@ -77,14 +98,15 @@
                     <div class="card" style="background-color: black;">
                         <h1 class="textContact "> Have a project in mind?</h1>
                         <h1 class="textContact mb-4">We are happyto listen</h1>
+
                         <form class="d-lg-flex justify-content-start" role="search">
-                            <button class="btn btn-menu" type="submit">Start a Project <svg style="margin-left: 6px;"
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-arrow-right" viewBox="0 1 16 16">
+                            <a class="btn btn-Contact" id="box1" onclick="selectBox(1)">Start a Project <svg
+                                    style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-arrow-right" viewBox="0 1 16 16">
                                     <path fill-rule="evenodd"
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
                                     </path>
-                                </svg></button>
+                                </svg></a>
                         </form>
                         <iframe class="mapContact"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17090.763333348837!2d-80.20489797722283!3d25.774183251713882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69bc4e13fd5%3A0x521b20717b79e040!2s66%20W%20Flagler%20St%20Suit%20900%2C%20Miami%2C%20FL%2033130%2C%20EE.%20UU.!5e0!3m2!1ses!2ssv!4v1713212955923!5m2!1ses!2ssv"
@@ -133,7 +155,129 @@
 
             </div>
         </div>
+        <div class="fullscreen-background top-up" id="fullscreen-background"></div>
+        <div class="scrollerWork" id="scrollerWork">
 
+            <div class="box on-top animate__animated animate__backInUp" id="big-box">
+                <a class="close-button" onclick="clearSelection()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </a>
+                <div class="contWorkTitle paddingWork-left marginTopContaTitle">
+                    
+                    <h1 class="text-center">Fill in the blanks and we'll get back to you in one business day.</h1>
+                </div>
+                <div class="content paddingContactForm ">
+                    <form class="row g-3 needs-validation"  id="test" novalidate>
+                        <div class="mb-3">
+                          <label for="validationCustom01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="validationCustom02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                        <div class="mb-3">
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                          </div>
+                        <div class="col-md-6">
+                          <label for="validationCustom03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationCustom03" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom04" class="form-label">State</label>
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom05" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="validationCustom05" required>
+                          <div class="invalid-feedback">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                      </form>
+
+                </div>
+            </div>
+        </div>
     </div>
     <!--End container home -->
     <!-- Start Footeer Home -->
@@ -269,6 +413,68 @@
     </footer>
     <!--Start Footeer Home  -->
     <script>
+        var boxes = [
+            {
+                typeWork: "Fill in the blanks and we'll get back to you in one business day.",
+                image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
+                titleModal: "Fill in the blanks and we'll get back to you in one business day.",
+                Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
+                cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis am dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
+
+                imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+                imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+                imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+                imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+
+
+                testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
+                imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+                nameTest: 'Name 1',
+            }
+        ];
+        function selectBox(index) {
+            document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
+            document.getElementById("fullscreen-background").style.zIndex = 10;
+            var selectedBox = boxes[index - 1];
+            document.getElementById("scrollerWork").style.display = "block";
+            document.getElementById("workcardModal").textContent = selectedBox.typeWork;
+            document.getElementById("titleModal").textContent = selectedBox.titleModal;
+            document.getElementById("titleWork").textContent = selectedBox.Subtitle;
+            document.getElementById("cardText").textContent = selectedBox.cardText;
+
+            document.getElementById("imgcard1").src = selectedBox.imgcard1;
+            document.getElementById("imgcard2").src = selectedBox.imgcard2;
+            document.getElementById("imgcard3").src = selectedBox.imgcard3;
+            document.getElementById("imgcard4").src = selectedBox.imgcard4;
+
+            document.getElementById("testomioModa").textContent = selectedBox.testiModal;
+            document.getElementById("avatarTesti").src = selectedBox.imgTestim;
+            document.getElementById("nameTesti").textContent = selectedBox.nameTest;
+        }
+
+        function clearSelection() {
+
+            document.getElementById("scrollerWork").scrollTop = 0;
+            document.getElementById("scrollerWork").style.display = "none";
+            document.getElementById("fullscreen-background").style.zIndex = -6;
+            document.getElementById("fullscreen-background").style.backgroundColor = "black";
+
+        }
+
+        document.getElementById("scrollerWork").addEventListener("scroll", function () {
+            var scrollPosition = this.scrollTop;
+            if (window.innerWidth < 478) {
+                paddingValue = scrollPosition > 0 ? 0 : 30;
+            } else {
+                paddingValue = scrollPosition > 0 ? 0 : 60;
+            }
+            this.style.padding = paddingValue + "px";
+        });
+    </script>
+
+
+
+    <script>
         // Función para ejecutar la animación
         function ejecutarAnimacion() {
             var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
@@ -281,7 +487,7 @@
                 document.querySelector('.draw-on-scroll2').style.right = '0';
             } else {
                 document.querySelector('.draw-on-scroll-my').style.width = '0';
-               document.querySelector('.draw-on-scroll2').style.width = '0';
+                document.querySelector('.draw-on-scroll2').style.width = '0';
                 document.querySelector('.draw-on-scroll2').style.right = '0';
             }
         }
@@ -297,6 +503,7 @@
         });
     </script>
     <script src="../assets/js/scrollreveal.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="../assets/js/scrollreveal.min.js"></script>
 </body>
