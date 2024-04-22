@@ -211,6 +211,11 @@ nav {
     top: 10px;
   }
 
+
+@media screen {
+    
+}
+
   @media screen and (max-width: 970px) {
     .btn2{ 
         display: none !important;
@@ -237,6 +242,10 @@ nav {
       overflow-y: auto;
       box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
       transition: all 0.3s ease;
+    }
+
+    .botommenu1{
+        margin-bottom: 15px;
     }
 
     /* custom scroll bar */
@@ -325,7 +334,7 @@ nav {
       top: 65px;
       opacity: 1;
       visibility: visible;
-      padding: 0 20px;
+      padding: 0 13px;
       max-height: 0px;
       overflow: hidden;
       transition: all 0.3s ease;
@@ -341,12 +350,12 @@ nav {
       /*width: 100%;*/
       width: 140% !important;
       margin-bottom: 15px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: none;
     }
 
     .mega-box .content .row:nth-child(1),
     .mega-box .content .row:nth-child(2) {
-      border-top: 0px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .content .row .mega-links {
@@ -571,6 +580,13 @@ nav {
     width: 40%;
     font-family: var(--FontspringDemo);
     font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+.textHome p {
+    width: 70%;
+    margin: 0 auto;
     margin-bottom: 25px;
 }
 
@@ -1467,7 +1483,18 @@ footer button {
 
 /*Resposive*/
 
+@media screen and (min-width: 1800px) and (max-width: 2000px) {
+    nav .wrapper{
+        max-width: 1700px;
+      }
+
+    }
+
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
+    nav .wrapper{
+        max-width: 1400px;
+      }
+
     .contact {
         padding: 0 65px;
     }
@@ -1481,7 +1508,18 @@ footer button {
     }
 }
 
+@media screen and (min-width: 1391px) and (max-width: 1490px) {
+    nav .wrapper{
+        max-width: 1300px !important;
+    }
+}
 
+
+@media screen and (min-width: 1200px) and (max-width: 1390px) {
+    nav .wrapper{
+        max-width: 1000px !important;
+    }
+}
 @media screen and (min-width: 1200px) and (max-width: 1590px) {
 
     .margenGeneralContact {
@@ -1814,6 +1852,12 @@ footer button {
         width: 80%;
         font-family: var(--FontspringDemo);
         margin-bottom: 20px;
+    }
+
+    .textHome p {
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 25px;
     }
 
     swiper-container {
