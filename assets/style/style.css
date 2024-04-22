@@ -128,7 +128,7 @@ nav {
 .drop-menu, .mega-box {
   transform: translateY(-10px);
   transition: all 0.3s ease, transform 1s ease;
-  top: 70px; /* Ajusta este valor al alto de tu barra de navegación */
+  top: 70px; 
 }
 
   .drop-menu li a {
@@ -232,7 +232,7 @@ nav {
       left: -100%;
       background: #242526;
       display: block;
-      padding: 50px 10px;
+      padding: 50px 1px;
       line-height: 50px;
       overflow-y: auto;
       box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
@@ -338,7 +338,8 @@ nav {
     }
 
     .mega-box .content .row {
-      width: 100%;
+      /*width: 100%;*/
+      width: 140% !important;
       margin-bottom: 15px;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
@@ -1574,7 +1575,8 @@ footer button {
 
     .fondoPart3Home,
     .carrucelHome {
-        height: 90vh;
+       /* height: 90vh;*/
+       height: auto;
     }
 
     swiper-container {
@@ -1613,7 +1615,8 @@ footer button {
 
     .fondoPart3Home,
     .carrucelHome {
-        height: 75vh;
+       /* height: 75vh;*/
+       height: auto;
     }
 
     .carrucul {
@@ -1638,7 +1641,8 @@ footer button {
 
     .fondoPart3Home,
     .carrucelHome {
-        height: 65vh;
+       /* height: 65vh;*/
+       height:auto;
     }
 
     footer h1 {
@@ -1710,7 +1714,8 @@ footer button {
 
     .fondoPart3Home,
     .carrucelHome {
-        height: 70vh;
+        /*height: 70vh;*/
+        height: auto;
     }
 
     .carrucelHome {
@@ -1719,7 +1724,7 @@ footer button {
     }
 
     swiper-container .card {
-        height: 60%;
+        height: auto;
     }
 
     swiper-container {
@@ -1786,6 +1791,20 @@ footer button {
     .margenCardAbout {
         padding: 18px    ;
     }
+
+    .cardPageTestiHome{
+        height: auto;
+        width: auto;
+    }
+
+    .draw-on-scroll,
+    .draw-on-scroll1 {
+        transition: width 3s ease;
+    }
+
+    .draw-on-scroll2 {
+        transition: width 3s ease, right 3s ease;
+    }
 }
 
 @media (max-width: 478px) {
@@ -1805,7 +1824,8 @@ footer button {
 
     .fondoPart3Home,
     .carrucelHome {
-        height: 100vh;
+        /*height: 100vh;*/
+        height: auto;
     }
 
     .carrucelHome {
