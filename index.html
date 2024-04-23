@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="./public/img/iconW.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SayHello</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -17,7 +18,6 @@
 </head>
 
 <body class="m-0 border-0">
-
   <!-- start nav  -->
   <nav>
     <div class="wrapper fixed-top">
@@ -35,7 +35,7 @@
                 d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
             </svg></a>
           <input type="checkbox" id="showMega">
-          <label for="showMega" class="mobile-item navtext">Services <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          <label for="showMega" class="mobile-item navtext">Services<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
             fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
             <path
               d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -111,10 +111,8 @@
     <!-- start Section Home  -->
     <section class="home d-flex justify-content-center align-items-center flex-column">
       <div class="textHome text-center">
-        <h1 class="animationScroll">Your digital success partner</h1>
-        <p class="animationScroll">We design tailored solutions that ensure a strong online presence, effective
-          marketing, and optimized
-          technical infrastructure.</p>
+        <h1 class="animationScroll">Innovation with no bounds</h1>
+        <p class="animationScroll">We're committed t developing customized solutions that only increase your online presence but also drive real result.</p>
         <form class="d-lg-flex justify-content-center animationScroll" role="search">
           <button class="btn btn-home" type="submit">Start a Project <svg style="margin-left: 6px;"
               xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
@@ -530,6 +528,20 @@
     });
 
 
+  </script>
+  <script>
+
+    var showMegaCheckbox = document.getElementById('.mobile-item');
+    var megaBox = document.querySelector('.mega-box');
+  
+    showMegaCheckbox.addEventListener('change', function() {
+
+      if (this.checked) {
+        megaBox.style.display = 'block';
+      } else {
+        megaBox.style.display = 'none';
+      }
+    });
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

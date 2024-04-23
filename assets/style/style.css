@@ -159,7 +159,7 @@ nav {
   }
 
   .mega-box .content .row {
-    width: calc(45% - 30px);
+    /*width: calc(45% - 30px);*/
     line-height: 45px;
   }
 
@@ -468,6 +468,12 @@ nav {
     border-radius: 4px;
     color: #fff;
     margin: 14px;
+}
+
+.textColor-white3 {
+    border-radius: 4px;
+    color: #fff;
+    /* margin: 14px; */
 }
 
 .textColor-white:hover {
@@ -781,7 +787,8 @@ nav {
 }
 
 .fondoPart3Home {
-    height: 100vh;
+    /*height: 100vh;*/
+    height: auto;
     border-radius: 15px;
     background-color: var(--secondary-color);
 }
@@ -792,7 +799,12 @@ nav {
 }
 
 swiper-container .card {
-    height: 100%;
+    padding: 35px;
+    height: auto;
+}
+
+swiper-container .card .row {
+    margin-top: -7%;
 }
 
 swiper-container {
@@ -926,6 +938,17 @@ swiper-slide {
     max-width: 100%; 
     height: auto;
 }
+
+.animatioTopScr2{
+    height: 70vh;
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 35px;
+}
+
 
 .contenService .col-md-6 {
     max-width: 650px; 
@@ -1181,7 +1204,8 @@ swiper-slide {
 }
 
 .mainTextAbout {
-    width: 80%;
+    width: 50%;
+    font-family: var(--Urbanist);
     margin: 0 auto;
 }
 
@@ -1194,6 +1218,8 @@ swiper-slide {
     font-family: var(--Urbanist);
 }
 
+.textAboutSect2{margin: 10rem 0;}
+
 .sectionAbout4 {
     margin-top: 45px;
     height: auto;
@@ -1204,6 +1230,12 @@ swiper-slide {
     padding: 0 25%;
 }
 /*carrucel infinito About*/
+
+.line{
+    margin: 25px 0 ;
+    border-top: 4px solid #ffffff;
+    width: 60%;
+}
 
 .hidden1 {
     opacity: 0;
@@ -1285,6 +1317,15 @@ swiper-slide {
 /*section2*/
 .sectionAbout2 {
     height: 100vh;
+    font-family: var(--Urbanist);
+}
+
+.texttitleAbouSection2 {
+    width: 63%;
+}
+
+.aboutTextSection2{
+    width: 60%;
 }
 
 /*section 3 esta en about*/
@@ -1606,6 +1647,10 @@ footer button {
 }
 
 @media(max-width:992px) {
+
+    .textHome h1{
+        width: 60%;
+    }
     .navbar-collapse {
         margin-top: 60px;
         background-color: #101010;
@@ -1693,6 +1738,10 @@ footer button {
         margin: 0 auto;
         margin-top: 35%;
     }
+
+    .texttitleAbouSection2 {
+        width: auto;
+    }
 }
 
 @media (max-width:767px) {
@@ -1702,6 +1751,14 @@ footer button {
 
     .mobileContaact {
         margin-top: 160px;
+    }
+
+    .aboutTextSection2 {
+        width: 100%;
+    }
+
+    .sectionAbout2 {
+        height: 200vh;
     }
 }
 
@@ -1749,6 +1806,9 @@ footer button {
 }
 
 @media (max-width: 625px) {
+    .textHome h1 {
+        width: 80%;
+    }
 
     .fondoPart3Home,
     .carrucelHome {
@@ -1846,6 +1906,23 @@ footer button {
 }
 
 @media (max-width: 478px) {
+
+    .sectionAbout2 {
+        height: 200vh;
+    }
+    swiper-container .card {
+        padding: 25px;
+        height: 100%;
+    }
+    
+    swiper-container .card .row {
+        margin-top: 0;
+    }
+
+    .textHome {
+        margin-top: 30%;
+    }
+
     .textHome h1 {
         font-size: 34px;
         margin: 0 auto;
