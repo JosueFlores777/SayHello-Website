@@ -502,11 +502,6 @@ nav input {
     background-color: #f0126a;
 }
 
-.activeC {
-    color: #fff;
-    margin: 14px;
-    background-color: #f0126a;
-}
 
 .btn-menu {
     width: 155px;
@@ -586,6 +581,10 @@ nav input {
 }
 
 
+.activeC {
+    color: #fff;
+    background-color: #f0126a !important;
+}
 
 /**/
 
