@@ -531,17 +531,21 @@
   </script>
   <script>
 
-    var showMegaCheckbox = document.getElementById('.mobile-item');
-    var megaBox = document.querySelector('.mega-box');
-  
-    showMegaCheckbox.addEventListener('change', function() {
+var showMegaCheckbox = document.querySelector('.mobile-item');
+var megaBox = document.querySelector('.mega-box');
 
-      if (this.checked) {
-        megaBox.style.display = 'block';
-      } else {
-        megaBox.style.display = 'none';
-      }
-    });
+showMegaCheckbox.addEventListener('change', function() {
+  if (this.checked) {
+    megaBox.style.display = 'block';
+  } else {
+    megaBox.style.transition = 'all 0.0001s ease;'; 
+    megaBox.style.opacity = '0'; 
+    setTimeout(function() {
+      megaBox.style.display = 'none'; 
+    }, 300);
+  }
+});
+
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

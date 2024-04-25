@@ -127,9 +127,12 @@ document.getElementById("scrollerWork").addEventListener("scroll", function () {
   var scrollPosition = this.scrollTop;
   if (window.innerWidth < 478) {
     paddingValue = scrollPosition > 0 ? 0 : 30;
+    var paddi= "padding-left 0.9s ease, padding-right 0.9s ease";;
   } else {
     paddingValue = scrollPosition > 0 ? 0 : 60;
+    var paddi= "padding-left 0.4s ease, padding-right 0.4s ease";;
   }
+  this.style.transition = paddi;
   this.style.padding = paddingValue + "px";
 });
 

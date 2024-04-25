@@ -184,7 +184,7 @@
                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
                     </svg>
                 </a>
-                <div class="contWorkTitle paddingWork-left marginTopContaTitle">
+                <div class="marginTopContaTitleContact marginTopContaTitle fontContact">
                     
                     <h1 class="text-center">Fill in the blanks and we'll get back to you in one business day.</h1>
                 </div>
@@ -454,19 +454,6 @@
             document.getElementById("fullscreen-background").style.zIndex = 10;
             var selectedBox = boxes[index - 1];
             document.getElementById("scrollerWork").style.display = "block";
-            document.getElementById("workcardModal").textContent = selectedBox.typeWork;
-            document.getElementById("titleModal").textContent = selectedBox.titleModal;
-            document.getElementById("titleWork").textContent = selectedBox.Subtitle;
-            document.getElementById("cardText").textContent = selectedBox.cardText;
-
-            document.getElementById("imgcard1").src = selectedBox.imgcard1;
-            document.getElementById("imgcard2").src = selectedBox.imgcard2;
-            document.getElementById("imgcard3").src = selectedBox.imgcard3;
-            document.getElementById("imgcard4").src = selectedBox.imgcard4;
-
-            document.getElementById("testomioModa").textContent = selectedBox.testiModal;
-            document.getElementById("avatarTesti").src = selectedBox.imgTestim;
-            document.getElementById("nameTesti").textContent = selectedBox.nameTest;
         }
 
         function clearSelection() {
@@ -479,14 +466,16 @@
         }
 
         document.getElementById("scrollerWork").addEventListener("scroll", function () {
-            var scrollPosition = this.scrollTop;
-            if (window.innerWidth < 478) {
-                paddingValue = scrollPosition > 0 ? 0 : 30;
-            } else {
-                paddingValue = scrollPosition > 0 ? 0 : 60;
-            }
-            this.style.padding = paddingValue + "px";
-        });
+    var scrollPosition = this.scrollTop;
+    var paddingValue;
+    if (window.innerWidth < 478) {
+        paddingValue = scrollPosition > 0 ? 0 : 30;
+    } else {
+        paddingValue = scrollPosition > 0 ? 0 : 60;
+    }
+    this.style.transition = "padding-left 0.4s ease, padding-right 0.4s ease";
+    this.style.padding = paddingValue + "px";
+});
     </script>
 
 
