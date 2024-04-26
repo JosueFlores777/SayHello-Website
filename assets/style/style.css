@@ -2440,14 +2440,14 @@ footer button {
     }*/
 
     .testimonioHome {
-        height: 80vh;
+        height: 60vh;
     }
 
 }
 
 @media(max-width: 400px) {
     .testimonioAboutBootm {
-        margin-bottom: 45%;
+        margin-bottom: 85%;
     }
 }
 
@@ -2487,7 +2487,10 @@ footer button {
     }
 
     .testimonioHome {
-        height: 100vh;
+        height: 50vh;
+    }
+    .testimonioAboutBootm {
+        margin-bottom: 105%;
     }
 
 }
@@ -2524,5 +2527,7 @@ footer button {
         margin-bottom: 59%;
     }
 
-
+    .testimonioAboutBootm {
+        margin-bottom: 130%;
+    }
 }
