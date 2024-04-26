@@ -84,7 +84,7 @@ nav .wrapper {
     list-style: none;
 }
 
-.nav-links li a {
+.nav-links li a{
     background-color: #696667a8;
     color: #f2f2f2;
     text-decoration: none;
@@ -96,14 +96,26 @@ nav .wrapper {
     transition: all 0.3s ease;
 }
 
+
+ .mobile-item {
+    background-color: #696667a8;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 .row .mega-links li a {
     background-color: #69666700;
     transition: all 0.3s ease;
 }
 
 
-.nav-links li a:hover {
-    background: #f0126a;
+.nav-links li a:hover, .mobile-item:hover {
+    background: #f0126bd2 !important;
+    transition: all 0.5s ease;
 }
 
 .nav-links .mobile-item {
@@ -459,7 +471,7 @@ nav input {
     -webkit-backdrop-filter: blur(10px);
 }
 
-.navbar .container {
+.navbar .container-fluid {
     border-radius: 4px;
     background-color: #343333a7;
 }
@@ -892,9 +904,11 @@ swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
 }
 
 .cardPageTestiHome {
+  
     margin: 10px auto;
     position: absolute;
     background-color: #6d4416;
@@ -908,12 +922,6 @@ swiper-slide {
     /* text-align: center;*/
     justify-content: space-between;
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.cardPageTestiHome .dark {
-    background-color: black;
-    border-color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .cardPageTestiHome-content {
@@ -936,6 +944,7 @@ swiper-slide {
 }
 
 .testimonial-info {
+    
     margin-top: 20px;
 }
 
@@ -950,6 +959,7 @@ swiper-slide {
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    background-image: none;
 }
 
 /*page Services*/
@@ -1641,13 +1651,23 @@ footer button {
         max-width: 1700px;
     }
 
+    .navbar .container-fluid {
+        max-width: 1700px;
+        border-radius: 4px;
+        background-color: #343333a7;
+    }
+
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
     nav .wrapper {
         max-width: 1400px;
     }
-
+    .navbar .container-fluid {
+        max-width: 1400px;
+        border-radius: 4px;
+        background-color: #343333a7;
+    }
     .contact {
         padding: 0 65px;
     }
@@ -1676,12 +1696,23 @@ footer button {
     nav .wrapper {
         max-width: 1300px !important;
     }
+    .navbar .container-fluid {
+        max-width: 1300px;
+        border-radius: 4px;
+        background-color: #343333a7;
+    }
 }
 
 
 @media screen and (min-width: 1200px) and (max-width: 1390px) {
     nav .wrapper {
         max-width: 1000px !important;
+    }
+
+    .navbar .container-fluid {
+        max-width: 1000px;
+        border-radius: 4px;
+        background-color: #343333a7;
     }
 
     .textTestHomeH2 {
@@ -2007,6 +2038,10 @@ footer button {
 
     .modarlCarbody {
         margin-top: 30px !important;
+    }
+
+    .animatioTopScr2 {
+        height: 40vh;
     }
 }
 
@@ -2400,19 +2435,19 @@ footer button {
         margin-top: 90px;
     }
 
-    .centrarContact2 {
+    /*.centrarContact2 {
         padding: 0 15px;
-    }
+    }*/
 
     .testimonioHome {
-        height: 80vh;
+        height: 60vh;
     }
 
 }
 
 @media(max-width: 400px) {
     .testimonioAboutBootm {
-        margin-bottom: 45%;
+        margin-bottom: 85%;
     }
 }
 
@@ -2452,7 +2487,10 @@ footer button {
     }
 
     .testimonioHome {
-        height: 100vh;
+        height: 50vh;
+    }
+    .testimonioAboutBootm {
+        margin-bottom: 105%;
     }
 
 }
@@ -2489,5 +2527,7 @@ footer button {
         margin-bottom: 59%;
     }
 
-
+    .testimonioAboutBootm {
+        margin-bottom: 130%;
+    }
 }
