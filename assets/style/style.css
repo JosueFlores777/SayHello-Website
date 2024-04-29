@@ -518,9 +518,10 @@ nav input {
     background-color: #f0126a;
 }
 
-.rowRange{
-    --bs-gutter-x: 8px!important;
+.rowRange {
+    --bs-gutter-x: 8px !important;
 }
+
 .btn-menu {
     width: 155px;
     background-color: #ffffff64;
@@ -545,7 +546,7 @@ nav input {
     color: #fff;
 }
 
-.form-control{
+.form-control {
     background-color: #f2f4f8 !important;
 }
 
@@ -609,9 +610,11 @@ nav input {
     background-color: #f0126a !important;
 }
 
-.activeCFooter:hover,.activeCFooter {
+.activeCFooter:hover,
+.activeCFooter {
     color: #fa8db9fd;
 }
+
 /**/
 
 /* start Home*/
@@ -649,14 +652,16 @@ nav input {
     color: #fff;
 }
 
-.btn-contact, .btn-contact:hover {
+.btn-contact,
+.btn-contact:hover {
     margin: 45px 0;
     background-color: #f0126a;
     width: 100% !important;
     color: #fff;
 }
 
-.btn-home:hover, .btn-contact:hover {
+.btn-home:hover,
+.btn-contact:hover {
     background-color: #f0126a;
     width: 155px;
     color: #fff;
@@ -713,7 +718,7 @@ nav input {
     padding: 0 23px 0 !important;
 }
 
-.imageOurFon{
+.imageOurFon {
     max-width: 150px !important;
 }
 
@@ -1155,9 +1160,10 @@ swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #605c5c;
+    background-color: #5d5d5d;
     border-radius: 10px;
     height: 50vh;
+    font-family: var(--Urbanist);
 }
 
 .titleModal {
@@ -1166,7 +1172,7 @@ swiper-slide {
 }
 
 .textTestiModal {
-    font-size: 16px;
+    font-size: 26px;
     color: var(--text-White);
 }
 
@@ -1470,19 +1476,23 @@ swiper-slide {
 
 /*Contact*/
 
-.activeCRange{
+.activeCRange {
     background-color: #ad0746 !important;
 }
 
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    transition: 0.8s  !important;
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    transition: 0.8s !important;
 }
 
 .btn-outline-primary {
     height: 20px;
     width: 50px;
-    transition: 0.8s  !important;
+    transition: 0.8s !important;
     --bs-btn-bg: #fee5f2 !important;
     --bs-btn-color: #fee5f2 !important;
     --bs-btn-border-color: #fee5f2 !important;
@@ -1502,18 +1512,20 @@ swiper-slide {
     transition-property: margin-right, --bs-btn-active-bg;
 }
 
-.form-label{
+.form-label {
     font-family: var(--AllRoundGothic);
 }
 
-#range-pay,.rangeText{
+#range-pay,
+.rangeText {
     font-family: var(--Urbanist);
 }
 
-#range-pay{
+#range-pay {
     color: #1b1b1bee;
 }
-.rangeText{
+
+.rangeText {
     color: #4e4e4aaf;
 }
 
@@ -2126,7 +2138,7 @@ footer button {
 
 @media (max-width: 825px) {
 
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 50px;
     }
 
@@ -2157,7 +2169,7 @@ footer button {
 }
 
 @media (max-width:767px) {
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 62px;
     }
 
@@ -2271,11 +2283,14 @@ footer button {
         width: 80%;
     }
 
+    .textTestiModal {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 625px) {
 
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 54px;
     }
 
@@ -2362,6 +2377,10 @@ footer button {
         display: block;
         width: 90%;
     }
+
+    .testimonioModal {
+        padding: 25px 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -2370,8 +2389,8 @@ footer button {
     }
 
     .content {
-       /* padding: 10px 20px;*/
-          padding: 0 12px;
+        /* padding: 10px 20px;*/
+        padding: 0 12px;
     }
 
     .on-top {
@@ -2415,6 +2434,11 @@ footer button {
     .paddingWork {
         padding: 0 45px;
     }
+
+    .textTestiModal {
+        font-size: 16px;
+        color: var(--text-White);
+    }
 }
 
 @media screen and (min-width: 420px) and (max-width: 604px) {
@@ -2425,11 +2449,11 @@ footer button {
 
 @media (max-width: 478px) {
 
-   .carrucelHome .card-body {
+    .carrucelHome .card-body {
         margin-top: 0;
     }
 
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 45px;
     }
 
@@ -2507,7 +2531,8 @@ footer button {
         height: 100vh;
     }
 
-    .btn-contact, .btn-contact:hover {
+    .btn-contact,
+    .btn-contact:hover {
         margin: 0 0 30px 0;
     }
 
@@ -2558,17 +2583,18 @@ footer button {
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
-        padding: 50px 20px;
+        padding: 50px 0px;
     }
 
     .modalConte .content {
         padding: 0;
     }
+
     .paddingWork2 {
         margin-top: 25px;
         padding: 0 0;
     }
-    
+
     /*Contact*/
     .contact {
         margin-top: 13%;
@@ -2582,7 +2608,7 @@ footer button {
         margin-top: 45px;
     }
 
-    .centrarContact{
+    .centrarContact {
         width: 100%;
     }
 
@@ -2634,7 +2660,7 @@ footer button {
 }
 
 @media (max-width: 430px) {
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 40px;
     }
 
@@ -2665,14 +2691,14 @@ footer button {
         margin-bottom: 85%;
     }
 
-    .imageOurFon{
+    .imageOurFon {
         max-width: 290px !important;
     }
 }
 
 @media (max-width: 378px) {
 
-    .btn-outline-primary{
+    .btn-outline-primary {
         width: 36px;
     }
 
@@ -2718,7 +2744,7 @@ footer button {
         margin-bottom: 105%;
     }
 
-    .imageOurFon{
+    .imageOurFon {
         max-width: 280px !important;
     }
 
@@ -2733,12 +2759,14 @@ footer button {
         margin-left: 105px;
     }
 
-    .imageOurFon{
+    .imageOurFon {
         max-width: 275px !important;
     }
-    .btn-outline-primary{
+
+    .btn-outline-primary {
         width: 32px;
     }
+
     .textHome {
         margin-top: 30%;
     }
