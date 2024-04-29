@@ -1,15 +1,15 @@
-
 :root {
-    --bg-black: #010101; 
-    --primary-color: #007bff; 
+    --bg-black: #010101;
+    --primary-color: #007bff;
     --secondary-color: #403c3c;
-    --text-White:#fff; 
+    --text-White: #fff;
     --Urbanist: 'Urbanist Regular', sans-serif;
     --AllRoundGothic: 'AllRound Gothic Bold', sans-serif;
     --FontspringDemo: 'Fontspring Demo', sans-serif;
     --FontspringDemoText: 'Fontspring Demo Text', sans-serif;
 
 }
+
 /*
 @font-face {
     font-family: 'AllRound Gothic Bold';
@@ -51,21 +51,21 @@
 
 @font-face {
     font-family: 'AllRound Gothic Bold';
-    src: url('/assets/fonts/Urbanist-Bold.ttf') format('truetype'); 
+    src: url('/assets/fonts/Urbanist-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Urbanist Regular';
-    src: url('/assets/fonts/Urbanist-Regular.ttf') format('truetype'); 
+    src: url('/assets/fonts/Urbanist-Regular.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Fontspring Demo Text';
-    src: url('/assets/fonts/Fontspring-DEMO-allroundgothic-text.otf') format('opentype'); 
+    src: url('/assets/fonts/Fontspring-DEMO-allroundgothic-text.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

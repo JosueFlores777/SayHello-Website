@@ -85,7 +85,8 @@ nav .wrapper {
     list-style: none;
 }
 
-.nav-links li a, .btn3{
+.nav-links li a,
+.btn3 {
     background-color: #696667a8;
     color: #f2f2f2;
     text-decoration: none;
@@ -98,7 +99,7 @@ nav .wrapper {
 }
 
 
- .mobile-item {
+.mobile-item {
     background-color: #696667a8;
     color: #f2f2f2;
     text-decoration: none;
@@ -108,13 +109,15 @@ nav .wrapper {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
+
 .row .mega-links li a {
     background-color: #69666700;
     transition: all 0.3s ease;
 }
 
 
-.nav-links li a:hover, .mobile-item:hover {
+.nav-links li a:hover,
+.mobile-item:hover {
     background: #f0126bd2 !important;
     transition: all 0.5s ease;
 }
@@ -599,6 +602,9 @@ nav input {
     background-color: #f0126a !important;
 }
 
+.activeCFooter:hover,.activeCFooter {
+    color: #fa8db9fd;
+}
 /**/
 
 /* start Home*/
@@ -905,11 +911,11 @@ swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
- 
+
 }
 
 .cardPageTestiHome {
-  
+
     margin: 10px auto;
     position: absolute;
     background-color: #6d4416;
@@ -945,7 +951,7 @@ swiper-slide {
 }
 
 .testimonial-info {
-    
+
     margin-top: 20px;
 }
 
@@ -1108,6 +1114,7 @@ swiper-slide {
     height: 50vh;
     padding: 25px;
 }
+
 .card-bodyhome h5 {
     margin-left: 20px;
     font-size: 28px;
@@ -1121,6 +1128,7 @@ swiper-slide {
     color: #a87c22;
     font-family: var(--Urbanist);
 }
+
 .borRadModal {
     border-radius: 10px;
 }
@@ -1638,7 +1646,8 @@ footer button {
     }
 
     .sectionAbout1 {
-        margin-top:15%;;
+        margin-top: 15%;
+        ;
     }
 }
 
@@ -1674,9 +1683,10 @@ footer button {
         background-color: #343333a7;
     }
 
-    
+
     .sectionAbout1 {
-        margin-top:15%;;
+        margin-top: 15%;
+        ;
     }
 
 }
@@ -1684,7 +1694,8 @@ footer button {
 
 @media screen and (min-width: 2001px) and (max-width: 2500px) {
     .sectionAbout1 {
-        margin-top:12%;;
+        margin-top: 12%;
+        ;
     }
 }
 
@@ -1693,11 +1704,13 @@ footer button {
     nav .wrapper {
         max-width: 1400px;
     }
+
     .navbar .container-fluid {
         max-width: 1400px;
         border-radius: 4px;
         background-color: #343333a7;
     }
+
     .contact {
         padding: 0 65px;
     }
@@ -1726,6 +1739,7 @@ footer button {
     nav .wrapper {
         max-width: 1300px !important;
     }
+
     .navbar .container-fluid {
         max-width: 1300px;
         border-radius: 4px;
@@ -2259,11 +2273,13 @@ footer button {
         padding: 0 45px;
     }
 }
+
 @media screen and (min-width: 420px) and (max-width: 604px) {
     .card-bodyhome {
         margin-top: 11%;
     }
 }
+
 @media (max-width: 478px) {
 
     /* {
@@ -2523,6 +2539,7 @@ footer button {
     .testimonioHome {
         height: 50vh;
     }
+
     .testimonioAboutBootm {
         margin-bottom: 105%;
     }
@@ -2565,4 +2582,3 @@ footer button {
         margin-bottom: 130%;
     }
 }
-
