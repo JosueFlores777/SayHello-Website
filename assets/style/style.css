@@ -63,6 +63,7 @@ nav .wrapper {
     justify-content: space-between;
 }
 
+
 .wrapper .logo a {
     color: #f2f2f2;
     font-size: 30px;
@@ -542,6 +543,10 @@ nav input {
     width: 155px;
     background-color: #f0126a;
     color: #fff;
+}
+
+.form-control{
+    background-color: #f2f4f8 !important;
 }
 
 .white-icon {
@@ -2365,7 +2370,8 @@ footer button {
     }
 
     .content {
-        padding: 10px 20px;
+       /* padding: 10px 20px;*/
+          padding: 0 12px;
     }
 
     .on-top {
@@ -2501,6 +2507,9 @@ footer button {
         height: 100vh;
     }
 
+    .btn-contact, .btn-contact:hover {
+        margin: 0 0 30px 0;
+    }
 
     .cardPageTestiHome {
         height: auto;
@@ -2552,6 +2561,14 @@ footer button {
         padding: 50px 20px;
     }
 
+    .modalConte .content {
+        padding: 0;
+    }
+    .paddingWork2 {
+        margin-top: 25px;
+        padding: 0 0;
+    }
+    
     /*Contact*/
     .contact {
         margin-top: 13%;
