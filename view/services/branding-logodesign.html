@@ -29,9 +29,8 @@
             <ul class="nav-links">
                 <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
                 <li>
-                    <a href="#" class="desktop-item navtext activeC">Services <svg xmlns="http://www.w3.org/2000/svg"
-                            width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
-                            viewBox="0 0 16 16">
+                    <a class="desktop-item navtext activeC">Services <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                             <path
                                 d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                         </svg></a>
@@ -163,8 +162,6 @@
             </h1>
             <div class="animatioTopScr2">
             </div>
-
-
         </section>
 
         <section class="contenService">
@@ -267,15 +264,16 @@
                     <h1 class="textColor-white2">Services</h1>
                     <div class="draw-on-scroll2"></div>
 
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2"
-                            href="#">Branding & Logo
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2 activeCFooter"
+                            href="./branding-logodesign.html">Branding & Logo
                             Design <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
                                 </path>
                             </svg></a></p>
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2" href="#">AI
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2"
+                            href="./ai-marketing.html">AI
                             Marketing
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -284,7 +282,7 @@
                                 </path>
                             </svg></a></p>
                     <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2"
-                            href="#">Digital
+                            href="./digital-marketing.html">Digital
                             Marketing <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -292,7 +290,7 @@
                                 </path>
                             </svg></a></p>
                     <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2"
-                            href="#">Photography &
+                            href="./photography-multimedia.html">Photography &
                             Multimedia <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -300,7 +298,7 @@
                                 </path>
                             </svg></a></p>
                     <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2"
-                            href="#">Advertising
+                            href="./advertising-plans.html">Advertising
                             Plans <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -316,7 +314,7 @@
                                 </path>
                             </svg></a></p>
                     <p><a class="link-offset-2 link-underline link-underline-opacity-0 textColor-white2"
-                            href="#">Website
+                            href="./website-development.html">Website
                             Development <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -342,9 +340,9 @@
                 <div class="draw-on-scroll-my"></div>
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <a href="#">Work</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Contact Us</a>
+                        <a href="../work.html">Work</a>
+                        <a href="../about.html">About Us</a>
+                        <a href="../contact.html">Contact Us</a>
                     </div>
                     <div class="col-md-6 d-flex justify-content-end">
                         <p> <a href="#" target="_blank" rel="noopener noreferrer"> @sayhello.global</a></p>
@@ -413,10 +411,14 @@
             reset: true
         });
 
-        sr5.reveal(".animatioTopScr", {
-            origin: "top",
-            interval: 200,
-            reset: true
+        const clasesAnimadas = [".animatioTopScr", ".animatioTopScr2",".animatioTopScr3"];
+
+        clasesAnimadas.forEach(clase => {
+            sr5.reveal(clase, {
+                origin: "top",
+                interval: 200,
+                reset: true
+            });
         });
 
         const sr6 = ScrollReveal({
