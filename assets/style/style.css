@@ -701,6 +701,10 @@ nav input {
     padding: 0 23px 0 !important;
 }
 
+.imageOurFon{
+    max-width: 150px !important;
+}
+
 
 .m-autoCard {
     margin: auto;
@@ -1489,7 +1493,7 @@ swiper-slide {
 }
 
 #range-pay{
-    color: #1b1b1bc2;
+    color: #1b1b1bee;
 }
 .rangeText{
     color: #4e4e4aaf;
@@ -2402,6 +2406,10 @@ footer button {
 
 @media (max-width: 478px) {
 
+   .carrucelHome .card-body {
+        margin-top: 0;
+    }
+
     .btn-outline-primary{
         width: 45px;
     }
@@ -2612,15 +2620,19 @@ footer button {
         padding: 0 15px;
     }*/
 
-    .testimonioHome {
+    /*.testimonioHome {
         height: 60vh;
     }
-
+*/
 }
 
 @media(max-width: 400px) {
     .testimonioAboutBootm {
         margin-bottom: 85%;
+    }
+
+    .imageOurFon{
+        max-width: 290px !important;
     }
 }
 
@@ -2664,17 +2676,32 @@ footer button {
         font-size: 19px;
     }
 
-    .testimonioHome {
+    /*.testimonioHome {
         height: 50vh;
     }
-
+*/
     .testimonioAboutBootm {
         margin-bottom: 105%;
     }
 
+    .imageOurFon{
+        max-width: 280px !important;
+    }
+
+    .wrapper .btn {
+        margin-left: 115px;
+    }
 }
 
 @media (max-width: 360px) {
+
+    .wrapper .btn {
+        margin-left: 105px;
+    }
+
+    .imageOurFon{
+        max-width: 275px !important;
+    }
     .btn-outline-primary{
         width: 32px;
     }
