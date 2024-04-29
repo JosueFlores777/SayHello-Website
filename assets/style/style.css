@@ -2430,7 +2430,7 @@ footer button {
     .textHome h1 {
         font-size: 34px;
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         font-family: var(--FontspringDemo);
         margin-bottom: 20px;
     }
@@ -2552,9 +2552,9 @@ footer button {
         margin-top: 45px;
     }
 
-    /* .centrarContact2 {
-        padding-left: 28px;
-    }*/
+    .centrarContact{
+        width: 100%;
+    }
 
     /*About*/
     .mainTextAbout {
