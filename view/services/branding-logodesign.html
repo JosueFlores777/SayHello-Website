@@ -377,14 +377,11 @@
     <script src="../../assets/js/scrollreveal.min.js"></script>
 
     <script>
-        // Función para ejecutar la animación
         function ejecutarAnimacion() {
             var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
 
             if (distanceToFooterTop < window.innerHeight) {
                 document.querySelector('.draw-on-scroll-my').style.width = '90%';
-                document.querySelector('.draw-on-scroll3').style.width = '80%';
-                document.querySelector('.draw-on-scroll4').style.width = '80%';
                 document.querySelector('.draw-on-scroll2').style.width = '50%';
                 document.querySelector('.draw-on-scroll2').style.right = '0';
             } else {
