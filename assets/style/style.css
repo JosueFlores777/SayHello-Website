@@ -240,7 +240,6 @@ nav .wrapper {
 }
 
 
-@media screen {}
 
 @media screen and (max-width: 970px) {
     .btn2 {
@@ -518,7 +517,9 @@ nav input {
     background-color: #f0126a;
 }
 
-
+.rowRange{
+    --bs-gutter-x: 8px!important;
+}
 .btn-menu {
     width: 155px;
     background-color: #ffffff64;
@@ -1452,6 +1453,39 @@ swiper-slide {
 
 /*Contact*/
 
+.btn-outline-primary {
+    height: 20px;
+    width: 50px;
+    --bs-btn-bg: #fee5f2 !important;
+    --bs-btn-color: #fee5f2 !important;
+    --bs-btn-border-color: #fee5f2 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #f0126a !important;
+    --bs-btn-hover-border-color: #fee5f2 !important;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #f0126a !important;
+    --bs-btn-active-border-color: #f0126a !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #f0126a !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #f0126a !important;
+    --bs-gradient: none;
+    transition-delay: 1s;
+    transition-property: margin-right, --bs-btn-active-bg;
+}
+
+.form-label{
+    font-family: var(--AllRoundGothic);
+}
+
+.range-pay,.rangeText{
+    font-family: var(--Urbanist);
+}
+.rangeText{
+    color: #4e4e4a;
+}
+
 .contact {
     margin-top: 137px;
 }
@@ -1745,6 +1779,8 @@ footer button {
         border-radius: 4px;
         background-color: #343333a7;
     }
+
+
 }
 
 
@@ -1820,6 +1856,68 @@ footer button {
         margin-top: 160px;
     }
 }
+
+
+@media screen and (min-width: 853px) and (max-width: 936px) {
+    .btn-outline-primary {
+        height: 20px;
+        width: 52px;
+    }
+}
+
+@media screen and (min-width: 937px) and (max-width: 1000px) {
+    .btn-outline-primary {
+        height: 20px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1150px) {
+    .btn-outline-primary {
+        height: 20px;
+        width: 62px;
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1250px) {
+    .btn-outline-primary {
+        height: 20px;
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1400px) {
+    .btn-outline-primary {
+        width: 83px;
+    }
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 1510px) {
+    .btn-outline-primary {
+        width: 87px;
+    }
+}
+
+@media screen and (min-width: 1511px) and (max-width: 1620px) {
+    .btn-outline-primary {
+        width: 92px;
+    }
+}
+
+@media screen and (min-width: 1621px) and (max-width: 2500px) {
+    .btn-outline-primary {
+        width: 100px;
+    }
+}
+
+
+@media screen and (min-width: 2500px) and (max-width: 3000px) {
+    .btn-outline-primary {
+        width: 130px;
+    }
+}
+
 
 @media (max-width: 1300px) {
 
