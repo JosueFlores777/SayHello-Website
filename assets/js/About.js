@@ -131,8 +131,6 @@ function ejecutarAnimacion() {
         document.querySelector('.draw-on-scroll2').style.right = '50%';
     } else {
         document.querySelector('.draw-on-scroll-my').style.width = '0';
-       document.querySelector('.draw-on-scroll').style.width = '0';
-        document.querySelector('.draw-on-scroll2').style.right = '0';
         document.querySelector('.draw-on-scroll6').style.width = '0';
     }
 }
