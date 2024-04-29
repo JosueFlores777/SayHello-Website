@@ -1462,9 +1462,15 @@ swiper-slide {
     background-color: #ad0746 !important;
 }
 
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    transition: 0.8s  !important;
+}
+
 .btn-outline-primary {
     height: 20px;
     width: 50px;
+    transition: 0.8s  !important;
     --bs-btn-bg: #fee5f2 !important;
     --bs-btn-color: #fee5f2 !important;
     --bs-btn-border-color: #fee5f2 !important;
@@ -2595,6 +2601,10 @@ footer button {
 
     .marginTopContaTitleContact {
         width: 90%;
+    }
+
+    .finalFooter {
+        padding-bottom: 0
     }
 
 }
