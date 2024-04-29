@@ -644,7 +644,14 @@ nav input {
     color: #fff;
 }
 
-.btn-home:hover {
+.btn-contact, .btn-contact:hover {
+    margin: 45px 0;
+    background-color: #f0126a;
+    width: 100% !important;
+    color: #fff;
+}
+
+.btn-home:hover, .btn-contact:hover {
     background-color: #f0126a;
     width: 155px;
     color: #fff;
