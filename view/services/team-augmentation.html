@@ -402,40 +402,30 @@
             ejecutarAnimacion();
         });
 
-        const sr5 = ScrollReveal({
+        const scrollRevealConfig = {
             duration: 2000,
             delay: 300,
+            reset: true
+        };
+
+        const sr5 = ScrollReveal(scrollRevealConfig);
+        sr5.reveal(".animatioTopScr2, .animatioTopScr", {
             origin: "top",
-            distance: "130px",
-            reset: true
+            interval: 200, distance: "230px"
+
         });
 
-        sr5.reveal(".animatioTopScr2", {
-            origin: "top",
-            interval: 200,
-            reset: true
-        });
-
-        sr5.reveal(".animatioTopScr", {
-            origin: "top",
-            interval: 200,
-            reset: true
-        });
-
-        const sr6 = ScrollReveal({
-            duration: 2000,
-            delay: 300,
-            origin: "bottom",
-            distance: "230px",
-            reset: true
-        });
-
+        const sr6 = ScrollReveal({ ...scrollRevealConfig, origin: "bottom", distance: "230px" });
         sr6.reveal(".contenServiceFinal", {
             origin: "bottom",
-            interval: 200,
-            reset: true
+            interval: 200
         });
 
+        const sr7 = ScrollReveal({ ...scrollRevealConfig, origin: "top", distance: "60px" });
+        sr7.reveal(".nameService", {
+            origin: "top",
+            interval: 200
+        });
 
         document.addEventListener("DOMContentLoaded", function () {
             var bottomNav = document.getElementById('bottom-nav');

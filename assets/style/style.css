@@ -2578,7 +2578,7 @@ footer button {
 @media (max-width: 478px) {
 
     .carrucelHome .card-body {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .btn-outline-primary {
