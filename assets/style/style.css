@@ -2145,9 +2145,35 @@ footer button {
         margin: 2rem 0;
     }
 }
+@media screen and (min-width: 765px) and (max-width: 1092px){
+    swiper-slide {
+        width: 550px;
+        height: 500px;
+    }
+} 
+
+@media screen and (min-width: 748px) and (max-width: 766px){
+    swiper-slide {
+        width: 550px;
+        height: 70vh;
+    }
+
+
+} 
+
+@media screen and (min-width: 600px) and (max-width: 748px){
+    swiper-slide {
+        width: 400px;
+        height: 100%;
+    }
+} 
+
 
 @media (max-width: 835px) {
-
+    .carrucelHome .card-body {
+        margin-top: 25px;
+        padding: 0;
+    }
     .cardPageTestiHome {
 
         width: 80%;
@@ -2157,6 +2183,10 @@ footer button {
     .carrucelHome {
         /* height: 75vh;*/
         height: auto;
+    }
+
+    .fondoPart3Home{
+        margin: 65px 0;
     }
 
     .carrucul {
@@ -2538,6 +2568,7 @@ footer button {
 
 }
 
+
 @media screen and (min-width: 420px) and (max-width: 604px) {
     .card-bodyhome {
         margin-top: 11%;
@@ -2910,5 +2941,9 @@ footer button {
 
     .testimonioAboutBootm {
         margin-bottom: 130%;
+    }
+
+    .fondoPart3Home, .carrucelHome {
+         height: auto; 
     }
 }
