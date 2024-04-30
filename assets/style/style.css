@@ -2028,6 +2028,11 @@ footer button {
     .marginTopContaTitleContact {
         width: 60%;
     }
+
+    .contenService {
+        margin: 0;
+        margin-bottom: 25px;
+    }
 }
 
 @media(max-width:1025px) {
