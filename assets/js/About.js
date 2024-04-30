@@ -70,7 +70,7 @@ $(window).scroll(function () {
                 $("figure:nth-child(22)").css("transform", "translateY(" + (parallax-250) + "px)");
                 $("figure:nth-child(24)").css("transform", "translateY(" + (parallax-250) + "px)");
            
-            }else if ($(window).width() <= 658) {
+            }else if ($(window).width() <= 550) {
                 $("figure:nth-child(2)").css("transform", "none");
                 $("figure:nth-child(4)").css("transform", "none");
                 $("figure:nth-child(6)").css("transform", "none");

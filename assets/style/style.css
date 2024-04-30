@@ -1883,6 +1883,7 @@ footer button {
     }
 
     .work-card {
+        
         font-size: 20px !important;
     }
 
@@ -2060,7 +2061,7 @@ footer button {
     }
 
     .textPrinciService {
-        margin-left: -5px !important;
+        margin-left: -5px ;
         width: 60%;
     }
 }
@@ -2357,6 +2358,13 @@ footer button {
         width: 96%;
         margin: 13px;
         height: 40vh;
+    }
+
+    .work-card {
+        margin-left: -5px;
+    }
+    .textPrinciService{
+        margin-left: 15px;
     }
 }
 
