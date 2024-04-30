@@ -841,6 +841,10 @@ nav input {
     --_animation-duration: 60s;
 }
 
+.titleCarruWorkHome {
+    font-family: var(--Urbanist);
+}
+
 @keyframes scroll {
     to {
         transform: translate(calc(-50% - 0.5rem));
@@ -1866,11 +1870,12 @@ footer button {
     .work-card {
         font-size: 20px !important;
     }
-    .work-title{
+
+    .work-title {
         font-size: 50px !important;
     }
 
-    .titleMainWork  h1{
+    .titleMainWork h1 {
         font-size: 65px !important;
     }
 
@@ -2349,7 +2354,10 @@ footer button {
         margin-top: 10px;
     }
 
-
+    
+    .titleCarruWorkHome {
+        font-size: 45px;
+    }
 }
 
 @media (max-width: 625px) {
@@ -2503,12 +2511,15 @@ footer button {
         font-size: 16px;
         color: var(--text-White);
     }
-    #titleModal{
+
+    #titleModal {
         font-size: 35px !important;
     }
+
     #titleWork {
         font-size: 25px;
     }
+
 }
 
 @media screen and (min-width: 420px) and (max-width: 604px) {
@@ -2539,6 +2550,7 @@ footer button {
     .textHome {
         margin-top: 30%;
     }
+
 
     .textHome h1 {
         font-size: 34px;
