@@ -634,7 +634,7 @@ nav input {
 .textHome h1 {
     font-size: 44px;
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
     font-family: var(--FontspringDemo);
     font-weight: 400;
     margin-bottom: 25px;
@@ -2033,6 +2033,22 @@ footer button {
         margin: 0;
         margin-bottom: 25px;
     }
+
+    .textHome h1 {
+        font-size: 60px;
+    }
+
+    .textHome p {
+        font-size: 20px;
+    }
+
+    .work-card{
+        margin-left: -5px;
+    }
+    .textPrinciService {
+        margin-left: -5px !important;
+        width: 60%;
+    }
 }
 
 @media(max-width:1025px) {
@@ -2071,7 +2087,12 @@ footer button {
 @media(max-width:992px) {
 
     .textHome h1 {
-        width: 60%;
+        width: 70%;
+        font-size: 50px;
+    }
+
+    .textHome p {
+        font-size: 16px;
     }
 
     .navbar-collapse {
@@ -2356,7 +2377,8 @@ footer button {
     }
 
     .textPrinciService {
-        width: 70%;
+        margin-top: -10px !important;
+        width: auto;
     }
 
     .footerConter {
@@ -2413,7 +2435,7 @@ footer button {
     }
 
     .textHome h1 {
-        width: 80%;
+        width: auto;
     }
 
     .fondoPart3Home,
@@ -2447,11 +2469,8 @@ footer button {
     }
 
     .margenTopService {
+       
         margin-top: 45% !important;
-    }
-
-    .textPrinciService {
-        width: 70%;
     }
 
     .cardContHome {

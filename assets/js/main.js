@@ -112,3 +112,71 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const videoContainer = document.querySelector('.video-container');
+  const videoIframe = document.querySelector('.video-container iframe');
+
+  videoIframe.style.width = '450px';
+  videoIframe.style.height = '250px';
+  videoIframe.style.transform = 'scale(1)';
+
+  const sr = ScrollReveal({
+    duration: 2000,
+    delay: 300,
+    origin: "bottom",
+    distance: "180px",
+    reset: true
+  });
+
+  sr.reveal(".animationScroll", {
+    origin: "bottom",
+    interval: 200,
+    reset: true
+  });
+
+  window.addEventListener('scroll', function () {
+    var scrollPosition = window.scrollY;
+    var scaleFactor = Math.min(scrollPosition / 400, 1);
+
+    videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
+    videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+    videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+  });
+});
+
+const sr1 = ScrollReveal({
+  duration: 2000,
+  delay: 300,
+  origin: "bottom",
+  distance: "480px",
+  reset: true
+});
+
+sr1.reveal(".carrucelHome", {
+  origin: "bottom",
+  interval: 200,
+  reset: true
+});
+sr1.reveal(".mySwiper", {
+  origin: "bottom",
+  interval: 200,
+  reset: true
+});
+
+
+
+var showMegaCheckbox = document.querySelector('.mobile-item');
+var megaBox = document.querySelector('.mega-box');
+
+showMegaCheckbox.addEventListener('change', function () {
+  if (this.checked) {
+    megaBox.style.display = 'block';
+  } else {
+    megaBox.style.transition = 'all 0.0001s ease;';
+    megaBox.style.opacity = '0';
+    setTimeout(function () {
+      megaBox.style.display = 'none';
+    }, 300);
+  }
+});
