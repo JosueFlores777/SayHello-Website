@@ -1015,6 +1015,8 @@ swiper-slide {
 }
 
 .contenService {
+    margin:0 15%;
+    margin-bottom: 25px;
     height: auto;
 }
 
@@ -2358,6 +2360,15 @@ footer button {
     .titleCarruWorkHome {
         font-size: 45px;
     }
+
+    .contenService{
+        margin: 0 0;
+    }
+
+    .principalServices {
+      margin-bottom: 15%;
+    }
+    
 }
 
 @media (max-width: 625px) {
