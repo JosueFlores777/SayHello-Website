@@ -1208,8 +1208,8 @@ swiper-slide {
 }
 
 
-.workImag{
-    height: 40vh !important;
+.workImag {
+    height: 65vh !important;
 }
 
 
@@ -1856,6 +1856,42 @@ footer button {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 2600px) {
+
+    .textHome h1 {
+        font-size: 74px;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .work-card {
+        font-size: 20px !important;
+    }
+    .work-title{
+        font-size: 50px !important;
+    }
+
+    .titleMainWork  h1{
+        font-size: 65px !important;
+    }
+
+    #workcardModal {
+        font-size: 25px !important;
+    }
+
+    .titleCarruWorkHome {
+        font-size: 65px;
+    }
+
+    #titleModal {
+        font-size: 55px !important;
+    }
+
+    .textHome p {
+        font-size: 30px;
+        width: 70%;
+        margin: 0px auto 25px;
+    }
+
     .part2Home {
         margin-top: 100px;
         margin-bottom: 130px;
@@ -2168,7 +2204,7 @@ footer button {
         margin: 28px 0 1.9rem 0;
     }
 
-    .workImag{
+    .workImag {
         height: auto !important;
     }
 }
@@ -2309,7 +2345,7 @@ footer button {
         margin: 15px;
     }
 
-    .titleTestimService{
+    .titleTestimService {
         margin-top: 10px;
     }
 
@@ -2466,6 +2502,12 @@ footer button {
     .textTestiModal {
         font-size: 16px;
         color: var(--text-White);
+    }
+    #titleModal{
+        font-size: 35px !important;
+    }
+    #titleWork {
+        font-size: 25px;
     }
 }
 
