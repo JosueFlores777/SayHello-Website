@@ -147,6 +147,7 @@ nav .wrapper {
     visibility: visible;
 }
 
+
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
     transform: translateY(0px);
@@ -244,6 +245,10 @@ nav .wrapper {
 
 
 @media screen and (max-width: 970px) {
+    .mega-box .content {
+        background: none;
+    }
+
     .btn2 {
         display: none !important;
     }
@@ -401,6 +406,14 @@ nav .wrapper {
 
     .navtext2 {
         display: none;
+    }
+
+    .nav-links li:hover .drop-menu,
+    .nav-links li:hover .mega-box {
+        transition: all -21s ease;
+        top: 80px;
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -1015,7 +1028,7 @@ swiper-slide {
 }
 
 .contenService {
-    margin:0 15%;
+    margin: 0 15%;
     margin-bottom: 25px;
     height: auto;
 }
@@ -2042,9 +2055,10 @@ footer button {
         font-size: 20px;
     }
 
-    .work-card{
+    .work-card {
         margin-left: -5px;
     }
+
     .textPrinciService {
         margin-left: -5px !important;
         width: 60%;
@@ -2166,28 +2180,29 @@ footer button {
         margin: 2rem 0;
     }
 }
-@media screen and (min-width: 765px) and (max-width: 1092px){
+
+@media screen and (min-width: 765px) and (max-width: 1092px) {
     swiper-slide {
         width: 550px;
         height: 500px;
     }
-} 
+}
 
-@media screen and (min-width: 748px) and (max-width: 766px){
+@media screen and (min-width: 748px) and (max-width: 766px) {
     swiper-slide {
         width: 550px;
         height: 70vh;
     }
 
 
-} 
+}
 
-@media screen and (min-width: 600px) and (max-width: 748px){
+@media screen and (min-width: 600px) and (max-width: 748px) {
     swiper-slide {
         width: 400px;
         height: 100%;
     }
-} 
+}
 
 
 @media (max-width: 835px) {
@@ -2195,6 +2210,7 @@ footer button {
         margin-top: 25px;
         padding: 0;
     }
+
     .cardPageTestiHome {
 
         width: 80%;
@@ -2206,7 +2222,7 @@ footer button {
         height: auto;
     }
 
-    .fondoPart3Home{
+    .fondoPart3Home {
         margin: 65px 0;
     }
 
@@ -2413,19 +2429,19 @@ footer button {
         margin-top: 10px;
     }
 
-    
+
     .titleCarruWorkHome {
         font-size: 45px;
     }
 
-    .contenService{
+    .contenService {
         margin: 0 0;
     }
 
     .principalServices {
-      margin-bottom: 15%;
+        margin-bottom: 15%;
     }
-    
+
 }
 
 @media (max-width: 625px) {
@@ -2469,7 +2485,7 @@ footer button {
     }
 
     .margenTopService {
-       
+
         margin-top: 45% !important;
     }
 
@@ -2962,7 +2978,8 @@ footer button {
         margin-bottom: 130%;
     }
 
-    .fondoPart3Home, .carrucelHome {
-         height: auto; 
+    .fondoPart3Home,
+    .carrucelHome {
+        height: auto;
     }
 }
