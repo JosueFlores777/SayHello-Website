@@ -22,19 +22,37 @@
 
 /*Ojo*/
 
+.GridParallax {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  border-radius: 35px;
+  margin: 0;
+}
 .contedorGrid {
   position: absolute;
   background-color: #ffffff !important;
   padding: 1px;
+ 
+  margin-bottom: 65px;
   border-radius: 45px;
   text-align: center;
   display: flex;
   margin: 0 auto;
   align-items: center;
-  margin-top: -90px !important;
+ /* margin-top: -90px !important;*/
   /*  margin-left: 220px;*/
 
-  margin-left: 35px;
+  /*margin-left: 35px;*/
+  margin-bottom: 25px; 
 }
 
 .marginGeneraltes {
@@ -87,17 +105,7 @@
 }
 
 
-figure {
-  border-radius: 35;
-  margin: 0;
-}
 
-.GridParallax {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
-}
 
 /* Define las posiciones de las figuras */
 figure:nth-child(1) {
