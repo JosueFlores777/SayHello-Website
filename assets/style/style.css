@@ -503,6 +503,10 @@ nav input {
         margin: 15px 0;
         margin-left: 0 !important;
     }
+
+   .navbar {
+        --bs-navbar-padding-x: 1;
+    }
 }
 
 .margeTex1 {
@@ -2914,6 +2918,10 @@ footer button {
 
     .imageOurFon {
         max-width: 290px !important;
+    }
+
+    .navbar .container-fluid {
+        height: 28vh;
     }
 }
 
