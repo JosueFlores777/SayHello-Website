@@ -1985,7 +1985,7 @@ footer button {
     .textHome h1 {
         font-size: 74px;
         margin: 0 auto;
-        width: 50%;
+        width: 60%;
     }
 
     .work-card {
@@ -2453,6 +2453,11 @@ footer button {
     .textAboutSect2 {
         margin: 3rem 0 1.9rem 0;
     }
+
+    .textHome h1 {
+        width: 90%;
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 825px) {
@@ -2679,6 +2684,12 @@ footer button {
 
     .principalServices {
         margin-bottom: 15%;
+    }
+    .textHome h1{
+        font-size: 45px;
+    }
+    .video-container {
+         margin-top: 20px; 
     }
 
 }
@@ -2983,7 +2994,7 @@ footer button {
     }
 
     .video-container {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     /* Page Work*/
