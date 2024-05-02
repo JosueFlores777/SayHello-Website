@@ -27,31 +27,39 @@ body {
     position: absolute;
     width: auto;
     height: auto;
-    min-width: 500px;
-    min-height: 500px;
+
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
 }
 
 .top-left {
+    min-width: 280px;
+    min-height: 280px;
     top: 0;
     left: 0;
-    background-image: url('../../public/recurs/sayhello-branding-vector-line-02.png'); /* Sustituye con la ruta de tu imagen */
+    background-image: url('../../public/recurs/sayhello-branding-vector-line-02.png');
+    /* Sustituye con la ruta de tu imagen */
 }
 
 .top-right {
+    min-width: 280px;
+    min-height: 280px;
     top: 0;
     right: 0;
     background-image: url('../../public/recurs/sayhello-branding-vector-line-01.png');
 }
 
 .bottom-left {
+    min-width: 500px;
+    min-height: 500px;
     bottom: 0;
     left: 0;
     background-image: url('../../public/recurs/sayhello-branding-vector-line-03.png');
 }
 
 .bottom-right {
+    min-width: 500px;
+    min-height: 500px;
     bottom: 0;
     right: 0;
     background-image: url('../../public/recurs/sayhello-branding-vector-line-04.png');
@@ -511,14 +519,15 @@ nav input {
         min-width: 250px;
         min-height: 250px;
         background-repeat: no-repeat;
-        background-size: 100% 100%; 
-    }
-    #bottom-nav .d-flex{
-        display: block !important;
-       
+        background-size: 100% 100%;
     }
 
-    #bottom-nav  .btn-home {
+    #bottom-nav .d-flex {
+        display: block !important;
+
+    }
+
+    #bottom-nav .btn-home {
         background-color: #696667a8;
         width: 100%;
         color: #fff;
@@ -532,7 +541,7 @@ nav input {
     }
 
     .margeTex1 {
-        margin-left: 0 !important; 
+        margin-left: 0 !important;
     }
 
     .navbar .container-fluid {
@@ -540,12 +549,14 @@ nav input {
         border-radius: 4px;
         background-color: #343333a7;
     }
-    #bottom-nav .margeTex1,#bottom-nav .margeTex2 {
+
+    #bottom-nav .margeTex1,
+    #bottom-nav .margeTex2 {
         margin: 15px 0;
         margin-left: 0 !important;
     }
 
-   .navbar {
+    .navbar {
         --bs-navbar-padding-x: 1;
     }
 }
@@ -727,7 +738,7 @@ nav input {
 .textHome h1 {
     font-size: 44px;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
     font-family: var(--FontspringDemo);
     font-weight: 400;
     margin-bottom: 25px;
@@ -735,6 +746,9 @@ nav input {
 
 
 .textHome p {
+    font-size: 16px;
+    font-family: var(--Urbanist);
+    font-weight: 400;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -830,6 +844,7 @@ nav input {
 .card-text:last-child {
     margin-bottom: 15px;
 }
+
 .card-bodyhome p {
     font-size: 19px;
     margin-left: 20px;
@@ -838,7 +853,7 @@ nav input {
 }
 
 .card-bodyhome {
-   /* margin-top: 20%;*/
+    /* margin-top: 20%;*/
     padding-left: 10px;
 }
 
@@ -1999,7 +2014,7 @@ footer button {
     }
 
     .textHome p {
-        font-size: 30px;
+        font-size: 20px;
         width: 70%;
         margin: 0px auto 25px;
     }
@@ -2113,10 +2128,39 @@ footer button {
         width: 100px;
     }
 
+    .textHome {
+        margin-top: 2%;
+        color: var(--text-White);
+    }
+
     swiper-slide {
         width: 1100px;
         height: auto;
     }
+
+    .top-left {
+        min-width: 340px;
+        min-height: 340px;
+    }
+
+    .top-right {
+        min-width: 340px;
+        min-height: 340px;
+
+    }
+
+    .bottom-left {
+        min-width: 700px;
+        min-height: 700px;
+
+    }
+
+    .bottom-right {
+        min-width: 700px;
+        min-height: 700px;
+
+    }
+
 }
 
 
@@ -2124,9 +2168,33 @@ footer button {
     .btn-outline-primary {
         width: 130px;
     }
+
     swiper-slide {
         width: 1200px;
         height: auto;
+    }
+
+    .top-left {
+        min-width: 440px;
+        min-height: 440px;
+    }
+
+    .top-right {
+        min-width: 440px;
+        min-height: 440px;
+
+    }
+
+    .bottom-left {
+        min-width: 800px;
+        min-height: 800px;
+
+    }
+
+    .bottom-right {
+        min-width: 800px;
+        min-height: 800px;
+
     }
 }
 
@@ -2213,7 +2281,7 @@ footer button {
 @media(max-width:992px) {
 
     .textHome h1 {
-        width: 70%;
+        width: 80%;
         font-size: 50px;
     }
 
@@ -2257,7 +2325,7 @@ footer button {
     }
 
     .card-bodyhome {
-       /* margin-top: 30%;*/
+        /* margin-top: 30%;*/
         padding: 8px;
     }
 
@@ -2297,6 +2365,29 @@ footer button {
     swiper-slide {
         width: 550px;
         height: 500px;
+    }
+
+    .top-left {
+        min-width: 240px;
+        min-height: 240px;
+    }
+
+    .top-right {
+        min-width: 240px;
+        min-height: 240px;
+
+    }
+
+    .bottom-left {
+        min-width: 400px;
+        min-height: 400px;
+
+    }
+
+    .bottom-right {
+        min-width: 400px;
+        min-height: 400px;
+
     }
 }
 
@@ -2351,7 +2442,7 @@ footer button {
     }
 
     .card-bodyhome {
-       /* margin-top: 35%;*/
+        /* margin-top: 35%;*/
         padding: 8px;
     }
 
@@ -2478,10 +2569,33 @@ footer button {
     .textPrinciService {
         margin-left: 15px;
     }
+
     .video-container iframe {
         width: autoh !important;
         height: 650px;
         transition: width 0.5s, height 0.5s, transform 0.5s;
+    }
+
+    .top-left {
+        min-width: 250px;
+        min-height: 250px;
+    }
+
+    .top-right {
+        min-width: 250px;
+        min-height: 250px;
+
+    }
+
+    .bottom-left {
+        min-width: 360px;
+        min-height: 360px;
+
+    }
+
+    .bottom-right {
+        min-width: 360px;
+        min-height: 360px;
     }
 }
 
@@ -2490,7 +2604,7 @@ footer button {
         width: auto;
     }
 
-  /*  .card-bodyhome {
+    /*  .card-bodyhome {
         margin-top: 15%;
     }*/
 
@@ -2578,7 +2692,7 @@ footer button {
         min-width: 200px;
         min-height: 200px;
         background-repeat: no-repeat;
-        background-size: 100% 100%; 
+        background-size: 100% 100%;
     }
 
     .btn-outline-primary {
@@ -2668,6 +2782,28 @@ footer button {
 
     .testimonioModal {
         padding: 25px 0;
+    }
+
+    .top-left {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .top-right {
+        min-width: 200px;
+        min-height: 200px;
+
+    }
+
+    .bottom-left {
+        min-width: 360px;
+        min-height: 360px;
+
+    }
+
+    .bottom-right {
+        min-width: 360px;
+        min-height: 360px;
     }
 }
 
@@ -2847,7 +2983,7 @@ footer button {
     }
 
     .video-container {
-        margin-top: 25px;
+        margin-top: 0;
     }
 
     /* Page Work*/
@@ -2969,6 +3105,29 @@ footer button {
         margin: 15px;
     }
 
+
+    .top-left {
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .top-right {
+        min-width: 200px;
+        min-height: 200px;
+
+    }
+
+    .bottom-left {
+        min-width: 230px;
+        min-height: 330px;
+
+    }
+
+    .bottom-right {
+        min-width: 230px;
+        min-height: 330px;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -2996,6 +3155,30 @@ footer button {
         height: 60vh;
     }
 */
+
+
+
+.top-left {
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.top-right {
+    min-width: 200px;
+    min-height: 200px;
+
+}
+
+.bottom-left {
+    min-width: 200px;
+    min-height: 240px;
+
+}
+
+.bottom-right {
+    min-width: 200px;
+    min-height: 240px;
+}
 }
 
 @media(max-width: 400px) {
@@ -3010,6 +3193,8 @@ footer button {
     .navbar .container-fluid {
         height: 25vh;
     }
+
+
 }
 
 @media (max-width: 378px) {
@@ -3067,10 +3252,32 @@ footer button {
     .wrapper .btn {
         margin-left: 115px;
     }
+
     .navbar .container-fluid {
         height: 23vh;
     }
- 
+
+    .top-left {
+        min-width: 200px;
+        min-height: 200px;
+    }
+    
+    .top-right {
+        min-width: 200px;
+        min-height: 200px;
+    
+    }
+    
+    .bottom-left {
+        min-width: 180px;
+        min-height: 260px;
+    
+    }
+    
+    .bottom-right {
+        min-width: 180px;
+        min-height: 260px;
+    }
 }
 
 @media (max-width: 360px) {
