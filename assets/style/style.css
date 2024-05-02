@@ -66,9 +66,6 @@ nav .wrapper {
 
 
 .wrapper .logo a {
-    color: #f2f2f2;
-    font-size: 30px;
-    font-weight: 600;
     text-decoration: none;
 }
 
@@ -1674,6 +1671,7 @@ footer {
 }
 
 .footerTitle {
+    font-family: var(--AllRoundGothic);
     font-size: 65px;
 }
 
@@ -2037,17 +2035,33 @@ footer button {
     .btn-outline-primary {
         width: 87px;
     }
+
+    swiper-slide {
+        width: 900px;
+        height: 700px;
+    }
 }
 
 @media screen and (min-width: 1511px) and (max-width: 1620px) {
     .btn-outline-primary {
         width: 92px;
     }
+
+    swiper-slide {
+        width: 1050px;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 1621px) and (max-width: 2500px) {
     .btn-outline-primary {
         width: 100px;
+    }
+
+    swiper-slide {
+        width: 1100px;
+        height: auto;
     }
 }
 
@@ -2055,6 +2069,10 @@ footer button {
 @media screen and (min-width: 2500px) and (max-width: 3000px) {
     .btn-outline-primary {
         width: 130px;
+    }
+    swiper-slide {
+        width: 1200px;
+        height: auto;
     }
 }
 

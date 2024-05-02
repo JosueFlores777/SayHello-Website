@@ -113,6 +113,8 @@ window.addEventListener('scroll', function() {
 });
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const videoContainer = document.querySelector('.video-container');
   const videoIframe = document.querySelector('.video-container iframe');
@@ -135,6 +137,20 @@ document.addEventListener('DOMContentLoaded', function () {
     reset: true
   });
 
+
+  const sr12 = ScrollReveal({
+    duration: 2000,
+    delay: 800,
+    origin: "bottom",
+    distance: "680px",
+    reset: true
+  });
+  
+  sr12.reveal(".carrucelHome", {
+    origin: "bottom",
+    interval: 200,
+    reset: true
+  });
   window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
     var scaleFactor = Math.min(scrollPosition / 400, 1);
@@ -144,26 +160,22 @@ document.addEventListener('DOMContentLoaded', function () {
     videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
   });
 });
-
+/*
 const sr1 = ScrollReveal({
   duration: 2000,
   delay: 300,
   origin: "bottom",
   distance: "480px",
   reset: true
-});
+});*/
 
-sr1.reveal(".carrucelHome", {
-  origin: "bottom",
-  interval: 200,
-  reset: true
-});
+/*
 sr1.reveal(".mySwiper", {
   origin: "bottom",
   interval: 200,
   reset: true
 });
-
+*/
 
 
 var showMegaCheckbox = document.querySelector('.mobile-item');
