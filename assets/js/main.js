@@ -35,48 +35,68 @@ function addAnimation() {
 /*Card TestymoHome */
 const cardStack = document.querySelector('.cardPageTestiHome-stack');
 let cards = Array.from(cardStack.children);
+let intervalId;
 
 function startFlipping() {
-  // Array de colores para cada tarjeta
-  const colors = ['#805313', '#e1b911', '#f8ef70'];
-
-  setInterval(() => {
-    const lastCard = cards.pop();
-    cards.unshift(lastCard);
-    cards.forEach((card, index) => {
-      const newIndex = (index + 1) % cards.length;
-      card.style.top = `${newIndex * -50}px`;
-      card.style.transform = `scale(${1 - newIndex * 0.09})`;
-      card.style.zIndex = cards.length - newIndex;
-      card.style.backgroundColor = colors[newIndex];
-      if (index === 1) {
-        card.style.backgroundColor = '#f8ef70';
-      }
-      if (newIndex === 0) {
-        card.classList.add('animate__animated', 'animate__zoomInDown');
-        setTimeout(() => {
-          card.classList.remove('animate__animated', 'animate__zoomInDown');
-        }, 1000); 
-        
-      }
-      if (newIndex === 1) {
-        card.classList.add('animate__animated', 'animate__fadeIn');
-        setTimeout(() => {
-          card.classList.remove('animate__animated', 'animate__fadeIn');
-        }, 500); 
-      }
-      if (newIndex === 2) {
-        card.classList.add('animate__animated', 'animate__fadeIn');
-        setTimeout(() => {
-          card.classList.remove('animate__animated', 'animate__fadeIn');
-        }, 500); 
-      }
-    });
+  intervalId = setInterval(() => {
+    moveLastCardToFront();
   }, 4100);
 }
 
+function moveLastCardToFront() {
+  const lastCard = cards.pop();
+  cards.unshift(lastCard);
+  updateCardStyles();
+}
+
+function setupCards() {
+  cards.forEach((card, index) => {
+    card.style.top = `${index * -50}px`;
+    card.style.transform = `scale(${1 - index * 0.09})`;
+    card.style.zIndex = cards.length - index;
+    card.addEventListener('click', () => {
+      bringToFront(card);
+    });
+  });
+}
+
+function bringToFront(selectedCard) {
+
+  clearInterval(intervalId);
+
+  cards = cards.filter(card => card !== selectedCard);
+  cards.unshift(selectedCard);
+  updateCardStyles();
+
+ setTimeout(startFlipping, 2000); 
+}
+
+function updateCardStyles() {
+  cards.forEach((card, index) => {
+    card.style.top = `${index * -50}px`;
+    card.style.transform = `scale(${1 - index * 0.09})`;
+    card.style.zIndex = cards.length - index;
+    card.style.backgroundColor = index === 0 ? '#805313' : (index === 1 ? '#e1b911' : '#f8ef70');
+    applyAnimation(card, index);
+  });
+}
+
+function applyAnimation(card, index) {
+  card.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__fadeIn');
+  if (index === 0) {
+    card.classList.add('animate__animated', 'animate__zoomInDown');
+    setTimeout(() => card.classList.remove('animate__animated', 'animate__zoomInDown'), 1000);
+  } else {
+    card.classList.add('animate__animated', 'animate__fadeIn');
+    setTimeout(() => card.classList.remove('animate__animated', 'animate__fadeIn'), 500);
+  }
+}
+
+setupCards();
 startFlipping();
 
+
+/* */
 var lastScrollTop = 0;
 
 function handleVideoZoom() {
