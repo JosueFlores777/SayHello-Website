@@ -2921,7 +2921,7 @@ footer button {
     }
 
     .navbar .container-fluid {
-        height: 28vh;
+        height: 25vh;
     }
 }
 
@@ -2980,6 +2980,10 @@ footer button {
     .wrapper .btn {
         margin-left: 115px;
     }
+    .navbar .container-fluid {
+        height: 23vh;
+    }
+ 
 }
 
 @media (max-width: 360px) {
