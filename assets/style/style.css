@@ -22,6 +22,41 @@ body {
 
 /**/
 
+
+.corner-image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 500px;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    background-image: url('../../public/recurs/sayhello-branding-vector-line-02.png'); /* Sustituye con la ruta de tu imagen */
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    background-image: url('../../public/recurs/sayhello-branding-vector-line-01.png');
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    background-image: url('../../public/recurs/sayhello-branding-vector-line-03.png');
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    background-image: url('../../public/recurs/sayhello-branding-vector-line-04.png');
+}
+
 /*nav*/
 .fixed-topM {
     position: fixed;
@@ -469,6 +504,15 @@ nav input {
 
 
 @media (max-width: 850px) {
+    .corner-image {
+        position: absolute;
+        width: auto;
+        height: auto;
+        min-width: 250px;
+        min-height: 250px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+    }
     #bottom-nav .d-flex{
         display: block !important;
        
@@ -751,6 +795,7 @@ nav input {
 }
 
 .cardContHome {
+    justify-content: end;
     height: 160px;
 }
 
@@ -782,9 +827,18 @@ nav input {
     margin-top: 0 !important;
 }
 
+.card-text:last-child {
+    margin-bottom: 15px;
+}
+.card-bodyhome p {
+    font-size: 19px;
+    margin-left: 20px;
+    color: #a87c22;
+    font-family: var(--Urbanist);
+}
 
 .card-bodyhome {
-    margin-top: 20%;
+   /* margin-top: 20%;*/
     padding-left: 10px;
 }
 
@@ -2203,7 +2257,7 @@ footer button {
     }
 
     .card-bodyhome {
-        margin-top: 30%;
+       /* margin-top: 30%;*/
         padding: 8px;
     }
 
@@ -2297,7 +2351,7 @@ footer button {
     }
 
     .card-bodyhome {
-        margin-top: 35%;
+       /* margin-top: 35%;*/
         padding: 8px;
     }
 
@@ -2424,6 +2478,11 @@ footer button {
     .textPrinciService {
         margin-left: 15px;
     }
+    .video-container iframe {
+        width: autoh !important;
+        height: 650px;
+        transition: width 0.5s, height 0.5s, transform 0.5s;
+    }
 }
 
 @media (max-width: 700px) {
@@ -2431,9 +2490,9 @@ footer button {
         width: auto;
     }
 
-    .card-bodyhome {
+  /*  .card-bodyhome {
         margin-top: 15%;
-    }
+    }*/
 
     .video-container iframe {
         width: auto !important;
@@ -2511,6 +2570,16 @@ footer button {
 }
 
 @media (max-width: 625px) {
+
+    .corner-image {
+        position: absolute;
+        width: auto;
+        height: auto;
+        min-width: 200px;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+    }
 
     .btn-outline-primary {
         width: 54px;

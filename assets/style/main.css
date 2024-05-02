@@ -113,3 +113,10 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Fontspring Demo';
+    src: url('https://usayhello.com/demowebsite/assets/fonts/Fontspring-DEMO-allroundgothic-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
