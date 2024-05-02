@@ -470,6 +470,41 @@ nav input {
     z-index: 1030;
 }
 
+
+@media (max-width: 850px) {
+    #bottom-nav .d-flex{
+        display: block !important;
+       
+    }
+
+    #bottom-nav  .btn-home {
+        background-color: #696667a8;
+        width: 100%;
+        color: #fff;
+    }
+
+
+    #bottom-nav .textColor-white2 {
+        border-radius: 4px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .margeTex1 {
+        margin-left: 0 !important; 
+    }
+
+    .navbar .container-fluid {
+        height: 19vh;
+        border-radius: 4px;
+        background-color: #343333a7;
+    }
+    #bottom-nav .margeTex1,#bottom-nav .margeTex2 {
+        margin: 15px 0;
+        margin-left: 0 !important;
+    }
+}
+
 .margeTex1 {
     margin-left: 10% !important;
 }
@@ -1883,7 +1918,7 @@ footer button {
     }
 
     .work-card {
-        
+
         font-size: 20px !important;
     }
 
@@ -2061,7 +2096,7 @@ footer button {
     }
 
     .textPrinciService {
-        margin-left: -5px ;
+        margin-left: -5px;
         width: 60%;
     }
 }
@@ -2363,7 +2398,8 @@ footer button {
     .work-card {
         margin-left: -5px;
     }
-    .textPrinciService{
+
+    .textPrinciService {
         margin-left: 15px;
     }
 }
