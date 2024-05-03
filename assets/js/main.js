@@ -48,7 +48,7 @@ const isMobile = window.innerWidth <= 768;
 
 if (isMobile) {
 
-  scrollerHomeInner.style.animationPlayState = "running";
+  
 } else {
   scrollerHomeInner.addEventListener("mouseenter", () => {
     scrollerHomeInner.style.animationPlayState = "running";
