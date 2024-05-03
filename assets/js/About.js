@@ -30,9 +30,9 @@ $(window).scroll(function () {
   var scrollNew = scrollTop;
 
   if (sectionAbout3Top <= (scrollTop + windowHeight)) {
-    var parallax = (scrollNew / 6);
+    var parallax = (scrollNew / 4);
     if ($(window).width() <= 1024) {
-
+      var parallax = (scrollNew / 5);
       if ($(window).width() <= 845) {
         $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(4)").css("transform", "translateY(" + (parallax - 250) + "px)");
@@ -66,33 +66,34 @@ $(window).scroll(function () {
         $("figure:nth-child(24)").css("transform", "none");
 
       } else {
-        $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(5)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(11)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(14)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(20)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        var parallax = (scrollNew / 5);
+        $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(5)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(11)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(14)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 360) + "px)");
+      /*  $("figure:nth-child(20)").css("transform", "translateY(" + (parallax - 250) + "px)");*/
        
-        $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(26)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(29)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(26)").css("transform", "translateY(" + (parallax - 360) + "px)");
+        $("figure:nth-child(29)").css("transform", "translateY(" + (parallax - 360) + "px)");
 
       }
     } else {
-      $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(4)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(6)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(10)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(12)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(13)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(15)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(19)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(21)").css("transform", "translateY(" + (parallax - 250) + "px)");
-      $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(4)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(6)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(10)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(12)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(13)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(15)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(19)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(21)").css("transform", "translateY(" + (parallax - 420) + "px)");
+      $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 420) + "px)");
   
     }
 
