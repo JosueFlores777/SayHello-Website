@@ -3237,7 +3237,9 @@ footer button {
     }
 */
 
-
+.textHome {
+    margin-top: 18%;
+}
 
 .top-left {
     min-width: 200px;
@@ -3275,7 +3277,9 @@ footer button {
         height: 25vh;
     }
 
-
+    .textHome {
+        margin-top: 30%;
+    }
 }
 
 @media (max-width: 378px) {
@@ -3339,25 +3343,25 @@ footer button {
     }
 
     .top-left {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 180px;
+        min-height: 180px;
     }
     
     .top-right {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 180px;
+        min-height: 180px;
     
     }
     
     .bottom-left {
-        min-width: 180px;
-        min-height: 260px;
+        min-width: 190px;
+        min-height: 290px;
     
     }
     
     .bottom-right {
-        min-width: 180px;
-        min-height: 260px;
+        min-width: 190px;
+        min-height: 290px;
     }
 }
 
