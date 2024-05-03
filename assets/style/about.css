@@ -616,19 +616,22 @@ figure:nth-child(24) {
   figure:nth-child(16),
   figure:nth-child(17),
   figure:nth-child(18),
-  figure:nth-child(19) {
+  figure:nth-child(19),  figure:nth-child(20),
+  figure:nth-child(21),
+  figure:nth-child(22),
+  figure:nth-child(23),
+  figure:nth-child(24) {
     grid-row: auto;
     grid-column: 1;
     transform: none !important;
   }
 
-  figure:nth-child(18),
   /* figure:nth-child(19),*/
-  figure:nth-child(20),
+/*  figure:nth-child(20),
   figure:nth-child(21),
   figure:nth-child(22),
   figure:nth-child(23),
   figure:nth-child(24) {
     display: none;
-  }
+  }*/
 }

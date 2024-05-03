@@ -60,6 +60,8 @@ $(window).scroll(function () {
         $("figure:nth-child(18)").css("transform", "none");
         $("figure:nth-child(19)").css("transform", "none");
         $("figure:nth-child(20)").css("transform", "none");
+        $("figure:nth-child(21)").css("transform", "none");
+        $("figure:nth-child(23)").css("transform", "none");
        
         $("figure:nth-child(22)").css("transform", "none");
         $("figure:nth-child(24)").css("transform", "none");
