@@ -228,6 +228,8 @@ scrollerInner.addEventListener("mouseleave", () => {
     scrollerInner.style.animationPlayState = "running";
 });
 
+
+
 const isMobile = window.innerWidth <= 768;
 
 if (isMobile) {
@@ -239,6 +241,7 @@ if (isMobile) {
   });
 
   scrollerInner.addEventListener("touchend", () => {
+    // En lugar de mantener la animación pausada, la reanudamos aquí
     scrollerInner.style.animationPlayState = "running";
     touchStartX = null;
   });
