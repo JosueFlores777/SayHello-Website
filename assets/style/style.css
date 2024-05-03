@@ -1128,7 +1128,8 @@ swiper-slide {
 }
 
 .textPrinciService {
-    width: 40%;
+    width: 80%;
+    margin-bottom: 35px;
     font-family: var(--Urbanist);
 }
 
@@ -2279,7 +2280,6 @@ footer button {
 
     .textPrinciService {
         margin-left: -5px;
-        width: 60%;
     }
 }
 
@@ -2308,7 +2308,7 @@ footer button {
     }
 
     .textPrinciService {
-        width: 70%;
+        width: 90%;
     }
 
     .textTestHomeH2 {
