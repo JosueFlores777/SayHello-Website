@@ -23,7 +23,6 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
 /*Equipo de trabajo*/
 
-
 $(window).scroll(function () {
   var sectionAbout3Top = $('.sectionAbout3').offset().top;
   var windowHeight = $(window).height();
