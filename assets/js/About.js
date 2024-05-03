@@ -43,7 +43,7 @@ function addAnimation() {
   });
   const scroller = document.querySelector(".scrollerHome", ".scrollerAbout");
   const scrollerHomeInner = scroller.querySelector(".scrollerHome__inner", ".scrollerAbout__inner");
-  
+
   scrollerHomeInner.addEventListener("mouseenter", () => {
     scrollerHomeInner.style.animationPlayState = "paused";
   });
@@ -53,9 +53,9 @@ function addAnimation() {
   });
 
 
-  const scroller2 = document.querySelector( ".scrollerAbout");
-  const scrollerHomeInner2 = scroller2.querySelector( ".scrollerAbout__inner");
-  
+  const scroller2 = document.querySelector(".scrollerAbout");
+  const scrollerHomeInner2 = scroller2.querySelector(".scrollerAbout__inner");
+
   scrollerHomeInner2.addEventListener("mouseenter", () => {
     scrollerHomeInner2.style.animationPlayState = "paused";
   });
@@ -63,107 +63,131 @@ function addAnimation() {
   scrollerHomeInner2.addEventListener("mouseleave", () => {
     scrollerHomeInner2.style.animationPlayState = "running";
   });
-  
+
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+
+    scrollerHomeInner.style.animationPlayState = "running";
+    scrollerHomeInner2.style.animationPlayState = "running";
+  } else {
+    scrollerHomeInner.addEventListener("mouseenter", () => {
+      scrollerHomeInner.style.animationPlayState = "running";
+    });
+
+    scrollerHomeInner.addEventListener("mouseleave", () => {
+      scrollerHomeInner.style.animationPlayState = "running";
+    });
+
+    scrollerHomeInner2.addEventListener("mouseleave", () => {
+      scrollerHomeInner2.style.animationPlayState = "running";
+    });
+
+    scrollerHomeInner2.addEventListener("mouseenter", () => {
+      scrollerHomeInner2.style.animationPlayState = "running";
+    });
+  }
+
 }
 
 /*Equipo de trabajo*/
 
 
 $(window).scroll(function () {
-    var sectionAbout3Top = $('.sectionAbout3').offset().top;
-    var windowHeight = $(window).height();
-    var scrollTop = $(window).scrollTop();
-    var scrollNew = scrollTop;
+  var sectionAbout3Top = $('.sectionAbout3').offset().top;
+  var windowHeight = $(window).height();
+  var scrollTop = $(window).scrollTop();
+  var scrollNew = scrollTop;
 
-    if (sectionAbout3Top <= (scrollTop + windowHeight)) {
-        var parallax = (scrollNew/6);
-        if ($(window).width() <= 1024) {
+  if (sectionAbout3Top <= (scrollTop + windowHeight)) {
+    var parallax = (scrollNew / 6);
+    if ($(window).width() <= 1024) {
 
-            if ($(window).width() <= 845) {
-                $("figure:nth-child(2)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(4)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(6)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(8)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(10)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(12)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(14)").css("transform", "translateY(" + (parallax-250) + "px)");            
-                $("figure:nth-child(16)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(18)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(20)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(22)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(24)").css("transform", "translateY(" + (parallax-250) + "px)");
-           
-            }else if ($(window).width() <= 550) {
-                $("figure:nth-child(2)").css("transform", "none");
-                $("figure:nth-child(4)").css("transform", "none");
-                $("figure:nth-child(6)").css("transform", "none");
-                $("figure:nth-child(8)").css("transform", "none");
-                $("figure:nth-child(10)").css("transform", "none");
-                $("figure:nth-child(12)").css("transform", "none");
-                $("figure:nth-child(14)").css("transform", "none");            
-                $("figure:nth-child(16)").css("transform", "none");
-                $("figure:nth-child(18)").css("transform", "none");
-                $("figure:nth-child(20)").css("transform", "none");
-                $("figure:nth-child(22)").css("transform", "none");
-                $("figure:nth-child(24)").css("transform", "none");
-           
-            }else{
-                $("figure:nth-child(2)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(5)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(8)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(8)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(11)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(14)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(17)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(20)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(23)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(26)").css("transform", "translateY(" + (parallax-250) + "px)");
-                $("figure:nth-child(29)").css("transform", "translateY(" + (parallax-250) + "px)");
-             
-            }
+      if ($(window).width() <= 845) {
+        $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(4)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(6)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(10)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(12)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(14)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(16)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(18)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(20)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(22)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(24)").css("transform", "translateY(" + (parallax - 250) + "px)");
+
+      } else if ($(window).width() <= 550) {
+        $("figure:nth-child(2)").css("transform", "none");
+        $("figure:nth-child(4)").css("transform", "none");
+        $("figure:nth-child(6)").css("transform", "none");
+        $("figure:nth-child(8)").css("transform", "none");
+        $("figure:nth-child(10)").css("transform", "none");
+        $("figure:nth-child(12)").css("transform", "none");
+        $("figure:nth-child(14)").css("transform", "none");
+        $("figure:nth-child(16)").css("transform", "none");
+        $("figure:nth-child(18)").css("transform", "none");
+        $("figure:nth-child(20)").css("transform", "none");
+        $("figure:nth-child(22)").css("transform", "none");
+        $("figure:nth-child(24)").css("transform", "none");
+
+      } else {
+        $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(5)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(11)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(14)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(20)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(26)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        $("figure:nth-child(29)").css("transform", "translateY(" + (parallax - 250) + "px)");
+
+      }
     } else {
-            $("figure:nth-child(2)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(4)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(6)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(8)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(10)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(12)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(13)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(15)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(17)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(19)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(21)").css("transform", "translateY(" + (parallax-250) + "px)");
-            $("figure:nth-child(23)").css("transform", "translateY(" + (parallax-250) + "px)");
-          }
-      
+      $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(4)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(6)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(8)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(10)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(12)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(13)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(15)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(19)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(21)").css("transform", "translateY(" + (parallax - 250) + "px)");
+      $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 250) + "px)");
     }
+
+  }
 });
 
 
 /* */
 
 function ejecutarAnimacion() {
-    var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
+  var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
 
-    if (distanceToFooterTop < window.innerHeight) {
-        document.querySelector('.draw-on-scroll-my').style.width = '91%';
-        document.querySelector('.draw-on-scroll6').style.width = '50%';
-        document.querySelector('.draw-on-scroll3').style.width = '80%';
-        document.querySelector('.draw-on-scroll4').style.width = '80%';
-        document.querySelector('.draw-on-scroll').style.width = '50%';
-        document.querySelector('.draw-on-scroll2').style.right = '50%';
-    } else {
-        document.querySelector('.draw-on-scroll-my').style.width = '0';
-        document.querySelector('.draw-on-scroll6').style.width = '0';
-    }
+  if (distanceToFooterTop < window.innerHeight) {
+    document.querySelector('.draw-on-scroll-my').style.width = '91%';
+    document.querySelector('.draw-on-scroll6').style.width = '50%';
+    /*document.querySelector('.draw-on-scroll3').style.width = '80%';*/
+    document.querySelector('.draw-on-scroll4').style.width = '80%';
+    document.querySelector('.draw-on-scroll').style.width = '50%';
+    document.querySelector('.draw-on-scroll2').style.right = '50%';
+  } else {
+    document.querySelector('.draw-on-scroll-my').style.width = '0';
+    document.querySelector('.draw-on-scroll6').style.width = '0';
+  }
 }
 
 window.addEventListener('load', function () {
-    ejecutarAnimacion();
+  ejecutarAnimacion();
 });
 
 window.addEventListener('scroll', function () {
-    ejecutarAnimacion();
+  ejecutarAnimacion();
 });
 
 
@@ -206,7 +230,7 @@ function bringToFront(selectedCard) {
   cards.unshift(selectedCard);
   updateCardStyles();
 
- setTimeout(startFlipping, 4700); 
+  setTimeout(startFlipping, 4700);
 }
 
 function updateCardStyles() {

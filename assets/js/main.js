@@ -43,6 +43,24 @@ scrollerInner.addEventListener("mouseleave", () => {
     scrollerInner.style.animationPlayState = "running";
 });
 
+
+const isMobile = window.innerWidth <= 768; 
+
+if (isMobile) {
+
+  scrollerHomeInner.style.animationPlayState = "running";
+} else {
+  scrollerHomeInner.addEventListener("mouseenter", () => {
+    scrollerHomeInner.style.animationPlayState = "running";
+  });
+
+  scrollerHomeInner.addEventListener("mouseleave", () => {
+    scrollerHomeInner.style.animationPlayState = "running";
+  });
+}
+
+
+
 /*Card TestymoHome */
 const cardStack = document.querySelector('.cardPageTestiHome-stack');
 let cards = Array.from(cardStack.children);

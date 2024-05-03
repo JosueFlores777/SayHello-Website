@@ -1898,20 +1898,29 @@ footer button {
 
     .sectionAbout1 {
         margin-top: 15%;
-        ;
-    }
-
-    swiper-container .card {
-        padding: 65px 35px 65px 35px !important;
-        height: auto;
+       
     }
 
     swiper-slide {
         padding: 70px !important;
         background-position: center;
         background-size: cover;
-        width: 1200px !important;
+        width: 1300px !important;
         height: 600px;
+    }
+
+    swiper-container .card {
+        padding: 65px 35px 75px 35px !important;
+       
+    }
+    swiper-container {
+     
+        width: 90%;
+        padding-top: -160px;
+    }
+
+    .testimonioHome {
+        margin-top: 150px;
     }
 }
 
@@ -2132,7 +2141,7 @@ footer button {
     }
 
     swiper-slide {
-        width: 900px;
+        width: 1000px;
         height: 700px;
     }
 }
@@ -2160,7 +2169,7 @@ footer button {
     }
 
     swiper-slide {
-        width: 1100px;
+        width: 1200px;
         height: auto;
     }
 
@@ -2196,7 +2205,7 @@ footer button {
     }
 
     swiper-slide {
-        width: 1200px;
+        width: 1400px;
         height: auto;
     }
 
