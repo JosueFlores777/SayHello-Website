@@ -41,15 +41,27 @@ function addAnimation() {
       scrollerInner.appendChild(duplicatedItem);
     });
   });
-  const scrollerHome = document.querySelector(".scrollerHome");
-  const scrollerHomeInner = scrollerHome.querySelector(".scrollerHome__inner");
-
+  const scroller = document.querySelector(".scrollerHome", ".scrollerAbout");
+  const scrollerHomeInner = scroller.querySelector(".scrollerHome__inner", ".scrollerAbout__inner");
+  
   scrollerHomeInner.addEventListener("mouseenter", () => {
     scrollerHomeInner.style.animationPlayState = "paused";
   });
 
   scrollerHomeInner.addEventListener("mouseleave", () => {
     scrollerHomeInner.style.animationPlayState = "running";
+  });
+
+
+  const scroller2 = document.querySelector( ".scrollerAbout");
+  const scrollerHomeInner2 = scroller2.querySelector( ".scrollerAbout__inner");
+  
+  scrollerHomeInner2.addEventListener("mouseenter", () => {
+    scrollerHomeInner2.style.animationPlayState = "paused";
+  });
+
+  scrollerHomeInner2.addEventListener("mouseleave", () => {
+    scrollerHomeInner2.style.animationPlayState = "running";
   });
   
 }
