@@ -545,7 +545,7 @@ nav input {
     }
 
     .navbar .container-fluid {
-        height: 19vh;
+        height: 15vh;
         border-radius: 4px;
         background-color: #343333a7;
     }
@@ -555,7 +555,10 @@ nav input {
         margin: 15px 0;
         margin-left: 0 !important;
     }
-
+    #bottom-nav .margeTex2 {
+        display: none;
+    }
+    
     .navbar {
         --bs-navbar-padding-x: 1;
     }
@@ -1342,7 +1345,7 @@ swiper-slide {
 
 
 .workImag {
-    height: 65vh !important;
+    height: auto !important;
 }
 
 
@@ -3313,7 +3316,7 @@ footer button {
     }
 
     .navbar .container-fluid {
-        height: 25vh;
+        height: 18vh;
     }
 
     .textHome {
@@ -3386,7 +3389,7 @@ footer button {
     }
 
     .navbar .container-fluid {
-        height: 23vh;
+        height: 20vh;
     }
 
     .top-left {

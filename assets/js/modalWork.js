@@ -1,11 +1,12 @@
 var boxes = [
   {
-    typeWork: 'Website Development',
+    typeWork: 'Wensite Development',
     image: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 01.png',
     titleModal: 'Hotel Equinoccio',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis am dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
 
+    video: '../assets/img/Portfolio2024/videos/Hotel Equinoccio Showcase_1080p.mp4',
     imgcard1: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.png',
     imgcard2: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 03.png',
     imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.png',
@@ -22,7 +23,7 @@ var boxes = [
     titleModal: 'Visible Talent',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-
+    video: '../assets/img/Portfolio2024/videos/Visible Talent Showcase_1080p.mp4',
     imgcard1: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 02.jpg',
     imgcard2: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 03.jpg',
     imgcard3: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 04.jpg',
@@ -47,7 +48,7 @@ var boxes = [
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     nameTest: 'Name 1',
   },{
-    typeWork: 'Website Development',
+    typeWork: 'Wensite Development',
     image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     titleModal: 'Fisherman’s',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
@@ -93,25 +94,26 @@ var boxes = [
     nameTest: 'Name 1',
   }
   ,{
-    typeWork: 'WebSite Development',
+    typeWork: 'Wensite Development',
     image: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 01.jpg',
     titleModal: 'Fertiagro',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-
-    imgcard1:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 02.jpg',
-    imgcard2:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 03.jpg',
-    imgcard3:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 04.jpg',
-    imgcard4:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 05.jpg',
+    video: '../assets/img/Portfolio2024/videos/Fertiagro Showcase_1080p.mp4',
+    imgcard1:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 2.jpg',
+    imgcard2:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 3.jpg',
+    imgcard3:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 4.jpg',
+    imgcard4:  '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 5.jpg',
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     nameTest: 'Name 1',
-  },
+  }
   ,{
-    typeWork: 'WebSite Development',
+    typeWork: 'Wensite Development',
     image: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 01.jpg',
-    titleModal: 'Fertiagro',
+    titleModal: 'Aventu Fest',
+    video: '../assets/img/Portfolio2024/videos/Aventu Fest Showcase_1080p.mp4',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
 
@@ -135,6 +137,7 @@ function selectBox(index) {
   document.getElementById("titleWork").textContent = selectedBox.Subtitle;
   document.getElementById("cardText").textContent = selectedBox.cardText;
   
+  document.getElementById("video").src = selectedBox.video;
   document.getElementById("imgcardPri").src = selectedBox.image;
   document.getElementById("imgcard1").src = selectedBox.imgcard1;
   document.getElementById("imgcard2").src = selectedBox.imgcard2;
