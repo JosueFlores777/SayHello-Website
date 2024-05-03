@@ -3289,6 +3289,10 @@ footer button {
     .textHome {
         margin-top: 30%;
     }
+
+    .testimonioHome {
+        height: 80vh;
+    }
 }
 
 @media (max-width: 378px) {
@@ -3425,5 +3429,9 @@ footer button {
     .fondoPart3Home,
     .carrucelHome {
         height: auto;
+    }
+
+    .testimonioHome {
+        height: 70vh;
     }
 }
