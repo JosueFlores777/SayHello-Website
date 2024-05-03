@@ -228,8 +228,6 @@ scrollerInner.addEventListener("mouseleave", () => {
     scrollerInner.style.animationPlayState = "running";
 });
 
-
-
 const isMobile = window.innerWidth <= 768;
 
 if (isMobile) {
@@ -241,7 +239,6 @@ if (isMobile) {
   });
 
   scrollerInner.addEventListener("touchend", () => {
-    // En lugar de mantener la animación pausada, la reanudamos aquí
     scrollerInner.style.animationPlayState = "running";
     touchStartX = null;
   });
@@ -252,6 +249,13 @@ if (isMobile) {
       const deltaX = touchEndX - touchStartX;
       scrollerInner.scrollLeft -= deltaX;
       touchStartX = touchEndX;
+    }
+  });
+
+  document.addEventListener("touchstart", (event) => {
+    // Si el toque no está dentro del carrusel, reanudamos la animación
+    if (!scrollerInner.contains(event.target)) {
+      scrollerInner.style.animationPlayState = "running";
     }
   });
 } else {
