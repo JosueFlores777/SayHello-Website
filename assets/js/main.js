@@ -52,7 +52,7 @@ function bringToFront(selectedCard) {
   cards.unshift(selectedCard);
   updateCardStyles();
 
- setTimeout(startFlipping, 4700); 
+  setTimeout(startFlipping, 4700);
 }
 
 function updateCardStyles() {
@@ -91,9 +91,9 @@ function handleVideoZoom() {
   var videoContainer = document.querySelector('.video-container');
   var videoIframe = document.querySelector('.video-container iframe');
 
- var scaleFactor = 1 - (scrollPosition / 400); 
+  var scaleFactor = 1 - (scrollPosition / 400);
 
-  videoIframe.style.width = (450 + 350 * scaleFactor) + 'px'; 
+  videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
   videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
 }
 
@@ -102,19 +102,19 @@ document.addEventListener('DOMContentLoaded', handleVideoZoom);
 
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
 
   if (distanceToFooterTop < window.innerHeight) {
-      document.querySelector('.draw-on-scroll').style.width = '50%';
-      document.querySelector('.draw-on-scroll').style.width = '50%';
-      document.querySelector('.draw-on-scroll2').style.width = '90%';
-      document.querySelector('.draw-on-scroll2').style.right = '0';
+    document.querySelector('.draw-on-scroll').style.width = '50%';
+    document.querySelector('.draw-on-scroll').style.width = '50%';
+    document.querySelector('.draw-on-scroll2').style.width = '90%';
+    document.querySelector('.draw-on-scroll2').style.right = '0';
   } else {
-      document.querySelector('.draw-on-scroll').style.width = '0';
-      document.querySelector('.draw-on-scroll').style.width = '0';
-      document.querySelector('.draw-on-scroll2').style.width = '90%';
-      document.querySelector('.draw-on-scroll2').style.right = '0';
+    document.querySelector('.draw-on-scroll').style.width = '0';
+    document.querySelector('.draw-on-scroll').style.width = '0';
+    document.querySelector('.draw-on-scroll2').style.width = '90%';
+    document.querySelector('.draw-on-scroll2').style.right = '0';
   }
 });
 
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     distance: "380px",
     reset: true
   });
-  
+
   sr12.reveal(".carrucelHome", {
     origin: "bottom",
     interval: 200,
@@ -221,11 +221,11 @@ const scroller = document.querySelector(".scrollerHome");
 const scrollerInner = scroller.querySelector(".scrollerHome__inner");
 
 scrollerInner.addEventListener("mouseenter", () => {
-    scrollerInner.style.animationPlayState = "paused";
+  scrollerInner.style.animationPlayState = "paused";
 });
 
 scrollerInner.addEventListener("mouseleave", () => {
-    scrollerInner.style.animationPlayState = "running";
+  scrollerInner.style.animationPlayState = "running";
 });
 
 const isMobile = window.innerWidth <= 768;
