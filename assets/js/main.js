@@ -14,6 +14,8 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden1');
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+/* card carrucel */
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
@@ -30,7 +32,16 @@ function addAnimation() {
     });
   });
 }
+const scroller = document.querySelector(".scrollerHome");
+const scrollerInner = scroller.querySelector(".scrollerHome__inner");
 
+scrollerInner.addEventListener("mouseenter", () => {
+    scrollerInner.style.animationPlayState = "paused";
+});
+
+scrollerInner.addEventListener("mouseleave", () => {
+    scrollerInner.style.animationPlayState = "running";
+});
 
 /*Card TestymoHome */
 const cardStack = document.querySelector('.cardPageTestiHome-stack');
@@ -40,7 +51,7 @@ let intervalId;
 function startFlipping() {
   intervalId = setInterval(() => {
     moveLastCardToFront();
-  }, 4100);
+  }, 4700);
 }
 
 function moveLastCardToFront() {
@@ -68,7 +79,7 @@ function bringToFront(selectedCard) {
   cards.unshift(selectedCard);
   updateCardStyles();
 
- setTimeout(startFlipping, 2000); 
+ setTimeout(startFlipping, 4700); 
 }
 
 function updateCardStyles() {
@@ -160,9 +171,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const sr12 = ScrollReveal({
     duration: 2000,
-    delay: 800,
+    delay: 990,
     origin: "bottom",
-    distance: "680px",
+    distance: "380px",
     reset: true
   });
   
