@@ -245,37 +245,37 @@ function addAnimation() {
   if (isMobile) {
     let touchStartX = null;
 
-    scrollerInner.addEventListener("touchstart", (event) => {
+    scrollerHomeInner.addEventListener("touchstart", (event) => {
       touchStartX = event.touches[0].clientX;
-      scrollerInner.style.animationPlayState = "paused";
+      scrollerHomeInner.style.animationPlayState = "paused";
     });
 
-    scrollerInner.addEventListener("touchend", () => {
-      scrollerInner.style.animationPlayState = "running";
+    scrollerHomeInner.addEventListener("touchend", () => {
+      scrollerHomeInner.style.animationPlayState = "running";
       touchStartX = null;
     });
 
-    scrollerInner.addEventListener("touchmove", (event) => {
+    scrollerHomeInner.addEventListener("touchmove", (event) => {
       if (touchStartX !== null) {
         const touchEndX = event.changedTouches[0].clientX;
         const deltaX = touchEndX - touchStartX;
-        scrollerInner.scrollLeft -= deltaX;
+        scrollerHomeInner.scrollLeft -= deltaX;
         touchStartX = touchEndX;
       }
     });
 
     document.addEventListener("touchstart", (event) => {
       if (!scrollerInner.contains(event.target)) {
-        scrollerInner.style.animationPlayState = "running";
+        scrollerHomeInner.style.animationPlayState = "running";
       }
     });
   } else {
-    scrollerInner.addEventListener("mouseenter", () => {
-      scrollerInner.style.animationPlayState = "paused";
+    scrollerHomeInner.addEventListener("mouseenter", () => {
+      scrollerHomeInner.style.animationPlayState = "paused";
     });
 
-    scrollerInner.addEventListener("mouseleave", () => {
-      scrollerInner.style.animationPlayState = "running";
+    scrollerHomeInner.addEventListener("mouseleave", () => {
+      scrollerHomeInner.style.animationPlayState = "running";
     });
   }
 
