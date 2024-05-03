@@ -1,15 +1,15 @@
 var boxes = [
   {
     typeWork: 'Website Development',
-    image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
+    image: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 01.png',
     titleModal: 'Hotel Equinoccio',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis am dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
 
-    imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+    imgcard1: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.png',
+    imgcard2: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 03.png',
+    imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.png',
+    imgcard4: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.png',
 
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
@@ -103,7 +103,8 @@ function selectBox(index) {
   document.getElementById("titleModal").textContent = selectedBox.titleModal;
   document.getElementById("titleWork").textContent = selectedBox.Subtitle;
   document.getElementById("cardText").textContent = selectedBox.cardText;
-
+  
+  document.getElementById("imgcardPri").src = selectedBox.image;
   document.getElementById("imgcard1").src = selectedBox.imgcard1;
   document.getElementById("imgcard2").src = selectedBox.imgcard2;
   document.getElementById("imgcard3").src = selectedBox.imgcard3;
