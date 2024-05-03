@@ -18,15 +18,15 @@ var boxes = [
   },
   {
     typeWork: 'Branding & Logo Desing',
-    image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 01.jpg',
     titleModal: 'Visible Talent',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
 
-    imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+    imgcard1: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 02.jpg',
+    imgcard2: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 03.jpg',
+    imgcard3: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 04.jpg',
+    imgcard4: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 05.jpg',
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
