@@ -2278,6 +2278,38 @@ footer button {
     }
 }
 
+
+@media screen and (min-width:1000px) and (max-width: 1030px){
+  
+    .textHome h1 {
+        font-size: 40px;
+        width: 50%;
+ 
+        margin-bottom: 5px !important;
+    }
+
+    .textHome p {
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    .video-container {
+        max-width: 800px;
+   
+         margin-top: 15px; 
+    }
+
+    .carrucelHome {
+        height: auto;
+    }
+
+    .testimonioHome {
+        height: 90vh;
+    }
+}
+
 @media(max-width:992px) {
 
     .textHome h1 {
