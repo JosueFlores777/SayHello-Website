@@ -46,18 +46,38 @@ scrollerInner.addEventListener("mouseleave", () => {
 
 const isMobile = window.innerWidth <= 768; 
 
-if (isMobile) {
+  if (isMobile) {
+    let touchStartX = null;
 
-  
-} else {
-  scrollerHomeInner.addEventListener("mouseenter", () => {
-    scrollerHomeInner.style.animationPlayState = "running";
-  });
+    scrollerHomeInner.addEventListener("touchstart", (event) => {
+      touchStartX = event.touches[0].clientX;
+      scrollerHomeInner.style.animationPlayState = "paused";
+    });
 
-  scrollerHomeInner.addEventListener("mouseleave", () => {
-    scrollerHomeInner.style.animationPlayState = "running";
-  });
-}
+    scrollerHomeInner.addEventListener("touchend", () => {
+      scrollerHomeInner.style.animationPlayState = "running";
+      touchStartX = null;
+    });
+
+    scrollerHomeInner.addEventListener("touchmove", (event) => {
+      if (touchStartX !== null) {
+        const touchEndX = event.changedTouches[0].clientX;
+        const deltaX = touchEndX - touchStartX;
+        scrollerHomeInner.scrollLeft -= deltaX;
+        touchStartX = touchEndX;
+      }
+    });
+  } else {
+
+    scrollerHomeInner.addEventListener("mouseenter", () => {
+      scrollerHomeInner.style.animationPlayState = "paused";
+    });
+
+    scrollerHomeInner.addEventListener("mouseleave", () => {
+      scrollerHomeInner.style.animationPlayState = "running";
+    });
+  }
+
 
 
 
