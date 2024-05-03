@@ -200,7 +200,35 @@ showMegaCheckbox.addEventListener('change', function () {
 });
 
 
-/* card carrucel */const isMobile = window.innerWidth <= 768;
+/* card carrucel */
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+    const scrollerInner = scroller.querySelector(".scrollerHome__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
+const scroller = document.querySelector(".scrollerHome");
+const scrollerInner = scroller.querySelector(".scrollerHome__inner");
+
+scrollerInner.addEventListener("mouseenter", () => {
+    scrollerInner.style.animationPlayState = "paused";
+});
+
+scrollerInner.addEventListener("mouseleave", () => {
+    scrollerInner.style.animationPlayState = "running";
+});
+
+const isMobile = window.innerWidth <= 768;
 
 if (isMobile) {
   let touchStartX = null;
