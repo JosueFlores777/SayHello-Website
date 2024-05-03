@@ -253,7 +253,6 @@ if (isMobile) {
   });
 
   document.addEventListener("touchstart", (event) => {
-    // Si el toque no está dentro del carrusel, reanudamos la animación
     if (!scrollerInner.contains(event.target)) {
       scrollerInner.style.animationPlayState = "running";
     }

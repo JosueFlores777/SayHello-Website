@@ -19,87 +19,7 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
 
-function addAnimation() {
-  scrollers.forEach((scroller) => {
-    scroller.setAttribute("data-animated", true);
-    const scrollerInner = scroller.querySelector(".scrollerAbout__inner");
-    const scrollerContent = Array.from(scrollerInner.children);
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    });
-  });
 
-  scrollers1.forEach((scroller) => {
-    scroller.setAttribute("data-animated", true);
-    const scrollerInner = scroller.querySelector(".scrollerHome__inner");
-    const scrollerContent = Array.from(scrollerInner.children);
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    });
-  });
-  const scroller = document.querySelector(".scrollerHome", ".scrollerAbout");
-  const scrollerHomeInner = scroller.querySelector(".scrollerHome__inner", ".scrollerAbout__inner");
-
-  scrollerHomeInner.addEventListener("mouseenter", () => {
-    scrollerHomeInner.style.animationPlayState = "paused";
-  });
-
-  scrollerHomeInner.addEventListener("mouseleave", () => {
-    scrollerHomeInner.style.animationPlayState = "running";
-  });
-
-
-  const scroller2 = document.querySelector(".scrollerAbout");
-  const scrollerHomeInner2 = scroller2.querySelector(".scrollerAbout__inner");
-
-  scrollerHomeInner2.addEventListener("mouseenter", () => {
-    scrollerHomeInner2.style.animationPlayState = "paused";
-  });
-
-  scrollerHomeInner2.addEventListener("mouseleave", () => {
-    scrollerHomeInner2.style.animationPlayState = "running";
-  });
-
-  const isMobile = window.innerWidth <= 768; 
-
-  if (isMobile) {
-    let touchStartX = null;
-
-    scrollerHomeInner.addEventListener("touchstart", (event) => {
-      touchStartX = event.touches[0].clientX;
-      scrollerHomeInner.style.animationPlayState = "paused";
-    });
-
-    scrollerHomeInner.addEventListener("touchend", () => {
-      scrollerHomeInner.style.animationPlayState = "running";
-      touchStartX = null;
-    });
-
-    scrollerHomeInner.addEventListener("touchmove", (event) => {
-      if (touchStartX !== null) {
-        const touchEndX = event.changedTouches[0].clientX;
-        const deltaX = touchEndX - touchStartX;
-        scrollerHomeInner.scrollLeft -= deltaX;
-        touchStartX = touchEndX;
-      }
-    });
-  } else {
-
-    scrollerHomeInner.addEventListener("mouseenter", () => {
-      scrollerHomeInner.style.animationPlayState = "paused";
-    });
-
-    scrollerHomeInner.addEventListener("mouseleave", () => {
-      scrollerHomeInner.style.animationPlayState = "running";
-    });
-  }
-
-
-}
 
 /*Equipo de trabajo*/
 
@@ -270,4 +190,94 @@ startFlipping();
 
 /*Carrucel about */
 
+
+
+
+
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+    const scrollerInner = scroller.querySelector(".scrollerAbout__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+
+  scrollers1.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+    const scrollerInner = scroller.querySelector(".scrollerHome__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+  const scroller = document.querySelector(".scrollerHome", ".scrollerAbout");
+  const scrollerHomeInner = scroller.querySelector(".scrollerHome__inner", ".scrollerAbout__inner");
+
+  scrollerHomeInner.addEventListener("mouseenter", () => {
+    scrollerHomeInner.style.animationPlayState = "paused";
+  });
+
+  scrollerHomeInner.addEventListener("mouseleave", () => {
+    scrollerHomeInner.style.animationPlayState = "running";
+  });
+
+
+  const scroller2 = document.querySelector(".scrollerAbout");
+  const scrollerHomeInner2 = scroller2.querySelector(".scrollerAbout__inner");
+
+  scrollerHomeInner2.addEventListener("mouseenter", () => {
+    scrollerHomeInner2.style.animationPlayState = "paused";
+  });
+
+  scrollerHomeInner2.addEventListener("mouseleave", () => {
+    scrollerHomeInner2.style.animationPlayState = "running";
+  });
+
+
+  const isMobile = window.innerWidth <= 768;
+
+  if (isMobile) {
+    let touchStartX = null;
+
+    scrollerInner.addEventListener("touchstart", (event) => {
+      touchStartX = event.touches[0].clientX;
+      scrollerInner.style.animationPlayState = "paused";
+    });
+
+    scrollerInner.addEventListener("touchend", () => {
+      scrollerInner.style.animationPlayState = "running";
+      touchStartX = null;
+    });
+
+    scrollerInner.addEventListener("touchmove", (event) => {
+      if (touchStartX !== null) {
+        const touchEndX = event.changedTouches[0].clientX;
+        const deltaX = touchEndX - touchStartX;
+        scrollerInner.scrollLeft -= deltaX;
+        touchStartX = touchEndX;
+      }
+    });
+
+    document.addEventListener("touchstart", (event) => {
+      if (!scrollerInner.contains(event.target)) {
+        scrollerInner.style.animationPlayState = "running";
+      }
+    });
+  } else {
+    scrollerInner.addEventListener("mouseenter", () => {
+      scrollerInner.style.animationPlayState = "paused";
+    });
+
+    scrollerInner.addEventListener("mouseleave", () => {
+      scrollerInner.style.animationPlayState = "running";
+    });
+  }
+
+}
 
