@@ -42,9 +42,9 @@ $(window).scroll(function () {
         $("figure:nth-child(10)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(12)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(14)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(16)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        /*$("figure:nth-child(16)").css("transform", "translateY(" + (parallax - 250) + "px)");*/
         $("figure:nth-child(18)").css("transform", "translateY(" + (parallax - 250) + "px)");
-        $("figure:nth-child(20)").css("transform", "translateY(" + (parallax - 250) + "px)");
+        
         $("figure:nth-child(22)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(24)").css("transform", "translateY(" + (parallax - 250) + "px)");
 
@@ -58,7 +58,9 @@ $(window).scroll(function () {
         $("figure:nth-child(14)").css("transform", "none");
         $("figure:nth-child(16)").css("transform", "none");
         $("figure:nth-child(18)").css("transform", "none");
+        $("figure:nth-child(19)").css("transform", "none");
         $("figure:nth-child(20)").css("transform", "none");
+       
         $("figure:nth-child(22)").css("transform", "none");
         $("figure:nth-child(24)").css("transform", "none");
 
@@ -71,6 +73,7 @@ $(window).scroll(function () {
         $("figure:nth-child(14)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(17)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(20)").css("transform", "translateY(" + (parallax - 250) + "px)");
+       
         $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(26)").css("transform", "translateY(" + (parallax - 250) + "px)");
         $("figure:nth-child(29)").css("transform", "translateY(" + (parallax - 250) + "px)");
@@ -89,6 +92,7 @@ $(window).scroll(function () {
       $("figure:nth-child(19)").css("transform", "translateY(" + (parallax - 250) + "px)");
       $("figure:nth-child(21)").css("transform", "translateY(" + (parallax - 250) + "px)");
       $("figure:nth-child(23)").css("transform", "translateY(" + (parallax - 250) + "px)");
+  
     }
 
   }
