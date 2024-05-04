@@ -792,6 +792,7 @@ nav input {
 }
 
 .video-container iframe {
+    overflow: hidden;
     width: 450px;
     height: 250px;
     transition: width 0.5s, height 0.5s, transform 0.5s;
@@ -3375,7 +3376,18 @@ footer button {
     .margeTopAbouTesti {
         margin-bottom: 160px;
     }
+
+    .part2Home {
+        margin-top: 32%;
+    }
 }
+
+@media screen and (min-width: 410px) and (max-width: 618px) {
+    .textHome {
+        margin-top: 42%;
+    }
+}
+
 
 @media(max-width: 400px) {
     .testimonioAboutBootm {
@@ -3400,6 +3412,10 @@ footer button {
 
     .margeTopAbouTesti {
         margin-bottom: -100px;
+    }
+
+    .part2Home {
+        margin-top: 35%;
     }
 }
 
@@ -3507,7 +3523,7 @@ footer button {
     }
 
     .part2Home {
-        margin-top: 35% !important;
+        margin-top: 55% !important;
     }
 }
 
@@ -3526,7 +3542,15 @@ footer button {
     }
 
     .textHome {
-        margin-top: 30%;
+        margin-top: 37.2%;
+    }
+
+    .textHome h1 {
+        font-size: 30px;
+        width: auto;
+    }
+    .textHome p {
+        font-size: 12px;
     }
 
     .fondoPart3Home,
