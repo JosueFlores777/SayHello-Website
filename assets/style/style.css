@@ -731,8 +731,12 @@ nav input {
 /*parte 1*/
 
 .home {
-    /*height: 100vh;*/
-    height: auto;
+   /* height: 100vh;*/
+   height: auto;
+}
+
+.imganes{
+    height: 100vh;
 }
 
 .textHome {
@@ -1826,8 +1830,7 @@ footer button {
     font-family: var(--Urbanist);
 }
 .part2Home {
-    margin-top: 20%;
-    margin-bottom: 130px;
+    margin-top: 17%;
 }
 
 @media (max-width: 768px) {
@@ -1896,6 +1899,10 @@ footer button {
         margin-left: 5%;
         margin-right: 10%;
     }
+/*
+    .part2Home {
+        margin-top: 38%;
+    }*/
 }
 
 @media screen and (min-width: 992px) and (max-width: 1181px) {
@@ -2608,10 +2615,10 @@ footer button {
     .workImag {
         height: auto !important;
     }
-
+/*
     .part2Home {
         margin-top: 25% !important;
-    }
+    }*/
     .video-container {
         max-width: 600px;
         width: auto;
@@ -2734,7 +2741,7 @@ footer button {
     }
 
     .part2Home {
-        margin-top: 60px;
+        margin-top: 20%;
     }
     .textHome {
         margin-top: 18%;
@@ -2968,6 +2975,10 @@ footer button {
 
     .margeTopAbouTesti {
         margin-bottom: 65px;
+    }
+
+    .part2Home {
+        margin-top: 22%;
     }
 }
 
@@ -3292,7 +3303,7 @@ footer button {
     }
 
     .part2Home {
-        margin-top: 35% !important;
+        margin-top: 28%;
     }
 
     .textTestHomeH2 {
@@ -3493,6 +3504,10 @@ footer button {
 
     .margeTopAbouTesti {
         margin-bottom: -120px;
+    }
+
+    .part2Home {
+        margin-top: 35% !important;
     }
 }
 
