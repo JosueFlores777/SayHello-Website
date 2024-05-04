@@ -273,10 +273,6 @@ figure:nth-child(24) {
 }
 
 @media screen and (min-width: 1091px) and (max-width: 1287px) {
-  .carrucelHome {
-    height: auto;
-  }
-
   swiper-slide {
     width: 650px;
     height: 600px;

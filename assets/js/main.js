@@ -24,7 +24,7 @@ let intervalId;
 function startFlipping() {
   intervalId = setInterval(() => {
     moveLastCardToFront();
-  }, 4700);
+  }, 5700);
 }
 
 function moveLastCardToFront() {
@@ -52,7 +52,7 @@ function bringToFront(selectedCard) {
   cards.unshift(selectedCard);
   updateCardStyles();
 
-  setTimeout(startFlipping, 4700);
+  setTimeout(startFlipping, 5700);
 }
 
 function updateCardStyles() {
