@@ -1825,6 +1825,10 @@ footer button {
 .fontContact {
     font-family: var(--Urbanist);
 }
+.part2Home {
+    margin-top: 20%;
+    margin-bottom: 130px;
+}
 
 @media (max-width: 768px) {
 
@@ -2448,9 +2452,6 @@ footer button {
         margin: 2rem 0;
     }
 
-    .part2Home {
-        margin-top: 50px;
-    }
 }
 
 
@@ -2606,6 +2607,22 @@ footer button {
     .workImag {
         height: auto !important;
     }
+
+    .part2Home {
+        margin-top: 25% !important;
+    }
+    .video-container {
+        max-width: 600px;
+        width: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+    .textHome {
+        margin-top: 15%;
+        color: var(--text-White);
+    }
 }
 
 @media (max-width:767px) {
@@ -2717,6 +2734,14 @@ footer button {
 
     .part2Home {
         margin-top: 60px;
+    }
+    .textHome {
+        margin-top: 18%;
+        color: var(--text-White);
+    }
+
+    .margeTopAbouTesti {
+        margin-bottom: 65px;
     }
 }
 
@@ -2925,14 +2950,23 @@ footer button {
     }
 
     .bottom-left {
-        min-width: 360px;
-        min-height: 360px;
+        min-width: 260px;
+        min-height: 260px;
 
     }
 
     .bottom-right {
-        min-width: 360px;
-        min-height: 360px;
+        min-width: 260px;
+        min-height: 260px;
+    }
+
+    .textHome {
+        margin-top: 20%;
+        color: var(--text-White);
+    }
+
+    .margeTopAbouTesti {
+        margin-bottom: 65px;
     }
 }
 
@@ -2973,7 +3007,7 @@ footer button {
     }
 
     .testimonioHome {
-        height: 50vh;
+        height: 80vh;
     }
 
     .textSubAbout {
@@ -3012,13 +3046,6 @@ footer button {
 
 @media (max-width: 478px) {
 
-    .swiper-horizontal > .swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
-        margin-top: 415px !important;
-    }
-    
 
     .carrucelHome .card-body {
         margin-top: 10px;
@@ -3040,8 +3067,6 @@ footer button {
     .textHome {
         margin-top: 30%;
     }
-
-
     .textHome h1 {
         font-size: 34px;
         margin: 0 auto;
@@ -3244,29 +3269,29 @@ footer button {
 
 
     .top-left {
-        min-width: 200px;
+        min-width: 190px;
         min-height: 200px;
     }
 
     .top-right {
-        min-width: 200px;
+        min-width: 190px;
         min-height: 200px;
 
     }
 
     .bottom-left {
-        min-width: 230px;
+        min-width: 220px;
         min-height: 330px;
 
     }
 
     .bottom-right {
-        min-width: 230px;
+        min-width: 220px;
         min-height: 330px;
     }
 
     .part2Home {
-        margin-top: 60px;
+        margin-top: 35% !important;
     }
 
     .textTestHomeH2 {
@@ -3279,6 +3304,10 @@ footer button {
 
     .testimonioHome .margeTopAbouTesti {
         height: 60vh !important;
+    }
+
+    .testimonioHome {
+        height: 68vh;
     }
 }
 
@@ -3308,30 +3337,27 @@ footer button {
     }
 */
 
-    .textHome {
-        margin-top: 18%;
-    }
 
     .top-left {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 180px;
+        min-height: 180px;
     }
 
     .top-right {
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 180px;
+        min-height: 180px;
 
     }
 
     .bottom-left {
-        min-width: 200px;
-        min-height: 240px;
+        min-width: 180px;
+        min-height: 220px;
 
     }
 
     .bottom-right {
-        min-width: 200px;
-        min-height: 240px;
+        min-width: 180px;
+        min-height: 220px;
     }
 
     .margeTopAbouTesti {
@@ -3366,6 +3392,9 @@ footer button {
 }
 
 @media (max-width: 378px) {
+    .textHome {
+        margin-top: 35%;
+    }
 
     .btn-outline-primary {
         width: 36px;
@@ -3431,19 +3460,19 @@ footer button {
     }
 
     .top-left {
-        min-width: 180px;
-        min-height: 180px;
+        min-width: 150px;
+        min-height: 150px;
     }
 
     .top-right {
-        min-width: 180px;
-        min-height: 180px;
+        min-width: 150px;
+        min-height: 150px;
 
     }
 
     .bottom-left {
-        min-width: 190px;
-        min-height: 290px;
+        min-width: 160px;
+        min-height: 250px;
 
     }
 
@@ -3452,8 +3481,8 @@ footer button {
     }
 
     .bottom-right {
-        min-width: 190px;
-        min-height: 290px;
+        min-width: 160px;
+        min-height: 250px;
     }
 
 

@@ -91,9 +91,9 @@ function handleVideoZoom() {
   var videoContainer = document.querySelector('.video-container');
   var videoIframe = document.querySelector('.video-container iframe');
 
-  var scaleFactor = 1 - (scrollPosition / 400);
+  var scaleFactor = 1 - (scrollPosition / 20);
 
-  videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
+  videoIframe.style.width = (20 + 20 * scaleFactor) + 'px';
   videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
 }
 
