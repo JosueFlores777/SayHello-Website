@@ -2080,7 +2080,6 @@ footer button {
     }
 
     .part2Home {
-        margin-top: 100px;
         margin-bottom: 130px;
     }
 
@@ -2100,7 +2099,9 @@ footer button {
         width: 550px;
         border-radius: 15px;
     }
-
+    .textHome {
+        margin-top: 10% !important;
+    }
 }
 
 @media screen and (min-width: 1900px) and (max-width: 2200px) {
