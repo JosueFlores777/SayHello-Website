@@ -214,7 +214,7 @@ nav .wrapper {
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 0 30px;
+    /*padding: 0 30px;*/
     top: 85px;
     opacity: 0;
     visibility: hidden;
@@ -555,10 +555,11 @@ nav input {
         margin: 15px 0;
         margin-left: 0 !important;
     }
+
     #bottom-nav .margeTex2 {
         display: none;
     }
-    
+
     .navbar {
         --bs-navbar-padding-x: 1;
     }
@@ -1015,7 +1016,7 @@ swiper-container .card .row {
 swiper-container {
     margin-top: 25px;
     width: 80%;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     padding-bottom: 50px;
 
 }
@@ -1227,7 +1228,7 @@ swiper-slide {
 }
 
 
-.fondo-card1{
+.fondo-card1 {
     background-repeat: no-repeat;
     height: 50vh;
     width: 100%;
@@ -2303,7 +2304,7 @@ footer button {
     swiper-container {
         margin-top: 25px;
         width: 93%;
-        padding-top: 50px;
+       /* padding-top: 50px;*/
         padding-bottom: 50px;
     }
 
@@ -2353,6 +2354,7 @@ footer button {
     .carrucelHome {
         height: auto;
     }
+   
 
     .testimonioHome {
         height: 90vh;
@@ -2384,7 +2386,7 @@ footer button {
     swiper-container {
         margin-top: 25px;
         width: 100%;
-        padding-top: 50px;
+       /* padding-top: 50px;*/
         padding-bottom: 50px;
     }
 
@@ -2446,1042 +2448,1053 @@ footer button {
     }
 }
 
-@media screen and (min-width: 765px) and (max-width: 1092px) {
-    swiper-slide {
-        width: 550px;
-        height: 500px;
+ @media screen and (min-width: 765px) and (max-width: 1090px) {
+        swiper-slide {
+            width: 650px;
+            height: 520px;
+        }
+        swiper-container {
+            width: 89%;
+        }
+        .top-left {
+            min-width: 240px;
+            min-height: 240px;
+        }
+
+        .top-right {
+            min-width: 240px;
+            min-height: 240px;
+
+        }
+
+        .bottom-left {
+            min-width: 400px;
+            min-height: 400px;
+
+        }
+
+        .bottom-right {
+            min-width: 400px;
+            min-height: 400px;
+
+        }
+    }
+    @media screen and (min-width: 1091px) and (max-width: 1287px) {
+        .carrucelHome {
+            height: auto !important;
+        }
+        swiper-slide {
+            width: 750px; 
+           height: 500px;
+       }
+    }
+       
+    @media screen and (min-width: 748px) and (max-width: 766px) {
+        swiper-slide {
+            width: 550px;
+            height: 70vh;
+        }
+
+
     }
 
-    .top-left {
-        min-width: 240px;
-        min-height: 240px;
-    }
+    @media screen and (min-width: 600px) and (max-width: 748px) {
+        swiper-slide {
+            width: 400px;
+            height: 100%;
+        }
 
-    .top-right {
-        min-width: 240px;
-        min-height: 240px;
-
-    }
-
-    .bottom-left {
-        min-width: 400px;
-        min-height: 400px;
 
     }
 
-    .bottom-right {
-        min-width: 400px;
-        min-height: 400px;
 
-    }
-}
+    @media (max-width: 835px) {
+        .carrucelHome .card-body {
+            margin-top: 25px;
+            padding: 0;
+        }
 
-@media screen and (min-width: 748px) and (max-width: 766px) {
-    swiper-slide {
-        width: 550px;
-        height: 70vh;
-    }
+        .cardPageTestiHome {
 
+            width: 80%;
+        }
 
-}
+        .fondoPart3Home,
+        .carrucelHome {
+            /* height: 75vh;*/
+            height: auto;
+        }
 
-@media screen and (min-width: 600px) and (max-width: 748px) {
-    swiper-slide {
-        width: 400px;
-        height: 100%;
-    }
+        .fondoPart3Home {
+            margin: 65px 0;
+        }
 
+        .carrucul {
+            margin-top: 0;
+        }
 
-}
+        .footer a {
+            font-size: 11px;
+        }
 
+        .close-button svg {
+            margin-left: -32px;
+        }
 
-@media (max-width: 835px) {
-    .carrucelHome .card-body {
-        margin-top: 25px;
-        padding: 0;
-    }
+        .card-bodyhome {
+            /* margin-top: 35%;*/
+            padding: 8px;
+        }
 
-    .cardPageTestiHome {
+        .textTestHomeH2 {
+            width: 60%;
+        }
 
-        width: 80%;
-    }
+        .textAboutSect2 {
+            margin: 3rem 0 1.9rem 0;
+        }
 
-    .fondoPart3Home,
-    .carrucelHome {
-        /* height: 75vh;*/
-        height: auto;
-    }
-
-    .fondoPart3Home {
-        margin: 65px 0;
-    }
-
-    .carrucul {
-        margin-top: 0;
-    }
-
-    .footer a {
-        font-size: 11px;
+        .textHome h1 {
+            width: 90%;
+            font-size: 50px;
+        }
     }
 
-    .close-button svg {
-        margin-left: -32px;
+    @media (max-width: 825px) {
+
+        .btn-outline-primary {
+            width: 50px;
+        }
+
+        .fondoPart3Home,
+        .carrucelHome {
+            /* height: 65vh;*/
+            height: auto;
+        }
+
+        footer h1 {
+            width: auto;
+        }
+
+        /*About*/
+        .mainTextAbout {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 35%;
+        }
+
+        .texttitleAbouSection2 {
+            width: auto;
+        }
+
+        .textAboutSect2 {
+            margin: 28px 0 1.9rem 0;
+        }
+
+        .workImag {
+            height: auto !important;
+        }
     }
 
-    .card-bodyhome {
-        /* margin-top: 35%;*/
-        padding: 8px;
-    }
+    @media (max-width:767px) {
+        .btn-outline-primary {
+            width: 62px;
+        }
 
-    .textTestHomeH2 {
-        width: 60%;
-    }
+        .footer a {
+            font-size: 16px;
+        }
 
-    .textAboutSect2 {
-        margin: 3rem 0 1.9rem 0;
-    }
+        .mobileContaact {
+            margin-top: 160px;
+        }
 
-    .textHome h1 {
-        width: 90%;
-        font-size: 50px;
-    }
-}
+        .aboutTextSection2 {
+            width: 100%;
+        }
 
-@media (max-width: 825px) {
-
-    .btn-outline-primary {
-        width: 50px;
-    }
-
-    .fondoPart3Home,
-    .carrucelHome {
-        /* height: 65vh;*/
-        height: auto;
-    }
-
-    footer h1 {
-        width: auto;
-    }
-
-    /*About*/
-    .mainTextAbout {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 35%;
-    }
-
-    .texttitleAbouSection2 {
-        width: auto;
-    }
-
-    .textAboutSect2 {
-        margin: 28px 0 1.9rem 0;
-    }
-
-    .workImag {
-        height: auto !important;
-    }
-}
-
-@media (max-width:767px) {
-    .btn-outline-primary {
-        width: 62px;
-    }
-
-    .footer a {
-        font-size: 16px;
-    }
-
-    .mobileContaact {
-        margin-top: 160px;
-    }
-
-    .aboutTextSection2 {
-        width: 100%;
-    }
-
-    /*.sectionAbout2 {
+        /*.sectionAbout2 {
         height: 150vh;
     }*/
 
-    footer h1 {
-        width: 60%;
+        footer h1 {
+            width: 60%;
+        }
+
+        .footerTitle {
+            font-size: 55px;
+        }
+
+        .line {
+            margin: 25px 0;
+            border-top: 4px solid #ffffff;
+            width: 100%;
+        }
+
+        .margile {
+            margin-left: 0%;
+            margin-right: 20%;
+        }
+
+        .margenGeneral {
+            margin: 0 35px;
+        }
+
+        .marginTopContaTitleContact {
+            width: 80%;
+        }
+
+        .centrarContact {
+            display: block;
+        }
+
+        .margenGeneralContact {
+            margin: 0 15%;
+            margin-top: 25%;
+        }
+
+        #titleWork {
+            font-size: 35px;
+        }
+
+        .modarlCarbody {
+            margin-top: 30px !important;
+        }
+
+        .animatioTopScr2 {
+            width: 96%;
+            margin: 13px;
+            height: 40vh;
+        }
+
+        .work-card {
+            margin-left: -5px;
+        }
+
+        .textPrinciService {
+            margin-left: 15px;
+        }
+
+        .video-container iframe {
+            width: autoh !important;
+            height: 650px;
+            transition: width 0.5s, height 0.5s, transform 0.5s;
+        }
+
+        .top-left {
+            min-width: 250px;
+            min-height: 250px;
+        }
+
+        .top-right {
+            min-width: 250px;
+            min-height: 250px;
+
+        }
+
+        .bottom-left {
+            min-width: 360px;
+            min-height: 360px;
+
+        }
+
+        .bottom-right {
+            min-width: 360px;
+            min-height: 360px;
+        }
+
+        .part2Home {
+            margin-top: 60px;
+        }
     }
 
-    .footerTitle {
-        font-size: 55px;
-    }
+    @media (max-width: 700px) {
+        .textppart2Home {
+            width: auto;
+        }
 
-    .line {
-        margin: 25px 0;
-        border-top: 4px solid #ffffff;
-        width: 100%;
-    }
-
-    .margile {
-        margin-left: 0%;
-        margin-right: 20%;
-    }
-
-    .margenGeneral {
-        margin: 0 35px;
-    }
-
-    .marginTopContaTitleContact {
-        width: 80%;
-    }
-
-    .centrarContact {
-        display: block;
-    }
-
-    .margenGeneralContact {
-        margin: 0 15%;
-        margin-top: 25%;
-    }
-
-    #titleWork {
-        font-size: 35px;
-    }
-
-    .modarlCarbody {
-        margin-top: 30px !important;
-    }
-
-    .animatioTopScr2 {
-        width: 96%;
-        margin: 13px;
-        height: 40vh;
-    }
-
-    .work-card {
-        margin-left: -5px;
-    }
-
-    .textPrinciService {
-        margin-left: 15px;
-    }
-
-    .video-container iframe {
-        width: autoh !important;
-        height: 650px;
-        transition: width 0.5s, height 0.5s, transform 0.5s;
-    }
-
-    .top-left {
-        min-width: 250px;
-        min-height: 250px;
-    }
-
-    .top-right {
-        min-width: 250px;
-        min-height: 250px;
-
-    }
-
-    .bottom-left {
-        min-width: 360px;
-        min-height: 360px;
-
-    }
-
-    .bottom-right {
-        min-width: 360px;
-        min-height: 360px;
-    }
-
-    .part2Home {
-        margin-top: 60px;
-    }
-}
-
-@media (max-width: 700px) {
-    .textppart2Home {
-        width: auto;
-    }
-
-    /*  .card-bodyhome {
+        /*  .card-bodyhome {
         margin-top: 15%;
     }*/
 
-    .video-container iframe {
-        width: auto !important;
-        height: 650px;
-        transition: width 0.5s, height 0.5s, transform 0.5s;
-    }
-
-    .cardHome {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cardContHome:nth-child(2),
-    .cardContHome:nth-child(3),
-    .cardContHome:nth-child(4) {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-
-    .margenTopService {
-        margin-top: 30% !important;
-    }
-
-    .textPrinciService {
-        margin-top: -10px !important;
-        width: auto;
-    }
-
-    .footerConter {
-        padding: 12px;
-        margin-left: 0;
-    }
-
-    .textTestHomeH2 {
-        width: 80%;
-    }
-
-    .textTestiModal {
-        font-size: 18px;
-    }
-
-    .margenGeneralService {
-        margin: 0;
-    }
-
-    .textService {
-        margin-top: 8px;
-        margin-bottom: 15px;
-        margin-left: -15px;
-    }
-
-    .contenServiceFinal .row {
-        padding: 20px;
-        margin: 15px;
-    }
-
-    .titleTestimService {
-        margin-top: 10px;
-    }
-
-
-    .titleCarruWorkHome {
-        font-size: 45px;
-    }
-
-    .contenService {
-        margin: 0 0;
-    }
-
-    .principalServices {
-        margin-bottom: 15%;
-    }
-
-    .textHome h1 {
-        font-size: 45px;
-    }
-
-    .video-container {
-        margin-top: 20px;
-    }
-
-}
-
-@media (max-width: 625px) {
-
-    .corner-image {
-        position: absolute;
-        width: auto;
-        height: auto;
-        min-width: 200px;
-        min-height: 200px;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-
-    .btn-outline-primary {
-        width: 54px;
-    }
-
-    .textHome h1 {
-        width: auto;
-    }
-
-    .fondoPart3Home,
-    .carrucelHome {
-        /*height: 70vh;*/
-        height: auto;
-    }
-
-    .carrucelHome {
-        margin-top: 60px !important;
-        margin-bottom: 160px !important;
-    }
-
-    swiper-container .card {
-        height: auto;
-    }
-
-    swiper-container {
-        margin-top: 25px;
-        width: 80%;
-        padding-top: 60px;
-        padding-bottom: 50px;
-
-    }
-
-    swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 26%;
-    }
-
-    .margenTopService {
-
-        margin-top: 45% !important;
-    }
-
-    .cardContHome {
-        width: 100% !important;
-    }
-
-    .mobileContaact {
-        margin-top: 130px;
-    }
-
-    .margenGeneralContact {
-        margin: 0 15%;
-    }
-
-    .contact {
-        margin-top: 137px;
-    }
-
-    .textTestHomeH2 {
-        width: auto;
-    }
-
-    .line {
-        margin: 25px 0;
-        border-top: 4px solid #ffffff;
-        width: 100%;
-    }
-
-    .margile {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .margenGeneral,
-    .margenGeneralContact {
-        margin: 0 20px;
-    }
-
-    .centrarContact {
-        margin-top: 30%;
-        display: block;
-        width: 90%;
-    }
-
-    .testimonioModal {
-        padding: 25px 0;
-    }
-
-    .top-left {
-        min-width: 200px;
-        min-height: 200px;
-    }
-
-    .top-right {
-        min-width: 200px;
-        min-height: 200px;
-
-    }
-
-    .bottom-left {
-        min-width: 360px;
-        min-height: 360px;
-
-    }
-
-    .bottom-right {
-        min-width: 360px;
-        min-height: 360px;
-    }
-}
-
-@media (max-width: 600px) {
-    .card-bodyhome {
-        margin-top: 20%;
-    }
-
-    .content {
-        /* padding: 10px 20px;*/
-        padding: 0 12px;
-    }
-
-    .on-top {
-        margin-top: 4%;
-    }
-
-    /*About*/
-    .mainTextAbout {
-        width: 82%;
-        margin: 0 auto;
-        margin-top: 40%;
-    }
-
-    .cardPageTestiHome {
-        height: auto;
-        width: auto;
-    }
+        .video-container iframe {
+            width: auto !important;
+            height: 650px;
+            transition: width 0.5s, height 0.5s, transform 0.5s;
+        }
+
+        .cardHome {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cardContHome:nth-child(2),
+        .cardContHome:nth-child(3),
+        .cardContHome:nth-child(4) {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+
+        .margenTopService {
+            margin-top: 30% !important;
+        }
+
+        .textPrinciService {
+            margin-top: -10px !important;
+            width: auto;
+        }
+
+        .footerConter {
+            padding: 12px;
+            margin-left: 0;
+        }
+
+        .textTestHomeH2 {
+            width: 80%;
+        }
+
+        .textTestiModal {
+            font-size: 18px;
+        }
+
+        .margenGeneralService {
+            margin: 0;
+        }
+
+        .textService {
+            margin-top: 8px;
+            margin-bottom: 15px;
+            margin-left: -15px;
+        }
+
+        .contenServiceFinal .row {
+            padding: 20px;
+            margin: 15px;
+        }
+
+        .titleTestimService {
+            margin-top: 10px;
+        }
+
+
+        .titleCarruWorkHome {
+            font-size: 45px;
+        }
+
+        .contenService {
+            margin: 0 0;
+        }
+
+        .principalServices {
+            margin-bottom: 15%;
+        }
+
+        .textHome h1 {
+            font-size: 45px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+    }
+
+    @media (max-width: 625px) {
+
+        .corner-image {
+            position: absolute;
+            width: auto;
+            height: auto;
+            min-width: 200px;
+            min-height: 200px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .btn-outline-primary {
+            width: 54px;
+        }
+
+        .textHome h1 {
+            width: auto;
+        }
+
+        .fondoPart3Home,
+        .carrucelHome {
+            /*height: 70vh;*/
+            height: auto;
+        }
+
+        .carrucelHome {
+            margin-top: 60px !important;
+            margin-bottom: 160px !important;
+        }
+
+        swiper-container .card {
+            height: auto;
+        }
+
+        swiper-container {
+            margin-top: 25px;
+            width: 80%;
+           /* padding-top: 60px;*/
+            padding-bottom: 50px;
+
+        }
+
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 26%;
+        }
+
+        .margenTopService {
+
+            margin-top: 45% !important;
+        }
+
+        .cardContHome {
+            width: 100% !important;
+        }
+
+        .mobileContaact {
+            margin-top: 130px;
+        }
+
+        .margenGeneralContact {
+            margin: 0 15%;
+        }
+
+        .contact {
+            margin-top: 137px;
+        }
+
+        .textTestHomeH2 {
+            width: auto;
+        }
+
+        .line {
+            margin: 25px 0;
+            border-top: 4px solid #ffffff;
+            width: 100%;
+        }
+
+        .margile {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        .margenGeneral,
+        .margenGeneralContact {
+            margin: 0 20px;
+        }
+
+        .centrarContact {
+            margin-top: 30%;
+            display: block;
+            width: 90%;
+        }
+
+        .testimonioModal {
+            padding: 25px 0;
+        }
 
-    .draw-on-scroll,
-    .draw-on-scroll1,
-    .draw-on-scroll6 {
-        transition: width 3s ease;
-    }
-
-    .draw-on-scroll2 {
-        transition: width 3s ease, right 3s ease;
-    }
-
-    .testimonioHome {
-        height: 50vh;
-    }
-
-    .textSubAbout {
-        margin-top: 0;
-    }
-
-    .card-bodyabout {
-        margin-left: -20px;
-    }
-
-    .paddingWork {
-        padding: 0 45px;
-    }
-
-    .textTestiModal {
-        font-size: 16px;
-        color: var(--text-White);
-    }
-
-    #titleModal {
-        font-size: 35px !important;
-    }
-
-    #titleWork {
-        font-size: 25px;
-    }
-
-}
-
-
-@media screen and (min-width: 420px) and (max-width: 604px) {
-    .card-bodyhome {
-        margin-top: 11%;
-    }
-}
-
-@media (max-width: 478px) {
-
-    .carrucelHome .card-body {
-        margin-top: 10px;
-    }
-
-    .btn-outline-primary {
-        width: 45px;
-    }
-
-    swiper-container .card {
-        padding: 25px;
-        height: 100%;
-    }
-
-    swiper-container .card .row {
-        margin-top: 0;
-    }
-
-    .textHome {
-        margin-top: 30%;
-    }
-
-
-    .textHome h1 {
-        font-size: 34px;
-        margin: 0 auto;
-        width: 90%;
-        font-family: var(--FontspringDemo);
-        margin-bottom: 20px;
-    }
-
-    .textHome p {
-        width: auto;
-        margin: 0 auto;
-        margin-bottom: 25px;
-    }
-
-    swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .fondoPart3Home,
-    .carrucelHome {
-        /*height: 100vh;*/
-        height: auto;
-    }
-
-    .carrucelHome {
-        margin-top: 60px !important;
-        margin-bottom: 60px !important;
-    }
-
-    swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 25%;
-    }
-
-    .margenGeneral,
-    .margenGeneralContact {
-        margin: 0 5px;
-    }
+        .top-left {
+            min-width: 200px;
+            min-height: 200px;
+        }
 
-    .textppart2Home {
-        width: 100%;
-    }
-
-    /*home card*/
-    .cardHome {
-        flex-direction: column;
-        align-items: normal;
-    }
-
-    .cardContHome {
-        width: auto !important;
-    }
-
-    .testimony {
-        height: 100vh;
-    }
-
-    .btn-contact,
-    .btn-contact:hover {
-        margin: 0 0 30px 0;
-    }
-
-    .cardPageTestiHome {
-        height: auto;
-        width: auto;
-    }
-
-    .video-container iframe {
-        width: auto !important;
-        height: 250px;
-        transition: width 0.5s, height 0.5s, transform 0.5s;
-    }
-
-    .video-container {
-        margin-top: 10px;
-    }
-
-    /* Page Work*/
-
-    .paddingWork-left {
-        padding-left: 15px;
-    }
-
-    .on-top {
-        margin-top: 54%;
-    }
-
-    .paddingWork {
-        padding: 15px;
-    }
-
-    .workContent {
-        margin-top: 155px;
-    }
-
-    .scrollerWork {
-        padding: 30px;
-        transition: bottom 7s ease !important;
-    }
-
-    .textModalFinal {
-        width: auto;
-        margin-bottom: 35px;
-    }
-
-    .modalFinal {
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        padding: 50px 0px;
-    }
-
-    .modalConte .content {
-        padding: 0;
-    }
-
-    .paddingWork2 {
-        margin-top: 25px;
-        padding: 0 0;
-    }
-
-    /*Contact*/
-    .contact {
-        margin-top: 13%;
-    }
-
-    .mobileContaact {
-        margin-top: 100px;
-    }
-
-    .draw-on-scroll3 {
-        margin-top: 45px;
-    }
-
-    .centrarContact {
-        width: 100%;
-    }
-
-    /*About*/
-    .mainTextAbout {
-        width: auto;
-        margin: 0 auto;
-        margin-top: 60%;
-    }
+        .top-right {
+            min-width: 200px;
+            min-height: 200px;
 
-    .draw-on-scroll,
-    .draw-on-scroll2 {
-        margin-left: 15px;
-    }
-
-    .testimonioAboutBootm {
-        margin-bottom: 28%;
-    }
+        }
+
+        .bottom-left {
+            min-width: 360px;
+            min-height: 360px;
+
+        }
 
-    .sectionAbout4 .row {
-        --bs-gutter-x: 0 !important;
+        .bottom-right {
+            min-width: 360px;
+            min-height: 360px;
+        }
     }
 
-    /* .margenCardAbout {
+    @media (max-width: 600px) {
+        .card-bodyhome {
+            margin-top: 20%;
+        }
+
+        .content {
+            /* padding: 10px 20px;*/
+            padding: 0 12px;
+        }
+
+        .on-top {
+            margin-top: 4%;
+        }
+
+        /*About*/
+        .mainTextAbout {
+            width: 82%;
+            margin: 0 auto;
+            margin-top: 40%;
+        }
+
+        .cardPageTestiHome {
+            height: auto;
+            width: auto;
+        }
+
+        .draw-on-scroll,
+        .draw-on-scroll1,
+        .draw-on-scroll6 {
+            transition: width 3s ease;
+        }
+
+        .draw-on-scroll2 {
+            transition: width 3s ease, right 3s ease;
+        }
+
+        .testimonioHome {
+            height: 50vh;
+        }
+
+        .textSubAbout {
+            margin-top: 0;
+        }
+
+        .card-bodyabout {
+            margin-left: -20px;
+        }
+
+        .paddingWork {
+            padding: 0 45px;
+        }
+
+        .textTestiModal {
+            font-size: 16px;
+            color: var(--text-White);
+        }
+
+        #titleModal {
+            font-size: 35px !important;
+        }
+
+        #titleWork {
+            font-size: 25px;
+        }
+
+    }
+
+
+    @media screen and (min-width: 420px) and (max-width: 604px) {
+        .card-bodyhome {
+            margin-top: 11%;
+        }
+    }
+
+    @media (max-width: 478px) {
+
+        .carrucelHome .card-body {
+            margin-top: 10px;
+        }
+
+        .btn-outline-primary {
+            width: 45px;
+        }
+
+        swiper-container .card {
+            padding: 25px;
+            height: 100%;
+        }
+
+        swiper-container .card .row {
+            margin-top: 0;
+        }
+
+        .textHome {
+            margin-top: 30%;
+        }
+
+
+        .textHome h1 {
+            font-size: 34px;
+            margin: 0 auto;
+            width: 90%;
+            font-family: var(--FontspringDemo);
+            margin-bottom: 20px;
+        }
+
+        .textHome p {
+            width: auto;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        swiper-container {
+            width: 100%;
+       /*     padding-top: 50px;*/
+            padding-bottom: 50px;
+        }
+
+        .fondoPart3Home,
+        .carrucelHome {
+            /*height: 100vh;*/
+            height: auto;
+        }
+
+        .carrucelHome {
+            margin-top: 60px !important;
+            margin-bottom: 60px !important;
+        }
+
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 25%;
+        }
+
+        .margenGeneral,
+        .margenGeneralContact {
+            margin: 0 5px;
+        }
+
+        .textppart2Home {
+            width: 100%;
+        }
+
+        /*home card*/
+        .cardHome {
+            flex-direction: column;
+            align-items: normal;
+        }
+
+        .cardContHome {
+            width: auto !important;
+        }
+
+        .testimony {
+            height: 100vh;
+        }
+
+        .btn-contact,
+        .btn-contact:hover {
+            margin: 0 0 30px 0;
+        }
+
+        .cardPageTestiHome {
+            height: auto;
+            width: auto;
+        }
+
+        .video-container iframe {
+            width: auto !important;
+            height: 250px;
+            transition: width 0.5s, height 0.5s, transform 0.5s;
+        }
+
+        .video-container {
+            margin-top: 10px;
+        }
+
+        /* Page Work*/
+
+        .paddingWork-left {
+            padding-left: 15px;
+        }
+
+        .on-top {
+            margin-top: 54%;
+        }
+
+        .paddingWork {
+            padding: 15px;
+        }
+
+        .workContent {
+            margin-top: 155px;
+        }
+
+        .scrollerWork {
+            padding: 30px;
+            transition: bottom 7s ease !important;
+        }
+
+        .textModalFinal {
+            width: auto;
+            margin-bottom: 35px;
+        }
+
+        .modalFinal {
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            padding: 50px 0px;
+        }
+
+        .modalConte .content {
+            padding: 0;
+        }
+
+        .paddingWork2 {
+            margin-top: 25px;
+            padding: 0 0;
+        }
+
+        /*Contact*/
+        .contact {
+            margin-top: 13%;
+        }
+
+        .mobileContaact {
+            margin-top: 100px;
+        }
+
+        .draw-on-scroll3 {
+            margin-top: 45px;
+        }
+
+        .centrarContact {
+            width: 100%;
+        }
+
+        /*About*/
+        .mainTextAbout {
+            width: auto;
+            margin: 0 auto;
+            margin-top: 60%;
+        }
+
+        .draw-on-scroll,
+        .draw-on-scroll2 {
+            margin-left: 15px;
+        }
+
+        .testimonioAboutBootm {
+            margin-bottom: 28%;
+        }
+
+        .sectionAbout4 .row {
+            --bs-gutter-x: 0 !important;
+        }
+
+        /* .margenCardAbout {
         padding: 0 68px;
     }*/
 
-    .textPrinciAbout {
-        width: auto;
+        .textPrinciAbout {
+            width: auto;
+        }
+
+        /*service*/
+
+        .animatioTopScr2 {
+            width: auto;
+            margin: 13px;
+            height: 40vh;
+        }
+
+        .principalServices .imagenFlui img {
+            padding: 21px !important;
+        }
+
+        .footerTitle {
+            font-size: 45px;
+        }
+
+        .marginTopContaTitleContact {
+            width: 90%;
+        }
+
+        .finalFooter {
+            padding-bottom: 0
+        }
+
+        .contenServiceFinal .row {
+            padding-right: 8px;
+            padding-left: 8px;
+            margin: 15px;
+        }
+
+
+        .top-left {
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        .top-right {
+            min-width: 200px;
+            min-height: 200px;
+
+        }
+
+        .bottom-left {
+            min-width: 230px;
+            min-height: 330px;
+
+        }
+
+        .bottom-right {
+            min-width: 230px;
+            min-height: 330px;
+        }
+
+        .part2Home {
+            margin-top: 60px;
+        }
+
+        .textTestHomeH2 {
+            font-size: 35px;
+        }
+
+        .designation {
+            font-size: 14px;
+        }
+
+        .testimonioHome .margeTopAbouTesti {
+            height: 60vh !important;
+        }
     }
 
-    /*service*/
+    @media (max-width: 430px) {
+        .btn-outline-primary {
+            width: 40px;
+        }
 
-    .animatioTopScr2 {
-        width: auto;
-        margin: 13px;
-        height: 40vh;
-    }
+        .footer {
+            margin-top: 60%;
+        }
 
-    .principalServices .imagenFlui img {
-        padding: 21px !important;
-    }
+        .footer a {
+            font-size: 15px;
+        }
 
-    .footerTitle {
-        font-size: 45px;
-    }
+        .mobileContaact {
+            margin-top: 90px;
+        }
 
-    .marginTopContaTitleContact {
-        width: 90%;
-    }
-
-    .finalFooter {
-        padding-bottom: 0
-    }
-
-    .contenServiceFinal .row {
-        padding-right: 8px;
-        padding-left: 8px;
-        margin: 15px;
-    }
-
-
-    .top-left {
-        min-width: 200px;
-        min-height: 200px;
-    }
-
-    .top-right {
-        min-width: 200px;
-        min-height: 200px;
-
-    }
-
-    .bottom-left {
-        min-width: 230px;
-        min-height: 330px;
-
-    }
-
-    .bottom-right {
-        min-width: 230px;
-        min-height: 330px;
-    }
-
-    .part2Home {
-        margin-top: 60px;
-    }
-
-    .textTestHomeH2 {
-        font-size: 35px;
-    }
-
-    .designation {
-        font-size: 14px;
-    }
-
-    .testimonioHome .margeTopAbouTesti{
-        height: 60vh !important;
-    }
-}
-
-@media (max-width: 430px) {
-    .btn-outline-primary {
-        width: 40px;
-    }
-
-    .footer {
-        margin-top: 60%;
-    }
-
-    .footer a {
-        font-size: 15px;
-    }
-
-    .mobileContaact {
-        margin-top: 90px;
-    }
-
-    /*.centrarContact2 {
+        /*.centrarContact2 {
         padding: 0 15px;
     }*/
 
-    /*.testimonioHome {
+        /*.testimonioHome {
         height: 60vh;
     }
 */
 
-    .textHome {
-        margin-top: 18%;
+        .textHome {
+            margin-top: 18%;
+        }
+
+        .top-left {
+            min-width: 200px;
+            min-height: 200px;
+        }
+
+        .top-right {
+            min-width: 200px;
+            min-height: 200px;
+
+        }
+
+        .bottom-left {
+            min-width: 200px;
+            min-height: 240px;
+
+        }
+
+        .bottom-right {
+            min-width: 200px;
+            min-height: 240px;
+        }
+
+        .margeTopAbouTesti {
+            margin-bottom: 160px;
+        }
     }
 
-    .top-left {
-        min-width: 200px;
-        min-height: 200px;
+    @media(max-width: 400px) {
+        .testimonioAboutBootm {
+            margin-bottom: 85%;
+        }
+
+        .imageOurFon {
+            max-width: 290px !important;
+        }
+
+        .navbar .container-fluid {
+            height: 18vh;
+        }
+
+        .textHome {
+            margin-top: 30%;
+        }
+
+        .testimonioHome {
+            height: 60vh;
+        }
+
+        .margeTopAbouTesti {
+            margin-bottom: -100px;
+        }
     }
 
-    .top-right {
-        min-width: 200px;
-        min-height: 200px;
+    @media (max-width: 378px) {
 
-    }
+        .btn-outline-primary {
+            width: 36px;
+        }
 
-    .bottom-left {
-        min-width: 200px;
-        min-height: 240px;
+        swiper-container {
+            width: 100%;
+         /*   padding-top: 50px;*/
+            padding-bottom: 50px;
+        }
 
-    }
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 270px;
+            height: 26%;
+        }
 
-    .bottom-right {
-        min-width: 200px;
-        min-height: 240px;
-    }
+        .footer {
+            margin-top: 90%;
+        }
 
-    .margeTopAbouTesti {
-        margin-bottom: 160px;
-    }
-}
+        .footerConter {
+            padding: 8px;
+            margin-left: 0;
+        }
 
-@media(max-width: 400px) {
-    .testimonioAboutBootm {
-        margin-bottom: 85%;
-    }
+        .footer a {
+            font-size: 14px;
+        }
 
-    .imageOurFon {
-        max-width: 290px !important;
-    }
+        .centrarContact2 {
+            padding: 0 10px;
+        }
 
-    .navbar .container-fluid {
-        height: 18vh;
-    }
+        .textContacMobile {
+            font-size: 19px;
+        }
 
-    .textHome {
-        margin-top: 30%;
-    }
-
-    .testimonioHome {
-        height: 60vh;
-    }
-
-    .margeTopAbouTesti {
-        margin-bottom: -100px;
-    }
-}
-
-@media (max-width: 378px) {
-
-    .btn-outline-primary {
-        width: 36px;
-    }
-
-    swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 270px;
-        height: 26%;
-    }
-
-    .footer {
-        margin-top: 90%;
-    }
-
-    .footerConter {
-        padding: 8px;
-        margin-left: 0;
-    }
-
-    .footer a {
-        font-size: 14px;
-    }
-
-    .centrarContact2 {
-        padding: 0 10px;
-    }
-
-    .textContacMobile {
-        font-size: 19px;
-    }
-
-    /*.testimonioHome {
+        /*.testimonioHome {
         height: 50vh;
     }
 */
-    .testimonioAboutBootm {
-        margin-bottom: 105%;
+        .testimonioAboutBootm {
+            margin-bottom: 105%;
+        }
+
+        .imageOurFon {
+            max-width: 280px !important;
+        }
+
+        .wrapper .btn {
+            margin-left: 115px;
+        }
+
+        .navbar .container-fluid {
+            height: 20vh;
+        }
+
+        .top-left {
+            min-width: 180px;
+            min-height: 180px;
+        }
+
+        .top-right {
+            min-width: 180px;
+            min-height: 180px;
+
+        }
+
+        .bottom-left {
+            min-width: 190px;
+            min-height: 290px;
+
+        }
+
+        .testimonioHome {
+            height: 55vh;
+        }
+
+        .bottom-right {
+            min-width: 190px;
+            min-height: 290px;
+        }
+
+
+        .margeTopAbouTesti {
+            margin-bottom: -20px;
+        }
+
+        .margeTopAbouTesti {
+            margin-bottom: -120px;
+        }
     }
 
-    .imageOurFon {
-        max-width: 280px !important;
+    @media (max-width: 360px) {
+
+        .wrapper .btn {
+            margin-left: 105px;
+        }
+
+        .imageOurFon {
+            max-width: 275px !important;
+        }
+
+        .btn-outline-primary {
+            width: 32px;
+        }
+
+        .textHome {
+            margin-top: 30%;
+        }
+
+        .fondoPart3Home,
+        .carrucelHome {
+            height: 70vh;
+        }
+
+        swiper-container {
+            width: 100%;
+           /* padding-top: 50px;*/
+            padding-bottom: 50px;
+        }
+
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 275px;
+            height: 26%;
+        }
+
+        .footer {
+            margin-top: 120%;
+        }
+
+        .testimonioAboutBootm {
+            margin-bottom: 59%;
+        }
+
+        .testimonioAboutBootm {
+            margin-bottom: 130%;
+        }
+
+        .fondoPart3Home,
+        .carrucelHome {
+            height: auto;
+        }
+
+        .testimonioHome {
+            height: 50vh;
+        }
     }
-
-    .wrapper .btn {
-        margin-left: 115px;
-    }
-
-    .navbar .container-fluid {
-        height: 20vh;
-    }
-
-    .top-left {
-        min-width: 180px;
-        min-height: 180px;
-    }
-
-    .top-right {
-        min-width: 180px;
-        min-height: 180px;
-
-    }
-
-    .bottom-left {
-        min-width: 190px;
-        min-height: 290px;
-
-    }
-
-    .testimonioHome {
-        height: 55vh;
-    }
-
-    .bottom-right {
-        min-width: 190px;
-        min-height: 290px;
-    }
-
-
-    .margeTopAbouTesti {
-        margin-bottom: -20px;
-    }
-
-    .margeTopAbouTesti {
-        margin-bottom: -120px;
-    }
-}
-
-@media (max-width: 360px) {
-
-    .wrapper .btn {
-        margin-left: 105px;
-    }
-
-    .imageOurFon {
-        max-width: 275px !important;
-    }
-
-    .btn-outline-primary {
-        width: 32px;
-    }
-
-    .textHome {
-        margin-top: 30%;
-    }
-
-    .fondoPart3Home,
-    .carrucelHome {
-        height: 70vh;
-    }
-
-    swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 275px;
-        height: 26%;
-    }
-
-    .footer {
-        margin-top: 120%;
-    }
-
-    .testimonioAboutBootm {
-        margin-bottom: 59%;
-    }
-
-    .testimonioAboutBootm {
-        margin-bottom: 130%;
-    }
-
-    .fondoPart3Home,
-    .carrucelHome {
-        height: auto;
-    }
-
-    .testimonioHome {
-        height: 50vh;
-    }
-}

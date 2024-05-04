@@ -261,7 +261,7 @@ figure:nth-child(24) {
 @media screen and (min-width: 1026px) and (max-width: 1060px) {
   .scrollimg {
     width: 100%;
-    height: 230px;
+    height: 330px;
   }
 }
 
@@ -272,14 +272,40 @@ figure:nth-child(24) {
   }
 }
 
+@media screen and (min-width: 1091px) and (max-width: 1287px) {
+  .carrucelHome {
+    height: auto;
+  }
 
-@media screen and (min-width: 1258px) and (max-width: 1587px) {
+  swiper-slide {
+    width: 650px;
+    height: 600px;
+  }
+}
+
+
+
+@media screen and (min-width: 1180px) and (max-width: 1257px) {
+  .scrollimg {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+
+@media screen and (min-width: 1258px) and (max-width: 1350px) {
+  .scrollimg {
+    width: 100%;
+    height: 330px;
+  }
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1587px) {
   .scrollimg {
     width: 100%;
     height: 430px;
   }
 }
-
 
 @media screen and (min-width: 1587px) and (max-width: 1887px) {
   .scrollimg {
@@ -302,7 +328,15 @@ figure:nth-child(24) {
   }
 }
 
-@media (max-width: 1024px) {
+
+@media screen and (min-width: 846px) and (max-width: 1000px) {
+  .scrollimg {
+    width: 100%;
+    height: 360px;
+  }
+}
+
+@media (max-width: 1030px) {
 
   /* .contedorGrid {
 
@@ -548,7 +582,8 @@ figure:nth-child(24) {
     grid-row: 8;
     grid-column: 2;
   }
-/*
+
+  /*
   figure:nth-child(19) {
     grid-row: 10;
     grid-column: 1;
@@ -616,7 +651,8 @@ figure:nth-child(24) {
   figure:nth-child(16),
   figure:nth-child(17),
   figure:nth-child(18),
-  figure:nth-child(19),  figure:nth-child(20),
+  figure:nth-child(19),
+  figure:nth-child(20),
   figure:nth-child(21),
   figure:nth-child(22),
   figure:nth-child(23),
@@ -627,7 +663,7 @@ figure:nth-child(24) {
   }
 
   /* figure:nth-child(19),*/
-/*  figure:nth-child(20),
+  /*  figure:nth-child(20),
   figure:nth-child(21),
   figure:nth-child(22),
   figure:nth-child(23),

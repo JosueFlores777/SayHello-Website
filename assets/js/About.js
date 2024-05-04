@@ -31,7 +31,7 @@ $(window).scroll(function () {
 
   if (sectionAbout3Top <= (scrollTop + windowHeight)) {
     var parallax = (scrollNew / 4);
-    if ($(window).width() <= 1024) {
+    if ($(window).width() <= 1030) {
       var parallax = (scrollNew / 5);
       if ($(window).width() <= 845) {
         $("figure:nth-child(2)").css("transform", "translateY(" + (parallax - 250) + "px)");
