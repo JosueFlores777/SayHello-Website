@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
     duration: 2000,
     delay: 300,
     origin: "bottom",
-    distance: "130px",
+    distance: "180px",
     reset: true
   });
 
@@ -200,21 +200,6 @@ sr1.reveal(".mySwiper", {
 });
 */
 
-
-var showMegaCheckbox = document.querySelector('.mobile-item');
-var megaBox = document.querySelector('.mega-box');
-
-showMegaCheckbox.addEventListener('change', function () {
-  if (this.checked) {
-    megaBox.style.display = 'block';
-  } else {
-    megaBox.style.transition = 'all 0.0001s ease;';
-    megaBox.style.opacity = '0';
-    setTimeout(function () {
-      megaBox.style.display = 'none';
-    }, 300);
-  }
-});
 
 
 /* card carrucel */

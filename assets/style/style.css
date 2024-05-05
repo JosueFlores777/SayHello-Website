@@ -3512,6 +3512,9 @@ footer button {
     .margeTex1{
         text-align: center;
     }
+    .name {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -3629,7 +3632,9 @@ footer button {
     /*  .part2Home {
         margin-top: 35%;
     }*/
-
+    .cardPageTestiHome {
+        height: 29rem;
+    }
     .margeTopAbouTesti{
         height: 69vh;
         margin-bottom: 5%;
