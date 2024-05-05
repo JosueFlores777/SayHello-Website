@@ -2182,6 +2182,10 @@ footer button {
         width: 1000px;
         height: 700px;
     }
+
+    .titleCarruWorkHome{
+        font-size: 3rem;
+    }
 }
 
 @media screen and (min-width: 1511px) and (max-width: 1620px) {
@@ -2233,7 +2237,9 @@ footer button {
         min-height: 700px;
 
     }
-
+    .titleCarruWorkHome{
+        font-size: 3.5rem;
+    }
 }
 
 
@@ -2268,6 +2274,10 @@ footer button {
         min-width: 800px;
         min-height: 800px;
 
+    }
+
+    .titleCarruWorkHome{
+        font-size: 4rem;
     }
 }
 
