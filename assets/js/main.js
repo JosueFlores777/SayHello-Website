@@ -82,7 +82,7 @@ startFlipping();
 
 /* */
 var lastScrollTop = 0;
-
+/*
 function handleVideoZoom() {
   var scrollPosition = window.scrollY;
   var scrollDirection = scrollPosition > lastScrollTop ? 'down' : 'up';
@@ -99,7 +99,7 @@ function handleVideoZoom() {
 
 window.addEventListener('scroll', handleVideoZoom);
 document.addEventListener('DOMContentLoaded', handleVideoZoom);
-
+*/
 
 
 window.addEventListener('scroll', function () {
@@ -143,6 +143,21 @@ document.addEventListener('DOMContentLoaded', function () {
     reset: true
   });
 
+  const sr123 = ScrollReveal({
+    duration: 2000,
+    delay: 300,
+    origin: "bottom",
+    distance: "130px",
+    reset: true
+  });
+
+  sr123.reveal(".animationScroll2", {
+    origin: "bottom",
+    interval: 200,
+    reset: true
+  });
+
+
 
   const sr12 = ScrollReveal({
     duration: 2000,
@@ -157,14 +172,16 @@ document.addEventListener('DOMContentLoaded', function () {
     interval: 200,
     reset: true
   });
-  window.addEventListener('scroll', function () {
+ /* window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
     var scaleFactor = Math.min(scrollPosition / 400, 1);
 
-    videoIframe.style.width = (450 + 350 * scaleFactor) + 'px';
-    videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
-    videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
-  });
+
+      videoIframe.style.width = (400 + 350 * scaleFactor) + 'px';
+      videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+      videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+
+  });*/
 });
 /*
 const sr1 = ScrollReveal({

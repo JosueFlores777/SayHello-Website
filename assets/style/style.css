@@ -284,6 +284,10 @@ nav .wrapper {
 
 
 
+.part2Home {
+    margin-top: 10%;
+}
+
 @media screen and (max-width: 970px) {
     .mega-box .content {
         background: none;
@@ -1177,7 +1181,7 @@ swiper-slide {
     background-color: var(--text-White);
 }
 
-.contenService h2 {
+.contenService h2,.margeTex1, .margeTex2 {
     font-family: var(--Urbanist);
 }
 
@@ -1830,10 +1834,11 @@ footer button {
 .fontContact {
     font-family: var(--Urbanist);
 }
+/*
 .part2Home {
     margin-top: 17%;
 }
-
+*/
 @media (max-width: 768px) {
 
     .paddingContactForm {
@@ -2765,9 +2770,9 @@ footer button {
         min-height: 360px;
     }
 
-    .part2Home {
+  /*  .part2Home {
         margin-top: 20%;
-    }
+    }*/
     .textHome {
         margin-top: 18%;
         color: var(--text-White);
@@ -3003,9 +3008,9 @@ footer button {
         margin-bottom: 65px;
     }
 
-    .part2Home {
+  /*  .part2Home {
         margin-top: 22%;
-    }
+    }*/
 }
 
 @media (max-width: 600px) {
@@ -3323,7 +3328,7 @@ footer button {
     }
 
     .part2Home {
-        margin-top: 28%;
+        margin-top: 20%;
     }
 
     .textTestHomeH2 {
@@ -3396,9 +3401,9 @@ footer button {
         margin-bottom: 160px;
     }
 
-    .part2Home {
+  /*  .part2Home {
         margin-top: 32%;
-    }
+    }*/
 
     swiper-slide {
      
@@ -3438,9 +3443,9 @@ footer button {
         margin-bottom: -100px;
     }
 
-    .part2Home {
+  /*  .part2Home {
         margin-top: 35%;
-    }
+    }*/
 }
 
 @media (max-width: 378px) {
@@ -3538,10 +3543,10 @@ footer button {
     .margeTopAbouTesti {
         margin-bottom: -120px;
     }
-
+/*
     .part2Home {
         margin-top: 55% !important;
-    }
+    }*/
 }
 
 @media (max-width: 360px) {

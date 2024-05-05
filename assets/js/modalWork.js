@@ -1,6 +1,6 @@
 var boxes = [
   {
-    typeWork: 'Wensite Development',
+    typeWork: 'Website Development',
     image: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 01.png',
     titleModal: 'Hotel Equinoccio',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
@@ -48,7 +48,7 @@ var boxes = [
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     nameTest: 'Name 1',
   },{
-    typeWork: 'Wensite Development',
+    typeWork: 'Website Development',
     image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     titleModal: 'Fisherman’s',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
@@ -94,7 +94,7 @@ var boxes = [
     nameTest: 'Name 1',
   }
   ,{
-    typeWork: 'Wensite Development',
+    typeWork: 'Website Development',
     image: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 01.jpg',
     titleModal: 'Fertiagro',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
@@ -110,7 +110,7 @@ var boxes = [
     nameTest: 'Name 1',
   }
   ,{
-    typeWork: 'Wensite Development',
+    typeWork: 'Website Development',
     image: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 01.jpg',
     titleModal: 'Aventu Fest',
     video: '../assets/img/Portfolio2024/videos/Aventu Fest Showcase_1080p.mp4',
