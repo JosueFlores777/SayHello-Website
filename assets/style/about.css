@@ -101,7 +101,7 @@ figure {
 .scrollimg {
   display: block;
   width: 100%;
-  height: 430px;
+  height: auto !important;
   border-radius: 25px;
   box-shadow: 0 0 56px rgba(0, 0, 0, 0.1);
 }
@@ -259,32 +259,44 @@ figure:nth-child(24) {
 
 
 @media screen and (min-width: 1026px) and (max-width: 1060px) {
-  .scrollimg {
+ /* .scrollimg {
     width: 100%;
-    height: 330px;
-  }
+    height: auto;
+  }*/
+  .image-caption2 {
+    margin-left: -10px;
+    font-size: 14px;
+    padding: 11px;
+    border-radius: 45px;
+}
 }
 
 @media screen and (min-width: 1058px) and (max-width: 1187px) {
   .scrollimg {
     width: 100%;
-    height: 330px;
+    height: auto;
   }
+  .image-caption2 {
+    margin-left: -10px;
+    font-size: 14px;
+    padding: 11px;
+    border-radius: 45px;
 }
-
+}
+/*
 @media screen and (min-width: 1091px) and (max-width: 1287px) {
   swiper-slide {
     width: 650px;
     height: 600px;
   }
 }
+*/
 
-
-
+/*
 @media screen and (min-width: 1180px) and (max-width: 1257px) {
   .scrollimg {
     width: 100%;
-    height: 330px;
+    height: auto;
   }
 }
 
@@ -296,10 +308,17 @@ figure:nth-child(24) {
   }
 }
 
-@media screen and (min-width: 1351px) and (max-width: 1587px) {
+@media screen and (min-width: 1351px) and (max-width: 1405px) {
   .scrollimg {
     width: 100%;
-    height: 430px;
+    height: 390px;
+  }
+}
+
+@media screen and (min-width: 1406px) and (max-width: 1587px) {
+  .scrollimg {
+    width: 100%;
+    height: 412px;
   }
 }
 
@@ -331,7 +350,7 @@ figure:nth-child(24) {
     height: 360px;
   }
 }
-
+*/
 @media (max-width: 1030px) {
 
   /* .contedorGrid {
