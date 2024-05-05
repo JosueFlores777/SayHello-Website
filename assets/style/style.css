@@ -1487,6 +1487,12 @@ swiper-slide {
 .sectionAbout4 .row {
     --bs-gutter-x: none !important;
 }
+.titleProyec{
+    font-family: var(--FontspringDemoText);
+}
+ .contectProyect{
+ font-family: var(--Urbanist);
+}
 
 /*carrucel infinito About*/
 
@@ -2165,11 +2171,25 @@ footer button {
         height: 20px;
         width: 70px;
     }
+
+    .titleProyec{
+        font-size: 29px;
+    }
+     .contectProyect{
+        font-size: 13px;
+    }
 }
 
 @media screen and (min-width: 1251px) and (max-width: 1400px) {
     .btn-outline-primary {
         width: 83px;
+    }
+
+    .titleProyec{
+        font-size: 30px;
+    }
+     .contectProyect{
+        font-size: 14px;
     }
 }
 
@@ -2191,6 +2211,12 @@ footer button {
     .titleCarruWorkHome{
         font-size: 3rem;
     }
+    .titleProyec{
+        font-size: 32px;
+    }
+     .contectProyect{
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 1511px) and (max-width: 1620px) {
@@ -2202,7 +2228,12 @@ footer button {
         width: 1050px;
         height: auto;
     }
-
+    .titleProyec{
+        font-size: 34px;
+    }
+     .contectProyect{
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 1621px) and (max-width: 2500px) {
@@ -2244,6 +2275,13 @@ footer button {
     }
     .titleCarruWorkHome{
         font-size: 3.5rem;
+    }
+
+    .titleProyec{
+        font-size: 38px;
+    }
+     .contectProyect{
+        font-size: 20px;
     }
 }
 
@@ -2363,6 +2401,13 @@ footer button {
     .textTestHomeH2 {
         width: 50%;
     }
+
+    .titleProyec{
+        font-size: 22px;
+    }
+     .contectProyect{
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:1000px) and (max-width: 1030px) {
@@ -2475,7 +2520,12 @@ footer button {
     .textAboutSect2 {
         margin: 2rem 0;
     }
-
+    .titleProyec{
+        font-size: 20px;
+    }
+     .contectProyect{
+        font-size: 10px;
+    }
 }
 
 
