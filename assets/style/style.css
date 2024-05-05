@@ -195,10 +195,9 @@ nav .wrapper {
     visibility: visible;
 }
 
-.drop-menu,
-.mega-box {
+.drop-menu,.mega-box {
     transform: translateY(-10px);
-    transition: all 0.3s ease, transform 1s ease;
+    transition: all 0.5s ease, transform 1s ease;
     top: 70px;
 }
 
@@ -288,30 +287,39 @@ nav .wrapper {
     margin-top: 10%;
 }
 
-.nav-links > li {
-    position: relative; 
-  }
-  
-  .mega-box {
+.nav-links>li {
+    position: relative;
+}
+
+.mega-box {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%; 
-    z-index: 1000; 
-    display: none; 
-  }
-  
-  
-  .nav-links > li:hover .mega-box {
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.nav-links>li:hover .mega-box {
     display: block;
-  }
-  .mega-box .content {
+}
+
+.mega-box .content {
     background: #242526;
     padding: 25px 20px;
     display: flex;
     width: 65vh;
     justify-content: space-between;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 @media screen and (max-width: 970px) {
@@ -761,11 +769,11 @@ nav input {
 /*parte 1*/
 
 .home {
-   /* height: 100vh;*/
-   height: auto;
+    /* height: 100vh;*/
+    height: auto;
 }
 
-.imganes{
+.imganes {
     height: 100vh;
 }
 
@@ -1207,7 +1215,9 @@ swiper-slide {
     background-color: var(--text-White);
 }
 
-.contenService h2,.margeTex1, .margeTex2 {
+.contenService h2,
+.margeTex1,
+.margeTex2 {
     font-family: var(--Urbanist);
 }
 
@@ -1513,11 +1523,13 @@ swiper-slide {
 .sectionAbout4 .row {
     --bs-gutter-x: none !important;
 }
-.titleProyec{
+
+.titleProyec {
     font-family: var(--FontspringDemoText);
 }
- .contectProyect{
- font-family: var(--Urbanist);
+
+.contectProyect {
+    font-family: var(--Urbanist);
 }
 
 /*carrucel infinito About*/
@@ -1866,6 +1878,7 @@ footer button {
 .fontContact {
     font-family: var(--Urbanist);
 }
+
 /*
 .part2Home {
     margin-top: 17%;
@@ -1937,7 +1950,8 @@ footer button {
         margin-left: 5%;
         margin-right: 10%;
     }
-/*
+
+    /*
     .part2Home {
         margin-top: 38%;
     }*/
@@ -2144,6 +2158,7 @@ footer button {
         width: 550px;
         border-radius: 15px;
     }
+
     .textHome {
         margin-top: 10% !important;
     }
@@ -2198,10 +2213,11 @@ footer button {
         width: 70px;
     }
 
-    .titleProyec{
+    .titleProyec {
         font-size: 29px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 13px;
     }
 }
@@ -2211,10 +2227,11 @@ footer button {
         width: 83px;
     }
 
-    .titleProyec{
+    .titleProyec {
         font-size: 30px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 14px;
     }
 
@@ -2238,17 +2255,19 @@ footer button {
         height: 700px;
     }
 
-    .titleCarruWorkHome{
+    .titleCarruWorkHome {
         font-size: 3rem;
     }
-    .titleProyec{
+
+    .titleProyec {
         font-size: 32px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 15px;
     }
 
-    
+
     .mega-box .content {
         width: 75vh;
     }
@@ -2263,14 +2282,16 @@ footer button {
         width: 1050px;
         height: auto;
     }
-    .titleProyec{
+
+    .titleProyec {
         font-size: 34px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 18px;
     }
 
-    
+
     .mega-box .content {
         width: 75vh;
     }
@@ -2313,18 +2334,20 @@ footer button {
         min-height: 700px;
 
     }
-    .titleCarruWorkHome{
+
+    .titleCarruWorkHome {
         font-size: 3.5rem;
     }
 
-    .titleProyec{
+    .titleProyec {
         font-size: 38px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 20px;
     }
 
-    
+
     .mega-box .content {
         width: 75vh;
     }
@@ -2364,10 +2387,10 @@ footer button {
 
     }
 
-    .titleCarruWorkHome{
+    .titleCarruWorkHome {
         font-size: 4rem;
     }
-    
+
     .mega-box .content {
         width: 75vh;
     }
@@ -2451,10 +2474,11 @@ footer button {
         width: 50%;
     }
 
-    .titleProyec{
+    .titleProyec {
         font-size: 22px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 12px;
     }
 }
@@ -2569,10 +2593,12 @@ footer button {
     .textAboutSect2 {
         margin: 2rem 0;
     }
-    .titleProyec{
+
+    .titleProyec {
         font-size: 20px;
     }
-     .contectProyect{
+
+    .contectProyect {
         font-size: 10px;
     }
 }
@@ -2635,6 +2661,7 @@ footer button {
         height: auto;
     }
 }
+
 @media screen and (min-width: 765px) and (max-width: 939px) {
     swiper-slide {
         width: 480px;
@@ -2744,7 +2771,8 @@ footer button {
     .workImag {
         height: auto !important;
     }
-/*
+
+    /*
     .part2Home {
         margin-top: 25% !important;
     }*/
@@ -2869,7 +2897,7 @@ footer button {
         min-height: 360px;
     }
 
-  /*  .part2Home {
+    /*  .part2Home {
         margin-top: 20%;
     }*/
     .textHome {
@@ -2971,6 +2999,7 @@ footer button {
     .video-container {
         margin-top: 20px;
     }
+
     .cardPageTestiHome {
         height: 380PX;
     }
@@ -3107,7 +3136,7 @@ footer button {
         margin-bottom: 65px;
     }
 
-  /*  .part2Home {
+    /*  .part2Home {
         margin-top: 22%;
     }*/
 }
@@ -3171,7 +3200,7 @@ footer button {
     #titleWork {
         font-size: 25px;
     }
-   
+
 }
 
 
@@ -3208,6 +3237,7 @@ footer button {
     .textHome {
         margin-top: 30%;
     }
+
     .textHome h1 {
         font-size: 34px;
         margin: 0 auto;
@@ -3500,12 +3530,12 @@ footer button {
         margin-bottom: 160px;
     }
 
-  /*  .part2Home {
+    /*  .part2Home {
         margin-top: 32%;
     }*/
 
     swiper-slide {
-     
+
         width: 90%;
     }
 }
@@ -3542,7 +3572,7 @@ footer button {
         margin-bottom: -100px;
     }
 
-  /*  .part2Home {
+    /*  .part2Home {
         margin-top: 35%;
     }*/
 }
@@ -3642,7 +3672,8 @@ footer button {
     .margeTopAbouTesti {
         margin-bottom: -120px;
     }
-/*
+
+    /*
     .part2Home {
         margin-top: 55% !important;
     }*/
@@ -3670,6 +3701,7 @@ footer button {
         font-size: 30px;
         width: auto;
     }
+
     .textHome p {
         font-size: 12px;
     }
@@ -3714,7 +3746,7 @@ footer button {
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 359px){
+@media screen and (min-width: 200px) and (max-width: 359px) {
     .testimonioHome {
         height: 80vh;
     }
@@ -3725,7 +3757,8 @@ footer button {
         height: 100%;
     }
 
-    .margenGeneral, .margenGeneralContact{
+    .margenGeneral,
+    .margenGeneralContact {
         margin: 0;
     }
 }
