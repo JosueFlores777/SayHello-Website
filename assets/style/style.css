@@ -195,7 +195,8 @@ nav .wrapper {
     visibility: visible;
 }
 
-.drop-menu,.mega-box {
+.drop-menu,
+.mega-box {
     transform: translateY(-10px);
     transition: all 0.5s ease, transform 1s ease;
     top: 70px;
@@ -1114,7 +1115,7 @@ swiper-slide {
     margin: 10px auto;
     position: absolute;
     background-color: #6d4416;
-    height: 360PX;
+    height: 20rem;
     width: 50%;
     border-radius: 15px;
     padding: 10px;
@@ -1909,9 +1910,11 @@ footer button {
         flex: 0 0 auto;
         width: 100% !important;
     }
+
     .titleProyec {
         font-size: 24px !important;
     }
+
     .contectProyect {
         font-size: 14px !important;
     }
@@ -3481,6 +3484,10 @@ footer button {
     .testimonioHome {
         height: 68vh;
     }
+
+    .margeTopAbouTesti{
+        height: 58vh;
+    }
 }
 
 @media (max-width: 430px) {
@@ -3544,6 +3551,23 @@ footer button {
 
         width: 90%;
     }
+
+    .cardPageTestiHome {
+        width: 90%;
+    }
+
+    .cardPageTestiHome {
+        height: 26rem;
+    }
+
+    .margeTopAbouTesti{
+        height: 69vh;
+        
+    }
+ 
+    .margeTopAbouTesti .cardPageTestiHome{
+        height: 35rem;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
@@ -3581,6 +3605,19 @@ footer button {
     /*  .part2Home {
         margin-top: 35%;
     }*/
+
+    .margeTopAbouTesti{
+        height: 69vh;
+        margin-bottom: 5%;
+    }
+ 
+    .margeTopAbouTesti .cardPageTestiHome{
+        height: 35rem;
+    }
+
+    .margeTopAbouTesti .cardPageTestiHome {
+        width: 95%;
+    }
 }
 
 @media (max-width: 378px) {
@@ -3678,11 +3715,21 @@ footer button {
     .margeTopAbouTesti {
         margin-bottom: -120px;
     }
+    .cardPageTestiHome {
+        height: 28rem;
+    }
 
-    /*
-    .part2Home {
-        margin-top: 55% !important;
-    }*/
+    .margeTopAbouTesti{
+        height: 74vh;
+    }
+ 
+    .margeTopAbouTesti .cardPageTestiHome{
+        height: 34rem;
+    }
+
+    .margeTopAbouTesti .cardPageTestiHome {
+        width: 99%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -3750,6 +3797,18 @@ footer button {
     .testimonioHome {
         height: 50vh;
     }
+
+    .margeTopAbouTesti{
+        height: 72vh;
+    }
+ 
+    .margeTopAbouTesti .cardPageTestiHome{
+        height: 37rem;
+    }
+
+    .margeTopAbouTesti .cardPageTestiHome {
+        width: 99%;
+    }
 }
 
 @media screen and (min-width: 200px) and (max-width: 359px) {
@@ -3766,5 +3825,10 @@ footer button {
     .margenGeneral,
     .margenGeneralContact {
         margin: 0;
+    }
+
+    .cardPageTestiHome {
+        width: 99%;
+        height: 30rem;
     }
 }
