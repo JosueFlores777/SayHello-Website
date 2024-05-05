@@ -668,6 +668,10 @@ nav input {
     color: #ffffff86;
 }
 
+.textColor-white6 {
+    color: #ffffff86;
+}
+
 .textColor-white:hover {
     color: #fff;
     margin: 14px;
@@ -1032,7 +1036,7 @@ nav input {
 .btn-carrucelHomeS,
 .btn-carrucelHomeS:hover {
     background-color: #f0126a;
-    width: 155px;
+    width: 155px !important;
     color: #fff;
 }
 
@@ -1092,6 +1096,7 @@ swiper-slide {
 /*TestimonyHome*/
 .testimonioHome {
     height: 60vh;
+    margin-bottom: 10%;
 }
 
 .titleTextTesti {
@@ -1949,7 +1954,9 @@ footer button {
         height: auto;
     }
 }
-
+.swiper-3d {
+    perspective: 1500px !important;
+}
 @media screen and (min-width: 1304px) and (max-width: 1521px) {
     .margile {
         margin-left: 10%;
@@ -1959,6 +1966,9 @@ footer button {
     swiper-container .card {
         padding: 65px 35px 65px 35px;
         height: auto;
+    }
+    swiper-container{
+        width: 100%;
     }
 }
 
@@ -2012,8 +2022,7 @@ footer button {
     }
 
     swiper-container {
-
-        width: 90%;
+        width: 100%;
         padding-top: -160px;
     }
 
@@ -2457,6 +2466,9 @@ footer button {
     .textPrinciService {
         margin-left: -5px;
     }
+    swiper-container {
+        width: 100%;
+    }
 }
 
 @media(max-width:1025px) {
@@ -2627,6 +2639,16 @@ footer button {
         font-size: 45px;
     }
 
+    swiper-container {
+        width: 100%;
+    }
+    .titleProyec{
+        font-size: 1.25rem;
+    }
+    .contectProyect{
+        font-size: 14px;
+    }
+    
     swiper-slide {
         width: 750px;
         height: auto;
@@ -2645,7 +2667,7 @@ footer button {
 @media screen and (min-width: 765px) and (max-width: 1090px) {
 
     swiper-container {
-        width: 89%;
+        width: 100%;
     }
 
     .top-left {
@@ -2685,8 +2707,12 @@ footer button {
         height: auto;
     }
 
-    swiper-container {
-        width: 89%;
+}
+
+@media screen and (min-width: 750px) and (max-width: 764px) {
+    swiper-slide {
+        width: 480px;
+        height: auto;
     }
 
 }
@@ -2804,6 +2830,11 @@ footer button {
     .textHome {
         margin-top: 15%;
         color: var(--text-White);
+    }
+
+    .testimonioHome {
+        height: 70vh;
+        margin-bottom: 20%;
     }
 }
 
@@ -3024,6 +3055,9 @@ footer button {
     .cardPageTestiHome {
         height: 380PX;
     }
+    swiper-container{
+        width: 100%;
+    }
 }
 
 @media (max-width: 625px) {
@@ -3061,13 +3095,7 @@ footer button {
         height: auto;
     }
 
-    swiper-container {
-        margin-top: 25px;
-        width: 80%;
-        /* padding-top: 60px;*/
-        padding-bottom: 50px;
 
-    }
 
     swiper-slide {
         background-position: center;

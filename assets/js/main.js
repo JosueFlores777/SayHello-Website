@@ -202,6 +202,7 @@ sr1.reveal(".mySwiper", {
 
 
 
+
 /* card carrucel */
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
