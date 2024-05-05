@@ -288,6 +288,32 @@ nav .wrapper {
     margin-top: 10%;
 }
 
+.nav-links > li {
+    position: relative; 
+  }
+  
+  .mega-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    display: none; 
+  }
+  
+  
+  .nav-links > li:hover .mega-box {
+    display: block;
+  }
+  .mega-box .content {
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 65vh;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 @media screen and (max-width: 970px) {
     .mega-box .content {
         background: none;
@@ -2191,6 +2217,10 @@ footer button {
      .contectProyect{
         font-size: 14px;
     }
+
+    .mega-box .content {
+        width: 75vh;
+    }
 }
 
 
@@ -2217,6 +2247,11 @@ footer button {
      .contectProyect{
         font-size: 15px;
     }
+
+    
+    .mega-box .content {
+        width: 75vh;
+    }
 }
 
 @media screen and (min-width: 1511px) and (max-width: 1620px) {
@@ -2233,6 +2268,11 @@ footer button {
     }
      .contectProyect{
         font-size: 18px;
+    }
+
+    
+    .mega-box .content {
+        width: 75vh;
     }
 }
 
@@ -2283,6 +2323,11 @@ footer button {
      .contectProyect{
         font-size: 20px;
     }
+
+    
+    .mega-box .content {
+        width: 75vh;
+    }
 }
 
 
@@ -2321,6 +2366,10 @@ footer button {
 
     .titleCarruWorkHome{
         font-size: 4rem;
+    }
+    
+    .mega-box .content {
+        width: 75vh;
     }
 }
 
