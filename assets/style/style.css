@@ -3720,7 +3720,7 @@ footer button {
         margin-bottom: -120px;
     }
     .cardPageTestiHome {
-        height: 28rem;
+        height: 29rem;
     }
 
     .margeTopAbouTesti{
@@ -3800,6 +3800,9 @@ footer button {
 
     .testimonioHome {
         height: 50vh;
+    }
+    .cardPageTestiHome {
+        height: 31rem;
     }
 
     .margeTopAbouTesti{
