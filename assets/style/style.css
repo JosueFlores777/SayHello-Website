@@ -1207,15 +1207,31 @@ swiper-slide {
     height: auto;
 }
 
-.animatioTopScr2 {
+.animatioTopScr2,.advertisingImg, .websiteImg, .brandingImg, .digitalImg {
     height: 70vh;
     width: 100%;
-    background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 35px;
 }
+
+.animatioTopScr2, .digitalImg {
+    background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
+}
+.animatioTopScr2,.advertisingImg{
+    background-image: url('../img/services/advertising-plans/advertising.jpeg');
+}
+
+.animatioTopScr2 .websiteImg {
+    background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
+}
+
+.animatioTopScr2 .brandingImg {
+    background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
+}
+
+
 
 
 .contenService .col-md-6 {
@@ -2934,7 +2950,7 @@ footer button {
         margin-top: 30px !important;
     }
 
-    .animatioTopScr2 {
+    .animatioTopScr2,.advertisingImg, .websiteImg, .brandingImg, .digitalImg {
         width: 96%;
         margin: 13px;
         height: 40vh;
@@ -3491,7 +3507,7 @@ footer button {
 
     /*service*/
 
-    .animatioTopScr2 {
+    .animatioTopScr2,.advertisingImg, .websiteImg, .brandingImg, .digitalImg {
         width: auto;
         margin: 13px;
         height: 40vh;
