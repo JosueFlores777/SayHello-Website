@@ -213,7 +213,7 @@ nav .wrapper {
 .mega-box {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: auto;
     /*padding: 0 30px;*/
     top: 85px;
     opacity: 0;
@@ -1076,12 +1076,12 @@ swiper-slide {
     margin: 10px auto;
     position: absolute;
     background-color: #6d4416;
-    height: auto;
+    height: 360PX;
     width: 50%;
     border-radius: 15px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: inline-grid;
     flex-direction: column;
     /* text-align: center;*/
     justify-content: space-between;
@@ -2472,7 +2472,7 @@ footer button {
 
     swiper-slide {
         width: 750px;
-        height: 500px;
+        height: auto;
     }
 }
 
@@ -2486,10 +2486,6 @@ footer button {
 }
 
 @media screen and (min-width: 765px) and (max-width: 1090px) {
-    swiper-slide {
-        width: 650px;
-        height: 520px;
-    }
 
     swiper-container {
         width: 89%;
@@ -2517,6 +2513,24 @@ footer button {
         min-height: 400px;
 
     }
+}
+
+@media screen and (min-width: 940px) and (max-width: 1025px) {
+    swiper-slide {
+        width: 680px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 765px) and (max-width: 939px) {
+    swiper-slide {
+        width: 480px;
+        height: auto;
+    }
+
+    swiper-container {
+        width: 89%;
+    }
+
 }
 
 
@@ -2843,7 +2857,9 @@ footer button {
     .video-container {
         margin-top: 20px;
     }
-
+    .cardPageTestiHome {
+        height: 380PX;
+    }
 }
 
 @media (max-width: 625px) {
@@ -2892,7 +2908,6 @@ footer button {
     swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
         height: 26%;
     }
 
@@ -3004,11 +3019,6 @@ footer button {
         margin-top: 40%;
     }
 
-    .cardPageTestiHome {
-        height: auto;
-        width: auto;
-    }
-
     .draw-on-scroll,
     .draw-on-scroll1,
     .draw-on-scroll6 {
@@ -3047,13 +3057,17 @@ footer button {
     #titleWork {
         font-size: 25px;
     }
-
+   
 }
 
 
 @media screen and (min-width: 420px) and (max-width: 604px) {
     .card-bodyhome {
         margin-top: 11%;
+    }
+
+    .cardPageTestiHome {
+        height: 480px;
     }
 }
 
@@ -3114,7 +3128,6 @@ footer button {
     swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
         height: 25%;
     }
 
@@ -3146,10 +3159,6 @@ footer button {
         margin: 0 0 30px 0;
     }
 
-    .cardPageTestiHome {
-        height: auto;
-        width: auto;
-    }
 
     .video-container iframe {
         width: auto !important;
@@ -3380,6 +3389,11 @@ footer button {
     .part2Home {
         margin-top: 32%;
     }
+
+    swiper-slide {
+     
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
@@ -3432,13 +3446,6 @@ footer button {
         width: 100%;
         /*   padding-top: 50px;*/
         padding-bottom: 50px;
-    }
-
-    swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 270px;
-        height: 26%;
     }
 
     swiper-container .card {
@@ -3599,6 +3606,7 @@ footer button {
     }
 
     swiper-container .card {
+        width: 102%;
         padding: 18px;
         height: 100%;
     }
