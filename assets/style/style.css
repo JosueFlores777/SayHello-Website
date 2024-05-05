@@ -1909,6 +1909,12 @@ footer button {
         flex: 0 0 auto;
         width: 100% !important;
     }
+    .titleProyec {
+        font-size: 22px !important;
+    }
+    .contectProyect {
+        font-size: 13px !important;
+    }
 }
 
 /* end home*/
