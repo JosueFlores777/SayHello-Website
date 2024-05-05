@@ -654,6 +654,10 @@ nav input {
     margin: 14px;
 }
 
+.textColor-white4,.textColor-white5 {
+    color: #010101 !important;
+}
+
 .textColor-white3 {
     border-radius: 4px;
     color: #fff;
@@ -2921,6 +2925,10 @@ footer button {
     .margeTopAbouTesti {
         margin-bottom: 65px;
     }
+
+    .textColor-white5{
+       font-size: 10px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -3232,7 +3240,9 @@ footer button {
 }
 
 @media (max-width: 478px) {
-
+    .textColor-white5 {
+        font-size: 5px;
+    }
 
     .carrucelHome .card-body {
         margin-top: 10px;
@@ -3496,6 +3506,12 @@ footer button {
     .margeTopAbouTesti{
         height: 58vh;
     }
+    .navbar .container-fluid {
+        height: 16vh;
+    }
+    .margeTex1{
+        text-align: center;
+    }
 }
 
 @media (max-width: 430px) {
@@ -3595,7 +3611,7 @@ footer button {
     }
 
     .navbar .container-fluid {
-        height: 18vh;
+        height: 17vh;
     }
 
     .textHome {
@@ -3686,7 +3702,7 @@ footer button {
     }
 
     .navbar .container-fluid {
-        height: 20vh;
+        height: 18vh;
     }
 
     .top-left {
