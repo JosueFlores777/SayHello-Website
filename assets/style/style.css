@@ -3544,6 +3544,15 @@ footer button {
 }
 
 @media (max-width: 478px) {
+
+    .mainTextAbout h1 {
+font-size: 2.8rem;
+    }
+
+    .texttitleAbouSection2, .teamTextAbout h1 {
+        font-size: 2.4rem;
+    }
+
     .textColor-white5 {
         font-size: 5px;
     }
@@ -3921,6 +3930,15 @@ footer button {
 
 
 @media(max-width: 400px) {
+
+
+    .texttitleAbouSection2, .teamTextAbout h1 {
+        font-size: 1.9rem;
+    }
+    .mainTextAbout h1 {
+        font-size: 2.2rem;
+            }
+        
     .testimonioAboutBootm {
         margin-bottom: 85%;
     }
