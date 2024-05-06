@@ -5,15 +5,6 @@ var boxes = [
     titleModal: 'Hotel Equinoccio',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'Equinoccio is a hotel situated in Lake Coatepeque, a popular tourist spot in El Salvador. Our client wanted to revamp their website to mirror the aesthetics and cleanliness portrayed in their social media. Together, we worked on UX/UI design and website development to achieve their desired look and feel.',
-<<<<<<< HEAD
-
-    video: '../assets/img/Portfolio2024/videos/Hotel Equinoccio Showcase_1080p.mp4',
-    imgcard1: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.png',
-    imgcard2: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 03.png',
-    imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.png',
-    imgcard4: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.png',
-=======
->>>>>>> master
 
     video: '../assets/img/Portfolio2024/videos/Hotel Equinoccio Showcase_1080p.mp4',
     imgcard1: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.png',
@@ -30,20 +21,14 @@ var boxes = [
     image: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 01.jpg',
     titleModal: 'Visible Talent',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-<<<<<<< HEAD
-    cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-=======
 
     cardText: 'The Marketing Plan involves thorough company analysis, goal setting, and audience identification, along with the establishment of digital assets.',
     cardText2: 'Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels.',
->>>>>>> master
     video: '../assets/img/Portfolio2024/videos/Visible Talent Showcase_1080p.mp4',
     imgcard1: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 02.jpg',
     imgcard2: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 03.jpg',
     imgcard3: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 04.jpg',
     imgcard4: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 05.jpg',
-<<<<<<< HEAD
-=======
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
@@ -73,54 +58,11 @@ var boxes = [
     imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
->>>>>>> master
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     nameTest: 'Name 1',
   }, {
-<<<<<<< HEAD
-    typeWork: 'Marketing Campaign',
-    image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    titleModal: 'Teatro Luis Poma',
-    Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-    cardText: 'We collaborated with Teatro Luis Poma for their 20th anniversary celebration of continuous theater seasons. For this special occasion, we created the "Teatromorphosis" campaign together.',
-    video: '../assets/img/Portfolio2024/videos/Teatro Luis Poma20th Anniversary.mp4',
-    imgcard1: '../assets/img/Portfolio2024/TeatroPoma/PORTADA-facebook-Naara.png',
-    imgcard2: '../assets/img/Portfolio2024/TeatroPoma/Mini campana-tlp logo12.jpg',
-    imgcard3: '../assets/img/Portfolio2024/TeatroPoma/portada web_acto 1_2022.png',
-    imgcard4: '../assets/img/Portfolio2024/TeatroPoma/Mini campana-tlp logo12.jpg',
-
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
-  }, {
-    typeWork: 'Website Development',
-    image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    titleModal: 'Fisherman’s',
-    Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-    cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-
-    imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
-  }, {
-    typeWork: 'Marketing Campaign ',
-    image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    titleModal: 'Bebemundo',
-    Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-    cardText: ' Bebemundo is the biggest baby items store in El Salvador. We partnered with them for their summer campaign, aiming to capture the essence of the season with eye-catching images that resonate with their audience.',
-
-    imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-=======
     typeWork: 'Marketing Campaign ',
     image: '../assets/img/Portfolio2024/Card Images/bebe-mundo-cover-image.jpg',
     titleModal: 'Bebemundo',
@@ -131,7 +73,6 @@ var boxes = [
     imgcard2: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-02.jpg',
     imgcard3: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-03.jpg',
     imgcard4: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-04.jpg',
->>>>>>> master
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
@@ -157,11 +98,7 @@ var boxes = [
     image: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 01.jpg',
     titleModal: 'Fertiagro',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-<<<<<<< HEAD
-    cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-=======
     cardText: "Fertiagro is a hub for distributing agrochemical products that enhance agricultural outcomes. The client entrusted us to craft a website that narrated the company's journey and showcased its products and services in a creative, sleek, and contemporary manner, reflecting the brand's credibility and professionalism.To meet this demand, we offered UX/UI design and website development services.",
->>>>>>> master
     video: '../assets/img/Portfolio2024/videos/Fertiagro Showcase_1080p.mp4',
     imgcard1: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 2.jpg',
     imgcard2: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 3.jpg',
@@ -178,11 +115,7 @@ var boxes = [
     titleModal: 'Aventu Fest',
     video: '../assets/img/Portfolio2024/videos/Aventu Fest Showcase_1080p.mp4',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-<<<<<<< HEAD
-    cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quamm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lec. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-=======
     cardText: 'The Marketing Plan involves thorough company analysis, goal setting, and audience identification, along with the establishment of digital assets. <> Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels. ',
->>>>>>> master
 
     imgcard1: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 02.jpg',
     imgcard2: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 03.jpg',
@@ -204,9 +137,6 @@ function selectBox(index) {
  /* document.getElementById("titleWork").textContent = selectedBox.Subtitle;*/
   document.getElementById("cardText").textContent = selectedBox.cardText;
 
-<<<<<<< HEAD
-  document.getElementById("video").src = selectedBox.video;
-=======
 
   if (selectedBox.video) {
     document.getElementById("video").src = selectedBox.video;
@@ -214,7 +144,6 @@ function selectBox(index) {
   } else {
     document.getElementById("video").style.display = "none";
   }
->>>>>>> master
   document.getElementById("imgcardPri").src = selectedBox.image;
   document.getElementById("imgcard1").src = selectedBox.imgcard1;
   document.getElementById("imgcard2").src = selectedBox.imgcard2;
