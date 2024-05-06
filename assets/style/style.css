@@ -1484,7 +1484,8 @@ swiper-slide {
     font-size: 28px;
     font-weight: 700;
     color: #a87c22;
-    font-family: var(--FontspringDemo);
+    font-family: var(--AllRoundGothic);
+    font-weight: bold;
 }
 
 .card-bodyhome p {
@@ -2076,6 +2077,12 @@ footer button {
 
     .contectProyect {
         font-size: 14px !important;
+    }
+
+    .carda {
+
+        width: 97%;
+
     }
 }
 
