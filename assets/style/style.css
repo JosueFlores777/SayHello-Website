@@ -3530,6 +3530,10 @@ footer button {
         font-size: 25px;
     }
 
+    .carda-body {
+        height: var(--cardHeight) + 58px;
+    }
+
 }
 
 
@@ -3920,6 +3924,10 @@ font-size: 2.8rem;
     .textHome p {
         font-size: 15px;
     }
+
+    .testimnomioHomeCard {
+        margin-bottom: 25%;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
@@ -4104,6 +4112,9 @@ font-size: 2.8rem;
 
     .margeTopAbouTesti .cardPageTestiHome {
         width: 99%;
+    }
+    .testimnomioHomeCard {
+        margin-bottom: 30%;
     }
 }
 
