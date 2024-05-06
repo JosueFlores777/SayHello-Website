@@ -20,7 +20,7 @@ var boxes = [
     typeWork: 'Branding & Logo Desing',
     image: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 01.jpg',
     titleModal: 'Visible Talent',
-    Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
+    Subtitle: 'Lorem ipsum dolor sit amet, consectetur sed quam.',
 
     cardText: 'The Marketing Plan involves thorough company analysis, goal setting, and audience identification, along with the establishment of digital assets.',
     cardText2: 'Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels.',
