@@ -1348,20 +1348,11 @@ swiper-slide {
     object-fit: cover;
     border-radius: 25px !important;
 }
-<<<<<<< HEAD
- .brandingImg {
-    background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
-}
-
-
-
-=======
 
 .img-fluid2{
     width: 100%;
     height: auto;
 }
->>>>>>> master
 
 .contenService .col-md-6 {
     max-width: 650px;
