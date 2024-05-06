@@ -835,6 +835,25 @@ nav input {
     color: #fff;
 }
 
+.btn-homeMc {
+    background-color: #696667a8;
+    width: auto;
+    color: #fff;
+}
+
+.btn-homeMc:hover,
+.btn-contacthomeMc:hover {
+    background-color: #f0126a;
+    width: auto;
+    color: #fff;
+}
+
+.btn-carrucelHomeSMac, .btn-carrucelHomeSMac:hover {
+    background-color: #f0126a;
+    width: auto;
+    color: #fff;
+}
+
 .video-container {
     max-width: 800px;
     margin: 0 auto;
