@@ -16,7 +16,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-/*Card TestymoHome */
+/*Card TestymoHome 
 const cardStack = document.querySelector('.cardPageTestiHome-stack');
 let cards = Array.from(cardStack.children);
 let intervalId;
