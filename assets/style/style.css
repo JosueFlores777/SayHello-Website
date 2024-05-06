@@ -3737,6 +3737,18 @@ footer button {
     .margeTopAbouTesti .cardPageTestiHome{
         height: 35rem;
     }
+
+    .textHome {
+        margin-top: 10%;
+    }
+    .textHome h1 {
+        font-size: 32px;
+        width: 95%;
+    }
+
+    .textHome p {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
@@ -3788,6 +3800,18 @@ footer button {
 
     .margeTopAbouTesti .cardPageTestiHome {
         width: 95%;
+    }
+
+    .textHome {
+        margin-top: 10%;
+    }
+    .textHome h1 {
+        font-size: 30px;
+        width: 95%;
+    }
+
+    .textHome p {
+        font-size: 14px;
     }
 }
 
