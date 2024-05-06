@@ -700,6 +700,19 @@ nav input {
     color: #fff;
 }
 
+.btn-ContactMac {
+    width: auto;
+    background-color: #ffffff64;
+    color: #fff;
+}
+
+.btn-ContactMac:hover {
+    width: auto;
+    background-color: #f0126a !important;
+    color: #fff;
+}
+
+
 .btn-menu:hover {
     width: 155px;
     background-color: #f0126a;
@@ -849,7 +862,7 @@ nav input {
 }
 
 .btn-carrucelHomeSMac, .btn-carrucelHomeSMac:hover {
-    background-color: #f0126a;
+    background-color: #f0126a !important;  
     width: auto;
     color: #fff;
 }
@@ -1113,6 +1126,10 @@ swiper-slide {
 /**/
 
 /*TestimonyHome*/
+.testimnomioHomeCard{
+    margin-top: 10%;
+}
+
 
 :root {
     --cards: 3;
@@ -1146,7 +1163,12 @@ swiper-slide {
   
   /*protitpo*/
   
-  
+  .titleTextTesti {
+    position: sticky;
+    top: 10%;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+  }
+
   .carda {
     margin: 0 auto;
     width: 90%;
