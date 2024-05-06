@@ -1286,6 +1286,12 @@ swiper-slide {
     font-size: 15px;
 }
 
+.imageWorkModal{
+    display: flex;
+    justify-content: end; 
+    align-items: center;
+}
+
 .paddingWork-left {
     padding-left: 62px;
 }
@@ -1437,12 +1443,16 @@ swiper-slide {
     width: 100%;
     padding-top: 25px;
 }
-
+/*
 .box img {
     width: 100%;
     height: auto;
 }
-
+*/
+.box img {
+    width: 450px;
+    height: auto;
+  }
 
 #fullscreen-background {
     position: fixed;
@@ -1969,6 +1979,10 @@ footer button {
         padding: 65px 35px 65px 35px;
         height: auto;
     }
+
+    .cardText{
+        font-size: 35px;
+    }
 }
 .swiper-3d {
     perspective: 1500px !important;
@@ -2266,12 +2280,20 @@ footer button {
         height: 20px;
         width: 60px;
     }
+
+    #cardText{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1150px) {
     .btn-outline-primary {
         height: 20px;
         width: 62px;
+    }
+
+    #cardText{
+        font-size: 1.4rem;
     }
 }
 
@@ -2287,6 +2309,10 @@ footer button {
 
     .contectProyect {
         font-size: 13px;
+    }
+
+    #cardText{
+        font-size: 1.5rem;
     }
 }
 
@@ -2305,6 +2331,9 @@ footer button {
 
     .mega-box .content {
         width: 75vh;
+    }
+    #cardText{
+        font-size: 1.7rem;
     }
 }
 
@@ -2343,6 +2372,9 @@ footer button {
     .aboutTextSection2{
         font-size: 18px;
     }
+    #cardText{
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (min-width: 1511px) and (max-width: 1620px) {
@@ -2366,6 +2398,16 @@ footer button {
 
     .mega-box .content {
         width: 75vh;
+    }
+
+    #cardText{
+      
+        font-size: 1.9rem;
+    }
+
+    .box img {
+        width: 500px;
+        height: auto;
     }
 }
 
@@ -2425,6 +2467,13 @@ footer button {
     .aboutTextSection2{
         font-size: 19px;
     }
+    .box img {
+        width: 600px;
+        height: auto;
+    }
+    #cardText{
+        font-size: 2rem;
+    }
 }
 
 
@@ -2466,6 +2515,16 @@ footer button {
 
     .mega-box .content {
         width: 75vh;
+    }
+
+    #cardText{
+       
+        font-size: 2.1rem;
+    }
+
+    .box img {
+        width: 500px;
+        height: auto;
     }
 }
 

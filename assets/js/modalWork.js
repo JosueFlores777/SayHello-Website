@@ -134,7 +134,7 @@ function selectBox(index) {
   document.getElementById("scrollerWork").style.display = "block";
   document.getElementById("workcardModal").textContent = selectedBox.typeWork;
   document.getElementById("titleModal").textContent = selectedBox.titleModal;
-  document.getElementById("titleWork").textContent = selectedBox.Subtitle;
+ /* document.getElementById("titleWork").textContent = selectedBox.Subtitle;*/
   document.getElementById("cardText").textContent = selectedBox.cardText;
 
   document.getElementById("video").src = selectedBox.video;
