@@ -1653,10 +1653,15 @@ swiper-slide {
 }
 
 .mainTextAbout {
-    width: 50%;
+    width: 80%;
     font-family: var(--Urbanist);
     margin: 0 auto;
 }
+
+.mainTextAbout h1 {
+    font-size: 4rem;
+}
+
 
 .teamTextAbout {
     margin-top: 25px;
@@ -1783,8 +1788,13 @@ swiper-slide {
     width: 63%;
 }
 
+.texttitleAbouSection2, .teamTextAbout h1 {
+    font-size: 3.5rem;
+}
+
 .aboutTextSection2 {
-    width: 60%;
+    margin-top: 10%;
+   /* width: 70%;*/
 }
 
 .line {
@@ -1794,8 +1804,8 @@ swiper-slide {
 }
 
 .margile {
-    margin-left: 40%;
-    margin-right: 20%;
+    margin-left: 50%;
+    margin-right: 0%;
 }
 
 /*section 3 esta en about*/
@@ -2078,7 +2088,6 @@ footer button {
     .contectProyect {
         font-size: 14px !important;
     }
-
     .carda {
 
         width: 97%;
@@ -2093,8 +2102,12 @@ footer button {
 
 @media screen and (min-width: 1522px) and (max-width: 1849px) {
     .margile {
-        margin-left: 30%;
-        margin-right: 20%;
+        margin-left: 40%;
+        margin-right: 0%;
+    }
+
+    .texttitleAbouSection2, .teamTextAbout h1 {
+        font-size: 2.8rem;
     }
 
     .sectionAbout1 {
@@ -2115,6 +2128,11 @@ footer button {
     perspective: 1500px !important;
 }
 @media screen and (min-width: 1304px) and (max-width: 1521px) {
+
+    .texttitleAbouSection2, .teamTextAbout h1 {
+        font-size: 2.8rem;
+    }
+
     .margile {
         margin-left: 10%;
         margin-right: 20%;
@@ -2601,9 +2619,12 @@ footer button {
     #cardText{
         font-size: 2rem;
     }
+    
 }
 
-
+.sectionAbout3 {
+    margin-top: 10%;
+}
 @media screen and (min-width: 2500px) and (max-width: 3000px) {
     .btn-outline-primary {
         width: 130px;
@@ -2657,7 +2678,9 @@ footer button {
 
 
 @media (max-width: 1300px) {
-
+    .texttitleAbouSection2, .teamTextAbout h1 {
+        font-size: 2.8rem;
+    }
     .aboutTextSection2,
     .texttitleAbouSection2 {
         width: auto;
@@ -2705,6 +2728,10 @@ footer button {
 
     .designation {
         font-size:22px;
+    }
+
+    .mainTextAbout h1 {
+        font-size: 3.4rem;
     }
 }
 
@@ -3019,6 +3046,14 @@ footer button {
         width: 90%;
         font-size: 50px;
     }
+
+    .texttitleAbouSection2, .teamTextAbout h1 {
+        font-size: 2.4rem;
+    }
+
+    .mainTextAbout h1 {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 825px) {
@@ -3039,7 +3074,7 @@ footer button {
 
     /*About*/
     .mainTextAbout {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 35%;
     }
@@ -3451,7 +3486,7 @@ footer button {
 
     /*About*/
     .mainTextAbout {
-        width: 82%;
+        width: 89%;
         margin: 0 auto;
         margin-top: 40%;
     }
