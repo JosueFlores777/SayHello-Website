@@ -782,8 +782,8 @@ nav input {
 /*parte 1*/
 
 .home {
-    /* height: 100vh;*/
-    height: auto;
+     height: 100vh
+    /*height: auto;*/
 }
 
 .imganes {
@@ -791,7 +791,7 @@ nav input {
 }
 
 .textHome {
-    margin-top: 10%;
+ /*   margin-top: 10%;*/
     color: var(--text-White);
 }
 
@@ -2222,10 +2222,10 @@ footer button {
         width: 550px;
         border-radius: 15px;
     }
-
+/*
     .textHome {
         margin-top: 10% !important;
-    }
+    }*/
 }
 
 @media screen and (min-width: 1900px) and (max-width: 2200px) {
@@ -2425,7 +2425,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 2%;
+    /*    margin-top: 2%;*/
         color: var(--text-White);
     }
 
@@ -2942,7 +2942,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 15%;
+      /*  margin-top: 15%;*/
         color: var(--text-White);
     }
 
@@ -3063,8 +3063,8 @@ footer button {
         margin-top: 20%;
     }*/
     .textHome {
-        margin-top: 18%;
-        color: var(--text-White);
+    /*    margin-top: 18%;*/
+       color: var(--text-White);
     }
 
     .margeTopAbouTesti {
@@ -3291,7 +3291,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 20%;
+      /*  margin-top: 20%;*/
         color: var(--text-White);
     }
 
@@ -3402,10 +3402,10 @@ footer button {
     swiper-container .card .row {
         margin-top: 0;
     }
-
+/*
     .textHome {
         margin-top: 30%;
-    }
+    }*/
 
     .textHome h1 {
         font-size: 34px;
@@ -3740,9 +3740,9 @@ footer button {
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
-    .textHome {
+  /*  .textHome {
         margin-top: 42%;
-    }
+    }*/
 }
 
 
@@ -3758,10 +3758,10 @@ footer button {
     .navbar .container-fluid {
         height: 17vh;
     }
-
+/*
     .textHome {
         margin-top: 30%;
-    }
+    }*/
 
     .testimonioHome {
         height: 80vh;
@@ -3792,9 +3792,9 @@ footer button {
 }
 
 @media (max-width: 378px) {
-    .textHome {
+ /*   .textHome {
         margin-top: 35%;
-    }
+    }*/
 
     .btn-outline-primary {
         width: 36px;
@@ -3916,11 +3916,11 @@ footer button {
     .btn-outline-primary {
         width: 32px;
     }
-
+/*
     .textHome {
         margin-top: 37.2%;
     }
-
+*/
     .textHome h1 {
         font-size: 30px;
         width: auto;
