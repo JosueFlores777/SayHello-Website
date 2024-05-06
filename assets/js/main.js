@@ -2,15 +2,27 @@
 var boxes = [
   {
     typeWork: 'Marketing Campaign ',
+<<<<<<< HEAD
     image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+=======
+    image: '../assets/img/Portfolio2024/Card Images/bebe-mundo-cover-image.jpg',
+>>>>>>> master
     titleModal: 'Bebemundo',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: ' Bebemundo is the biggest baby items store in El Salvador. We partnered with them for their summer campaign, aiming to capture the essence of the season with eye-catching images that resonate with their audience.',
 
+<<<<<<< HEAD
     imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
+=======
+    video : '',
+    imgcard1: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-01.jpg',
+    imgcard2: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-02.jpg',
+    imgcard3: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-03.jpg',
+    imgcard4: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-04.jpg',
+>>>>>>> master
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
@@ -29,25 +41,43 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.png',
     imgcard4: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.png',
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     nameTest: 'Name 1',
   }, {
     typeWork: 'Marketing Campaign',
+<<<<<<< HEAD
     image: 'https://images.unsplash.com/photo-1712675670807-f925abe035b3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+=======
+    image: '../assets/img/Portfolio2024/TeatroPoma/medico-extended.png',
+>>>>>>> master
     titleModal: 'Teatro Luis Poma',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'We collaborated with Teatro Luis Poma for their 20th anniversary celebration of continuous theater seasons. For this special occasion, we created the "Teatromorphosis" campaign together.',
     video: '../assets/img/Portfolio2024/videos/Teatro Luis Poma20th Anniversary.mp4',
+<<<<<<< HEAD
     imgcard1: '../assets/img/Portfolio2024/TeatroPoma/PORTADA-facebook-Naara.png',
     imgcard2: '../assets/img/Portfolio2024/TeatroPoma/Mini campana-tlp logo12.jpg',
     imgcard3: '../assets/img/Portfolio2024/TeatroPoma/portada web_acto 1_2022.png',
     imgcard4: '../assets/img/Portfolio2024/TeatroPoma/Mini campana-tlp logo12.jpg',
+=======
+    imgcard1: '../assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-01.jpg',
+    imgcard2: '../assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-02.jpg',
+    imgcard3: '../assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-03.jpg',
+    imgcard4: '../assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-04.jpg',
+>>>>>>> master
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
     nameTest: 'Name 1',
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
   }
 ];
 function selectBox(index) {
@@ -57,10 +87,22 @@ function selectBox(index) {
   document.getElementById("scrollerWork").style.display = "block";
   document.getElementById("workcardModal").textContent = selectedBox.typeWork;
   document.getElementById("titleModal").textContent = selectedBox.titleModal;
+<<<<<<< HEAD
  /* document.getElementById("titleWork").textContent = selectedBox.Subtitle;*/
   document.getElementById("cardText").textContent = selectedBox.cardText;
 
   document.getElementById("video").src = selectedBox.video;
+=======
+  /* document.getElementById("titleWork").textContent = selectedBox.Subtitle;*/
+  document.getElementById("cardText").textContent = selectedBox.cardText;
+
+  if (selectedBox.video) {
+    document.getElementById("video").src = selectedBox.video;
+    document.getElementById("video").style.display = "block";
+  } else {
+    document.getElementById("video").style.display = "none";
+  }
+>>>>>>> master
   document.getElementById("imgcardPri").src = selectedBox.image;
   document.getElementById("imgcard1").src = selectedBox.imgcard1;
   document.getElementById("imgcard2").src = selectedBox.imgcard2;
@@ -77,7 +119,11 @@ function selectBox(index) {
 function clearSelection() {
   var video = document.getElementById('video');
   if (video) {
+<<<<<<< HEAD
       video.muted = true;
+=======
+    video.muted = true;
+>>>>>>> master
   }
   document.getElementById("scrollerWork").scrollTop = 0;
   document.getElementById("scrollerWork").style.display = "none";
@@ -295,6 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
     interval: 200,
     reset: true
   });
+<<<<<<< HEAD
  /* window.addEventListener('scroll', function () {
     var scrollPosition = window.scrollY;
     var scaleFactor = Math.min(scrollPosition / 400, 1);
@@ -305,6 +352,18 @@ document.addEventListener('DOMContentLoaded', function () {
       videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
 
   });*/
+=======
+  /* window.addEventListener('scroll', function () {
+     var scrollPosition = window.scrollY;
+     var scaleFactor = Math.min(scrollPosition / 400, 1);
+ 
+ 
+       videoIframe.style.width = (400 + 350 * scaleFactor) + 'px';
+       videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+       videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+ 
+   });*/
+>>>>>>> master
 });
 /*
 const sr1 = ScrollReveal({
