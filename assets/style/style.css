@@ -1319,6 +1319,11 @@ swiper-slide {
     height: auto;
 }
 
+.blogServi {
+    text-align: center;
+    margin: 1%;
+}
+
 .contenService .imagenFlui img {
     max-width: 100%;
     height: auto;
