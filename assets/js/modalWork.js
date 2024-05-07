@@ -111,12 +111,12 @@ var boxes = [
     nameTest: 'Name 1',
   }
   , {
-    typeWork: 'Website Development',
+    typeWork: 'UI/UX',
     image: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 01.jpg',
     titleModal: 'Aventu Fest',
     video: '../assets/img/Portfolio2024/videos/Aventu Fest Showcase_1080p.mp4',
     Subtitle: '',
-    cardText: 'The Marketing Plan involves thorough company analysis, goal setting, and audience identification, along with the establishment of digital assets. Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels. ',
+    cardText: 'We collaborated closely with Aventu to create a new initiative: an app designed for making all the necessary purchases for your event. From a diverse range of food and drinks to booking rooms for your guests, this app has you covered. Additionally, we integrated a credit system that provides flexibility to spend according to your needs and preferences.',
 
     imgcard1: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 02.jpg',
     imgcard2: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 03.jpg',
