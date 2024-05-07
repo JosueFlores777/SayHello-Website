@@ -146,6 +146,9 @@ nav .wrapper {
     transition: all 0.3s ease;
 }
 
+.padddingBox {
+padding:  1.5rem 1.5rem 0 1.5rem !important;
+}
 
 .mobile-item {
     background-color: #696667a8;
