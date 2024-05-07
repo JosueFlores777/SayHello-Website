@@ -1289,6 +1289,7 @@ swiper-slide {
     border-radius: 50%;
     margin-right: 10px;
     background-image: none;
+    display: none;
 }
 
 /*page Services*/
@@ -1357,6 +1358,11 @@ swiper-slide {
 .contenService .col-md-6 {
     max-width: 650px;
 }
+
+#cardText,#titleWork{
+    color: #3a3b3c;
+}
+
 
 .contenServiceFinal .row {
     margin-top: 8%;
@@ -1481,7 +1487,7 @@ swiper-slide {
 
 .card-bodyhome h5 {
     margin-left: 20px;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     color: #a87c22;
     font-family: var(--AllRoundGothic);
@@ -2425,7 +2431,9 @@ footer button {
         height: 20px;
         width: 60px;
     }
-
+    #titleWork{
+        font-size: 1.6rem;
+    }
     #cardText{
         font-size: 1.2rem;
     }
@@ -2436,7 +2444,9 @@ footer button {
         height: 20px;
         width: 62px;
     }
-
+    #titleWork{
+        font-size: 1.8rem;
+    }
     #cardText{
         font-size: 1.4rem;
     }
@@ -2455,7 +2465,9 @@ footer button {
     .contectProyect {
         font-size: 13px;
     }
-
+    #titleWork{
+        font-size: 1.8rem;
+    }
     #cardText{
         font-size: 1.5rem;
     }
@@ -2476,6 +2488,9 @@ footer button {
 
     .mega-box .content {
         width: 75vh;
+    }
+    #titleWork{
+        font-size: 2.1rem;
     }
     #cardText{
         font-size: 1.7rem;
@@ -2517,6 +2532,10 @@ footer button {
     .aboutTextSection2{
         font-size: 18px;
     }
+
+    #titleWork{
+        font-size: 2.5rem;
+    }
     #cardText{
         font-size: 1.8rem;
     }
@@ -2549,7 +2568,9 @@ footer button {
       
         font-size: 1.9rem;
     }
-
+    #titleWork{
+        font-size: 2.5rem;
+    }
     .box img {
         width: 500px;
         height: auto;
@@ -2616,12 +2637,17 @@ footer button {
         width: 600px;
         height: auto;
     }
+    #titleWork{
+        font-size: 2.9rem;
+    }
     #cardText{
         font-size: 2rem;
     }
     
 }
-
+#titleWork{
+    font-family: var(--Urbanist);
+}
 .sectionAbout3 {
     margin-top: 10%;
 }
@@ -2666,8 +2692,11 @@ footer button {
     }
 
     #cardText{
-       
         font-size: 2.1rem;
+    }
+
+    #titleWork{
+        font-size: 3rem;
     }
 
     .box img {
@@ -3533,7 +3562,9 @@ footer button {
     .carda-body {
         height: var(--cardHeight) + 58px;
     }
-
+    .scrollerHome[data-speed="slow"] {
+        --_animation-duration: 65s;
+    }
 }
 
 
