@@ -1414,6 +1414,10 @@ swiper-slide {
     font-size: 15px;
 }
 
+.work-card,.work-title{
+    margin-left: 2%;
+}
+
 #workcardModal {
     padding: 8px;
     border-radius: 210px;
@@ -1841,7 +1845,7 @@ swiper-slide {
 }
 
 .scrollerAbout[data-speed="slow"] {
-    --_animation-duration: 50s;
+    --_animation-duration: 99s;
 }
 
 .imageAboutCarrInfi {
