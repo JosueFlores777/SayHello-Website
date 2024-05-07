@@ -1847,7 +1847,9 @@ swiper-slide {
 .scrollerAbout[data-speed="slow"] {
     --_animation-duration: 99s;
 }
-
+.contenServiceFinal{
+    display: none;
+}
 .imageAboutCarrInfi {
     width: 250px;
 }

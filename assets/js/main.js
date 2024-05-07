@@ -35,7 +35,7 @@ var boxes = [
     nameTest: 'Name 1',
   }, {
     typeWork: 'Marketing Campaign',
-    image: './assets/img/Portfolio2024/TeatroPoma/medico-extended.png',
+    image: './assets/img/Portfolio2024/TeatroPoma/tlp-project-showcase-05.jpg',
     titleModal: 'Teatro Luis Poma',
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: 'We collaborated with Teatro Luis Poma for their 20th anniversary celebration of continuous theater seasons. For this special occasion, we created the "Teatromorphosis" campaign together.',
