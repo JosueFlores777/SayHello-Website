@@ -47,7 +47,7 @@
     font-style: normal;
 }
 
-
+*/
 @font-face {
     font-family: 'AllRound Gothic Bold';
     src: url('/assets/fonts/Urbanist-Bold.ttf') format('truetype');
@@ -84,7 +84,7 @@
     font-weight: bold;
     font-style: normal;
 }*/
-
+/*
 
 @font-face {
     font-family: 'AllRound Gothic Bold';
@@ -113,7 +113,7 @@
     font-weight: 400;
     font-style: normal;
 }
-
+*/
 @font-face {
     font-family: 'Fontspring Demo';
     src: url('https://usayhello.com/demowebsite/assets/fonts/Fontspring-DEMO-allroundgothic-bold.otf') format('opentype');

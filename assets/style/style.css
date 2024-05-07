@@ -1,4 +1,5 @@
 @import url('main.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -655,7 +656,8 @@ nav input {
     margin: 14px;
 }
 
-.textColor-white4,.textColor-white5 {
+.textColor-white4,
+.textColor-white5 {
     color: #010101 !important;
 }
 
@@ -796,8 +798,8 @@ nav input {
 /*parte 1*/
 
 .home {
-     height: 100vh
-    /*height: auto;*/
+    height: 100vh
+        /*height: auto;*/
 }
 
 .imganes {
@@ -805,7 +807,7 @@ nav input {
 }
 
 .textHome {
- /*   margin-top: 10%;*/
+    /*   margin-top: 10%;*/
     color: var(--text-White);
 }
 
@@ -862,8 +864,9 @@ nav input {
     color: #fff;
 }
 
-.btn-carrucelHomeSMac, .btn-carrucelHomeSMac:hover {
-    background-color: #f0126a !important;  
+.btn-carrucelHomeSMac,
+.btn-carrucelHomeSMac:hover {
+    background-color: #f0126a !important;
     width: auto;
     color: #fff;
 }
@@ -1128,7 +1131,7 @@ swiper-slide {
 /**/
 
 /*TestimonyHome*/
-.testimnomioHomeCard{
+.testimnomioHomeCard {
     margin-top: 10%;
 }
 
@@ -1138,9 +1141,9 @@ swiper-slide {
     --cardHeight: 50vh;
     --cardTopPadding: 1.5em;
     --cardMargin: 4vw;
-  }
-  
-  #cards {
+}
+
+#cards {
     list-style: none;
     padding-left: 0;
     display: grid;
@@ -1149,50 +1152,50 @@ swiper-slide {
     gap: var(--cardMargin);
     padding-bottom: calc(var(--cards) * var(--cardTopPadding));
     margin-bottom: var(--cardMargin);
-  }
-  
-  #card1 {
+}
+
+#card1 {
     --index: 1;
-  }
-  
-  #card2 {
+}
+
+#card2 {
     --index: 2;
-  }
-  
-  #card3 {
+}
+
+#card3 {
     --index: 3;
-  }
-  
-  /*protitpo*/
-  
-  .titleTextTesti {
+}
+
+/*protitpo*/
+
+.titleTextTesti {
     position: sticky;
     top: 10%;
     padding-top: calc(var(--index) * var(--cardTopPadding));
-  }
+}
 
-  .carda {
+.carda {
     margin: 0 auto;
     width: 90%;
     position: sticky;
     top: 25%;
     padding-top: calc(var(--index) * var(--cardTopPadding));
-  }
+}
 
-  #card1 .carda-body {
+#card1 .carda-body {
     background-color: #c72766;
-  }
-  
-  #card2 .carda-body {
+}
+
+#card2 .carda-body {
     background-color: #D10550;
-  }
-  
-  #card3 .carda-body {
+}
+
+#card3 .carda-body {
     background-color: #8F0C3B;
-  }
-  
-  
-  .carda-body {
+}
+
+
+.carda-body {
     box-sizing: border-box;
     padding: 30px;
     border-radius: 50px;
@@ -1202,8 +1205,8 @@ swiper-slide {
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
-  }
-  
+}
+
 /**/
 .testimonioHome {
     height: 60vh;
@@ -1260,7 +1263,7 @@ swiper-slide {
 }
 
 .designation {
-    font-size:25px;
+    font-size: 25px;
     font-family: var(--Urbanist);
     color: var(--text-White);
     font-weight: normal;
@@ -1321,7 +1324,10 @@ swiper-slide {
     height: auto;
 }
 
-.advertisingImg, .websiteImg, .brandingImg, .digitalImg {
+.advertisingImg,
+.websiteImg,
+.brandingImg,
+.digitalImg {
     height: 70vh;
     width: 100%;
     background-size: cover;
@@ -1330,17 +1336,19 @@ swiper-slide {
     margin-bottom: 35px;
 }
 
- .digitalImg {
+.digitalImg {
     background-image: url('https://images.pexels.com/photos/20780442/pexels-photo-20780442/free-photo-of-madera-paisaje-invierno-parque.jpeg?auto=compress&cs=tinysrgb&w=1660&h=750&dpr=1');
 }
-.advertisingImg{
+
+.advertisingImg {
     background-image: url('../img/services/advertising-plans/advertising.jpeg');
 }
+
 .websiteImg {
     height: auto;
     width: 100%;
     margin-bottom: 35px;
-    
+
 }
 
 .websiteImg video {
@@ -1350,7 +1358,7 @@ swiper-slide {
     border-radius: 25px !important;
 }
 
-.img-fluid2{
+.img-fluid2 {
     width: 100%;
     height: auto;
 }
@@ -1359,7 +1367,8 @@ swiper-slide {
     max-width: 650px;
 }
 
-#cardText,#titleWork{
+#cardText,
+#titleWork {
     color: #3a3b3c;
 }
 
@@ -1412,9 +1421,9 @@ swiper-slide {
     font-size: 15px;
 }
 
-.imageWorkModal{
+.imageWorkModal {
     display: flex;
-    justify-content: end; 
+    justify-content: end;
     align-items: center;
 }
 
@@ -1570,6 +1579,7 @@ swiper-slide {
     width: 100%;
     padding-top: 25px;
 }
+
 /*
 .box img {
     width: 100%;
@@ -1579,7 +1589,7 @@ swiper-slide {
 .box img {
     width: 450px;
     height: auto;
-  }
+}
 
 #fullscreen-background {
     position: fixed;
@@ -1708,6 +1718,42 @@ swiper-slide {
 
 
 
+/*Blog*/
+.principalBlog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89vh;
+}
+
+.blogTitle {
+    font-family: var(--AllRoundGothic);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.blogtext {
+    font-family: var(--Urbanist);
+    font-size: 2rem;
+}
+
+.yellow-background {
+    font-family: var(--AllRoundGothic);
+    color: #010101;
+    font-size: 2rem;
+    background-color: #ffec74;
+    padding: 20px;
+
+}
+
+
+.contenidoBlog {
+    height: 100vh;
+}
+
+/*blog*/
+
+
 .hidden1 {
     opacity: 0;
     filter: blur(5px);
@@ -1794,13 +1840,14 @@ swiper-slide {
     width: 63%;
 }
 
-.texttitleAbouSection2, .teamTextAbout h1 {
+.texttitleAbouSection2,
+.teamTextAbout h1 {
     font-size: 3.5rem;
 }
 
 .aboutTextSection2 {
     margin-top: 10%;
-   /* width: 70%;*/
+    /* width: 70%;*/
 }
 
 .line {
@@ -2094,6 +2141,7 @@ footer button {
     .contectProyect {
         font-size: 14px !important;
     }
+
     .carda {
 
         width: 97%;
@@ -2112,7 +2160,8 @@ footer button {
         margin-right: 0%;
     }
 
-    .texttitleAbouSection2, .teamTextAbout h1 {
+    .texttitleAbouSection2,
+    .teamTextAbout h1 {
         font-size: 2.8rem;
     }
 
@@ -2126,16 +2175,19 @@ footer button {
         height: auto;
     }
 
-    .cardText{
+    .cardText {
         font-size: 35px;
     }
 }
+
 .swiper-3d {
     perspective: 1500px !important;
 }
+
 @media screen and (min-width: 1304px) and (max-width: 1521px) {
 
-    .texttitleAbouSection2, .teamTextAbout h1 {
+    .texttitleAbouSection2,
+    .teamTextAbout h1 {
         font-size: 2.8rem;
     }
 
@@ -2148,7 +2200,8 @@ footer button {
         padding: 65px 35px 65px 35px;
         height: auto;
     }
-    swiper-container{
+
+    swiper-container {
         width: 100%;
     }
 }
@@ -2291,6 +2344,15 @@ footer button {
     .textTestHomeH2 {
         width: 60%;
     }
+
+    .blogTitle {
+        font-size: 3.8rem;
+    }
+
+    .blogtext {
+        font-size: 1.7rem;
+    }
+
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1590px) {
@@ -2365,7 +2427,8 @@ footer button {
         width: 550px;
         border-radius: 15px;
     }
-/*
+
+    /*
     .textHome {
         margin-top: 10% !important;
     }*/
@@ -2402,25 +2465,25 @@ footer button {
 
 
 @media screen and (min-width: 971px) and (max-width: 1050px) {
-    .mega-box .content { 
+    .mega-box .content {
         width: 99vh !important;
     }
 
-  
+
 }
 
 @media screen and (min-width: 1051px) and (max-width: 1180px) {
-    .mega-box .content { 
+    .mega-box .content {
         width: 100vh !important;
     }
 }
 
 @media screen and (min-width: 1180px) and (max-width: 1380px) {
-    .mega-box .content { 
+    .mega-box .content {
         width: 89vh !important;
     }
 
-    .aboutTextSection2{
+    .aboutTextSection2 {
         font-size: 16px;
     }
 }
@@ -2431,10 +2494,12 @@ footer button {
         height: 20px;
         width: 60px;
     }
-    #titleWork{
+
+    #titleWork {
         font-size: 1.6rem;
     }
-    #cardText{
+
+    #cardText {
         font-size: 1.2rem;
     }
 }
@@ -2444,10 +2509,12 @@ footer button {
         height: 20px;
         width: 62px;
     }
-    #titleWork{
+
+    #titleWork {
         font-size: 1.8rem;
     }
-    #cardText{
+
+    #cardText {
         font-size: 1.4rem;
     }
 }
@@ -2465,10 +2532,12 @@ footer button {
     .contectProyect {
         font-size: 13px;
     }
-    #titleWork{
+
+    #titleWork {
         font-size: 1.8rem;
     }
-    #cardText{
+
+    #cardText {
         font-size: 1.5rem;
     }
 }
@@ -2489,10 +2558,12 @@ footer button {
     .mega-box .content {
         width: 75vh;
     }
-    #titleWork{
+
+    #titleWork {
         font-size: 2.1rem;
     }
-    #cardText{
+
+    #cardText {
         font-size: 1.7rem;
     }
 }
@@ -2529,14 +2600,15 @@ footer button {
         width: 75vh;
     }
 
-    .aboutTextSection2{
+    .aboutTextSection2 {
         font-size: 18px;
     }
 
-    #titleWork{
+    #titleWork {
         font-size: 2.5rem;
     }
-    #cardText{
+
+    #cardText {
         font-size: 1.8rem;
     }
 }
@@ -2564,13 +2636,15 @@ footer button {
         width: 75vh;
     }
 
-    #cardText{
-      
+    #cardText {
+
         font-size: 1.9rem;
     }
-    #titleWork{
+
+    #titleWork {
         font-size: 2.5rem;
     }
+
     .box img {
         width: 500px;
         height: auto;
@@ -2583,7 +2657,7 @@ footer button {
     }
 
     .textHome {
-    /*    margin-top: 2%;*/
+        /*    margin-top: 2%;*/
         color: var(--text-White);
     }
 
@@ -2630,27 +2704,33 @@ footer button {
         width: 75vh;
     }
 
-    .aboutTextSection2{
+    .aboutTextSection2 {
         font-size: 19px;
     }
+
     .box img {
         width: 600px;
         height: auto;
     }
-    #titleWork{
+
+    #titleWork {
         font-size: 2.9rem;
     }
-    #cardText{
+
+    #cardText {
         font-size: 2rem;
     }
-    
+
 }
-#titleWork{
+
+#titleWork {
     font-family: var(--Urbanist);
 }
+
 .sectionAbout3 {
     margin-top: 10%;
 }
+
 @media screen and (min-width: 2500px) and (max-width: 3000px) {
     .btn-outline-primary {
         width: 130px;
@@ -2691,11 +2771,11 @@ footer button {
         width: 75vh;
     }
 
-    #cardText{
+    #cardText {
         font-size: 2.1rem;
     }
 
-    #titleWork{
+    #titleWork {
         font-size: 3rem;
     }
 
@@ -2707,9 +2787,12 @@ footer button {
 
 
 @media (max-width: 1300px) {
-    .texttitleAbouSection2, .teamTextAbout h1 {
+
+    .texttitleAbouSection2,
+    .teamTextAbout h1 {
         font-size: 2.8rem;
     }
+
     .aboutTextSection2,
     .texttitleAbouSection2 {
         width: auto;
@@ -2751,16 +2834,25 @@ footer button {
     .textPrinciService {
         margin-left: -5px;
     }
+
     swiper-container {
         width: 100%;
     }
 
     .designation {
-        font-size:22px;
+        font-size: 22px;
     }
 
     .mainTextAbout h1 {
         font-size: 3.4rem;
+    }
+
+    .blogTitle {
+        font-size: 3.7rem;
+    }
+
+    .blogtext {
+        font-size: 1.6rem;
     }
 }
 
@@ -2805,7 +2897,16 @@ footer button {
     }
 
     .designation {
-        font-size:18px;
+        font-size: 18px;
+    }
+
+
+    .blogTitle {
+        font-size: 3.5rem;
+    }
+
+    .blogtext {
+        font-size: 1.5rem;
     }
 }
 
@@ -2927,6 +3028,14 @@ footer button {
     .contectProyect {
         font-size: 10px;
     }
+
+    .blogTitle {
+        font-size: 3.5rem;
+    }
+
+    .blogtext {
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -2939,13 +3048,15 @@ footer button {
     swiper-container {
         width: 100%;
     }
-    .titleProyec{
+
+    .titleProyec {
         font-size: 1.25rem;
     }
-    .contectProyect{
+
+    .contectProyect {
         font-size: 14px;
     }
-    
+
     swiper-slide {
         width: 750px;
         height: auto;
@@ -3024,7 +3135,6 @@ footer button {
 
 
 
-
 @media (max-width: 835px) {
     .carrucelHome .card-body {
         margin-top: 25px;
@@ -3076,12 +3186,21 @@ footer button {
         font-size: 50px;
     }
 
-    .texttitleAbouSection2, .teamTextAbout h1 {
+    .texttitleAbouSection2,
+    .teamTextAbout h1 {
         font-size: 2.4rem;
     }
 
     .mainTextAbout h1 {
         font-size: 3rem;
+    }
+
+    .blogTitle {
+        font-size: 3.3rem;
+    }
+
+    .blogtext {
+        font-size: 1.1rem;
     }
 }
 
@@ -3133,7 +3252,7 @@ footer button {
     }
 
     .textHome {
-      /*  margin-top: 15%;*/
+        /*  margin-top: 15%;*/
         color: var(--text-White);
     }
 
@@ -3208,7 +3327,11 @@ footer button {
         margin-top: 30px !important;
     }
 
-    .animatioTopScr2,.advertisingImg, .websiteImg, .brandingImg, .digitalImg {
+    .animatioTopScr2,
+    .advertisingImg,
+    .websiteImg,
+    .brandingImg,
+    .digitalImg {
         width: 96%;
         margin: 13px;
         height: 40vh;
@@ -3254,16 +3377,16 @@ footer button {
         margin-top: 20%;
     }*/
     .textHome {
-    /*    margin-top: 18%;*/
-       color: var(--text-White);
+        /*    margin-top: 18%;*/
+        color: var(--text-White);
     }
 
     .margeTopAbouTesti {
         margin-bottom: 65px;
     }
 
-    .textColor-white5{
-       font-size: 10px;
+    .textColor-white5 {
+        font-size: 10px;
     }
 }
 
@@ -3360,7 +3483,8 @@ footer button {
     .cardPageTestiHome {
         height: 380PX;
     }
-    swiper-container{
+
+    swiper-container {
         width: 100%;
     }
 }
@@ -3482,7 +3606,7 @@ footer button {
     }
 
     .textHome {
-      /*  margin-top: 20%;*/
+        /*  margin-top: 20%;*/
         color: var(--text-White);
     }
 
@@ -3496,6 +3620,18 @@ footer button {
 
     .margenCardAbout {
         text-align: center;
+    }
+
+
+    /*blog*/
+
+    .principalBlog {
+        height: 85vh;
+    }
+
+    .yellow-background {
+        color: #010101;
+        font-size: 1.9rem;
     }
 }
 
@@ -3562,6 +3698,7 @@ footer button {
     .carda-body {
         height: var(--cardHeight) + 58px;
     }
+
     .scrollerHome[data-speed="slow"] {
         --_animation-duration: 65s;
     }
@@ -3581,10 +3718,11 @@ footer button {
 @media (max-width: 478px) {
 
     .mainTextAbout h1 {
-font-size: 2.8rem;
+        font-size: 2.8rem;
     }
 
-    .texttitleAbouSection2, .teamTextAbout h1 {
+    .texttitleAbouSection2,
+    .teamTextAbout h1 {
         font-size: 2.4rem;
     }
 
@@ -3608,7 +3746,8 @@ font-size: 2.8rem;
     swiper-container .card .row {
         margin-top: 0;
     }
-/*
+
+    /*
     .textHome {
         margin-top: 30%;
     }*/
@@ -3780,7 +3919,11 @@ font-size: 2.8rem;
 
     /*service*/
 
-    .animatioTopScr2,.advertisingImg, .websiteImg, .brandingImg, .digitalImg {
+    .animatioTopScr2,
+    .advertisingImg,
+    .websiteImg,
+    .brandingImg,
+    .digitalImg {
         width: auto;
         margin: 13px;
         height: 40vh;
@@ -3851,18 +3994,33 @@ font-size: 2.8rem;
         height: 68vh;
     }
 
-    .margeTopAbouTesti{
+    .margeTopAbouTesti {
         height: 58vh;
     }
+
     .navbar .container-fluid {
         height: 16vh;
     }
-    .margeTex1{
+
+    .margeTex1 {
         text-align: center;
     }
+
     .name {
         font-size: 14px;
     }
+
+    /*blog*/
+
+    .principalBlog {
+        height: 85vh;
+    }
+
+    .yellow-background {
+        color: #010101;
+        font-size: 1.7rem;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -3935,18 +4093,19 @@ font-size: 2.8rem;
         height: 26rem;
     }
 
-    .margeTopAbouTesti{
+    .margeTopAbouTesti {
         height: 69vh;
-        
+
     }
- 
-    .margeTopAbouTesti .cardPageTestiHome{
+
+    .margeTopAbouTesti .cardPageTestiHome {
         height: 35rem;
     }
 
     .textHome {
         margin-top: 10%;
     }
+
     .textHome h1 {
         font-size: 32px;
         width: 95%;
@@ -3959,10 +4118,21 @@ font-size: 2.8rem;
     .testimnomioHomeCard {
         margin-bottom: 25%;
     }
+
+    /*blog*/
+
+    .principalBlog {
+        height: 86vh;
+    }
+
+    .yellow-background {
+        color: #010101;
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
-  /*  .textHome {
+    /*  .textHome {
         margin-top: 42%;
     }*/
 }
@@ -3971,13 +4141,15 @@ font-size: 2.8rem;
 @media(max-width: 400px) {
 
 
-    .texttitleAbouSection2, .teamTextAbout h1 {
+    .texttitleAbouSection2,
+    .teamTextAbout h1 {
         font-size: 1.9rem;
     }
+
     .mainTextAbout h1 {
         font-size: 2.2rem;
-            }
-        
+    }
+
     .testimonioAboutBootm {
         margin-bottom: 85%;
     }
@@ -3989,7 +4161,8 @@ font-size: 2.8rem;
     .navbar .container-fluid {
         height: 17vh;
     }
-/*
+
+    /*
     .textHome {
         margin-top: 30%;
     }*/
@@ -4008,12 +4181,13 @@ font-size: 2.8rem;
     .cardPageTestiHome {
         height: 29rem;
     }
-    .margeTopAbouTesti{
+
+    .margeTopAbouTesti {
         height: 69vh;
         margin-bottom: 5%;
     }
- 
-    .margeTopAbouTesti .cardPageTestiHome{
+
+    .margeTopAbouTesti .cardPageTestiHome {
         height: 35rem;
     }
 
@@ -4024,6 +4198,7 @@ font-size: 2.8rem;
     .textHome {
         margin-top: 10%;
     }
+
     .textHome h1 {
         font-size: 30px;
         width: 95%;
@@ -4032,10 +4207,21 @@ font-size: 2.8rem;
     .textHome p {
         font-size: 14px;
     }
+
+    /*blog*/
+
+    .principalBlog {
+        height: 85vh;
+    }
+
+    .yellow-background {
+        color: #010101;
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 378px) {
- /*   .textHome {
+    /*   .textHome {
         margin-top: 35%;
     }*/
 
@@ -4129,21 +4315,23 @@ font-size: 2.8rem;
     .margeTopAbouTesti {
         margin-bottom: -120px;
     }
+
     .cardPageTestiHome {
         height: 29rem;
     }
 
-    .margeTopAbouTesti{
+    .margeTopAbouTesti {
         height: 74vh;
     }
- 
-    .margeTopAbouTesti .cardPageTestiHome{
+
+    .margeTopAbouTesti .cardPageTestiHome {
         height: 34rem;
     }
 
     .margeTopAbouTesti .cardPageTestiHome {
         width: 99%;
     }
+
     .testimnomioHomeCard {
         margin-bottom: 30%;
     }
@@ -4162,7 +4350,8 @@ font-size: 2.8rem;
     .btn-outline-primary {
         width: 32px;
     }
-/*
+
+    /*
     .textHome {
         margin-top: 37.2%;
     }
@@ -4214,20 +4403,32 @@ font-size: 2.8rem;
     .testimonioHome {
         height: 50vh;
     }
+
     .cardPageTestiHome {
         height: 31rem;
     }
 
-    .margeTopAbouTesti{
+    .margeTopAbouTesti {
         height: 72vh;
     }
- 
-    .margeTopAbouTesti .cardPageTestiHome{
+
+    .margeTopAbouTesti .cardPageTestiHome {
         height: 37rem;
     }
 
     .margeTopAbouTesti .cardPageTestiHome {
         width: 99%;
+    }
+
+      /*blog*/
+
+      .principalBlog {
+        height: 85vh;
+    }
+
+    .yellow-background {
+        color: #010101;
+        font-size: 1.3rem;
     }
 }
 
