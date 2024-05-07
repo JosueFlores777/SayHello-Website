@@ -1,16 +1,16 @@
 var boxes = [
   {
     typeWork: 'Website Development',
-    image: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 01.png',
+    image: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 01.jpg',
     titleModal: 'Hotel Equinoccio',
     Subtitle: '',
     cardText: 'Equinoccio is a hotel situated in Lake Coatepeque, a popular tourist spot in El Salvador. Our client wanted to revamp their website to mirror the aesthetics and cleanliness portrayed in their social media. Together, we worked on UX/UI design and website development to achieve their desired look and feel.',
 
     video: '../assets/img/Portfolio2024/videos/Hotel Equinoccio Showcase_1080p.mp4',
-    imgcard1: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.png',
-    imgcard2: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 03.png',
-    imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.png',
-    imgcard4: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.png',
+    imgcard1: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.jpg',
+    imgcard2: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 03.jpg',
+    imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.jpg',
+    imgcard4: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.jpg',
 
     testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
     imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
@@ -52,7 +52,7 @@ var boxes = [
     typeWork: 'Website Development',
     image: '../assets/img/Portfolio2024/Fishermans/fishermans-project-showcase-01.jpg',
     titleModal: 'Fisherman’s',
-    video: '',
+    video: '../assets/img/Portfolio2024/videos/Fishermans Showcase_1080p.mp4',
     Subtitle: '',
     cardText: "Our journey to bring this website to life involved a meticulous process spanning UI/UX design, website development. We embarked on a collaborative effort to craft a user interface that seamlessly integrates functionality with aesthetic appeal. Leveraging the latest technologies and best practices to ensure optimal performance across devices and browsers. Through rigorous quality assurance testing, we meticulously scrutinized every aspect of the website to guarantee its reliability, functionality, and security. Today, we're thrilled to see fishermansresort.life go live, ready to welcome users to explore, engage, and discover the beauty of the fishing experience.",
     imgcard1: '../assets/img/Portfolio2024/Fishermans/fishermans-project-showcase-02.jpg',
