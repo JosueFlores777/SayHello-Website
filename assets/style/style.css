@@ -1726,6 +1726,13 @@ swiper-slide {
     height: 89vh;
 }
 
+.principalBlogConte {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+}
+
 .blogTitle {
     font-family: var(--AllRoundGothic);
     font-size: 4rem;
@@ -1736,6 +1743,11 @@ swiper-slide {
     font-family: var(--Urbanist);
     font-size: 2rem;
 }
+
+.blogServi{
+    margin-top: 10%;
+}
+
 
 .yellow-background {
     font-family: var(--AllRoundGothic);
@@ -2326,7 +2338,20 @@ footer button {
         background-color: #343333a7;
     }
 
+    .blogTitleCont {
+        font-size: 2.8rem;
+    }
 
+    .blogtextCont {
+        font-size: 1.5rem;
+    }
+
+    .principalBlogConte {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50vh;
+    }
 }
 
 
@@ -2350,7 +2375,19 @@ footer button {
     }
 
     .blogtext {
-        font-size: 1.7rem;
+        font-size: 3rem;
+    }
+
+    .blogTitleCont {
+        font-size: 2.7rem;
+    }
+
+    .blogtextCont {
+        font-size: 1.4rem;
+    }
+
+    .principalBlogConte {
+        height: 50vh;
     }
 
 }
@@ -2846,15 +2883,36 @@ footer button {
     .mainTextAbout h1 {
         font-size: 3.4rem;
     }
+
     .principalBlog {
         height: 85vh;
     }
+
     .blogTitle {
         font-size: 3.7rem;
     }
 
     .blogtext {
         font-size: 1.6rem;
+    }
+
+    .blogTitleCont {
+        font-size: 2rem;
+    }
+
+    .blogtextCont {
+        font-size: 1.1rem;
+    }
+
+    .principalBlogConte {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45vh;
+    }
+
+    .blogServi {
+        margin-top: 15%;
     }
 }
 
@@ -2909,6 +2967,25 @@ footer button {
 
     .blogtext {
         font-size: 1.5rem;
+    }
+
+    .blogTitleCont {
+        font-size: 2rem;
+    }
+
+    .blogtextCont {
+        font-size: 1rem;
+    }
+
+    .principalBlogConte {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 39vh;
+    }
+
+    .blogServi {
+        margin-top: 10%;
     }
 }
 
@@ -3038,6 +3115,10 @@ footer button {
     .blogtext {
         font-size: 1.3rem;
     }
+
+    .blogServi {
+        margin-top: 12%;
+    }
 }
 
 
@@ -3116,7 +3197,10 @@ footer button {
         width: 480px;
         height: auto;
     }
-
+    
+    .principalBlogConte {
+        height: 37vh;
+    }
 }
 
 @media screen and (min-width: 750px) and (max-width: 764px) {
@@ -3262,6 +3346,18 @@ footer button {
         height: 70vh;
         margin-bottom: 20%;
     }
+
+    .blogTitleCont {
+        font-size: 1.8rem;
+    }
+
+    .blogtextCont {
+        font-size: 0.9rem;
+    }
+
+    .principalBlogConte {
+        height: 35vh;
+    }
 }
 
 @media (max-width:767px) {
@@ -3389,6 +3485,10 @@ footer button {
 
     .textColor-white5 {
         font-size: 10px;
+    }
+
+    .blogServi {
+        margin-top: 16% !important;
     }
 }
 
@@ -3704,6 +3804,10 @@ footer button {
     .scrollerHome[data-speed="slow"] {
         --_animation-duration: 65s;
     }
+
+    .blogServi {
+        margin-top: 18% !important;
+    }
 }
 
 
@@ -3715,6 +3819,7 @@ footer button {
     .cardPageTestiHome {
         height: 480px;
     }
+    
 }
 
 @media (max-width: 478px) {
@@ -4220,6 +4325,10 @@ footer button {
         color: #010101;
         font-size: 1.5rem;
     }
+
+    .blogServi {
+        margin-top: 20% !important;
+    }
 }
 
 @media (max-width: 378px) {
@@ -4422,9 +4531,9 @@ footer button {
         width: 99%;
     }
 
-      /*blog*/
+    /*blog*/
 
-      .principalBlog {
+    .principalBlog {
         height: 85vh;
     }
 
