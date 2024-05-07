@@ -7,7 +7,7 @@ var boxes = [
     Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
     cardText: ' Bebemundo is the biggest baby items store in El Salvador. We partnered with them for their summer campaign, aiming to capture the essence of the season with eye-catching images that resonate with their audience.',
 
-    video : '',
+    video: '',
     imgcard1: './assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-01.jpg',
     imgcard2: './assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-02.jpg',
     imgcard3: './assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-03.jpg',
@@ -51,33 +51,43 @@ var boxes = [
 
   }
 ];
+
+
 function selectBox(index) {
-  document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
-  document.getElementById("fullscreen-background").style.zIndex = 10;
-  var selectedBox = boxes[index - 1];
-  document.getElementById("scrollerWork").style.display = "block";
-  document.getElementById("workcardModal").textContent = selectedBox.typeWork;
-  document.getElementById("titleModal").textContent = selectedBox.titleModal;
-  /* document.getElementById("titleWork").textContent = selectedBox.Subtitle;*/
-  document.getElementById("cardText").textContent = selectedBox.cardText;
 
-  if (selectedBox.video) {
-    document.getElementById("video").src = selectedBox.video;
-    document.getElementById("video").style.display = "block";
+console.log("tipo ", index)
+  if (index === 4) {
+ 
   } else {
-    document.getElementById("video").style.display = "none";
-  }
-  document.getElementById("imgcardPri").src = selectedBox.image;
-  document.getElementById("imgcard1").src = selectedBox.imgcard1;
-  document.getElementById("imgcard2").src = selectedBox.imgcard2;
-  document.getElementById("imgcard3").src = selectedBox.imgcard3;
-  document.getElementById("imgcard4").src = selectedBox.imgcard4;
+ 
+    
+    document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
+    document.getElementById("fullscreen-background").style.zIndex = 10;
+    var selectedBox = boxes[index - 1];
+    document.getElementById("scrollerWork").style.display = "block";
+    document.getElementById("workcardModal").textContent = selectedBox.typeWork;
+    document.getElementById("titleModal").textContent = selectedBox.titleModal;
+    /* document.getElementById("titleWork").textContent = selectedBox.Subtitle;*/
+    document.getElementById("cardText").textContent = selectedBox.cardText;
 
-  document.getElementById("testomioModa").textContent = selectedBox.testiModal;
-  document.getElementById("avatarTesti").src = selectedBox.imgTestim;
-  document.getElementById("nameTesti").textContent = selectedBox.nameTest;
-  var video = document.getElementById('video');
-  video.muted = false;
+    if (selectedBox.video) {
+      document.getElementById("video").src = selectedBox.video;
+      document.getElementById("video").style.display = "block";
+    } else {
+      document.getElementById("video").style.display = "none";
+    }
+    document.getElementById("imgcardPri").src = selectedBox.image;
+    document.getElementById("imgcard1").src = selectedBox.imgcard1;
+    document.getElementById("imgcard2").src = selectedBox.imgcard2;
+    document.getElementById("imgcard3").src = selectedBox.imgcard3;
+    document.getElementById("imgcard4").src = selectedBox.imgcard4;
+
+    document.getElementById("testomioModa").textContent = selectedBox.testiModal;
+    document.getElementById("avatarTesti").src = selectedBox.imgTestim;
+    document.getElementById("nameTesti").textContent = selectedBox.nameTest;
+    var video = document.getElementById('video');
+    video.muted = false;
+  }
 }
 
 function clearSelection() {

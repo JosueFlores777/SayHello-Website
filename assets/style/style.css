@@ -1606,7 +1606,7 @@ swiper-slide {
     z-index: -1;
 }
 
-.scrollerWork {
+.scrollerWork,.scrollerWork1 {
     display: none;
     position: fixed;
     top: 0;
@@ -2294,6 +2294,12 @@ footer button {
     }
 }
 
+@media screen and (min-width: 1520px) and (max-width: 1700px) {
+    swiper-container{
+        width: 100%;
+    }
+    
+}
 
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
     nav .wrapper {
@@ -2483,6 +2489,10 @@ footer button {
 
     .contact {
         margin-top: 137px !important;
+    }
+
+    swiper-container{
+        width: 100%;
     }
 }
 
@@ -3957,7 +3967,7 @@ footer button {
         margin-top: 155px;
     }
 
-    .scrollerWork {
+    .scrollerWork,.scrollerWork1 {
         padding: 30px;
         transition: bottom 7s ease !important;
     }
