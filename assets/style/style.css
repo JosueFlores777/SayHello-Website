@@ -2846,7 +2846,9 @@ footer button {
     .mainTextAbout h1 {
         font-size: 3.4rem;
     }
-
+    .principalBlog {
+        height: 85vh;
+    }
     .blogTitle {
         font-size: 3.7rem;
     }
