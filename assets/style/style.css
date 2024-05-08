@@ -2201,6 +2201,18 @@ footer button {
     .cardText {
         font-size: 35px;
     }
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: center;
+    }
+    .paddingImg1600 img{
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .swiper-3d {
@@ -2227,6 +2239,8 @@ footer button {
     swiper-container {
         width: 100%;
     }
+  
+    
 }
 
 @media screen and (min-width: 1182px) and (max-width: 1303px) {
@@ -2286,6 +2300,18 @@ footer button {
     .testimonioHome {
         margin-top: 150px;
     }
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: center;
+    }
+    .paddingImg1600 img{
+        max-width: 480px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -2298,6 +2324,19 @@ footer button {
     swiper-container .card {
         padding: 75px 35px 75px 35px;
         height: auto;
+    }
+
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: center;
+    }
+    .paddingImg1600 img{
+        max-width: 580px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -2840,6 +2879,19 @@ footer button {
     .box img {
         width: 500px;
         height: auto;
+    }
+
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: center;
+    }
+    .paddingImg1600 img{
+        max-width: 680px;
+        display: flex;
+        justify-content: center;
     }
 }
 

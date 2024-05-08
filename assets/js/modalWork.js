@@ -129,6 +129,13 @@ var boxes = [
   },
 ];
 function selectBox(index) {
+ if(index === 16) {
+  event.preventDefault();
+  document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
+  document.getElementById("fullscreen-background").style.zIndex = 10;
+  var selectedBox = boxes[index - 1];
+  document.getElementById("scrollerWork1").style.display = "block";
+ }else {
   document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
   document.getElementById("fullscreen-background").style.zIndex = 10;
   var selectedBox = boxes[index - 1];
@@ -161,6 +168,7 @@ function selectBox(index) {
   document.getElementById("nameTesti").textContent = selectedBox.nameTest;
   var video = document.getElementById('video');
   video.muted = false;
+ } 
 }
 
 function clearSelection() {
@@ -171,6 +179,8 @@ function clearSelection() {
   document.getElementById("titleWork").style.display = "block";
   document.getElementById("scrollerWork").scrollTop = 0;
   document.getElementById("scrollerWork").style.display = "none";
+  document.getElementById("scrollerWork1").scrollTop = 0;
+  document.getElementById("scrollerWork1").style.display = "none";
   document.getElementById("fullscreen-background").style.zIndex = -6;
   document.getElementById("fullscreen-background").style.backgroundColor = "black";
 
@@ -188,6 +198,19 @@ document.getElementById("scrollerWork").addEventListener("scroll", function () {
   this.style.transition = paddi;
   this.style.padding = paddingValue + "px";
 });
+document.getElementById("scrollerWork1").addEventListener("scroll", function () {
+  var scrollPosition = this.scrollTop;
+  if (window.innerWidth < 478) {
+    paddingValue = scrollPosition > 0 ? 0 : 30;
+    var paddi = "padding-left 0.9s ease, padding-right 0.9s ease";;
+  } else {
+    paddingValue = scrollPosition > 0 ? 0 : 60;
+    var paddi = "padding-left 0.4s ease, padding-right 0.4s ease";;
+  }
+  this.style.transition = paddi;
+  this.style.padding = paddingValue + "px";
+});
+
 
 window.addEventListener('scroll', function () {
   var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
