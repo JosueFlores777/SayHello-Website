@@ -118,6 +118,15 @@ nav .wrapper {
 }
 
 
+.logo a {
+    width: 140px;
+}
+.logo img {
+    height: auto;
+    width: 140px;
+}
+
+
 .nav-links {
     display: flex;
     justify-content: center;
@@ -2655,11 +2664,7 @@ footer button {
         width: 60px;
     }
 
-    #titleWork {
-        font-size: 1.6rem;
-    }
-
-    #cardText {
+    #cardText,#titleWork {
         font-size: 1.2rem;
     }
 }
@@ -2670,11 +2675,8 @@ footer button {
         width: 62px;
     }
 
-    #titleWork {
-        font-size: 1.8rem;
-    }
 
-    #cardText {
+    #cardText,#titleWork {
         font-size: 1.4rem;
     }
 }
@@ -2693,11 +2695,7 @@ footer button {
         font-size: 13px;
     }
 
-    #titleWork {
-        font-size: 1.8rem;
-    }
-
-    #cardText {
+    #cardText,#titleWork  {
         font-size: 1.5rem;
     }
 }
@@ -2719,11 +2717,7 @@ footer button {
         width: 75vh;
     }
 
-    #titleWork {
-        font-size: 2.1rem;
-    }
-
-    #cardText {
+    #cardText,   #titleWork {
         font-size: 1.7rem;
     }
 }
@@ -2764,11 +2758,7 @@ footer button {
         font-size: 18px;
     }
 
-    #titleWork {
-        font-size: 2.5rem;
-    }
-
-    #cardText {
+    #cardText,#titleWork{
         font-size: 1.8rem;
     }
 }
@@ -2799,14 +2789,11 @@ footer button {
         width: 75vh;
     }
 
-    #cardText {
+    #cardText,#titleWork{
 
         font-size: 1.9rem;
     }
 
-    #titleWork {
-        font-size: 2.5rem;
-    }
 
     .box img {
         width: 500px;
@@ -2876,11 +2863,7 @@ footer button {
         height: auto;
     }
 
-    #titleWork {
-        font-size: 2.9rem;
-    }
-
-    #cardText {
+    #cardText,#titleWork{
         font-size: 2rem;
     }
 
@@ -2934,13 +2917,10 @@ footer button {
         width: 75vh;
     }
 
-    #cardText {
+    #cardText,#titleWork {
         font-size: 2.1rem;
     }
 
-    #titleWork {
-        font-size: 3rem;
-    }
 
     .box img {
         width: 500px;
@@ -3986,11 +3966,8 @@ footer button {
         color: var(--text-White);
     }
 
-    #titleModal {
-        font-size: 35px !important;
-    }
 
-    #titleWork {
+    #cardText,#titleWork {
         font-size: 25px;
     }
 

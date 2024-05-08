@@ -22,9 +22,8 @@ var boxes = [
     titleModal: 'Visible Talent',
     Subtitle: 'Our project encompasses a comprehensive Marketing Plan, Brand Rebranding, and Website Redesign. ',
 
-    cardText: 'The Marketing Plan involves thorough company analysis, goal setting, and audience identification, along with the establishment of digital assets. Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels. ',
-    cardText2: 'Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels.',
-    video: '../assets/img/Portfolio2024/videos/Visible Talent Showcase_1080p.mp4',
+    cardText: "The Marketing Plan involves thorough company analysis, goal setting, and audience identification, along with the establishment of digital assets. Brand Rebranding includes auditing the current brand, defining a new strategy, designing visual identities, and implementing the rebranding across all channels.\n Website Redesign consists of evaluating the current site, defining goals, enhancing user experience through UX design, and developing visually appealing layouts aligned with the brand's new identity.",
+   video: '../assets/img/Portfolio2024/videos/Visible Talent Showcase_1080p.mp4',
     imgcard1: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 02.jpg',
     imgcard2: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 03.jpg',
     imgcard3: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 04.jpg',
