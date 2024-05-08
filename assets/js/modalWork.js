@@ -12,9 +12,9 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.jpg',
     imgcard4: '../assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   },
   {
     typeWork: 'UI/UX',
@@ -30,9 +30,10 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 04.jpg',
     imgcard4: '../assets/img/Portfolio2024/Visible Talent/visible-talent-project-showcase 05.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+  
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   }, {
     typeWork: 'Marketing Campaign',
     image: '../assets/img/Portfolio2024/TeatroPoma/tlp-project-showcase-05.jpg',
@@ -45,9 +46,9 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-03.jpg',
     imgcard4: '../assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-04.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   }, {
     typeWork: 'Website Development',
     image: '../assets/img/Portfolio2024/Fishermans/fishermans-project-showcase-01.jpg',
@@ -60,9 +61,9 @@ var boxes = [
     imgcard3:  '../assets/img/Portfolio2024/Fishermans/fishermans-project-showcase-04.jpg',
     imgcard4:  '../assets/img/Portfolio2024/Fishermans/fishermans-project-showcase-05.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   }, {
     typeWork: 'Marketing Campaign ',
     image: '../assets/img/Portfolio2024/Card Images/bebe-mundo-cover-image.jpg',
@@ -75,9 +76,9 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-03.jpg',
     imgcard4: '../assets/img/Portfolio2024/bebeMundo/bebe-mundo-project-showcase-04.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   }, {
     typeWork: 'Branding & Logo Design',
     image: '../assets/img/Portfolio2024/aceite/Card - Aceite de Arroz.jpg',
@@ -90,9 +91,9 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/aceite/aceite-de-arroz-project-showcase-03.jpg',
     imgcard4: '../assets/img/Portfolio2024/aceite/aceite-de-arroz-project-showcase-04.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   }
   , {
     typeWork: 'Website Development',
@@ -106,9 +107,9 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 4.jpg',
     imgcard4: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 5.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   }
   , {
     typeWork: 'UI/UX',
@@ -123,9 +124,9 @@ var boxes = [
     imgcard3: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 04.jpg',
     imgcard4: '../assets/img/Portfolio2024/Aventu Fest/aventu-fest-project-showcase 05.jpg',
 
-    testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-    imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-    nameTest: 'Name 1',
+    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
+    imgTestim: '../assets/img/team/fotos web-fede.jpg',
+    nameTest: 'Federico Trujillo-Growth Director',
   },
 ];
 function selectBox(index) {
@@ -151,12 +152,7 @@ function selectBox(index) {
   
   }
 
-  if (selectedBox.video) {
-    document.getElementById("video").src = selectedBox.video;
-    document.getElementById("video").style.display = "block";
-  } else {
-    document.getElementById("video").style.display = "none";
-  }
+ 
   document.getElementById("imgcardPri").src = selectedBox.image;
   document.getElementById("imgcard1").src = selectedBox.imgcard1;
   document.getElementById("imgcard2").src = selectedBox.imgcard2;
@@ -164,10 +160,18 @@ function selectBox(index) {
   document.getElementById("imgcard4").src = selectedBox.imgcard4;
 
   document.getElementById("testomioModa").textContent = selectedBox.testiModal;
-  document.getElementById("avatarTesti").src = selectedBox.imgTestim;
+  
+  document.getElementById("avatarTesti").style.display = "none";
   document.getElementById("nameTesti").textContent = selectedBox.nameTest;
-  var video = document.getElementById('video');
-  video.muted = false;
+  if (selectedBox.video) {
+    document.getElementById("video").src = selectedBox.video;
+    document.getElementById("video").style.display = "block";
+    var video = document.getElementById('video');
+    video.muted = false;
+  } else {
+    document.getElementById("video").style.display = "none";
+  }
+
  } 
 }
 
@@ -175,16 +179,6 @@ function clearSelection() {
   var video = document.getElementById('video');
   if (video) {
       video.muted = true;
-      video.addEventListener("ended", function() {
-        mostrarNotificacion("El video ha finalizado.");
-      });
-      function mostrarNotificacion(mensaje) {
-        notificaciones.textContent = mensaje; 
-        notificaciones.style.display = "block"; 
-        setTimeout(() => {
-          notificaciones.style.display = "none"; 
-        }, 4000);
-      }
   }
   document.getElementById("titleWork").style.display = "block";
   document.getElementById("scrollerWork").scrollTop = 0;

@@ -291,7 +291,9 @@ padding:  1.5rem 1.5rem 0 1.5rem !important;
     top: 10px;
 }
 
-
+.textService, .textService p {
+    font-family: var(--Urbanist);
+}
 
 .part2Home {
     margin-top: 10%;
@@ -670,6 +672,21 @@ nav input {
     /* margin: 14px; */
 }
 
+
+.textColor-whiteAbout {
+    font-family: var(--Urbanist);
+    font-size: 1.3rem;
+    border-radius: 4px;
+    color: #fff;
+    /* margin: 14px; */
+}
+
+.textColor-whiteAbout:hover {
+    border-radius: 4px;
+    color:#f0126a;
+    /* margin: 14px; */
+}
+
 .textColor-white4 {
     color: #ffffff86;
 }
@@ -834,6 +851,7 @@ nav input {
 }
 
 .btn-home {
+    font-family: var(--Urbanist);
     background-color: #696667a8;
     width: 155px;
     color: #fff;
@@ -841,6 +859,7 @@ nav input {
 
 .btn-contact,
 .btn-contact:hover {
+    font-family: var(--Urbanist);
     margin: 45px 0;
     background-color: #f0126a;
     width: 100% !important;
@@ -849,12 +868,14 @@ nav input {
 
 .btn-home:hover,
 .btn-contact:hover {
+    font-family: var(--Urbanist);
     background-color: #f0126a;
     width: 155px;
     color: #fff;
 }
 
 .btn-homeMc {
+    font-family: var(--Urbanist);
     background-color: #696667a8;
     width: auto;
     color: #fff;
@@ -862,6 +883,7 @@ nav input {
 
 .btn-homeMc:hover,
 .btn-contacthomeMc:hover {
+    font-family: var(--Urbanist);
     background-color: #f0126a;
     width: auto;
     color: #fff;
@@ -869,6 +891,7 @@ nav input {
 
 .btn-carrucelHomeSMac,
 .btn-carrucelHomeSMac:hover {
+    font-family: var(--Urbanist);
     background-color: #f0126a !important;
     width: auto;
     color: #fff;
@@ -1537,6 +1560,18 @@ swiper-slide {
     font-size: 35px;
 }
 
+#titleModal {
+    font-family: var(--FontspringDemo);
+    font-size: 35px;
+}
+
+.modarlCarbody p {
+    font-family: var(--Urbanist);
+}
+.footer a {
+    font-family: var(--Urbanist);
+}
+
 .textTestiModal {
     font-size: 26px;
     color: var(--text-White);
@@ -1544,6 +1579,11 @@ swiper-slide {
 
 .conteTestModal {
     width: 70%;
+}
+
+.testimonial-avatar {
+    font-family: var(--Urbanist);
+    font-size: 15px;
 }
 
 .testimonial-avatarWork {
@@ -1893,6 +1933,7 @@ swiper-slide {
 }
 
 .textSubAbout2 {
+    font-family: var(--Urbanist);
     margin-top: 65px;
 }
 
@@ -1979,7 +2020,9 @@ swiper-slide {
     font-family: var(--FontspringDemoText);
 }
 
-
+.centrarContact2{
+    font-family: var(--Urbanist);
+}
 .mapContact {
     margin-top: 35px;
     height: 350px;
@@ -2206,12 +2249,12 @@ footer button {
     }
     .paddingImg1600{
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
     .paddingImg1600 img{
         max-width: 500px;
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
 }
 
@@ -2273,10 +2316,8 @@ footer button {
         background-color: #343333a7;
     }
 
-
     .sectionAbout1 {
         margin-top: 15%;
-
     }
 
     swiper-slide {
@@ -2305,12 +2346,12 @@ footer button {
     }
     .paddingImg1600{
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
     .paddingImg1600 img{
         max-width: 480px;
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
 }
 
@@ -2331,12 +2372,12 @@ footer button {
     }
     .paddingImg1600{
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
     .paddingImg1600 img{
         max-width: 580px;
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
 }
 
@@ -2373,6 +2414,12 @@ footer button {
     swiper-container .card {
         padding: 65px 35px 65px 35px;
         height: auto;
+    }
+
+    swiper-container {
+        margin-top: 25px;
+        width: 100%;
+        padding-bottom: 50px;
     }
 }
 
@@ -2561,13 +2608,18 @@ footer button {
 }
 
 
-@media screen and (min-width: 971px) and (max-width: 1050px) {
+@media screen and (min-width: 971px) and (max-width: 1023px) {
     .mega-box .content {
-        width: 99vh !important;
+        width: 99.6vh !important;
     }
-
-
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1050px) {
+    .mega-box .content {
+        width: 87vh !important;
+    }
+}
+
 
 @media screen and (min-width: 1051px) and (max-width: 1180px) {
     .mega-box .content {
@@ -2798,7 +2850,7 @@ footer button {
     }
 
     .mega-box .content {
-        width: 75vh;
+        width: 82vh;
     }
 
     .aboutTextSection2 {
@@ -2886,12 +2938,12 @@ footer button {
     }
     .paddingImg1600{
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
     .paddingImg1600 img{
         max-width: 680px;
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
 }
 
@@ -2936,10 +2988,10 @@ footer button {
     .textHome p {
         font-size: 20px;
     }
-
+/*
     .work-card {
         margin-left: -5px;
-    }
+    }*/
 
     .textPrinciService {
         margin-left: -5px;
@@ -2986,6 +3038,21 @@ footer button {
 
     .blogServi {
         margin-top: 15%;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1300px) {
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: end;
+    }
+    .paddingImg1600 img{
+        max-width: 380px;
+        display: flex;
+        justify-content: end;
     }
 }
 
@@ -3194,7 +3261,20 @@ footer button {
     }
 }
 
-
+@media screen and (min-width:900px) and (max-width: 1024px) {
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: end;
+    }
+    .paddingImg1600 img{
+        max-width: 280px;
+        display: flex;
+        justify-content: end;
+    }
+}
 @media screen and (min-width: 1091px) and (max-width: 1287px) {
 
     .titleCarruWorkHome {
@@ -3507,10 +3587,10 @@ footer button {
         margin: 13px;
         height: 40vh;
     }
-
+/*
     .work-card {
         margin-left: -5px;
-    }
+    }*/
 
     .textPrinciService {
         margin-left: 15px;
@@ -4193,12 +4273,21 @@ footer button {
     /*blog*/
 
     .principalBlog {
-        height: 85vh;
+        height: 70vh;
+        margin-top: 30%;
     }
 
     .yellow-background {
         color: #010101;
         font-size: 1.7rem;
+    }
+
+    .blogTitle {
+        font-size: 3rem;
+    }
+
+    .blogtext {
+        font-size: 0.8rem;
     }
 
 }
@@ -4302,7 +4391,8 @@ footer button {
     /*blog*/
 
     .principalBlog {
-        height: 86vh;
+        margin-top: 10%;
+        height: 84vh;
     }
 
     .yellow-background {
@@ -4607,6 +4697,7 @@ footer button {
     /*blog*/
 
     .principalBlog {
+        margin-top: 15%;
         height: 85vh;
     }
 
