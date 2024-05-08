@@ -2104,9 +2104,18 @@ footer {
 }
 
 .footerConter {
+    font-family: var(--Urbanist);
     padding: 85px;
     margin-left: 0;
 }
+
+.footerConter .col-md-4 h1 {
+    font-family: var(--Urbanist);
+}
+.finalFooter a{
+    font-family: var(--Urbanist);;
+}
+
 
 a {
     text-decoration: none;
@@ -2219,7 +2228,21 @@ footer button {
 
 /*Resposive*/
 
-
+@media screen and (min-width: 1500px) and (max-width: 1849px) {
+ 
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: end;
+    }
+    .paddingImg1600 img{
+        max-width: 500px;
+        display: flex;
+        justify-content: end;
+    }
+}
 @media screen and (min-width: 1522px) and (max-width: 1849px) {
     .margile {
         margin-left: 40%;
@@ -2475,18 +2498,6 @@ footer button {
 
     .blogTitle {
         font-size: 3.8rem;
-    }
-
-    .blogtext {
-        font-size: 3rem;
-    }
-
-    .blogTitleCont {
-        font-size: 2.7rem;
-    }
-
-    .blogtextCont {
-        font-size: 1.4rem;
     }
 
     .principalBlogConte {
@@ -2761,6 +2772,9 @@ footer button {
         font-size: 1.8rem;
     }
 }
+
+
+
 
 @media screen and (min-width: 1511px) and (max-width: 1620px) {
     .btn-outline-primary {
@@ -3056,6 +3070,36 @@ footer button {
     }
 }
 
+@media screen and (min-width: 1295px) and (max-width: 1400px) {
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: end;
+    }
+    .paddingImg1600 img{
+        max-width: 350px;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+    .centered-content{
+        margin-top: 10%;
+    }
+    .paddingImg1600{
+        display: flex;
+        justify-content: end;
+    }
+    .paddingImg1600 img{
+        max-width: 410px;
+        display: flex;
+        justify-content: end;
+    }
+}
 @media(max-width:1025px) {
     .sectionAbout4 .row {
         --bs-gutter-x: 0 !important;
