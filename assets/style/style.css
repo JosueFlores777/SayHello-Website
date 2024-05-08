@@ -878,7 +878,7 @@ nav input {
 .btn-home:hover,
 .btn-contact:hover {
     font-family: var(--Urbanist);
-    background-color: #f0126a;
+background-color: #f0126a !important;
     width: 155px;
     color: #fff;
 }
@@ -893,7 +893,7 @@ nav input {
 .btn-homeMc:hover,
 .btn-contacthomeMc:hover {
     font-family: var(--Urbanist);
-    background-color: #f0126a;
+    background-color: #f0126a !important;
     width: auto;
     color: #fff;
 }
