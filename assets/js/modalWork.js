@@ -175,6 +175,16 @@ function clearSelection() {
   var video = document.getElementById('video');
   if (video) {
       video.muted = true;
+      video.addEventListener("ended", function() {
+        mostrarNotificacion("El video ha finalizado.");
+      });
+      function mostrarNotificacion(mensaje) {
+        notificaciones.textContent = mensaje; 
+        notificaciones.style.display = "block"; 
+        setTimeout(() => {
+          notificaciones.style.display = "none"; 
+        }, 4000);
+      }
   }
   document.getElementById("titleWork").style.display = "block";
   document.getElementById("scrollerWork").scrollTop = 0;
