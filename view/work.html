@@ -117,13 +117,19 @@
       </div>
 
       <div class="page">
-
+        <div class="filter-buttons">
+          <button class="filter-btn work-cardFilter active" onclick="filterSelection('all')">All</button>
+          <button class="filter-btn work-cardFilter" onclick="filterSelection('uiux')">UI/UX</button>
+          <button class="filter-btn work-cardFilter" onclick="filterSelection('website')">Website Development</button>
+          <button class="filter-btn work-cardFilter" onclick="filterSelection('marketing')">Marketing Campaign</button>
+          <button class="filter-btn work-cardFilter" onclick="filterSelection('branding')">Branding & Logo Design</button>
+        </div>
         <div class="row row-cols-1 row-cols-md-2 g-5 margenTopWork">
-
+        
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="website">
 
-            <div class="card padddingBox" id="box1" onclick="selectBox(1)">
+            <div class="card padddingBox" id="box1"  onclick="selectBox(1)">
               <div class="textoCardWork">
                 <p class="card-title work-card">Website Development</p>
                 <div class="card-body1 work-title">
@@ -139,7 +145,7 @@
           <!--End proyecto -->
 
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="uiux">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(2)">
 
@@ -156,7 +162,7 @@
           <!--End proyecto -->
 
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="marketing">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(3)">
               <h5 class="card-text work-card">Marketing Campaign</h5>
@@ -171,7 +177,7 @@
           <!--End proyecto -->
 
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="website">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(4)">
               <h5 class="card-text work-card">Website Development</h5>
@@ -187,7 +193,7 @@
           <!--End proyecto -->
 
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="marketing">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(5)">
               <h5 class="card-text work-card">Marketing Campaign </h5>
@@ -203,7 +209,7 @@
           <!--End proyecto -->
 
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="branding">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(6)">
               <h5 class="card-text work-card">Branding & Logo Desing</h5>
@@ -218,7 +224,7 @@
           </div>
           <!--End proyecto -->
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="website">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(7)">
               <h5 class="card-text work-card">Website Development</h5>
@@ -233,7 +239,7 @@
           </div>
           <!--End proyecto -->
           <!--Start proyecto -->
-          <div class="col">
+          <div class="col" data-category="uiux">
 
             <div class="card padddingBox" id="box1" onclick="selectBox(8)">
               <h5 class="card-text work-card">UI/UX</h5>

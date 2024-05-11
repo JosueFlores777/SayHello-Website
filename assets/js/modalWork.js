@@ -214,7 +214,26 @@ document.getElementById("scrollerWork1").addEventListener("scroll", function () 
   this.style.padding = paddingValue + "px";
 });
 
+function filterSelection(category) {
+  const buttons = document.querySelectorAll('.filter-btn');
+  const elements = document.querySelectorAll('.col');
+  
+  buttons.forEach(btn => {
+      if (btn.getAttribute('onclick').includes(category)) {
+          btn.classList.add('active');
+      } else {
+          btn.classList.remove('active');
+      }
+  });
 
+  elements.forEach(element => {
+      if (category === 'all' || element.dataset.category === category) {
+          element.style.display = 'block';
+      } else {
+          element.style.display = 'none';
+      }
+  });
+}
 window.addEventListener('scroll', function () {
   var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
 
