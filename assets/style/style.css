@@ -1648,6 +1648,7 @@ swiper-slide {
 }
 
 
+
 .workImag {
     height: auto !important;
 }
@@ -1660,6 +1661,15 @@ swiper-slide {
 .box {
     border-radius: 25px 25px 0 0;
     background: var(--text-White);
+    width: 100%;
+    padding-top: 25px;
+}
+
+
+.box1 {
+    border-radius: 25px 25px 0 0;
+    background: var(--text-White);
+    box-shadow: 0 19px 1px 0 rgba(0, 0, 0, 0.912), 0 1px 384px 0 rgba(0, 0, 0, 0.959);
     width: 100%;
     padding-top: 25px;
 }
@@ -3110,6 +3120,37 @@ footer button {
         justify-content: end;
     }
 }
+
+
+/*Filtrp margen*/
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .work-cardFilter {
+        padding: 7px 18px 7px 18px;
+    }
+    .ml-filter {
+        margin-left: 8px;
+    }
+} 
+@media screen and (min-width: 1401px) and (max-width: 1900px) {
+    .ml-filter {
+        margin-left: 12px;
+    }
+
+    .work-cardFilter {
+        padding: 8px 20px 8px 20px;
+    }
+} 
+
+@media screen and (min-width: 1900px) and (max-width: 3200px) {
+    .ml-filter {
+        margin-left: 15px;
+    }
+
+    .work-cardFilter {
+        padding: 9px 21px 9px 21px;
+    }
+} 
+
 @media(max-width:1025px) {
     .sectionAbout4 .row {
         --bs-gutter-x: 0 !important;
