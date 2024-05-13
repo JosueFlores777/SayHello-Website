@@ -138,7 +138,7 @@ function selectBox(index) {
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork1").style.display = "block";
     var video = document.getElementById('video');
-    video.muted = true;
+    video.pause();
     modalCloseVide = true;
   }
 
@@ -149,7 +149,7 @@ function selectBox(index) {
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork1").style.display = "block";
     var video = document.getElementById('video');
-    video.muted = true;
+    video.pause();
     modalCloseVide = false;
   } else {
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
@@ -206,14 +206,14 @@ function clearSelection() {
 function clearSelection1() {
   if( modalCloseVide === true){
     var video = document.getElementById('video');
-    video.muted = false;
+    video.play();
     document.getElementById("scrollerWork1").scrollTop = 0;
     document.getElementById("scrollerWork1").style.display = "none";
     document.getElementById("fullscreen-background").style.zIndex = -6;
     document.getElementById("fullscreen-background").style.backgroundColor = "black";
   }else{
     var video = document.getElementById('video');
-    video.muted = true;
+    video.pause();
     document.getElementById("scrollerWork1").scrollTop = 0;
     document.getElementById("scrollerWork1").style.display = "none";
     document.getElementById("fullscreen-background").style.zIndex = -6;
