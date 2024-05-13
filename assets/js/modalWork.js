@@ -191,7 +191,6 @@ function clearSelection() {
   document.getElementById("fullscreen-background").style.backgroundColor = "black";
 }
 
-
 function clearSelection1() {
   var video = document.getElementById('video');
   video.muted = false;

@@ -311,51 +311,21 @@ var boxes = [
     imgTestim: './assets/img/team/fotos web-fede.jpg',
     nameTest: 'Federico Trujillo-Growth Director',
   },
-  {
-    typeWork: 'Website Development',
-    image: './assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 01.jpg',
-    titleModal: 'Hotel Equinoccio',
-    Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-    cardText: 'Equinoccio is a hotel situated in Lake Coatepeque, a popular tourist spot in El Salvador. Our client wanted to revamp their website to mirror the aesthetics and cleanliness portrayed in their social media. Together, we worked on UX/UI design and website development to achieve their desired look and feel.',
 
-    video: './assets/img/Portfolio2024/videos/Hotel Equinoccio Showcase_1080p.mp4',
-    imgcard1: './assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 02.jpg',
-    imgcard2: './assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 03.jpg',
-    imgcard3: './assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 04.jpg',
-    imgcard4: './assets/img/Portfolio2024/Equinoccio/equinoccio-project-showcase 05.jpg',
-
-    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
-    imgTestim: './assets/img/team/fotos web-fede.jpg',
-    nameTest: 'Federico Trujillo-Growth Director',
-  }, {
-    typeWork: 'Marketing Campaign',
-    image: './assets/img/Portfolio2024/TeatroPoma/tlp-project-showcase-05.jpg',
-    titleModal: 'Teatro Luis Poma',
-    Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-    cardText: 'We collaborated with Teatro Luis Poma for their 20th anniversary celebration of continuous theater seasons. For this special occasion, we created the "Teatromorphosis" campaign together.',
-    video: './assets/img/Portfolio2024/videos/Teatro Luis Poma20th Anniversary.mp4',
-    imgcard1: './assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-01.jpg',
-    imgcard2: './assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-02.jpg',
-    imgcard3: './assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-03.jpg',
-    imgcard4: './assets/img/Portfolio2024/TeatroPoma/fundacion-poma-showcase-04.jpg',
-
-    testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
-    imgTestim: './assets/img/team/fotos web-fede.jpg',
-    nameTest: 'Federico Trujillo-Growth Director',
-
-  }
 ];
 
 
 function selectBox(index) {
 
-console.log("tipo ", index)
+
   if (index === 16) {
     event.preventDefault();
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork2").style.display = "block";
+    var video = document.getElementById('video');
+    video.muted = true;
   } else {
     
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
@@ -401,6 +371,13 @@ function clearSelection() {
   document.getElementById("fullscreen-background").style.backgroundColor = "black";
   document.getElementById("scrollerWork2").scrollTop = 0;
   document.getElementById("scrollerWork2").style.display = "none";
+}
+
+function clearSelection1() {
+  var video = document.getElementById('video');
+  video.muted = false;
+  document.getElementById("scrollerWork1").scrollTop = 0;
+  document.getElementById("scrollerWork1").style.display = "none";
 }
 
 document.getElementById("scrollerWork").addEventListener("scroll", function () {

@@ -3751,6 +3751,10 @@ footer button {
     .workContent {
         margin-top: 175px;
     }
+
+    .imageWorkModal {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 700px) {
