@@ -129,8 +129,19 @@ var boxes = [
   },
 ];
 
-
+var modalCloseVide = false;
 function selectBox(index) {
+  if(index=== 17){
+    event.preventDefault();
+    document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
+    document.getElementById("fullscreen-background").style.zIndex = 10;
+    var selectedBox = boxes[index - 1];
+    document.getElementById("scrollerWork1").style.display = "block";
+    var video = document.getElementById('video');
+    video.muted = true;
+    modalCloseVide = true;
+  }
+
   if (index === 16) {
     event.preventDefault();
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
@@ -139,6 +150,7 @@ function selectBox(index) {
     document.getElementById("scrollerWork1").style.display = "block";
     var video = document.getElementById('video');
     video.muted = true;
+    modalCloseVide = false;
   } else {
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
@@ -192,10 +204,22 @@ function clearSelection() {
 }
 
 function clearSelection1() {
-  var video = document.getElementById('video');
-  video.muted = false;
-  document.getElementById("scrollerWork1").scrollTop = 0;
-  document.getElementById("scrollerWork1").style.display = "none";
+  if( modalCloseVide === true){
+    var video = document.getElementById('video');
+    video.muted = false;
+    document.getElementById("scrollerWork1").scrollTop = 0;
+    document.getElementById("scrollerWork1").style.display = "none";
+    document.getElementById("fullscreen-background").style.zIndex = -6;
+    document.getElementById("fullscreen-background").style.backgroundColor = "black";
+  }else{
+    var video = document.getElementById('video');
+    video.muted = true;
+    document.getElementById("scrollerWork1").scrollTop = 0;
+    document.getElementById("scrollerWork1").style.display = "none";
+    document.getElementById("fullscreen-background").style.zIndex = -6;
+    document.getElementById("fullscreen-background").style.backgroundColor = "black";
+  }
+
 }
 
 document.getElementById("scrollerWork").addEventListener("scroll", function () {
