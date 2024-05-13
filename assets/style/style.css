@@ -1669,7 +1669,7 @@ swiper-slide {
 .box1 {
     border-radius: 25px 25px 0 0;
     background: var(--text-White);
-    box-shadow: 0 19px 1px 0 rgba(0, 0, 0, 0.912), 0 1px 384px 0 rgba(0, 0, 0, 0.959);
+    box-shadow: 0 39px 0px 0 rgba(0, 0, 0, 1), 0 6px 384px 0 rgba(0, 0, 0, 1);
     width: 100%;
     padding-top: 25px;
 }
@@ -3133,7 +3133,7 @@ footer button {
 } 
 @media screen and (min-width: 1401px) and (max-width: 1900px) {
     .ml-filter {
-        margin-left: 12px;
+        margin-left: 13px;
     }
 
     .work-cardFilter {
