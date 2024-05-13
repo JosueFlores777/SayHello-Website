@@ -1728,6 +1728,15 @@ swiper-slide {
     font-size: 25px;
 }
 
+
+.close-button svg:hover {
+    background-color: #a87c22;
+}
+
+.close-button:hover { 
+    color: #fcfcc4;
+}
+
 .content {
     padding: 20px 40px;
 }
