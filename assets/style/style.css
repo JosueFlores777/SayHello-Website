@@ -3738,6 +3738,10 @@ footer button {
     .blogServi {
         margin-top: 16% !important;
     }
+
+    .workContent {
+        margin-top: 175px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -3983,6 +3987,11 @@ footer button {
         color: #010101;
         font-size: 1.9rem;
     }
+
+    
+    .workContent {
+        margin-top: 155px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -4052,6 +4061,10 @@ footer button {
 
     .blogServi {
         margin-top: 18% !important;
+    }
+
+    .titleMainWork h1 {
+        font-size: 2.6rem;
     }
 }
 
@@ -4509,6 +4522,10 @@ footer button {
     .footer-Work{
         margin-top: 29%;
     }
+
+    .titleMainWork h1 {
+        font-size: 2.3rem;
+    }
 }
 
 @media screen and (min-width: 410px) and (max-width: 618px) {
@@ -4519,7 +4536,9 @@ footer button {
 
 
 @media(max-width: 400px) {
-
+    .titleMainWork h1 {
+        font-size: 2.1rem;
+    }
 
     .texttitleAbouSection2,
     .teamTextAbout h1 {
