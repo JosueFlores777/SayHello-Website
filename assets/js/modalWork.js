@@ -131,7 +131,6 @@ var boxes = [
 
 
 function selectBox(index) {
-  console.log("dato ", index);
   if (index === 16) {
     event.preventDefault();
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
@@ -231,8 +230,7 @@ function filterSelection(category) {
 
   elements.forEach(element => {
     if (category === 'all' || element.dataset.category === category) {
-      console.log("category ",category)
-     
+  
       element.style.display = 'block';
      
     } else {

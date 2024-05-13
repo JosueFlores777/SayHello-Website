@@ -4350,6 +4350,10 @@ footer button {
         font-size: 0.8rem;
     }
 
+    .footer-Work{
+        margin-top: 25%;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -4458,6 +4462,10 @@ footer button {
     .yellow-background {
         color: #010101;
         font-size: 1.5rem;
+    }
+
+    .footer-Work{
+        margin-top: 29%;
     }
 }
 
@@ -4669,6 +4677,10 @@ footer button {
     .testimnomioHomeCard {
         margin-bottom: 30%;
     }
+
+    .footer-Work{
+        margin-top: 20%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -4769,6 +4781,10 @@ footer button {
     .work-cardFilter {
         padding: 5.2px;
         margin-bottom: 10px;
+    }
+    
+    .footer-Work{
+        margin-top: 15%;
     }
 }
 
