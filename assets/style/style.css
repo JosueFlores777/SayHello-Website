@@ -1458,10 +1458,12 @@ swiper-slide {
 }
 
 .work-cardFilter:hover {
+    border: none;
     background-color: #916d30;
     color: #f6f4bd;
 }
 .filter-btn.active {
+    border: none;
     background-color: #916d30;
     color: #f6f4bd;
 }
