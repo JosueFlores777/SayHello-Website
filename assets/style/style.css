@@ -4028,8 +4028,9 @@ footer button {
 @media (max-width: 478px) {
 
     .work-cardFilter {
-        padding: 8px;
-        font-size: 14px;
+        padding: 7px;
+        margin-bottom: 15px;
+        font-size: 13.5px;
     }
 
     .margenTopWork {
@@ -4763,6 +4764,11 @@ footer button {
     .yellow-background {
         color: #010101;
         font-size: 1.3rem;
+    }
+
+    .work-cardFilter {
+        padding: 5.2px;
+        margin-bottom: 10px;
     }
 }
 
