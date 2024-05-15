@@ -4111,6 +4111,12 @@ footer button {
     .titleMainWork h1 {
         font-size: 2.6rem;
     }
+
+    .videoHome {
+        padding: 0;
+        margin: 0 15px;
+        margin-top: -25px;
+    }
 }
 
 
@@ -4126,6 +4132,11 @@ footer button {
 }
 
 @media (max-width: 478px) {
+    .videoHome {
+        padding: 0;
+        margin: 0 15px;
+        margin-top: -35px;
+    }
 
     .work-cardFilter {
         padding: 7px;
@@ -4743,17 +4754,19 @@ footer button {
 
     .bottom-left {
         min-width: 160px;
-        min-height: 250px;
+        min-height: 200px;
 
     }
-
+    .video-container {
+        margin-top: -40px;
+    }
     .testimonioHome {
         height: 55vh;
     }
 
     .bottom-right {
         min-width: 160px;
-        min-height: 250px;
+        min-height: 200px;
     }
 
 
