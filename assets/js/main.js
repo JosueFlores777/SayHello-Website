@@ -17,90 +17,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-/*Card TestymoHome 
-const cardStack = document.querySelector('.cardPageTestiHome-stack');
-let cards = Array.from(cardStack.children);
-let intervalId;
-
-function startFlipping() {
-  intervalId = setInterval(() => {
-    moveLastCardToFront();
-  }, 15700);
-}
-
-function moveLastCardToFront() {
-  const lastCard = cards.pop();
-  cards.unshift(lastCard);
-  updateCardStyles();
-}
-
-function setupCards() {
-  cards.forEach((card, index) => {
-    card.style.top = `${index * -50}px`;
-    card.style.transform = `scale(${1 - index * 0.09})`;
-    card.style.zIndex = cards.length - index;
-    card.addEventListener('click', () => {
-      bringToFront(card);
-    });
-  });
-}
-
-function bringToFront(selectedCard) {
-
-  clearInterval(intervalId);
-
-  cards = cards.filter(card => card !== selectedCard);
-  cards.unshift(selectedCard);
-  updateCardStyles();
-
-  setTimeout(startFlipping, 15700);
-}
-
-function updateCardStyles() {
-  cards.forEach((card, index) => {
-    card.style.top = `${index * -50}px`;
-    card.style.transform = `scale(${1 - index * 0.09})`;
-    card.style.zIndex = cards.length - index;
-    card.style.backgroundColor = index === 0 ? '#805313' : (index === 1 ? '#e1b911' : '#f8ef70');
-    applyAnimation(card, index);
-  });
-}
-
-function applyAnimation(card, index) {
-  card.classList.remove('animate__animated', 'animate__zoomInDown', 'animate__fadeIn');
-  if (index === 0) {
-    card.classList.add('animate__animated', 'animate__zoomInDown');
-    setTimeout(() => card.classList.remove('animate__animated', 'animate__zoomInDown'), 1000);
-  } else {
-    card.classList.add('animate__animated', 'animate__fadeIn');
-    setTimeout(() => card.classList.remove('animate__animated', 'animate__fadeIn'), 500);
-  }
-}
-
-setupCards();
-startFlipping();
-
-
-/* */
 var lastScrollTop = 0;
-/*
-function handleVideoZoom() {
-  var scrollPosition = window.scrollY;
-  var scrollDirection = scrollPosition > lastScrollTop ? 'down' : 'up';
-  lastScrollTop = scrollPosition;
-
-  var videoContainer = document.querySelector('.video-container');
-  var videoIframe = document.querySelector('.video-container iframe');
-
-  var scaleFactor = 1 - (scrollPosition / 20);
-
-  videoIframe.style.width = (20 + 20 * scaleFactor) + 'px';
-  videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
-}
-
-window.addEventListener('scroll', handleVideoZoom);
-document.addEventListener('DOMContentLoaded', handleVideoZoom);
-*/
 
 
 window.addEventListener('scroll', function () {
@@ -174,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function handleScroll() {
   var videoHome = document.getElementById("videoHome");
-  var video = document.getElementById("video");
+  var video = document.getElementById("video12");
   var scrollPosition = window.scrollY;
   var windowHeight = window.innerHeight;
   var windowWidth = window.innerWidth; // Obtener el ancho de la ventana

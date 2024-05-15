@@ -3,9 +3,13 @@ function selectBox(index) {
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
     document.getElementById("scrollerWork").style.display = "block";
+    var video = document.getElementById('video1');
+    video.pause();
 }
 
 function clearSelection() {
+    var video = document.getElementById('video1');
+    video.play();
     document.getElementById("scrollerWork").scrollTop = 0;
     document.getElementById("scrollerWork").style.display = "none";
     document.getElementById("fullscreen-background").style.zIndex = -6;
@@ -82,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (scrollPosition >= footerOffsetTop - window.innerHeight) {
             bottomNav.style.display = 'none';
         } else {
-            bottomNav.style.display = 'flex'; 
+            bottomNav.style.display = 'flex';
         }
     }
 

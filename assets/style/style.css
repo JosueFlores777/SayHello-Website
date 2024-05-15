@@ -4184,7 +4184,7 @@ footer button {
     }*/
 
     .textHome h1 {
-        font-size: 34px;
+        font-size: 36px;
         margin: 0 auto;
         width: 90%;
         font-family: var(--FontspringDemo);
@@ -4552,7 +4552,7 @@ footer button {
     }
 
     .textHome h1 {
-        font-size: 32px;
+        font-size: 34px;
         width: 95%;
     }
 
@@ -4656,7 +4656,7 @@ footer button {
     }
 
     .textHome h1 {
-        font-size: 30px;
+        font-size: 32px;
         width: 95%;
     }
 
@@ -4746,6 +4746,8 @@ footer button {
         min-height: 165px;
     }
 
+
+
     .top-right {
         min-width: 150px;
         min-height: 160px;
@@ -4801,6 +4803,11 @@ footer button {
     .footer-Work{
         margin-top: 20%;
     }
+
+    .textHome h1 {
+        font-size: 30px;
+        width: 95%;
+    }
 }
 
 @media (max-width: 360px) {
@@ -4823,7 +4830,7 @@ footer button {
     }
 */
     .textHome h1 {
-        font-size: 30px;
+        font-size: 33px;
         width: auto;
     }
 
