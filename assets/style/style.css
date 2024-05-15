@@ -4386,12 +4386,13 @@ footer button {
     .bottom-left {
         min-width: 220px;
         min-height: 330px;
-
+        bottom: 102px;
     }
 
     .bottom-right {
         min-width: 220px;
         min-height: 330px;
+        bottom: 102px;
     }
 
     .part2Home {
