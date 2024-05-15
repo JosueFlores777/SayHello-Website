@@ -55,6 +55,7 @@ body {
 }
 
 .bottom-left {
+    z-index: -25;
     min-width: 500px;
     min-height: 500px;
     bottom: 0;
@@ -63,6 +64,7 @@ body {
 }
 
 .bottom-right {
+    z-index: -25;
     min-width: 500px;
     min-height: 500px;
     bottom: 0;
@@ -622,6 +624,15 @@ nav input {
     .navbar {
         --bs-navbar-padding-x: 1;
     }
+
+    .btn-home {
+        width: auto !important;
+    }
+
+
+    .btn-home2{
+        width: 100% !important;
+    }
 }
 
 .margeTex1 {
@@ -827,12 +838,12 @@ nav input {
 /*parte 1*/
 
 .home {
-    height: 100vh
+    height: 90vh
         /*height: auto;*/
 }
 
 .imganes {
-    height: 100vh;
+    height: 90vh;
 }
 
 .textHome {
@@ -866,6 +877,14 @@ nav input {
     color: #fff;
 }
 
+.btn-home2 {
+    font-family: var(--Urbanist);
+    background-color: #696667a8;
+    width: 155px;
+    color: #fff;
+}
+
+
 .btn-contact,
 .btn-contact:hover {
     font-family: var(--Urbanist);
@@ -875,7 +894,7 @@ nav input {
     color: #fff;
 }
 
-.btn-home:hover,
+.btn-home:hover,.btn-home2:hover,
 .btn-contact:hover {
     font-family: var(--Urbanist);
 background-color: #f0126a !important;
@@ -907,23 +926,24 @@ background-color: #f0126a !important;
 }
 
 .video-container {
-    max-width: 800px;
+    z-index: 5000;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
     margin: 0 auto;
     overflow: hidden;
-    margin-top: 15px;
+    object-position: center;
+    border-radius: 25px;
 }
 
-.video-container iframe {
-    overflow: hidden;
-    width: 450px;
-    height: 250px;
-    transition: width 0.5s, height 0.5s, transform 0.5s;
+.videoHome{
+    padding:0 90px;
+    transition: padding-left 0.9s ease, padding-right 0.9s ease; 
 }
 
-.video-container.zoom1 iframe {
-    width: 800px;
-    height: 450px;
-    transform: scale(1.2);
+.img-fluid5 {
+    width: 100%;
+    height: auto;
 }
 
 /*parte 2*/
@@ -2273,9 +2293,7 @@ footer button {
     }
 
     .carda {
-
         width: 97%;
-
     }
 }
 
@@ -2538,7 +2556,7 @@ footer button {
 
 @media screen and (min-width: 1200px) and (max-width: 1390px) {
     nav .wrapper {
-        max-width: 1000px !important;
+        max-width: 1190px !important;
     }
 
     .navbar .container-fluid {
@@ -2932,8 +2950,13 @@ footer button {
     }
 
     swiper-slide {
+        padding: 150px;
         width: 1400px;
         height: auto;
+    }
+    
+    swiper-container {
+        width: 100%;
     }
 
     .top-left {
@@ -3252,14 +3275,6 @@ footer button {
         margin: 0 auto;
         margin-bottom: 5px;
     }
-
-    .video-container {
-        max-width: 800px;
-
-        margin-top: 15px;
-    }
-
-
 
     .testimonioHome {
         height: 90vh;
@@ -3614,13 +3629,6 @@ footer button {
     .part2Home {
         margin-top: 25% !important;
     }*/
-    .video-container {
-        max-width: 600px;
-        width: auto;
-        margin: 0 auto;
-        overflow: hidden;
-        margin-top: 15px;
-    }
 
     .textHome {
         /*  margin-top: 15%;*/
@@ -3727,13 +3735,6 @@ footer button {
     .textPrinciService {
         margin-left: 15px;
     }
-
-    .video-container iframe {
-        width: autoh !important;
-        height: 650px;
-        transition: width 0.5s, height 0.5s, transform 0.5s;
-    }
-
     .top-left {
         min-width: 250px;
         min-height: 250px;
@@ -3885,7 +3886,10 @@ footer button {
 }
 
 @media (max-width: 625px) {
-
+    .videoHome {
+        padding: 0;
+        margin: 0 15px;
+    }
     .corner-image {
         position: absolute;
         width: auto;
@@ -4107,6 +4111,12 @@ footer button {
     .titleMainWork h1 {
         font-size: 2.6rem;
     }
+
+    .videoHome {
+        padding: 0;
+        margin: 0 15px;
+        margin-top: -25px;
+    }
 }
 
 
@@ -4122,6 +4132,11 @@ footer button {
 }
 
 @media (max-width: 478px) {
+    .videoHome {
+        padding: 0;
+        margin: 0 15px;
+        margin-top: -35px;
+    }
 
     .work-cardFilter {
         padding: 7px;
@@ -4370,24 +4385,25 @@ footer button {
 
     .top-left {
         min-width: 190px;
-        min-height: 200px;
+        min-height: 210px;
     }
 
     .top-right {
         min-width: 190px;
-        min-height: 200px;
+        min-height: 210px;
 
     }
 
     .bottom-left {
         min-width: 220px;
         min-height: 330px;
-
+        bottom: 102px;
     }
 
     .bottom-right {
         min-width: 220px;
         min-height: 330px;
+        bottom: 102px;
     }
 
     .part2Home {
@@ -4481,12 +4497,12 @@ footer button {
 
     .top-left {
         min-width: 180px;
-        min-height: 180px;
+        min-height: 190px;
     }
 
     .top-right {
         min-width: 180px;
-        min-height: 180px;
+        min-height: 190px;
 
     }
 
@@ -4532,7 +4548,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 10%;
+        margin-top: 0;
     }
 
     .textHome h1 {
@@ -4636,7 +4652,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 10%;
+        margin-top: 0;
     }
 
     .textHome h1 {
@@ -4727,28 +4743,30 @@ footer button {
 
     .top-left {
         min-width: 150px;
-        min-height: 150px;
+        min-height: 160px;
     }
 
     .top-right {
         min-width: 150px;
-        min-height: 150px;
+        min-height: 160px;
 
     }
 
     .bottom-left {
         min-width: 160px;
-        min-height: 250px;
+        min-height: 200px;
 
     }
-
+    .video-container {
+        margin-top: -40px;
+    }
     .testimonioHome {
         height: 55vh;
     }
 
     .bottom-right {
         min-width: 160px;
-        min-height: 250px;
+        min-height: 200px;
     }
 
 

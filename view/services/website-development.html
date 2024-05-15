@@ -112,7 +112,7 @@
                 <p class="textColor-white2 margeTex1">We are a global agency with 6+ years of experience</p>
                 <p class="textColor-white2 margeTex2">marketing@usayhello.com</p>
                 <form>
-                    <button class="btn btn-home margeBut3 activeC " id="box1" onclick="selectBox(2)" type="button">Start
+                    <button class="btn btn-home2 margeBut3 activeC " id="box1" onclick="selectBox(2)" type="button">Start
                         a Project
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-right" viewBox="0 1 16 16">
@@ -364,72 +364,6 @@
 
 
     </div>
-    <script>
-        var boxes = [
-            {
-                typeWork: "Fill in the blanks and we'll get back to you in one business day.",
-                image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
-                titleModal: "Fill in the blanks and we'll get back to you in one business day.",
-                Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-                cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis am dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-
-                imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-
-
-                testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-                imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                nameTest: 'Name 1',
-            },    {
-                typeWork: "Fill in the blanks and we'll get back to you in one business day.",
-                image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
-                titleModal: "Fill in the blanks and we'll get back to you in one business day.",
-                Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-                cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis am dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-
-                imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-
-
-                testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-                imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                nameTest: 'Name 1',
-            }
-        ];
-        function selectBox(index) {
-            event.preventDefault();
-            document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
-            document.getElementById("fullscreen-background").style.zIndex = 10;
-            var selectedBox = boxes[index - 1];
-            document.getElementById("scrollerWork").style.display = "block";
-        }
-
-        function clearSelection() {
-
-            document.getElementById("scrollerWork").scrollTop = 0;
-            document.getElementById("scrollerWork").style.display = "none";
-            document.getElementById("fullscreen-background").style.zIndex = -6;
-            document.getElementById("fullscreen-background").style.backgroundColor = "black";
-
-
-        }
-
-        document.getElementById("scrollerWork").addEventListener("scroll", function () {
-            var scrollPosition = this.scrollTop;
-            var paddingValue;
-            if (window.innerWidth < 478) {
-                paddingValue = scrollPosition > 0 ? 0 : 30;
-            } else {
-                paddingValue = scrollPosition > 0 ? 0 : 60;
-            }
-            this.style.transition = "padding-left 0.4s ease, padding-right 0.4s ease";
-            this.style.padding = paddingValue + "px";
-        });
-    </script>
     <!--End container home -->
     <!-- Start Footeer Home -->
     <footer class="footer-contact">
