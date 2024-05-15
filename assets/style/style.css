@@ -4385,12 +4385,12 @@ footer button {
 
     .top-left {
         min-width: 190px;
-        min-height: 200px;
+        min-height: 210px;
     }
 
     .top-right {
         min-width: 190px;
-        min-height: 200px;
+        min-height: 210px;
 
     }
 
@@ -4497,12 +4497,12 @@ footer button {
 
     .top-left {
         min-width: 180px;
-        min-height: 180px;
+        min-height: 190px;
     }
 
     .top-right {
         min-width: 180px;
-        min-height: 180px;
+        min-height: 190px;
 
     }
 
@@ -4548,7 +4548,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 10%;
+        margin-top: 0;
     }
 
     .textHome h1 {
@@ -4652,7 +4652,7 @@ footer button {
     }
 
     .textHome {
-        margin-top: 10%;
+        margin-top: 0;
     }
 
     .textHome h1 {
@@ -4743,12 +4743,12 @@ footer button {
 
     .top-left {
         min-width: 150px;
-        min-height: 150px;
+        min-height: 160px;
     }
 
     .top-right {
         min-width: 150px;
-        min-height: 150px;
+        min-height: 160px;
 
     }
 
