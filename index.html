@@ -155,43 +155,6 @@
     </div>
   </section>
 
-  <script>
-    function handleScroll() {
-      var videoHome = document.getElementById("videoHome");
-      var video = document.getElementById("video");
-      var scrollPosition = window.scrollY;
-      var windowHeight = window.innerHeight;
-      var windowWidth = window.innerWidth; // Obtener el ancho de la ventana
-
-      // Verificar el ancho de la ventana
-      if (windowWidth > 600) {
-        var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
-        var defaultPadding = 90;
-        var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
-
-        if (videoBottom <= scrollPosition + windowHeight) {
-          paddingValue = defaultPadding;
-        }
-
-        // Aplicar el padding
-        videoHome.style.padding = "0 " + paddingValue + "px";
-      }
-
-      if (windowWidth <= 478) {
-        video.pause(); // Pausar el video si el ancho es menor o igual a 478px
-      } else {
-        video.play(); // Reanudar el video si el ancho es mayor a 478px
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    handleScroll();
-
-
-  </script>
-
-
   <div class="container-fluid  mx-auto mt-8 p-3">
 
     <!-- Start part2Home Home  -->

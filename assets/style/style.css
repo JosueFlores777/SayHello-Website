@@ -3276,14 +3276,6 @@ footer button {
         margin-bottom: 5px;
     }
 
-    .video-container {
-        max-width: 800px;
-
-        margin-top: 15px;
-    }
-
-
-
     .testimonioHome {
         height: 90vh;
     }
@@ -3637,13 +3629,6 @@ footer button {
     .part2Home {
         margin-top: 25% !important;
     }*/
-    .video-container {
-        max-width: 600px;
-        width: auto;
-        margin: 0 auto;
-        overflow: hidden;
-        margin-top: 15px;
-    }
 
     .textHome {
         /*  margin-top: 15%;*/
