@@ -102,7 +102,7 @@
         </ul>
         <div class="text-end">
           <form>
-            <button class="btn2 btn-homeMc"  id="box1" onclick="selectBox(16)">Start a Project
+            <button class="btn2 btn-homeMc" id="box1" onclick="selectBox(16)">Start a Project
               <svg style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                 fill="currentColor" class="bi bi-arrow-right" viewBox="0 1 16 16">
                 <path fill-rule="evenodd"
@@ -122,33 +122,68 @@
     <!--Contact-->
 
     <!---->
- 
+
     <div class="container-fluid  mx-auto mt-8 p-3">
       <!-- start Section Home  -->
       <section class="home d-flex justify-content-center align-items-center flex-column">
 
         <div class="textHome text-center">
           <h1 class="animationScroll">Say hello to your new success partner</h1>
-          <p class="animationScroll">We develop customized solutions that focus on your specific needs and challenges.
-            Together we’ll take your business to new heights</p>
+          <p class="animationScroll">Looking for customized web design solutions that focus on your specific needs and
+            challenges? Say hello is here to help, together we’ll take your business to new heights. </p>
           <form class="d-lg-flex justify-content-center animationScroll" role="search">
-          
-            <button class="btn btn-homeMc activeC"  id="box1" onclick="selectBox(16,event)" type="submit">Start a Project <svg style="margin-left: 6px;"
-                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
-                viewBox="0 1 16 16">
+
+            <button class="btn btn-homeMc activeC" id="box1" onclick="selectBox(16,event)" type="submit">Start a Project
+              <svg style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-arrow-right" viewBox="0 1 16 16">
                 <path fill-rule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
                 </path>
               </svg></button>
           </form>
         </div>
-        <div class="video-container animationScroll2 justify-center items-center">
-          <iframe src="https://www.youtube.com/embed/MUgWVJJJZg8?si=v0YEEGkQBvraRoxY" title="YouTube video player"
-            frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+
       </section>
   </section>
   <!-- End Section Home  -->
+  </div>
+  <section class="videoHome" id="videoHome">
+    <div class="video-container animationScroll2 justify-center items-center">
+      <video class="img-fluid5 rounded-start borRadModal workImag" id="video"
+        src="./assets/img/Portfolio2024/videos/sayhello72.mp4" controls autoplay loop>
+      </video>
+    </div>
+  </section>
+
+  <script>
+window.addEventListener("scroll", function () {
+  var videoHome = document.getElementById("videoHome");
+  var video = document.getElementById("video");
+  var scrollPosition = window.scrollY;
+  var windowHeight = window.innerHeight;
+
+  // Obtener la posición vertical de la parte inferior del video
+  var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
+
+  // Determinar el padding por defecto
+  var defaultPadding = 40;
+
+  var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
+
+ if (videoBottom <= scrollPosition + windowHeight) {
+    paddingValue = defaultPadding;
+  }
+
+  // Aplicar el padding
+  videoHome.style.padding = paddingValue + "px";
+});
+
+// Establece el padding inicial
+window.dispatchEvent(new Event("scroll"));
+
+  </script>
+
+  <div class="container-fluid  mx-auto mt-8 p-3">
 
     <!-- Start part2Home Home  -->
     <section class="part2Home margenGeneral">
@@ -224,9 +259,9 @@
         <div class="carruselTitleHome">
           <h2 class="text-center titleCarruWorkHome">Recent Work</h2>
         </div>
-        <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
-          slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-          coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true"
+        <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true"
+          centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+          coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true"
           autoplay='{"delay": 4500, "disableOnInteraction": false}'><swiper-slide>
             <div class="card mb-3">
               <div class="row g-0 align-items-center justify-content-center">
@@ -238,7 +273,8 @@
                     <h5 class="card-title titleProyec">Bebemundo Summer</h5>
                     <p class="card-text contectProyect">Bebemundo is the biggest baby items store in El Salvador. We
                       partnered with them
-                      for their summer campaign, aiming to capture the essence of the season with eye-catching images that
+                      for their summer campaign, aiming to capture the essence of the season with eye-catching images
+                      that
                       resonate with their audience.</p>
 
 
@@ -318,9 +354,9 @@
     </section>
     <!-- End Carrucell Home  -->
 
-    
+
     <div class="container-fluid  mx-auto mt-8 p-3">
- 
+
       <section id="proyecto" class="workContent margenGeneral ">
 
         <div class="page">
@@ -366,7 +402,7 @@
             </div>
             <div class="content justify-content-center ">
               <div class="d-flex justify-content-center align-items-center paddingWork2 mb-4">
-                <video class="img-fluid rounded-start borRadModal workImag" id="video" controls autoplay loop>
+                <video class="img-fluid5 rounded-start borRadModal workImag" id="video" controls autoplay loop>
                 </video>
               </div>
               <div class="row row-cols-1 row-cols-md-2 g-4 paddingWork2 ">
@@ -406,7 +442,7 @@
               <div class="modalFinal">
                 <h2 class="textModalFinal">Let's create something together</h2>
 
-                <button class="btn btn-homeMc activeC" id="box1" onclick="selectBox(17)"  type="submit">Start a Project
+                <button class="btn btn-homeMc activeC" id="box1" onclick="selectBox(17)" type="submit">Start a Project
                   <svg style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                     fill="currentColor" class="bi bi-arrow-right" viewBox="0 1 16 16">
                     <path fill-rule="evenodd"
@@ -422,7 +458,7 @@
 
         <div class="fullscreen-background top-up" id="fullscreen-background"></div>
         <div class="scrollerWork" id="scrollerWork2">
-  
+
           <div class="box1 on-top animate__animated animate__backInUp" id="big-box">
             <a class="close-button" onclick="clearSelection1()">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg"
@@ -432,7 +468,7 @@
               </svg>
             </a>
             <div class="marginTopContaTitleContact marginTopContaTitle fontContact">
-  
+
               <h1 class="text-center">Fill in the blanks and we'll get back to you in one business day.</h1>
             </div>
             <div class="content paddingContactForm ">
@@ -558,11 +594,11 @@
         </div>
       </section>
 
-     
+
     </div>
 
 
-  <!-- Start testimonyHome Home -->
+    <!-- Start testimonyHome Home -->
 
     <section class="testimnomioHomeCard">
       <div class="titleTextTesti">
@@ -608,9 +644,12 @@
             <div class="testimonial-info">
               <p class="designation">As part of our Commercial and Marketing Strategy, since January 2023, we hired the
                 services of the Say Hello agency to jointly develop our communication plan in digital media (social
-                networks, landing pages, email campaigns, among others). Due to the good results, this year we decided to
-                renew their contract to continue working with this company, which has become more than a provider, it has
-                become a strategic ally for its contributions as an innovative agency committed to digital transformation
+                networks, landing pages, email campaigns, among others). Due to the good results, this year we decided
+                to
+                renew their contract to continue working with this company, which has become more than a provider, it
+                has
+                become a strategic ally for its contributions as an innovative agency committed to digital
+                transformation
                 and return on investment in the projects entrusted.</p>
               <div class="testimonial-avatar">
                 <img
@@ -625,70 +664,7 @@
 
       </ul>
     </section>
-    <!--
-        <section class="testimonioHome">
-          <div class="titleTextTesti">
-            <h2 class="textTestHomeH2">Straight from the source - our clients</h2>
-          </div>
-          <div class="testimony">
-            <div class="cardPageTestiHome-stack">
-            
-              <div class="cardPageTestiHome">
-                <div class="cardPageTestiHome-content">hola</div>
-                <div class="testimonial-info">
-                  <p class="designation">Sayhello is an ally that contributes to the generation of value for our brand on
-                    social media. Their focus on innovation has made it easier for us to explore and implement innovative
-                    digital strategies, and their methodology allows us to measure the impact of our campaigns and identify
-                    opportunities for improvement. </p>
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Avatar de Name 1">
-
-                    <p class="name">Juanita Zelaya <br> Director of Fundación Poma</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="cardPageTestiHome">
-                <div class="cardPageTestiHome-content">hola</div>
-                <div class="testimonial-info">
-                  <p class="designation">LDuring this time, Say Hello has significantly and creatively contributed to
-                    achieving the digital communication objectives of our organization, which revolve around effectively
-                    conveying our messages on social and entrepreneurial topics.</p>
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Avatar de Name 2">
-                    <p class="name">Patricia López
-                      <br>Executive Director of Impact Hub San Salvador</p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="cardPageTestiHome">
-                <div class="cardPageTestiHome-content">hola</div>
-                <div class="testimonial-info">
-                  <p class="designation">LAs part of our Commercial and Marketing Strategy, since January 2023, we hired the
-                    services of the Say Hello agency to jointly develop our communication plan in digital media (social
-                    networks, landing pages, email campaigns, among others). Due to the good results, this year we decided to
-                    renew their contract to continue working with this company, which has become more than a provider, it has
-                    become a strategic ally for its contributions as an innovative agency committed to digital transformation
-                    and return on investment in the projects entrusted.</p>
-                  <div class="testimonial-avatar">
-                    <img
-                      src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt="Avatar de Name 3">
-                    <p class="name">Karina Reyes De Gustave <br>Communications Manager</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        Start TestiminioHome Home  -->
-    </div>
+  </div>
 
   <!-- Start Footeer Home -->
   <footer class="footer">
@@ -698,9 +674,9 @@
           <h1 class="textColor-white2 footerTitle">
             Let's collaborate
           </h1>
-          <button class="btn btn-home margeBut3 "  id="box1" onclick="selectBox(16)" type="button">Start a Project <svg style="margin-left: 6px;"
-              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
-              viewBox="0 1 16 16">
+          <button class="btn btn-home margeBut3 " id="box1" onclick="selectBox(16)" type="button">Start a Project <svg
+              style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right" viewBox="0 1 16 16">
               <path fill-rule="evenodd"
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
               </path>
