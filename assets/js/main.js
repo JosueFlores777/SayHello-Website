@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*Video Home */
-
 function handleScroll() {
   var videoHome = document.getElementById("videoHome");
   var video = document.getElementById("video12");
@@ -118,7 +117,6 @@ function handleScroll() {
 }
 window.addEventListener("scroll", handleScroll);
 handleScroll();
-
 
 /* */
 
