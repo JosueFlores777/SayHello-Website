@@ -172,7 +172,7 @@
     <div class="scrollerWork" id="scrollerWork">
 
       <div class="box on-top animate__animated animate__backInUp" id="big-box">
-        <a class="close-button" onclick="clearSelection()">
+        <a class="close-button" onclick="toggleSelection()">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg"
             viewBox="0 0 16 16">
             <path
@@ -437,15 +437,29 @@
       document.getElementById("scrollerWork").style.display = "block";
     }
 
-    function clearSelection() {
+    function toggleSelection() {
+            var bigBox = document.getElementById("big-box");
+            if (bigBox.style.display === "none" || bigBox.classList.contains("animate__backOutDown")) {
+                bigBox.style.display = "block";
+                bigBox.classList.remove("animate__backOutDown");
+                bigBox.classList.add("animate__backInUp");
+            } else {
 
-      document.getElementById("scrollerWork").scrollTop = 0;
-      document.getElementById("scrollerWork").style.display = "none";
-      document.getElementById("fullscreen-background").style.zIndex = -6;
-      document.getElementById("fullscreen-background").style.backgroundColor = "black";
-      
+                bigBox.classList.remove("animate__backInUp");
+                bigBox.classList.add("animate__backOutDown");
+                setTimeout(function () {
+                    bigBox.style.display = "none";
+                    clearSelection();
+                }, 500);
+            }
+        }
 
-    }
+        function clearSelection() {
+            document.getElementById("scrollerWork").scrollTop = 0;
+            document.getElementById("scrollerWork").style.display = "none";
+            document.getElementById("fullscreen-background").style.zIndex = -6;
+            document.getElementById("fullscreen-background").style.backgroundColor = "black";
+        }
 
     document.getElementById("scrollerWork").addEventListener("scroll", function () {
       var scrollPosition = this.scrollTop;

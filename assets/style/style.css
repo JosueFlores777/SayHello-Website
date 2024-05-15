@@ -622,6 +622,15 @@ nav input {
     .navbar {
         --bs-navbar-padding-x: 1;
     }
+
+    .btn-home {
+        width: auto !important;
+    }
+
+
+    .btn-home2{
+        width: 100% !important;
+    }
 }
 
 .margeTex1 {
@@ -866,6 +875,14 @@ nav input {
     color: #fff;
 }
 
+.btn-home2 {
+    font-family: var(--Urbanist);
+    background-color: #696667a8;
+    width: 155px;
+    color: #fff;
+}
+
+
 .btn-contact,
 .btn-contact:hover {
     font-family: var(--Urbanist);
@@ -875,7 +892,7 @@ nav input {
     color: #fff;
 }
 
-.btn-home:hover,
+.btn-home:hover,.btn-home2:hover,
 .btn-contact:hover {
     font-family: var(--Urbanist);
 background-color: #f0126a !important;
@@ -2538,7 +2555,7 @@ footer button {
 
 @media screen and (min-width: 1200px) and (max-width: 1390px) {
     nav .wrapper {
-        max-width: 1000px !important;
+        max-width: 1190px !important;
     }
 
     .navbar .container-fluid {

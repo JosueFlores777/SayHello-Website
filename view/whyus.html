@@ -494,25 +494,14 @@
         </div>
     </footer>
     <!--Start Footeer Home  -->
+
+    <style>
+        
+    </style>
+
     <script>
         var boxes = [
             {
-                typeWork: "Fill in the blanks and we'll get back to you in one business day.",
-                image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
-                titleModal: "Fill in the blanks and we'll get back to you in one business day.",
-                Subtitle: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam.',
-                cardText: 'Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis am dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecm dolor sit amet, consectetur  aliquam sed quam. Sed lecliquam eros. Nam scelerisque nec eros sit Lorem ipsum dolor sit amet, consectetur  aliquam sed quam. Sed lectus felis, feugiat ut turpis vel, convallis aliquam eros. Nam scelerisque nec eros sit',
-
-                imgcard1: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard2: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard3: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                imgcard4: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-
-
-                testiModal: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nihil voluptatibus perferendis sed, nulla, odit vel minima dolores iure exercitationem debitis ut alias vitae in dolore eos praesentium quis.',
-                imgTestim: 'https://images.pexels.com/photos/9482920/pexels-photo-9482920.jpeg?auto=compress&cs=tinysrgb&w=660&h=650&dpr=1',
-                nameTest: 'Name 1',
-            },    {
                 typeWork: "Fill in the blanks and we'll get back to you in one business day.",
                 image: 'https://source.unsplash.com/uAgLGG1WBd4/900x900',
                 titleModal: "Fill in the blanks and we'll get back to you in one business day.",
@@ -544,9 +533,20 @@
             document.getElementById("scrollerWork").style.display = "none";
             document.getElementById("fullscreen-background").style.zIndex = -6;
             document.getElementById("fullscreen-background").style.backgroundColor = "black";
-
-
+     
+            
         }
+
+
+
+function openSelection() {
+    var bigBox = document.getElementById("big-box");
+    // Mostrar el elemento y aplicar la animación de entrada
+    bigBox.style.display = "block";
+    bigBox.classList.remove("animate__backOutDown");
+    bigBox.classList.add("animate__backInUp");
+}
+
 
         document.getElementById("scrollerWork").addEventListener("scroll", function () {
             var scrollPosition = this.scrollTop;
