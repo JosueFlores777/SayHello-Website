@@ -123,13 +123,7 @@ window.addEventListener('scroll', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const videoContainer = document.querySelector('.video-container');
-  const videoIframe = document.querySelector('.video-container iframe');
-
-  videoIframe.style.width = '450px';
-  videoIframe.style.height = '250px';
-  videoIframe.style.transform = 'scale(1)';
-
+  
   const sr = ScrollReveal({
     duration: 2000,
     delay: 300,

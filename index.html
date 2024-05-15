@@ -150,38 +150,47 @@
   <section class="videoHome" id="videoHome">
     <div class="video-container animationScroll2 justify-center items-center">
       <video class="img-fluid5 rounded-start borRadModal workImag" id="video"
-        src="./assets/img/Portfolio2024/videos/sayhello72.mp4" controls autoplay loop>
+        src="./assets/img/Portfolio2024/videos/sayhello72.mp4" controls autoplay muted loop>
       </video>
     </div>
   </section>
 
   <script>
-window.addEventListener("scroll", function () {
-  var videoHome = document.getElementById("videoHome");
-  var video = document.getElementById("video");
-  var scrollPosition = window.scrollY;
-  var windowHeight = window.innerHeight;
+    function handleScroll() {
+      var videoHome = document.getElementById("videoHome");
+      var video = document.getElementById("video");
+      var scrollPosition = window.scrollY;
+      var windowHeight = window.innerHeight;
+      var windowWidth = window.innerWidth; // Obtener el ancho de la ventana
 
-  // Obtener la posición vertical de la parte inferior del video
-  var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
+      // Verificar el ancho de la ventana
+      if (windowWidth > 600) {
+        var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
+        var defaultPadding = 90;
+        var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
 
-  // Determinar el padding por defecto
-  var defaultPadding = 40;
+        if (videoBottom <= scrollPosition + windowHeight) {
+          paddingValue = defaultPadding;
+        }
 
-  var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
+        // Aplicar el padding
+        videoHome.style.padding = "0 " + paddingValue + "px";
+      }
 
- if (videoBottom <= scrollPosition + windowHeight) {
-    paddingValue = defaultPadding;
-  }
+      if (windowWidth <= 478) {
+        video.pause(); // Pausar el video si el ancho es menor o igual a 478px
+      } else {
+        video.play(); // Reanudar el video si el ancho es mayor a 478px
+      }
+    }
 
-  // Aplicar el padding
-  videoHome.style.padding = paddingValue + "px";
-});
+    window.addEventListener("scroll", handleScroll);
 
-// Establece el padding inicial
-window.dispatchEvent(new Event("scroll"));
+    handleScroll();
+
 
   </script>
+
 
   <div class="container-fluid  mx-auto mt-8 p-3">
 
@@ -189,9 +198,8 @@ window.dispatchEvent(new Event("scroll"));
     <section class="part2Home margenGeneral">
       <div class="textppart2Home">
         <h1>
-          Success in the digital world starts with understanding your audience and delivering experiences that
-          resonate
-          with them.
+          The first step to success is understanding your audience. Together we’ll build a strategy to focus on the
+          specific challenges to reach that audience.
         </h1>
       </div>
       <div class="cardHome margenpart2Home" class="d-flex justify-center items-center">
