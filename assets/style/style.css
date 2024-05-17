@@ -12,9 +12,13 @@ body {
 }
 
 /*Config General*/
-.margenGeneral,
+.margenGeneral {
+    margin: 0px 75px;
+}
+
 .margenGeneralService {
-    margin: 0 75px;
+    margin: 0px 75px;
+    margin-bottom: 10% !important;
 }
 
 .margenGeneralContact {
@@ -55,7 +59,7 @@ body {
 }
 
 .bottom-left {
-    z-index: -25;
+     z-index: -2;
     min-width: 500px;
     min-height: 500px;
     bottom: 0;
@@ -64,7 +68,7 @@ body {
 }
 
 .bottom-right {
-    z-index: -25;
+     z-index: -2;
     min-width: 500px;
     min-height: 500px;
     bottom: 0;
@@ -123,6 +127,7 @@ nav .wrapper {
 .logo a {
     width: 140px;
 }
+
 .logo img {
     height: auto;
     width: 140px;
@@ -158,7 +163,7 @@ nav .wrapper {
 }
 
 .padddingBox {
-padding:  1.5rem 1.5rem 0 1.5rem !important;
+    padding: 1.5rem 1.5rem 0 1.5rem !important;
 }
 
 .mobile-item {
@@ -302,7 +307,8 @@ padding:  1.5rem 1.5rem 0 1.5rem !important;
     top: 10px;
 }
 
-.textService, .textService p {
+.textService,
+.textService p {
     font-family: var(--Urbanist);
 }
 
@@ -630,7 +636,7 @@ nav input {
     }
 
 
-    .btn-home2{
+    .btn-home2 {
         width: 100% !important;
     }
 }
@@ -703,7 +709,7 @@ nav input {
 
 .textColor-whiteAbout:hover {
     border-radius: 4px;
-    color:#f0126a;
+    color: #f0126a;
     /* margin: 14px; */
 }
 
@@ -894,10 +900,11 @@ nav input {
     color: #fff;
 }
 
-.btn-home:hover,.btn-home2:hover,
+.btn-home:hover,
+.btn-home2:hover,
 .btn-contact:hover {
     font-family: var(--Urbanist);
-background-color: #f0126a !important;
+    background-color: #f0126a !important;
     width: 155px;
     color: #fff;
 }
@@ -928,7 +935,7 @@ background-color: #f0126a !important;
 .video-container {
     z-index: 5000;
     width: 100%;
-    height: 70%;
+    height: auto;
     object-fit: cover;
     margin: 0 auto;
     overflow: hidden;
@@ -936,9 +943,9 @@ background-color: #f0126a !important;
     border-radius: 25px;
 }
 
-.videoHome{
-    padding:0 90px;
-    transition: padding-left 0.9s ease, padding-right 0.9s ease; 
+.videoHome {
+    padding: 0 90px;
+    transition: padding-left 0.9s ease, padding-right 0.9s ease;
 }
 
 .img-fluid5 {
@@ -1369,7 +1376,7 @@ swiper-slide {
 }
 
 .contenService {
-    margin: 0 15%;
+    margin: 0 9%;
     margin-bottom: 25px;
     height: auto;
 }
@@ -1377,7 +1384,7 @@ swiper-slide {
 
 
 .contenService .imagenFlui img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1463,6 +1470,7 @@ swiper-slide {
     margin-bottom: 25px;
     font-size: 15px;
 }
+
 .work-cardFilter {
     padding: 8px;
     border-radius: 210px;
@@ -1490,7 +1498,8 @@ swiper-slide {
     color: #f6f4bd;
 }
 
-.work-card,.work-title{
+.work-card,
+.work-title {
     margin-left: 2%;
 }
 
@@ -1623,6 +1632,7 @@ swiper-slide {
 .modarlCarbody p {
     font-family: var(--Urbanist);
 }
+
 .footer a {
     font-family: var(--Urbanist);
 }
@@ -1716,7 +1726,8 @@ swiper-slide {
     z-index: -1;
 }
 
-.scrollerWork,.scrollerWork1 {
+.scrollerWork,
+.scrollerWork1 {
     display: none;
     position: fixed;
     top: 0;
@@ -1753,7 +1764,7 @@ swiper-slide {
     background-color: #a87c22;
 }
 
-.close-button:hover { 
+.close-button:hover {
     color: #fcfcc4;
 }
 
@@ -1867,7 +1878,7 @@ swiper-slide {
     font-size: 2rem;
 }
 
-.blogServi{
+.blogServi {
     margin-top: 10%;
 }
 
@@ -1959,9 +1970,11 @@ swiper-slide {
 .scrollerAbout[data-speed="slow"] {
     --_animation-duration: 99s;
 }
-.contenServiceFinal{
+
+.contenServiceFinal {
     display: none;
 }
+
 .imageAboutCarrInfi {
     width: 250px;
 }
@@ -2094,9 +2107,10 @@ swiper-slide {
     font-family: var(--FontspringDemoText);
 }
 
-.centrarContact2{
+.centrarContact2 {
     font-family: var(--Urbanist);
 }
+
 .mapContact {
     margin-top: 35px;
     height: 350px;
@@ -2186,8 +2200,10 @@ footer {
 .footerConter .col-md-4 h1 {
     font-family: var(--Urbanist);
 }
-.finalFooter a{
-    font-family: var(--Urbanist);;
+
+.finalFooter a {
+    font-family: var(--Urbanist);
+    ;
 }
 
 
@@ -2196,8 +2212,8 @@ a {
 }
 
 footer a:hover {
-    color:  #f47aab !important;
-    
+    color: #f47aab !important;
+
 }
 
 .footer {
@@ -2302,20 +2318,23 @@ footer button {
 /*Resposive*/
 
 @media screen and (min-width: 1500px) and (max-width: 1849px) {
- 
-    .centered-content{
+
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 500px;
         display: flex;
         justify-content: end;
     }
 }
+
 @media screen and (min-width: 1522px) and (max-width: 1849px) {
     .margile {
         margin-left: 40%;
@@ -2340,14 +2359,17 @@ footer button {
     .cardText {
         font-size: 35px;
     }
-    .centered-content{
+
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 500px;
         display: flex;
         justify-content: end;
@@ -2378,8 +2400,8 @@ footer button {
     swiper-container {
         width: 100%;
     }
-  
-    
+
+
 }
 
 @media screen and (min-width: 1182px) and (max-width: 1303px) {
@@ -2402,7 +2424,7 @@ footer button {
 }
 
 @media screen and (min-width: 1800px) and (max-width: 2000px) {
-    nav .wrapper {
+    nav .wrapper, .navbar .container-fluid {
         max-width: 1700px;
     }
 
@@ -2437,14 +2459,17 @@ footer button {
     .testimonioHome {
         margin-top: 150px;
     }
-    .centered-content{
+
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 480px;
         display: flex;
         justify-content: end;
@@ -2463,14 +2488,16 @@ footer button {
         height: auto;
     }
 
-    .centered-content{
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 580px;
         display: flex;
         justify-content: end;
@@ -2478,14 +2505,14 @@ footer button {
 }
 
 @media screen and (min-width: 1520px) and (max-width: 1700px) {
-    swiper-container{
+    swiper-container {
         width: 100%;
     }
-    
+
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1800px) {
-    nav .wrapper {
+    nav .wrapper, .navbar .container-fluid {
         max-width: 1400px;
     }
 
@@ -2527,7 +2554,7 @@ footer button {
 }
 
 @media screen and (min-width: 1391px) and (max-width: 1490px) {
-    nav .wrapper {
+    nav .wrapper, .navbar .container-fluid {
         max-width: 1300px !important;
     }
 
@@ -2555,7 +2582,7 @@ footer button {
 
 
 @media screen and (min-width: 1200px) and (max-width: 1390px) {
-    nav .wrapper {
+    nav .wrapper, .navbar .container-fluid {
         max-width: 1190px !important;
     }
 
@@ -2671,7 +2698,7 @@ footer button {
         margin-top: 137px !important;
     }
 
-    swiper-container{
+    swiper-container {
         width: 100%;
     }
 }
@@ -2731,7 +2758,8 @@ footer button {
         width: 60px;
     }
 
-    #cardText,#titleWork {
+    #cardText,
+    #titleWork {
         font-size: 1.2rem;
     }
 }
@@ -2743,7 +2771,8 @@ footer button {
     }
 
 
-    #cardText,#titleWork {
+    #cardText,
+    #titleWork {
         font-size: 1.4rem;
     }
 }
@@ -2762,9 +2791,12 @@ footer button {
         font-size: 13px;
     }
 
-    #cardText,#titleWork  {
+    #cardText,
+    #titleWork {
         font-size: 1.5rem;
     }
+
+    
 }
 
 @media screen and (min-width: 1251px) and (max-width: 1400px) {
@@ -2784,8 +2816,22 @@ footer button {
         width: 75vh;
     }
 
-    #cardText,   #titleWork {
+    #cardText,
+    #titleWork {
         font-size: 1.7rem;
+    }
+
+    .textService h2 {
+        font-size: 2.6rem;
+    }
+
+    .textService p {
+        font-size: 1.2rem;
+    }
+
+    .contenService .imagenFlui img {
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -2825,8 +2871,23 @@ footer button {
         font-size: 18px;
     }
 
-    #cardText,#titleWork{
+    #cardText,
+    #titleWork {
         font-size: 1.8rem;
+    }
+
+    .textService h2 {
+        font-size: 2.7rem;
+    }
+
+    .textService p {
+        font-size: 1.3rem;
+    }
+
+    
+    .contenService .imagenFlui img {
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -2856,14 +2917,28 @@ footer button {
         width: 75vh;
     }
 
-    #cardText,#titleWork{
+    #cardText,
+    #titleWork {
 
         font-size: 1.9rem;
     }
 
-
     .box img {
         width: 500px;
+        height: auto;
+    }
+
+    .textService h2 {
+        font-size: 2.9rem;
+    }
+
+    .textService p {
+        font-size: 1.4rem;
+    }
+
+    
+    .contenService .imagenFlui img {
+        width: 82%;
         height: auto;
     }
 }
@@ -2930,10 +3005,28 @@ footer button {
         height: auto;
     }
 
-    #cardText,#titleWork{
+    #cardText,
+    #titleWork {
         font-size: 2rem;
     }
 
+    .textService h2 {
+        font-size: 3.2rem;
+    }
+
+    .textService p {
+        font-size: 1.7rem;
+    }
+
+    .contenService .col-md-6 {
+        max-width: none;
+    }
+
+       
+    .contenService .imagenFlui img {
+        width: 85%;
+        height: auto;
+    }
 }
 
 #titleWork {
@@ -2954,7 +3047,7 @@ footer button {
         width: 1400px;
         height: auto;
     }
-    
+
     swiper-container {
         width: 100%;
     }
@@ -2989,7 +3082,8 @@ footer button {
         width: 75vh;
     }
 
-    #cardText,#titleWork {
+    #cardText,
+    #titleWork {
         font-size: 2.1rem;
     }
 
@@ -2999,17 +3093,36 @@ footer button {
         height: auto;
     }
 
-    .centered-content{
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 680px;
         display: flex;
         justify-content: end;
+    }
+
+    .textService h2 {
+        font-size: 4rem;
+    }
+
+    .textService p {
+        font-size: 1.9rem;
+    }
+    .contenService .col-md-6 {
+        max-width: none;
+    }
+
+       
+    .contenService .imagenFlui img {
+        width: 85%;
+        height: auto;
     }
 }
 
@@ -3058,7 +3171,8 @@ footer button {
     .textHome {
         margin-top: 8%;
     }
-/*
+
+    /*
     .work-card {
         margin-left: -5px;
     }*/
@@ -3109,17 +3223,39 @@ footer button {
     .blogServi {
         margin-top: 15%;
     }
+
+    
+    .textService h2 {
+        font-size: 3.1rem;
+    }
+
+    .textService p {
+        font-size: 1.5rem;
+    }
+
+ 
+}
+
+@media screen and (min-width: 770px) and (max-width: 1300px) {
+    .margenTopService {
+        margin-left: -1px !important;
+     }
+     .work-card, .work-title {
+         margin-left: 0;
+    }
 }
 
 @media screen and (min-width:1025px) and (max-width: 1300px) {
-    .centered-content{
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 380px;
         display: flex;
         justify-content: end;
@@ -3127,30 +3263,35 @@ footer button {
 }
 
 @media screen and (min-width: 1295px) and (max-width: 1400px) {
-    .centered-content{
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 350px;
         display: flex;
         justify-content: end;
     }
+
 }
 
 
 @media screen and (min-width: 1401px) and (max-width: 1500px) {
-    .centered-content{
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 410px;
         display: flex;
         justify-content: end;
@@ -3163,10 +3304,12 @@ footer button {
     .work-cardFilter {
         padding: 7px 18px 7px 18px;
     }
+
     .ml-filter {
         margin-left: 8px;
     }
-} 
+}
+
 @media screen and (min-width: 1401px) and (max-width: 1900px) {
     .ml-filter {
         margin-left: 13px;
@@ -3175,7 +3318,7 @@ footer button {
     .work-cardFilter {
         padding: 8px 20px 8px 20px;
     }
-} 
+}
 
 @media screen and (min-width: 1900px) and (max-width: 3200px) {
     .ml-filter {
@@ -3185,7 +3328,7 @@ footer button {
     .work-cardFilter {
         padding: 9px 21px 9px 21px;
     }
-} 
+}
 
 @media(max-width:1025px) {
     .sectionAbout4 .row {
@@ -3386,22 +3529,33 @@ footer button {
     .blogServi {
         margin-top: 12%;
     }
+
+    .textService h2 {
+        font-size: 2.7rem;
+    }
+
+    .textService p {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width:900px) and (max-width: 1024px) {
-    .centered-content{
+    .centered-content {
         margin-top: 10%;
     }
-    .paddingImg1600{
+
+    .paddingImg1600 {
         display: flex;
         justify-content: end;
     }
-    .paddingImg1600 img{
+
+    .paddingImg1600 img {
         max-width: 280px;
         display: flex;
         justify-content: end;
     }
 }
+
 @media screen and (min-width: 1091px) and (max-width: 1287px) {
 
     .titleCarruWorkHome {
@@ -3440,8 +3594,9 @@ footer button {
         font-weight: 400;
         margin-bottom: 25px;
     }
+
     .textHome p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }
 
@@ -3481,8 +3636,9 @@ footer button {
     .bottom-right {
         min-width: 400px;
         min-height: 400px;
-
     }
+
+
 }
 
 @media screen and (min-width: 940px) and (max-width: 1025px) {
@@ -3497,7 +3653,7 @@ footer button {
         width: 480px;
         height: auto;
     }
-    
+
     .principalBlogConte {
         height: 37vh;
     }
@@ -3587,6 +3743,14 @@ footer button {
 
     .blogtext {
         font-size: 1.1rem;
+    }
+
+    .textService h2 {
+        font-size: 2.3rem;
+    }
+
+    .textService p {
+        font-size: 1rem;
     }
 }
 
@@ -3727,7 +3891,8 @@ footer button {
         margin: 13px;
         height: 40vh;
     }
-/*
+
+    /*
     .work-card {
         margin-left: -5px;
     }*/
@@ -3735,6 +3900,7 @@ footer button {
     .textPrinciService {
         margin-left: 15px;
     }
+
     .top-left {
         min-width: 250px;
         min-height: 250px;
@@ -3784,6 +3950,30 @@ footer button {
     .imageWorkModal {
         justify-content: center;
     }
+
+    .textService h2 {
+        font-size: 3rem;
+    }
+
+    .textService p {
+        font-size: 1.3rem;
+    }
+
+    .Adverting-marge {
+        margin: 0 15px;
+    }
+
+       /*ditalMargin*/
+    .contenService .imagenFlui1 img {
+        margin-left: -25px;
+        width: 115%;
+        height: auto;
+    }
+  
+    .contenService .imagenFlui .img-fluid  {
+        max-width: none;
+    }
+    /**/
 }
 
 @media (max-width: 700px) {
@@ -3883,6 +4073,18 @@ footer button {
     swiper-container {
         width: 100%;
     }
+
+    .Adverting-marge {
+        margin: 0 15px;
+    }
+
+    /*digital*/
+    .contenService .imagenFlui1 img {
+        margin-left: -30px;
+        width: 110%;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 625px) {
@@ -3890,6 +4092,7 @@ footer button {
         padding: 0;
         margin: 0 15px;
     }
+
     .corner-image {
         position: absolute;
         width: auto;
@@ -4033,7 +4236,7 @@ footer button {
         font-size: 1.9rem;
     }
 
-    
+
     .workContent {
         margin-top: 155px;
     }
@@ -4092,7 +4295,8 @@ footer button {
     }
 
 
-    #cardText,#titleWork {
+    #cardText,
+    #titleWork {
         font-size: 25px;
     }
 
@@ -4128,7 +4332,7 @@ footer button {
     .cardPageTestiHome {
         height: 480px;
     }
-    
+
 }
 
 @media (max-width: 478px) {
@@ -4277,7 +4481,8 @@ footer button {
         margin-top: 155px;
     }
 
-    .scrollerWork,.scrollerWork1 {
+    .scrollerWork,
+    .scrollerWork1 {
         padding: 30px;
         transition: bottom 7s ease !important;
     }
@@ -4462,10 +4667,38 @@ footer button {
         font-size: 0.8rem;
     }
 
-    .footer-Work{
+    .footer-Work {
         margin-top: 25%;
     }
 
+    .textService h2 {
+        font-size: 2.1rem;
+    }
+
+    .textService p {
+        font-size: 1rem;
+    }
+
+     .Adverting-marge {
+        margin: 0 18px;
+    }
+
+
+    /*ditalMargin*/
+    .contenService .imagenFlui1 img {
+        margin-left: -25px;
+        width: 115%;
+        height: auto;
+    }
+
+    .contenService .imagenFlui .img-fluid  {
+        max-width: none;
+    }
+    /**/
+
+    .margenTopService {
+        margin-left: 15px !important;
+    }
 }
 
 @media (max-width: 430px) {
@@ -4576,7 +4809,7 @@ footer button {
         font-size: 1.5rem;
     }
 
-    .footer-Work{
+    .footer-Work {
         margin-top: 29%;
     }
 
@@ -4678,6 +4911,12 @@ footer button {
     .blogServi {
         margin-top: 20% !important;
     }
+      /*ditalMargin*/
+      .contenService .imagenFlui1 img {
+        margin-left: -25px;
+        width: 117%;
+        height: auto;
+    }
 }
 
 @media (max-width: 378px) {
@@ -4759,9 +4998,11 @@ footer button {
         min-height: 200px;
 
     }
+
     .video-container {
         margin-top: -40px;
     }
+
     .testimonioHome {
         height: 55vh;
     }
@@ -4800,7 +5041,7 @@ footer button {
         margin-bottom: 30%;
     }
 
-    .footer-Work{
+    .footer-Work {
         margin-top: 20%;
     }
 
@@ -4909,8 +5150,8 @@ footer button {
         padding: 5.2px;
         margin-bottom: 10px;
     }
-    
-    .footer-Work{
+
+    .footer-Work {
         margin-top: 15%;
     }
 }

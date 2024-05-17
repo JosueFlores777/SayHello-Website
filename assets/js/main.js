@@ -93,30 +93,26 @@ function handleScroll() {
   var video = document.getElementById("video12");
   var scrollPosition = window.scrollY;
   var windowHeight = window.innerHeight;
-  var windowWidth = window.innerWidth; // Obtener el ancho de la ventana
-
+  var windowWidth = window.innerWidth; 
+  var videoHomeRect = videoHome.getBoundingClientRect();
 
   if (windowWidth > 600) {
-    var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
-    var defaultPadding = 90;
-    var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
-
-    if (videoBottom <= scrollPosition + windowHeight) {
-      paddingValue = defaultPadding;
+    if (videoHomeRect.top <= 0 && videoHomeRect.bottom >= windowHeight) {
+      videoHome.style.padding = "0 90px";
+      video.play();
+    } else {
+      videoHome.style.padding = "0";
+      video.pause();
     }
-
-    videoHome.style.padding = "0 " + paddingValue + "px";
-  }
-
-  if (windowWidth <= 599) {
-    videoHome.style.padding = "0 " + 0 + "px";
-    video.pause();
   } else {
-    video.play();
+    videoHome.style.padding = "0";
+    video.pause();
   }
 }
+
 window.addEventListener("scroll", handleScroll);
 handleScroll();
+
 
 /* */
 
@@ -252,7 +248,11 @@ function selectBox(index) {
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork2").style.display = "block";
     var video = document.getElementById('video');
-    video.pause();
+    if(video.pause()){
+      video.pause();
+    }else {
+      video.pause();
+    }
     modalCloseVide = true;
   }
 
@@ -263,7 +263,12 @@ function selectBox(index) {
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork2").style.display = "block";
     var video = document.getElementById('video');
-    video.pause();
+   
+    if(video.pause()){
+      video.pause();
+    }else {
+      video.pause();
+    }
     modalCloseVide = false;
   } else {
     

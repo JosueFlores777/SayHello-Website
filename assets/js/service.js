@@ -1,15 +1,29 @@
+var video = document.getElementById('video1');
+var isVideoPlaying = video && !video.paused;
+
 function selectBox(index) {
     event.preventDefault();
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
     document.getElementById("scrollerWork").style.display = "block";
-    var video = document.getElementById('video1');
-    video.pause();
+    
+    if (video) {
+        isVideoPlaying = !video.paused;
+        if (isVideoPlaying) {
+            video.pause(); 
+        }
+    }
 }
 
 function clearSelection() {
-    var video = document.getElementById('video1');
-    video.play();
+    if (video) {
+        if (isVideoPlaying) {
+            video.play(); 
+        } else {
+            video.pause();
+        }
+    }
+
     document.getElementById("scrollerWork").scrollTop = 0;
     document.getElementById("scrollerWork").style.display = "none";
     document.getElementById("fullscreen-background").style.zIndex = -6;
@@ -92,3 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener('scroll', handleScroll);
 });
+
+/*
+
+
+*/

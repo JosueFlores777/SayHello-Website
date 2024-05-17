@@ -30,7 +30,7 @@ $(window).scroll(function () {
   var scrollNew = scrollTop;
 
   if (sectionAbout3Top <= (scrollTop + windowHeight)) {
-    var parallax = (scrollNew / 4);
+    var parallax = (scrollNew / 4.2);
     if ($(window).width() <= 1030) {
       var parallax = (scrollNew / 5);
       if ($(window).width() <= 845) {
