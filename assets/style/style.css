@@ -1377,7 +1377,11 @@ swiper-slide {
 }
 
 .contenService {
+<<<<<<< HEAD
     margin: 0 9%;
+=======
+    margin: 0 2%;
+>>>>>>> master
     margin-bottom: 25px;
     height: auto;
 }
@@ -2823,11 +2827,19 @@ footer button {
     }
 
     .textService h2 {
+<<<<<<< HEAD
         font-size: 2.3rem;
     }
 
     .textService p {
         font-size: 1rem;
+=======
+        font-size: 2.4rem;
+    }
+
+    .textService p {
+        font-size: 1.1rem;
+>>>>>>> master
     }
 
     .contenService .imagenFlui img {
@@ -2878,6 +2890,7 @@ footer button {
     }
 
     .textService h2 {
+<<<<<<< HEAD
         font-size: 2.5rem;
     }
 
@@ -2885,6 +2898,14 @@ footer button {
         font-size: 1.1rem;
     }
 
+=======
+        font-size: 2.6rem;
+    }
+
+    .textService p {
+        font-size: 1.2rem;
+    }
+>>>>>>> master
     
     .contenService .imagenFlui img {
         width: 90%;
@@ -2930,11 +2951,19 @@ footer button {
     }
 
     .textService h2 {
+<<<<<<< HEAD
         font-size: 2.7rem;
     }
 
     .textService p {
         font-size: 1.2rem;
+=======
+        font-size: 2.8rem;
+    }
+
+    .textService p {
+        font-size: 1.3rem;
+>>>>>>> master
     }
 
     
@@ -3227,13 +3256,21 @@ footer button {
 
     
     .textService h2 {
+<<<<<<< HEAD
         font-size: 2.8rem;
+=======
+        font-size: 2.4rem;
+>>>>>>> master
     }
 
     .textService p {
         font-size: 1.1rem;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     footer h1 {
         width: 70%;
     }
@@ -3753,11 +3790,19 @@ footer button {
     }
 
     .textService h2 {
+<<<<<<< HEAD
         font-size: 2.1rem;
     }
 
     .textService p {
         font-size: 0.8rem;
+=======
+        font-size: 2rem;
+    }
+
+    .textService p {
+        font-size: 0.7rem;
+>>>>>>> master
     }
 }
 
@@ -4069,7 +4114,7 @@ footer button {
     }
 
     .contenService {
-        margin: 0 0;
+        margin: 0 3%;
     }
 
     .principalServices {
