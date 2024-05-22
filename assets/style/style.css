@@ -958,7 +958,7 @@ nav input {
 
 
 .textppart2Home {
-    width: 70%;
+    width: 82%;
     color: var(--text-White);
     font-family: var(--Urbanist);
 }
@@ -1673,7 +1673,7 @@ swiper-slide {
 }
 
 .textModalFinal {
-    width: 30%;
+    width: 55%;
     font-size: 38px;
     font-family: var(--AllRoundGothic);
 }
@@ -2189,7 +2189,7 @@ footer {
 
 .footerTitle {
     font-family: var(--AllRoundGothic);
-    font-size: 65px;
+    font-size: 55px;
 }
 
 .footerConter {
@@ -2823,11 +2823,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 2.6rem;
+        font-size: 2.3rem;
     }
 
     .textService p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .contenService .imagenFlui img {
@@ -2878,11 +2878,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     .textService p {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     
@@ -2930,11 +2930,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 2.9rem;
+        font-size: 2.7rem;
     }
 
     .textService p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     
@@ -3012,11 +3012,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
     .textService p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .contenService .col-md-6 {
@@ -3110,11 +3110,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
 
     .textService p {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
     .contenService .col-md-6 {
         max-width: none;
@@ -3145,7 +3145,7 @@ footer button {
     }
 
     .footerTitle {
-        font-size: 55px;
+        font-size: 40px;
     }
 
     .textTestHomeH2 {
@@ -3227,14 +3227,16 @@ footer button {
 
     
     .textService h2 {
-        font-size: 3.1rem;
+        font-size: 2.8rem;
     }
 
     .textService p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
- 
+    footer h1 {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 770px) and (max-width: 1300px) {
@@ -3485,7 +3487,7 @@ footer button {
     }
 
     .footerTitle {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .row .margenCardAbout {
@@ -3532,11 +3534,15 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     .textService p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .textppart2Home {
+        width: 90%;
     }
 }
 
@@ -3747,11 +3753,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
 
     .textService p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -3816,6 +3822,17 @@ footer button {
     .principalBlogConte {
         height: 35vh;
     }
+
+    .modalFinal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        padding: 50px 0px;
+    }
+
+    .textModalFinal {
+        width: 100%;
+    }
 }
 
 @media (max-width:767px) {
@@ -3840,11 +3857,11 @@ footer button {
     }*/
 
     footer h1 {
-        width: 60%;
+        width: auto;
     }
 
     .footerTitle {
-        font-size: 55px;
+        font-size: 32px;
     }
 
     .line {
@@ -3953,11 +3970,11 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .textService p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .Adverting-marge {
@@ -4571,7 +4588,7 @@ footer button {
     }
 
     .footerTitle {
-        font-size: 45px;
+        font-size: 37px;
     }
 
     .marginTopContaTitleContact {
@@ -4673,7 +4690,7 @@ footer button {
     }
 
     .textService h2 {
-        font-size: 2.1rem;
+        font-size: 2.8rem;
     }
 
     .textService p {
@@ -4696,7 +4713,9 @@ footer button {
         max-width: none;
     }
     /**/
-
+    .footer {
+        padding: 0;
+    }
     .margenTopService {
         margin-left: 15px !important;
     }

@@ -88,30 +88,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /*Video Home */
+
 function handleScroll() {
   var videoHome = document.getElementById("videoHome");
-  var video = document.getElementById("video12");
+  var video = document.getElementById("video");
   var scrollPosition = window.scrollY;
   var windowHeight = window.innerHeight;
-  var windowWidth = window.innerWidth; 
-  var videoHomeRect = videoHome.getBoundingClientRect();
+  var windowWidth = window.innerWidth; // Obtener el ancho de la ventana
+
 
   if (windowWidth > 600) {
-    if (videoHomeRect.top <= 0 && videoHomeRect.bottom >= windowHeight) {
-      videoHome.style.padding = "0 90px";
-      video.play();
-    } else {
-      videoHome.style.padding = "0";
-      video.pause();
+    var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
+    var defaultPadding = 90;
+    var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
+
+    if (videoBottom <= scrollPosition + windowHeight) {
+      paddingValue = defaultPadding;
     }
-  } else {
-    videoHome.style.padding = "0";
+
+    videoHome.style.padding = "0 " + paddingValue + "px";
+  }
+
+  if (windowWidth <= 599) {
+    videoHome.style.padding = "0 " + 0 + "px";
     video.pause();
+  } else {
+    video.play();
   }
 }
-
 window.addEventListener("scroll", handleScroll);
 handleScroll();
+
 
 
 /* */
