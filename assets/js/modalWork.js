@@ -78,7 +78,7 @@ var boxes = [
     testiModal: 'Our greatest differentiator is our commitment to the brands that trust us. We aim to understand their needs and collaborate closely with our clients. Throughout the process, we strive to educate our clients and translate their ideas into a final product',
     imgTestim: '../assets/img/team/fotos web-fede.jpg',
     nameTest: 'Federico Trujillo-Growth Director',
-  }, {
+  }, /*{
     typeWork: 'Branding & Logo Design',
     image: '../assets/img/Portfolio2024/aceite/Card - Aceite de Arroz.jpg',
     titleModal: 'Aceite de Arroz',
@@ -94,7 +94,7 @@ var boxes = [
     imgTestim: '../assets/img/team/fotos web-fede.jpg',
     nameTest: 'Federico Trujillo-Growth Director',
   }
-  , {
+  ,*/ {
     typeWork: 'Website Development',
     image: '../assets/img/Portfolio2024/Fertiagro/Fertiagro-project-showcase 01.jpg',
     titleModal: 'Fertiagro',
@@ -129,34 +129,28 @@ var boxes = [
   },
 ];
 
-
 var modalCloseVide = false;
-
 function selectBox(index) {
-  if (index === 17) {
+  if(index=== 17){
     event.preventDefault();
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
+    var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork1").style.display = "block";
     var video = document.getElementById('video');
-    var isVideoPlaying = !video.paused;
-    video.pause();
- 
-  }else
+   video.pause();
+    modalCloseVide = true;
+  }
 
   if (index === 16) {
     event.preventDefault();
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
+    var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork1").style.display = "block";
     var video = document.getElementById('video');
-    var isVideoPlaying = !video.paused;
-    if (isVideoPlaying) {
-      video.pause();
-    } else {
-      video.pause();
-    }
-   
+     video.pause();
+    modalCloseVide = false;
   } else {
     document.getElementById("fullscreen-background").style.backgroundColor = "#343333a7";
     document.getElementById("fullscreen-background").style.zIndex = 10;
@@ -172,13 +166,13 @@ function selectBox(index) {
       document.getElementById("titleWork").textContent = selectedBox.Subtitle;
 
     }
-
+   
     document.getElementById("imgcard1").src = selectedBox.imgcard1;
     document.getElementById("imgcard2").src = selectedBox.imgcard2;
     document.getElementById("imgcard3").src = selectedBox.imgcard3;
     document.getElementById("imgcard4").src = selectedBox.imgcard4;
     document.getElementById("imgcardPri").src = selectedBox.image;
-
+   
     document.getElementById("testomioModa").textContent = selectedBox.testiModal;
 
     document.getElementById("avatarTesti").style.display = "none";
@@ -197,11 +191,8 @@ function selectBox(index) {
 
 function clearSelection() {
   var video = document.getElementById('video');
-  var isVideoPlaying = !video.paused;
-  if (isVideoPlaying) {
-    video.pause();
-  } else {
-    video.pause();
+  if (video) {
+    video.muted = true;
   }
   document.getElementById("titleWork").style.display = "block";
   document.getElementById("scrollerWork").scrollTop = 0;
@@ -213,22 +204,23 @@ function clearSelection() {
 }
 
 function clearSelection1() {
-  var video = document.getElementById('video');
-  var isVideoPlaying = !video.paused;
+  if( modalCloseVide === true){
+    var video = document.getElementById('video');
+       video.play();
+    document.getElementById("scrollerWork1").scrollTop = 0;
+    document.getElementById("scrollerWork1").style.display = "none";
+    document.getElementById("fullscreen-background").style.zIndex = -6;
+    document.getElementById("fullscreen-background").style.backgroundColor = "black";
+  }else{
+    var video = document.getElementById('video');
+    video.muted = true;
+    document.getElementById("scrollerWork1").scrollTop = 0;
+    document.getElementById("scrollerWork1").style.display = "none";
+    document.getElementById("fullscreen-background").style.zIndex = -6;
+    document.getElementById("fullscreen-background").style.backgroundColor = "black";
+  }
 
-  if (isVideoPlaying) {
-    video.pause();
-  
-  } else {
-    video.play();
-  } 
-
-  document.getElementById("scrollerWork1").scrollTop = 0;
-  document.getElementById("scrollerWork1").style.display = "none";
-  document.getElementById("fullscreen-background").style.zIndex = -6;
-  document.getElementById("fullscreen-background").style.backgroundColor = "black";
 }
-
 
 document.getElementById("scrollerWork").addEventListener("scroll", function () {
   var scrollPosition = this.scrollTop;
@@ -258,7 +250,7 @@ document.getElementById("scrollerWork1").addEventListener("scroll", function () 
 function filterSelection(category) {
   const buttons = document.querySelectorAll('.filter-btn');
   const elements = document.querySelectorAll('.proyecFilter');
-
+ 
   buttons.forEach(btn => {
     if (btn.getAttribute('onclick').includes(category)) {
       btn.classList.add('active');
@@ -269,9 +261,9 @@ function filterSelection(category) {
 
   elements.forEach(element => {
     if (category === 'all' || element.dataset.category === category) {
-
+  
       element.style.display = 'block';
-
+     
     } else {
       element.style.display = 'none';
     }
@@ -293,6 +285,3 @@ window.addEventListener('scroll', function () {
 });
 
 
-/*
-
-*/

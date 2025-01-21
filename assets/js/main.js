@@ -1,7 +1,7 @@
 
 const scrollers = document.querySelectorAll(".scrollerHome");
 
-// Observador de intersecciÃ³n para mostrar el contenido cuando se hace scroll
+// Observador de intersecci¨®n para mostrar el contenido cuando se hace scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -15,6 +15,41 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden1');
 hiddenElements.forEach((el) => observer.observe(el));
 
+
+/*Video Home */
+
+function handleScroll() {
+  var videoHome = document.getElementById("videoHome");
+  var video = document.getElementById("video12");
+  var scrollPosition = window.scrollY;
+  var windowHeight = window.innerHeight;
+  var windowWidth = window.innerWidth; // Obtener el ancho de la ventana
+
+
+  if (windowWidth > 600) {
+    var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
+    var defaultPadding = 90;
+    var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
+
+    if (videoBottom <= scrollPosition + windowHeight) {
+      paddingValue = defaultPadding;
+    }
+
+    videoHome.style.padding = "0 " + paddingValue + "px";
+  }
+
+  if (windowWidth <= 599) {
+    videoHome.style.padding = "0 " + 0 + "px";
+    video.pause();
+  } else {
+    video.play();
+  }
+}
+window.addEventListener("scroll", handleScroll);
+handleScroll();
+
+
+/* */
 
 
 var lastScrollTop = 0;
@@ -40,7 +75,13 @@ window.addEventListener('scroll', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  
+  const videoContainer = document.querySelector('.video-container');
+  const videoIframe = document.querySelector('.video-container iframe');
+
+  videoIframe.style.width = '450px';
+  videoIframe.style.height = '250px';
+  videoIframe.style.transform = 'scale(1)';
+
   const sr = ScrollReveal({
     duration: 2000,
     delay: 300,
@@ -84,44 +125,34 @@ document.addEventListener('DOMContentLoaded', function () {
     interval: 200,
     reset: true
   });
-
+  /* window.addEventListener('scroll', function () {
+     var scrollPosition = window.scrollY;
+     var scaleFactor = Math.min(scrollPosition / 400, 1);
+ 
+ 
+       videoIframe.style.width = (400 + 350 * scaleFactor) + 'px';
+       videoIframe.style.height = (250 + 200 * scaleFactor) + 'px';
+       videoIframe.style.transform = 'scale(' + (1 + 0.2 * scaleFactor) + ')';
+ 
+   });*/
 });
+/*
+const sr1 = ScrollReveal({
+  duration: 2000,
+  delay: 300,
+  origin: "bottom",
+  distance: "480px",
+  reset: true
+});*/
 
-/*Video Home */
+/*
+sr1.reveal(".mySwiper", {
+  origin: "bottom",
+  interval: 200,
+  reset: true
+});
+*/
 
-function handleScroll() {
-  var videoHome = document.getElementById("videoHome");
-  var video = document.getElementById("video");
-  var scrollPosition = window.scrollY;
-  var windowHeight = window.innerHeight;
-  var windowWidth = window.innerWidth; // Obtener el ancho de la ventana
-
-
-  if (windowWidth > 600) {
-    var videoBottom = video.getBoundingClientRect().bottom + window.scrollY;
-    var defaultPadding = 90;
-    var paddingValue = scrollPosition > 0 ? 0 : defaultPadding;
-
-    if (videoBottom <= scrollPosition + windowHeight) {
-      paddingValue = defaultPadding;
-    }
-
-    videoHome.style.padding = "0 " + paddingValue + "px";
-  }
-
-  if (windowWidth <= 599) {
-    videoHome.style.padding = "0 " + 0 + "px";
-    video.pause();
-  } else {
-    video.play();
-  }
-}
-window.addEventListener("scroll", handleScroll);
-handleScroll();
-
-
-
-/* */
 
 
 
@@ -255,11 +286,7 @@ function selectBox(index) {
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork2").style.display = "block";
     var video = document.getElementById('video');
-    if(video.pause()){
-      video.pause();
-    }else {
-      video.pause();
-    }
+    video.pause();
     modalCloseVide = true;
   }
 
@@ -270,12 +297,7 @@ function selectBox(index) {
     var selectedBox = boxes[index - 1];
     document.getElementById("scrollerWork2").style.display = "block";
     var video = document.getElementById('video');
-   
-    if(video.pause()){
-      video.pause();
-    }else {
-      video.pause();
-    }
+    video.pause();
     modalCloseVide = false;
   } else {
     

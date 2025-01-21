@@ -30,6 +30,7 @@ function clearSelection() {
     document.getElementById("fullscreen-background").style.backgroundColor = "black";
 }
 
+
 document.getElementById("scrollerWork").addEventListener("scroll", function () {
     var scrollPosition = this.scrollTop;
     var paddingValue;
@@ -41,6 +42,7 @@ document.getElementById("scrollerWork").addEventListener("scroll", function () {
     this.style.transition = "padding-left 0.4s ease, padding-right 0.4s ease";
     this.style.padding = paddingValue + "px";
 });
+
 
 function ejecutarAnimacion() {
     var distanceToFooterTop = document.querySelector('footer').getBoundingClientRect().top;
@@ -100,14 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (scrollPosition >= footerOffsetTop - window.innerHeight) {
             bottomNav.style.display = 'none';
         } else {
-            bottomNav.style.display = 'flex';
+            bottomNav.style.display = 'flex'; 
         }
     }
 
     window.addEventListener('scroll', handleScroll);
 });
-
-/*
-
-
-*/

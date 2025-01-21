@@ -703,7 +703,7 @@ nav input {
     font-family: var(--Urbanist);
     font-size: 1.3rem;
     border-radius: 4px;
-    color: #fff;
+    color: #454545;
     /* margin: 14px; */
 }
 
@@ -720,6 +720,14 @@ nav input {
 
 .textColor-white6 {
     color: #ffffff86;
+}
+
+.textColor-white12 {
+    color: #454545;
+}
+
+.textColor-white13 {
+    color: #010101;
 }
 
 .textColor-white:hover {
@@ -1830,11 +1838,12 @@ swiper-slide {
 .sectionAbout4 {
     margin-top: 45px;
     height: auto;
-    background-color: var(--secondary-color);
+    background-color: #E7E7E7;
 }
 
 .margenCardAbout {
-    padding: 50px 25%;
+    text-align: center;
+    padding: 50px 15%;
 }
 
 .sectionAbout4 .row {
@@ -2023,10 +2032,11 @@ swiper-slide {
 .textSubAbout2 {
     font-family: var(--Urbanist);
     margin-top: 65px;
+    font-size: 1.4rem;
 }
 
 .textPrinciAbout {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 35px;
 }
@@ -2129,7 +2139,7 @@ swiper-slide {
 }
 
 .sectionAbout4 .row .card {
-    background-color: var(--secondary-color);
+    background-color: #E7E7E7;
     color: var(--text-White);
     border: none;
 }
@@ -2834,6 +2844,18 @@ footer button {
         width: 90%;
         height: auto;
     }
+
+    .textTestHomeH2 {
+        width: 35%;
+    }
+
+    .footerTitle {
+        font-size: 45px;
+    }
+    footer h1 {
+        width: 70%;
+    }
+
 }
 
 
@@ -2889,6 +2911,16 @@ footer button {
     .contenService .imagenFlui img {
         width: 90%;
         height: auto;
+    }
+
+    .textTestHomeH2 {
+        width: 40%;
+    }
+    .footerTitle {
+        font-size: 48px;
+    }
+    footer h1 {
+        width: 80%;
     }
 }
 
@@ -3028,6 +3060,12 @@ footer button {
         width: 100%;
         height: auto;
     }
+
+    .margenCardAbout {
+        text-align: center;
+        padding: 50px 25%;
+    }
+    
 }
 
 #titleWork {
@@ -3124,6 +3162,11 @@ footer button {
     .contenService .imagenFlui img {
         width: 100%;
         height: auto;
+    }
+
+    .margenCardAbout {
+        text-align: center;
+        padding: 50px 25%;
     }
 }
 
@@ -3262,6 +3305,11 @@ footer button {
         max-width: 380px;
         display: flex;
         justify-content: end;
+    }
+
+    .margenCardAbout {
+        text-align: center;
+        padding: 50px 10%;
     }
 }
 
@@ -3404,6 +3452,11 @@ footer button {
     .blogServi {
         margin-top: 10%;
     }
+
+    .margenCardAbout {
+        text-align: center;
+        padding: 50px 5%;
+    }
 }
 
 @media screen and (min-width:1000px) and (max-width: 1030px) {
@@ -3543,6 +3596,10 @@ footer button {
 
     .textppart2Home {
         width: 90%;
+    }
+
+    .textPrinciAbout {
+        width: auto;
     }
 }
 
