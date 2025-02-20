@@ -42,93 +42,9 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- start nav  -->
-    <nav>
-        <div class="wrapper fixed-top">
-            <div class="logo">
-                <a href="https://usayhello.com/"> <img src="../../public/img/logo blanco.png" alt=""></a>
+    <div id="navbar-container"></div>
+    <script src="../../assets/js/nav/menuservicio.js"></script>
 
-            </div>
-            <input type="radio" name="slider" id="menu-btn">
-            <input type="radio" name="slider" id="close-btn">
-            <ul class="nav-links">
-                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li>
-                    <a class="desktop-item navtext activeC">Services <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                        </svg></a>
-                    <input type="checkbox" id="showMega">
-                    <label for="showMega" class="mobile-item navtext activeC">Services <svg
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                        </svg></label>
-                    <div class="mega-box">
-                        <div class="content">
-
-                            <div class="row">
-                                <header>Digital Services</header>
-                                <ul class="mega-links">
-                                    <li><a href="./branding-logodesign" class="navtext ">Branding & Graphic
-                                            Design<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                                            </svg></a> </li>
-                                    <li><a href="./digital-marketing" class="navtext activeC">Digital Marketing<svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                                            </svg></a></li>
-                                </ul>
-                            </div>
-                            <div class="row">
-                                <header class="navtext2">Security services</header>
-                                <ul class="mega-links">
-
-                                    <li><a href="./advertising-plans" class="navtext">Advertising Plans<svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                                            </svg></a></li>
-                                    <li><a href="./website-development" class="navtext">Website Development<svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                                            </svg></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="../work" class="navtext">Work</a></li>
-                <li><a href="../about" class="navtext">About us</a></li>
-                <li><a href="../whyus" class="navtext">Why us</a></li>
-
-                <li><a href="../contact" class="navtext ">Contact</a></li>
-
-            </ul>
-            <div class="text-end">
-                <form>
-                    <button class="btn2 btn-homeMc" id="box2" onclick="selectBox(1, event)">Start a Project
-                        <svg style="margin-left: 6px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 1 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
-                            </path>
-                        </svg>
-                    </button>
-
-                </form>
-            </div>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-        </div>
-    </nav>
 
 
     <div id="bottom-nav" class="navbar navbar-expand-lg fixed-topM2">
