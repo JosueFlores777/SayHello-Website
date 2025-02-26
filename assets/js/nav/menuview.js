@@ -132,7 +132,7 @@ class Menu {
 // Inicialización con texto y enlaces
 const menu = new Menu('navbar-container', 1, [
     { text: 'Work', link: './work', active: false },
-    { text: 'About us', link: './about', active: false },
+    { text: 'About us', link: './aboutus', active: false },
     { text: 'Why us', link: './whyus', active: false },
     { text: 'Contact', link: './contact', active: false },
 ]);

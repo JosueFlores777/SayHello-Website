@@ -99,7 +99,7 @@ class Navbar {
                             </div>
                         </li>
                         <li><a href="../work" class="navtext">Work</a></li>
-                        <li><a href="../about" class="navtext">About us</a></li>
+                        <li><a href="../aboutus" class="navtext">About us</a></li>
                         <li><a href="../whyus" class="navtext">Why us</a></li>
                         <li><a href="../contact" class="navtext">Contact</a></li>
                     </ul>

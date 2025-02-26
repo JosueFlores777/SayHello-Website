@@ -117,7 +117,7 @@ class Menu {
 // Inicialización:
 const menu = new Menu('navbar-container', 1, [
     { link: '/view/work', active: false },
-    { link: '/view/about', active: false },
+    { link: '/view/aboutus', active: false },
     { link: '/view/whyus', active: false },
     { link: '/view/contact', active: false },
 ]);
